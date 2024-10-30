@@ -14,6 +14,17 @@ function createSubMenu(subMenuItems) {
   return subMenu;
 }
 
+function createMobileSubMenu(subMenuItems) {
+  const mobileSubMenu = <div className="bg-slate-900/80 rounded-md flex flex-col justify-center items-center">
+    <ul >
+    {subMenuItems.map((items, index) => (
+      <li key = {index} className='p-3 text-white hover:bg-slate-950/90'>{ items.name }</li>
+    ))}
+  </ul>
+  </div>
+  return mobileSubMenu;
+}
+
 function Nav(){
   const [mobileMenu, setMobileMenu] = useState(false);
   const [aboutSubMenu, setAboutSubMenu] = useState(false);
@@ -34,7 +45,7 @@ function Nav(){
 
   return (
     <nav className='relative  bg-slate-950 text-white lg:flex justify-between '>
-      <div className='font-bold flex justify-center items-center sm:text-2xl mx-5 p-5 '>
+      <div className='font-bold flex justify-center items-center text-2xl mx-5 p-5 '>
         Temsmet2025
       </div>
       
@@ -42,15 +53,15 @@ function Nav(){
         {navigation.map((navItem, index) => (
           <li key={index} className="text-slate-300 hover:text-slate-50 cursor-pointer  md:text-sm p-2"
             onMouseEnter={() => {
-              (navItem.name === 'About') && handleAboutSubMenu(true);
-              (navItem.name === 'Call for Papers') && handleCFPSubMenu(true);
-              (navItem.name === 'Past Editions') && handleEditionsSubMenu(true);
+              (navItem.name === 'About') && handleAboutSubMenu();
+              (navItem.name === 'Call for Papers') && handleCFPSubMenu();
+              (navItem.name === 'Past Editions') && handleEditionsSubMenu();
               }
             }
             onMouseLeave={() => {
-              (navItem.name === 'About') && handleAboutSubMenu(false);
-              (navItem.name === 'Call for Papers') && handleCFPSubMenu(true);
-              (navItem.name === 'Past Editions') && handleEditionsSubMenu(true);
+              (navItem.name === 'About') && handleAboutSubMenu();
+              (navItem.name === 'Call for Papers') && handleCFPSubMenu();
+              (navItem.name === 'Past Editions') && handleEditionsSubMenu();
             }
             }
           >
@@ -77,8 +88,22 @@ function Nav(){
       {mobileMenu &&
           <ul className=' lg:hidden  flex flex-col justify-center items-center mr-5 space-y-2 py-5 font-bold text-lg hover:text-white transition-all duration-300 ease-in-out transform'>
             {navigation.map((navItem, index) => (
-              <li key={index} className="text-slate-300 hover:text-slate-50 cursor-pointer font-semibold  px-2 hover">
-                {navItem.name}
+              <li key={index}
+                className="text-slate-300 hover:text-slate-50 cursor-pointer font-semibold  px-2 hover"
+                onClick={() => {
+                  navItem.name === 'About' && handleAboutSubMenu();
+                  navItem.name === 'Call for Papers' && handleCFPSubMenu();
+                  navItem.name === 'Past Editions' && handleEditionsSubMenu();
+                 }}
+              >
+              <span className='flex'>
+                {navItem.name} {(navItem.name === 'About') ? (!aboutSubMenu ? <ChevronDown /> : <ChevronUp/>) : ""}
+                {(navItem.name === 'Call for Papers') ? (!cfpSubMenu ? <ChevronDown /> : <ChevronUp />) : ""}
+                {(navItem.name == 'Past Editions') ? (!editionsSubMenu ? <ChevronDown /> : <ChevronUp />) : ""}
+              </span>
+                {navItem.name === 'About' && aboutSubMenu && createMobileSubMenu(aboutSubmenuItems)}
+                {navItem.name === 'Call for Papers' && cfpSubMenu && createMobileSubMenu(cfpSubmenuItems)}
+                {navItem.name === 'Past Editions' && editionsSubMenu && createMobileSubMenu(pastEditionsItems)}
               </li>
             ))}
         
