@@ -71,10 +71,10 @@ function Nav(){
         
       </ul>
       {/* mobile menu toggle button */}
-      <button onClick={() => handleMobileMenu} id="mobile-menu" className="lg:hidden absolute right-5 top-5">
-        {mobileMenu ? <Menu/> : <X/>}
+      <button onClick={handleMobileMenu} id="mobile-menu" className="lg:hidden absolute right-5 top-5">
+        {!mobileMenu ? <Menu/> : <X/>}
       </button>
-      {!mobileMenu &&
+      {mobileMenu &&
           <ul className=' lg:hidden  flex flex-col justify-center items-center mr-5 space-y-2 py-5 font-bold text-lg hover:text-white transition-all duration-300 ease-in-out transform'>
             {navigation.map((navItem, index) => (
               <li key={index} className="text-slate-300 hover:text-slate-50 cursor-pointer font-semibold  px-2 hover">
