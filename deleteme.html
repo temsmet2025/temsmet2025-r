@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <nav class="flex flex-wrap items-center justify-between bg-blue-600 text-white p-4 shadow-lg">
+        <!-- Logo or Title -->
+        <div class="mx-5 p-2 text-lg font-bold tracking-wide">
+            temsmet
+        </div>
+    
+        <!-- Toggle button for mobile view (hidden on medium and larger screens) -->
+        <button class="sm:hidden mx-5 p-2 text-white focus:outline-none" id="nav-toggle">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    
+        <!-- Navigation Links -->
+        <div id="nav-links" class="w-full sm:flex sm:items-center sm:w-auto hidden transition-all duration-300 ease-in-out">
+            <ul
+                class="flex flex-col sm:flex-row sm:space-x-6 items-center w-full sm:w-auto sm:space-y-0 space-y-2 sm:mt-0 mt-4">
+                <li class="cursor-pointer px-3 py-2 hover:bg-blue-500 rounded transition duration-300 ease-in-out">Home</li>
+                <li class="cursor-pointer px-3 py-2 hover:bg-blue-500 rounded transition duration-300 ease-in-out">About
+                </li>
+                <li class="cursor-pointer px-3 py-2 hover:bg-blue-500 rounded transition duration-300 ease-in-out">Services
+                </li>
+                <li class="cursor-pointer px-3 py-2 hover:bg-blue-500 rounded transition duration-300 ease-in-out">Portfolio
+                </li>
+                <li class="cursor-pointer px-3 py-2 hover:bg-blue-500 rounded transition duration-300 ease-in-out">Contact
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navToggle = document.getElementById('nav-toggle');
+            const navLinks = document.getElementById('nav-links');
+
+            navToggle.addEventListener('click', function () {
+                console.log('Toggle button clicked'); // Debugging statement
+                navLinks.classList.toggle('hidden'); // Toggle between hidden and visible
+
+                // Smooth transition: change max-height when the menu is shown/hidden
+                if (navLinks.classList.contains('hidden')) {
+                    navLinks.style.maxHeight = '0'; // Collapse
+                } else {
+                    navLinks.style.maxHeight = navLinks.scrollHeight + 'px'; // Expand
+                }
+            });
+        });
+    </script>
+    
+    <style>
+        /* Optional: Initial styles for max-height */
+        #nav-links {
+            max-height: 0;
+            /* Initially collapsed */
+            overflow: hidden;
+            /* Hide overflow */
+            transition: max-height 0.3s ease-in-out;
+            /* Smooth transition for max-height */
+        }
+    </style>
+
+
+</body>
+</html>
