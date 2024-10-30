@@ -71,7 +71,7 @@ function Nav(){
         
       </ul>
       {/* mobile menu toggle button */}
-      <button onClick={handleMobileMenu} id="mobile-menu" className="lg:hidden absolute right-5 top-5">
+      <button onClick={() => handleMobileMenu} id="mobile-menu" className="lg:hidden absolute right-5 top-5">
         {mobileMenu ? <Menu/> : <X/>}
       </button>
       {!mobileMenu &&
