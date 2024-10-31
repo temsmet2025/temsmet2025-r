@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/components/*.{js,ts,jsx,tsx}",
     "./src/components/Navbar/*.{js,ts,jsx,tsx}",
+    "./src/components/Carousel/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},

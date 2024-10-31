@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import {navigation, aboutSubmenuItems, cfpSubmenuItems, pastEditionsItems} from './menuItems'
 
 function createSubMenu(subMenuItems) {
-  const subMenu = <div className="absolute bg-slate-900/80 rounded-md">
+  const subMenu = <div className="z-50 absolute bg-slate-900/80 rounded-md">
     <ul >
     {subMenuItems.map((items, index) => (
       <li key = {index} className='p-3 text-white hover:bg-slate-950/90'>{ items.name }</li>
@@ -15,7 +15,7 @@ function createSubMenu(subMenuItems) {
 }
 
 function createMobileSubMenu(subMenuItems) {
-  const mobileSubMenu = <div className="bg-slate-900/80 rounded-md flex flex-col justify-center items-center">
+  const mobileSubMenu = <div className="origin-center bg-slate-900/80 rounded-md flex flex-col justify-center items-center">
     <ul >
     {subMenuItems.map((items, index) => (
       <li key = {index} className='p-3 text-white hover:bg-slate-950/90'>{ items.name }</li>
@@ -44,8 +44,9 @@ function Nav(){
   }
 
   return (
-    <nav className='relative  bg-slate-950 text-white lg:flex justify-between '>
-      <div className='font-bold flex justify-center items-center text-2xl mx-5 p-5 '>
+    <nav className='fixed z-50 w-full'>
+      <div className="relative bg-fixed bg-slate-950 text-white lg:flex justify-between z-49">
+        <div className='font-bold flex justify-center items-center text-2xl mx-5 p-5 '>
         Temsmet2025
       </div>
       
@@ -66,9 +67,9 @@ function Nav(){
             }
           >
             <span className='flex'>
-              {navItem.name} {(navItem.name === 'About') ? (!aboutSubMenu ? <ChevronDown /> : <ChevronUp/>) : ""}
-              {(navItem.name === 'Call for Papers') ? (!cfpSubMenu ? <ChevronDown /> : <ChevronUp />) : ""}
-              {(navItem.name == 'Past Editions') ? (!editionsSubMenu ? <ChevronDown /> : <ChevronUp />) : ""}
+              {navItem.name} {(navItem.name === 'About') ? (!aboutSubMenu ? <ChevronDown  /> : <ChevronUp />) : ""}
+              {(navItem.name === 'Call for Papers') ? (!cfpSubMenu ? <ChevronDown  /> : <ChevronUp  />) : ""}
+              {(navItem.name == 'Past Editions') ? (!editionsSubMenu ? <ChevronDown  /> : <ChevronUp  />) : ""}
             </span>
 
 
@@ -86,7 +87,7 @@ function Nav(){
         {!mobileMenu ? <Menu/> : <X/>}
       </button>
       {mobileMenu &&
-          <ul className=' lg:hidden  flex flex-col justify-center items-center mr-5 space-y-2 py-5 font-bold text-lg hover:text-white transition-all duration-300 ease-in-out transform'>
+          <ul className='   flex flex-col justify-center items-center mr-5 space-y-2 py-5 font-bold text-lg hover:text-white transition-all duration-300 ease-in-out transform lg:hidden' >
             {navigation.map((navItem, index) => (
               <li key={index}
                 className="text-slate-300 hover:text-slate-50 cursor-pointer font-semibold  px-2 hover"
@@ -97,7 +98,7 @@ function Nav(){
                  }}
               >
               <span className='flex'>
-                {navItem.name} {(navItem.name === 'About') ? (!aboutSubMenu ? <ChevronDown /> : <ChevronUp/>) : ""}
+                {navItem.name} {(navItem.name === 'About') ? (!aboutSubMenu ? <ChevronDown /> : <ChevronUp />) : ""}
                 {(navItem.name === 'Call for Papers') ? (!cfpSubMenu ? <ChevronDown /> : <ChevronUp />) : ""}
                 {(navItem.name == 'Past Editions') ? (!editionsSubMenu ? <ChevronDown /> : <ChevronUp />) : ""}
               </span>
@@ -108,6 +109,7 @@ function Nav(){
             ))}
         
           </ul>}
+      </div>
       
         
     </nav>
