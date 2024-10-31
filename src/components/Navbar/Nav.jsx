@@ -46,8 +46,8 @@ function Nav(){
   return (
     <nav className='fixed z-50 w-full'>
       <div className="relative bg-fixed bg-slate-950 text-white lg:flex justify-between z-49">
-        <div className='font-bold flex justify-center items-center text-2xl mx-5 p-5 '>
-        Temsmet2025
+        <div className='font-bold flex justify-center items-center text-2xl mx-5 p-5 md:text-xl'>
+        TEMSMET2025
       </div>
       
       <ul className='hidden lg:flex justify-center items-center mr-5 transition-all ease-in-out '>
