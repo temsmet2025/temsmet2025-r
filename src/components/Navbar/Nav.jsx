@@ -6,8 +6,12 @@ import {navigation, aboutSubmenuItems, cfpSubmenuItems, pastEditionsItems} from 
 function createSubMenu(subMenuItems) {
   const subMenu = <div className="z-50 absolute bg-slate-900/80 rounded-md">
     <ul >
-    {subMenuItems.map((items, index) => (
-      <li key = {index} className='p-3 text-white hover:bg-slate-950/90'>{ items.name }</li>
+    {subMenuItems.map((item, index) => (
+      <li key={index} className='p-3 text-white hover:bg-slate-950/90'>
+        <Link to={item.href}>
+          {item.name}
+        </Link>
+      </li>
     ))}
   </ul>
   </div>
@@ -66,11 +70,13 @@ function Nav(){
             }
             }
           >
-            <span className='flex'>
+            <Link to={navItem.href}>
+              <span className='flex'>
               {navItem.name} {(navItem.name === 'About') ? (!aboutSubMenu ? <ChevronDown  /> : <ChevronUp />) : ""}
               {(navItem.name === 'Call for Papers') ? (!cfpSubMenu ? <ChevronDown  /> : <ChevronUp  />) : ""}
               {(navItem.name == 'Past Editions') ? (!editionsSubMenu ? <ChevronDown  /> : <ChevronUp  />) : ""}
-            </span>
+              </span>
+            </Link>
 
 
             {navItem.name === 'About' && aboutSubMenu && createSubMenu(aboutSubmenuItems)}
