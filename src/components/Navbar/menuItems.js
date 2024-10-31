@@ -7,7 +7,7 @@ export const navigation = [
       { name: 'Submission Guidelines', href: '/', current: false },
       { name: 'Call for Papers', href: '#call-for-papers', current: false },
       { name: 'Registration', href: '/', current: false },
-      { name: 'Organising Committee', href: '/', current: false },
+      { name: 'Organising Committee', href: '/org-committee', current: false },
       { name: 'Past Editions', href: '/', current: false },
     ]
 

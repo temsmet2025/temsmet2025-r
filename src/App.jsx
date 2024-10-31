@@ -3,7 +3,10 @@ import Carousel from './components/Carousel/Carousel'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from "./components/Home"
 import ListView from "./components/ListView"
-import {conferenceTracks} from "./assets/dataItems.js"
+import { conferenceTracks } from "./assets/dataItems.js"
+import Footer from './components/Footer.jsx'
+import OrgCommittee from './components/OrgCommitte.jsx'
+
 function App() {
   const router = createBrowserRouter([
       {
@@ -13,6 +16,7 @@ function App() {
           <Nav /> 
           <Carousel />
             < Home />
+            <Footer/>
           </>
         )
         
@@ -23,7 +27,19 @@ function App() {
         <>
           <Nav />
           <Carousel />
-          <ListView title="Call For Papers" data={ conferenceTracks } />
+          <ListView title="Call For Papers" data={conferenceTracks} />
+          <Footer/>
+        </>
+      )
+    },
+    {
+      path: "/org-committee",
+      element: (
+        <>
+        <Nav />
+          <Carousel />
+          <OrgCommittee/>
+          <Footer/>
         </>
       )
     }
