@@ -45,7 +45,7 @@ function App() {
     }
       
     ],
-    // { basename: "/temsmet.github.io" }, //uncomment this line for github pages and change vite.config
+    { basename: "/temsmet.github.io" }, //uncomment this line for github pages and change vite.config
   )
   return (
     <>
