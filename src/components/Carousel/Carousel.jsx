@@ -23,7 +23,7 @@ function Carousel() {
                     />
                 ))}
             </div>
-            <div className="absolute bottom-0 w-full flex justify-center items-center z-10">
+            <div id="circle-buttons" className="absolute bottom-0 w-full flex justify-center items-center z-10">
                 {images.map((image, index)=>(
                     <div key={ index+100 } className="">
                         <button  onClick={() => handleImages(image.id)} className='p-2'>
@@ -31,6 +31,46 @@ function Carousel() {
                         </button>
                     </div>
                 ))}
+            </div>
+            <div id="overlay" className="absolute bottom-0 top-0 w-full bg-black z-20 bg-opacity-30" style={{ height: "35rem" }}>
+            </div>
+            <div id="carousel-text" className='absolute top-0 w-full' style={{ height: "35rem" }}>
+                <div id="text-body" className='flex flex-col justify-center items-center w-full p-10 z-30' style={{ height: "35rem" }}> 
+                    <div id="welcome-note" className="z-30">
+                        <h1 className='text-2xl font-extrabold bg-gradient-to-r from-sky-600 to-slate-950 sm:text-4xl bg-clip-text text-transparent'>Welcome To TEMSMET2025</h1>
+                    </div>
+                    <div id="full-name" className='z-30 mt-10'>
+                        <p className='flex flex-col text-center text-extrabold text-base sm:text-2xl text-red-200'>
+                            <span>
+                                IEEE 4th International Conference
+                            </span>
+                            <span>
+                                on
+                            </span>
+                            <span>
+                                Technology, Engineering, Management for Societal Impact 
+                            </span>
+                            <span>
+                                using
+                            </span>
+                            <span>
+                                Marketing, Entrepreneurship, and Talent (TEMSMET)
+                            </span>
+                        </p>
+                    </div>
+                    <div id="date-venue-text" className='z-30 mt-10'>
+                        <p className='flex flex-col text-center text-bold text-base sm:text-2xl text-red-200'>
+                            <span>
+                                05-07 November 2025
+                            </span>
+                            <span>
+                                National Institute of Technology Delhi, New Delhi, India
+                            </span>
+                        </p>
+                    </div>
+                    
+
+                </div>
             </div>
         </section>
     )

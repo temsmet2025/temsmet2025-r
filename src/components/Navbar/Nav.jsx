@@ -21,8 +21,12 @@ function createSubMenu(subMenuItems) {
 function createMobileSubMenu(subMenuItems) {
   const mobileSubMenu = <div className="origin-center bg-slate-900/80 rounded-md flex flex-col justify-center items-center">
     <ul >
-    {subMenuItems.map((items, index) => (
-      <li key = {index} className='p-3 text-white hover:bg-slate-950/90'>{ items.name }</li>
+    {subMenuItems.map((item, index) => (
+      <li key={index} className='p-3 text-white hover:bg-slate-950/90'>
+        <Link to={item.href}>
+          {item.name}
+        </Link>
+      </li>
     ))}
   </ul>
   </div>
