@@ -107,11 +107,16 @@ function Nav(){
                   navItem.name === 'Past Editions' && handleEditionsSubMenu();
                  }}
               >
-              <span className='flex'>
-                {navItem.name} {(navItem.name === 'About') ? (!aboutSubMenu ? <ChevronDown /> : <ChevronUp />) : ""}
-                {(navItem.name === 'Call for Papers') ? (!cfpSubMenu ? <ChevronDown /> : <ChevronUp />) : ""}
-                {(navItem.name == 'Past Editions') ? (!editionsSubMenu ? <ChevronDown /> : <ChevronUp />) : ""}
-              </span>
+                <link to={navItem.href}>
+                  <span className='flex'>
+                    {navItem.name}
+                    {(navItem.name === 'About') ? (!aboutSubMenu ? <ChevronDown /> : <ChevronUp />) : ""}
+                    {(navItem.name === 'Call for Papers') ? (!cfpSubMenu ? <ChevronDown /> : <ChevronUp />) : ""}
+                    {(navItem.name == 'Past Editions') ? (!editionsSubMenu ? <ChevronDown /> : <ChevronUp />) : ""}
+                  </span>
+                
+                </link>
+                
                 {navItem.name === 'About' && aboutSubMenu && createMobileSubMenu(aboutSubmenuItems)}
                 {navItem.name === 'Call for Papers' && cfpSubMenu && createMobileSubMenu(cfpSubmenuItems)}
                 {navItem.name === 'Past Editions' && editionsSubMenu && createMobileSubMenu(pastEditionsItems)}
