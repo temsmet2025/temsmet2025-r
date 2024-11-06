@@ -1,11 +1,15 @@
 import { images } from './CarouselItems'
 import { useState, useEffect } from 'react'
-import { Circle } from 'lucide-react'
+import { Circle, MoveRight, MoveLeft } from 'lucide-react'
 function Carousel() {
-    const [imageIndex, setImageIndex] = useState(1);
-    const handleImages = (imageIdx)=>{
-        setImageIndex((imageIdx));
+    const [imageIndex, setImageIndex] = useState(0);
+    const handleCircleBtn = (imageIdx)=>{
+        setImageIndex(imageIdx);
     }
+    const handleArrowBtn = () => {
+        setImageIndex((imgIdx) => (imgIdx+1)%images.length)
+    }
+
     const autoSlideDuration =4000;
     useEffect(() => {
         const timerId = setTimeout(() => { setImageIndex((imageIndex + 1) % images.length)}, autoSlideDuration);
@@ -23,10 +27,19 @@ function Carousel() {
                     />
                 ))}
             </div>
-            <div id="circle-buttons" className="absolute bottom-0 w-full flex justify-center items-center z-10">
+
+            <div className="sm:hidden  absolute z-30 top-1/2 transform -translate-y-1/2  p-1 bg-slate-200 rounded-full left-1" onClick={handleArrowBtn}>
+                <MoveLeft size={10} strokeWidth={2}/>
+            </div>
+            <div className="sm:hidden absolute z-30 top-1/2 transform -translate-y-1/2  p-2 bg-slate-200 rounded-full right-1" onClick={handleArrowBtn}>
+                <MoveRight size={10} strokeWidth={2}/>
+            </div>
+            
+
+            <div id="circle-buttons" className="hidden sm:visible absolute bottom-0 w-full sm:flex justify-center items-center z-30">
                 {images.map((image, index)=>(
                     <div key={ index+100 } className="">
-                        <button  onClick={() => handleImages(image.id)} className='p-2'>
+                        <button  onClick={() => handleCircleBtn(image.id)} className='p-2'>
                         <Circle color={`${index == imageIndex? 'black':"white"}`} strokeWidth={3}/>
                         </button>
                     </div>
@@ -36,11 +49,14 @@ function Carousel() {
             </div>
             <div id="carousel-text" className='absolute top-0 w-full' style={{ height: "35rem" }}>
                 <div id="text-body" className='flex flex-col justify-center items-center w-full p-10 z-30' style={{ height: "35rem" }}> 
-                    <div id="welcome-note" className="z-30">
-                        <h1 className='text-2xl font-extrabold bg-gradient-to-r from-sky-600 to-slate-950 sm:text-4xl bg-clip-text text-transparent'>Welcome To TEMSMET2025</h1>
+                    <div id="welcome-note" className="z-30 w-full">
+                        <h1 className=
+                        'text-xl w-full flex flex-wrap justify-center space-x-2 font-bold bg-gradient-to-r from-fuchsia-100 via-fuchsia-400 to-fuchsia-500 sm:text-4xl sm:font-extrabold bg-clip-text text-transparent'>
+                            <span>Welcome</span> <span> To </span> <span>TEMSMET2025</span>  
+                        </h1>
                     </div>
                     <div id="full-name" className='z-30 mt-10'>
-                        <p className='flex flex-col text-center text-extrabold text-base sm:text-2xl text-red-200'>
+                        <p className='flex flex-col text-center text-extrabold text-sm sm:text-2xl text-red-100'>
                             <span>
                                 IEEE 4th International Conference
                             </span>
