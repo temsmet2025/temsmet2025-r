@@ -1,8 +1,4 @@
-# Project Name
-
-## Overview
-
-This project is a React-based web application that provides [brief description of the purpose of the project]. The project includes full inline documentation generated using JSDoc.
+# TEMSMET 2025
 
 ## Getting Started
 
@@ -25,4 +21,4 @@ Make sure you have the following installed:
     npm install
 3. running the dev server
     ```bash
-    npm start
+    npm run dev
