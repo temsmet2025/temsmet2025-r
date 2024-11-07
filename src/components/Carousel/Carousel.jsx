@@ -1,95 +1,125 @@
 import { images } from './CarouselItems'
 import { useState, useEffect } from 'react'
 import { Circle, MoveRight, MoveLeft } from 'lucide-react'
+
+/**
+ * Carousel component that displays a rotating set of images with navigation buttons.
+ *
+ * @component
+ * @returns {JSX.Element} The Carousel component rendering images with navigation and text.
+ */
 function Carousel() {
-    const [imageIndex, setImageIndex] = useState(0);
-    const handleCircleBtn = (imageIdx)=>{
-        setImageIndex(imageIdx);
-    }
-    const handleArrowBtn = () => {
-        setImageIndex((imgIdx) => (imgIdx+1)%images.length)
-    }
+  /**
+   * State to track the index of the currently displayed image.
+   * 
+   * @type {number}
+   */
+  const [imageIndex, setImageIndex] = useState(0);
 
-    const autoSlideDuration =4000;
-    useEffect(() => {
-        const timerId = setTimeout(() => { setImageIndex((imageIndex + 1) % images.length)}, autoSlideDuration);
-        return () => clearTimeout(timerId);
-    }, [imageIndex, images])
+  /**
+   * Function to handle the selection of an image when a circle button is clicked.
+   *
+   * @param {number} imageIdx - The index of the selected image.
+   */
+  const handleCircleBtn = (imageIdx) => {
+    setImageIndex(imageIdx);
+  }
 
-    return (
-        <section className="relative w-full carousel-container " style={{height:"35rem"}}>
-            <div className="image-container  m-auto w-full " style={{height:"35rem"}}>
-                {images.map((image, index) => (
-                    <img key={index} src={image.name}
-                        alt={`carousel image ${image.id}`}
-                        className={`absolute inset-0  w-full transition-all duration-1000 ease-in-out ${imageIndex == image.id ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
-                        style={{height:"35rem"}}
-                    />
-                ))}
-            </div>
+  /**
+   * Function to handle the left/right arrow button click to change the image.
+   * 
+   * The image index is incremented and wraps around using the modulo operator.
+   */
+  const handleArrowBtn = () => {
+    setImageIndex((imgIdx) => (imgIdx + 1) % images.length);
+  }
 
-            <div className="sm:hidden  absolute z-30 top-1/2 transform -translate-y-1/2  p-1 bg-slate-200 rounded-full left-1" onClick={handleArrowBtn}>
-                <MoveLeft size={10} strokeWidth={2}/>
-            </div>
-            <div className="sm:hidden absolute z-30 top-1/2 transform -translate-y-1/2  p-2 bg-slate-200 rounded-full right-1" onClick={handleArrowBtn}>
-                <MoveRight size={10} strokeWidth={2}/>
-            </div>
-            
+  // Duration for the automatic slide change (4 seconds)
+  const autoSlideDuration = 4000;
 
-            <div id="circle-buttons" className="hidden sm:visible absolute bottom-0 w-full sm:flex justify-center items-center z-30">
-                {images.map((image, index)=>(
-                    <div key={ index+100 } className="">
-                        <button  onClick={() => handleCircleBtn(image.id)} className='p-2'>
-                        <Circle color={`${index == imageIndex? 'black':"white"}`} strokeWidth={3}/>
-                        </button>
-                    </div>
-                ))}
-            </div>
-            <div id="overlay" className="absolute bottom-0 top-0 w-full bg-black z-20 bg-opacity-30" style={{ height: "35rem" }}>
-            </div>
-            <div id="carousel-text" className='absolute top-0 w-full' style={{ height: "35rem" }}>
-                <div id="text-body" className='flex flex-col justify-center items-center w-full p-10 z-30' style={{ height: "35rem" }}> 
-                    <div id="welcome-note" className="z-30 w-full">
-                        <h1 className=
-                        'text-xl w-full flex flex-wrap justify-center space-x-2 font-bold bg-gradient-to-r from-fuchsia-100 via-fuchsia-400 to-fuchsia-500 sm:text-4xl sm:font-extrabold bg-clip-text text-transparent'>
-                            <span>Welcome</span> <span> To </span> <span>TEMSMET2025</span>  
-                        </h1>
-                    </div>
-                    <div id="full-name" className='z-30 mt-10'>
-                        <p className='flex flex-col text-center text-extrabold text-sm sm:text-2xl text-red-100'>
-                            <span>
-                                IEEE 4th International Conference
-                            </span>
-                            <span>
-                                on
-                            </span>
-                            <span>
-                                Technology, Engineering, Management for Societal Impact 
-                            </span>
-                            <span>
-                                using
-                            </span>
-                            <span>
-                                Marketing, Entrepreneurship, and Talent (TEMSMET)
-                            </span>
-                        </p>
-                    </div>
-                    <div id="date-venue-text" className='z-30 mt-10'>
-                        <p className='flex flex-col text-center text-bold text-base sm:text-2xl text-red-200'>
-                            <span>
-                                05-07 November 2025
-                            </span>
-                            <span>
-                                National Institute of Technology Delhi, New Delhi, India
-                            </span>
-                        </p>
-                    </div>
-                    
+  /**
+   * useEffect hook to automatically slide to the next image after a set interval.
+   * 
+   * The timer is cleared when the component unmounts or the imageIndex changes.
+   */
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      setImageIndex((imageIndex + 1) % images.length)
+    }, autoSlideDuration);
+    
+    return () => clearTimeout(timerId);
+  }, [imageIndex, images]);
 
-                </div>
-            </div>
-        </section>
-    )
+  return (
+    <section className="relative w-full carousel-container" style={{ height: "35rem" }}>
+      <div className="image-container m-auto w-full" style={{ height: "35rem" }}>
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={image.name}
+            alt={`carousel image ${image.id}`}
+            className={`absolute inset-0 w-full transition-all duration-1000 ease-in-out ${imageIndex === image.id ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+            style={{ height: "35rem" }}
+          />
+        ))}
+      </div>
+
+      {/* Left Arrow Button */}
+      <div className="sm:hidden absolute z-30 top-1/2 transform -translate-y-1/2 p-1 bg-slate-200 rounded-full left-1" onClick={handleArrowBtn}>
+        <MoveLeft size={10} strokeWidth={2} />
+      </div>
+
+      {/* Right Arrow Button */}
+      <div className="sm:hidden absolute z-30 top-1/2 transform -translate-y-1/2 p-2 bg-slate-200 rounded-full right-1" onClick={handleArrowBtn}>
+        <MoveRight size={10} strokeWidth={2} />
+      </div>
+
+      {/* Circle Navigation Buttons */}
+      <div id="circle-buttons" className="hidden sm:visible absolute bottom-0 w-full sm:flex justify-center items-center z-30">
+        {images.map((image, index) => (
+          <div key={index + 100} className="">
+            <button onClick={() => handleCircleBtn(image.id)} className="p-2">
+              <Circle color={index === imageIndex ? 'black' : "white"} strokeWidth={3} />
+            </button>
+          </div>
+        ))}
+      </div>
+
+      {/* Overlay for visual effect */}
+      <div id="overlay" className="absolute bottom-0 top-0 w-full bg-black z-20 bg-opacity-30" style={{ height: "35rem" }}></div>
+
+      {/* Text Content Over Carousel */}
+      <div id="carousel-text" className="absolute top-0 w-full" style={{ height: "35rem" }}>
+        <div id="text-body" className="flex flex-col justify-center items-center w-full p-10 z-30" style={{ height: "35rem" }}>
+          {/* Welcome Message */}
+          <div id="welcome-note" className="z-30 w-full">
+            <h1 className='text-xl w-full flex flex-wrap justify-center space-x-2 font-bold bg-gradient-to-r from-fuchsia-100 via-fuchsia-400 to-fuchsia-500 sm:text-4xl sm:font-extrabold bg-clip-text text-transparent'>
+              <span>Welcome</span> <span> To </span> <span>TEMSMET2025</span>
+            </h1>
+          </div>
+          
+          {/* Conference Name */}
+          <div id="full-name" className="z-30 mt-10">
+            <p className="flex flex-col text-center text-extrabold text-sm sm:text-2xl text-red-100">
+              <span>IEEE 4th International Conference</span>
+              <span>on</span>
+              <span>Technology, Engineering, Management for Societal Impact</span>
+              <span>using</span>
+              <span>Marketing, Entrepreneurship, and Talent (TEMSMET)</span>
+            </p>
+          </div>
+          
+          {/* Date and Venue */}
+          <div id="date-venue-text" className="z-30 mt-10">
+            <p className="flex flex-col text-center text-bold text-base sm:text-2xl text-red-200">
+              <span>05-07 November 2025</span>
+              <span>National Institute of Technology Delhi, New Delhi, India</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
 }
 
 export default Carousel;

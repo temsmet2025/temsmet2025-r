@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: components/Carousel/Carousel.jsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: components/Carousel/Carousel.jsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { images } from './CarouselItems'
+import { useState, useEffect } from 'react'
+import { Circle, MoveRight, MoveLeft } from 'lucide-react'
+
+/**
+ * Carousel component that displays a rotating set of images with navigation buttons.
+ *
+ * @component
+ * @returns {JSX.Element} The Carousel component rendering images with navigation and text.
+ */
+function Carousel() {
+  /**
+   * State to track the index of the currently displayed image.
+   * 
+   * @type {number}
+   */
+  const [imageIndex, setImageIndex] = useState(0);
+
+  /**
+   * Function to handle the selection of an image when a circle button is clicked.
+   *
+   * @param {number} imageIdx - The index of the selected image.
+   */
+  const handleCircleBtn = (imageIdx) => {
+    setImageIndex(imageIdx);
+  }
+
+  /**
+   * Function to handle the left/right arrow button click to change the image.
+   * 
+   * The image index is incremented and wraps around using the modulo operator.
+   */
+  const handleArrowBtn = () => {
+    setImageIndex((imgIdx) => (imgIdx + 1) % images.length);
+  }
+
+  // Duration for the automatic slide change (4 seconds)
+  const autoSlideDuration = 4000;
+
+  /**
+   * useEffect hook to automatically slide to the next image after a set interval.
+   * 
+   * The timer is cleared when the component unmounts or the imageIndex changes.
+   */
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      setImageIndex((imageIndex + 1) % images.length)
+    }, autoSlideDuration);
+    
+    return () => clearTimeout(timerId);
+  }, [imageIndex, images]);
+
+  return (
+    &lt;section className="relative w-full carousel-container" style={{ height: "35rem" }}>
+      &lt;div className="image-container m-auto w-full" style={{ height: "35rem" }}>
+        {images.map((image, index) => (
+          &lt;img
+            key={index}
+            src={image.name}
+            alt={`carousel image ${image.id}`}
+            className={`absolute inset-0 w-full transition-all duration-1000 ease-in-out ${imageIndex === image.id ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+            style={{ height: "35rem" }}
+          />
+        ))}
+      &lt;/div>
+
+      {/* Left Arrow Button */}
+      &lt;div className="sm:hidden absolute z-30 top-1/2 transform -translate-y-1/2 p-1 bg-slate-200 rounded-full left-1" onClick={handleArrowBtn}>
+        &lt;MoveLeft size={10} strokeWidth={2} />
+      &lt;/div>
+
+      {/* Right Arrow Button */}
+      &lt;div className="sm:hidden absolute z-30 top-1/2 transform -translate-y-1/2 p-2 bg-slate-200 rounded-full right-1" onClick={handleArrowBtn}>
+        &lt;MoveRight size={10} strokeWidth={2} />
+      &lt;/div>
+
+      {/* Circle Navigation Buttons */}
+      &lt;div id="circle-buttons" className="hidden sm:visible absolute bottom-0 w-full sm:flex justify-center items-center z-30">
+        {images.map((image, index) => (
+          &lt;div key={index + 100} className="">
+            &lt;button onClick={() => handleCircleBtn(image.id)} className="p-2">
+              &lt;Circle color={index === imageIndex ? 'black' : "white"} strokeWidth={3} />
+            &lt;/button>
+          &lt;/div>
+        ))}
+      &lt;/div>
+
+      {/* Overlay for visual effect */}
+      &lt;div id="overlay" className="absolute bottom-0 top-0 w-full bg-black z-20 bg-opacity-30" style={{ height: "35rem" }}>&lt;/div>
+
+      {/* Text Content Over Carousel */}
+      &lt;div id="carousel-text" className="absolute top-0 w-full" style={{ height: "35rem" }}>
+        &lt;div id="text-body" className="flex flex-col justify-center items-center w-full p-10 z-30" style={{ height: "35rem" }}>
+          {/* Welcome Message */}
+          &lt;div id="welcome-note" className="z-30 w-full">
+            &lt;h1 className='text-xl w-full flex flex-wrap justify-center space-x-2 font-bold bg-gradient-to-r from-fuchsia-100 via-fuchsia-400 to-fuchsia-500 sm:text-4xl sm:font-extrabold bg-clip-text text-transparent'>
+              &lt;span>Welcome&lt;/span> &lt;span> To &lt;/span> &lt;span>TEMSMET2025&lt;/span>
+            &lt;/h1>
+          &lt;/div>
+          
+          {/* Conference Name */}
+          &lt;div id="full-name" className="z-30 mt-10">
+            &lt;p className="flex flex-col text-center text-extrabold text-sm sm:text-2xl text-red-100">
+              &lt;span>IEEE 4th International Conference&lt;/span>
+              &lt;span>on&lt;/span>
+              &lt;span>Technology, Engineering, Management for Societal Impact&lt;/span>
+              &lt;span>using&lt;/span>
+              &lt;span>Marketing, Entrepreneurship, and Talent (TEMSMET)&lt;/span>
+            &lt;/p>
+          &lt;/div>
+          
+          {/* Date and Venue */}
+          &lt;div id="date-venue-text" className="z-30 mt-10">
+            &lt;p className="flex flex-col text-center text-bold text-base sm:text-2xl text-red-200">
+              &lt;span>05-07 November 2025&lt;/span>
+              &lt;span>National Institute of Technology Delhi, New Delhi, India&lt;/span>
+            &lt;/p>
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+    &lt;/section>
+  )
+}
+
+export default Carousel;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#Carousel">Carousel</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#Home">Home</a></li><li><a href="global.html#Nav">Nav</a></li><li><a href="global.html#SectionList">SectionList</a></li><li><a href="global.html#aboutSubmenuItems">aboutSubmenuItems</a></li><li><a href="global.html#cfpSubmenuItems">cfpSubmenuItems</a></li><li><a href="global.html#createMobileSubMenu">createMobileSubMenu</a></li><li><a href="global.html#createSubMenu">createSubMenu</a></li><li><a href="global.html#images">images</a></li><li><a href="global.html#navigation">navigation</a></li><li><a href="global.html#pastEditionsItems">pastEditionsItems</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Thu Nov 07 2024 11:24:09 GMT+0530 (India Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

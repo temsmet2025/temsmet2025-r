@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: components/Navbar/Nav.jsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: components/Navbar/Nav.jsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, { useState } from 'react';
+import { Menu, X, ChevronUp, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { navigation, aboutSubmenuItems, cfpSubmenuItems, pastEditionsItems } from './menuItems';
+
+/**
+ * Creates the dropdown submenu for the provided list of submenu items.
+ * 
+ * @param {Array&lt;Object>} subMenuItems - List of submenu items.
+ * @returns {JSX.Element} The submenu JSX structure.
+ */
+function createSubMenu(subMenuItems) {
+  const subMenu = (
+    &lt;div className="z-50 absolute bg-slate-900/80 rounded-md">
+      &lt;ul>
+        {subMenuItems.map((item, index) => (
+          &lt;li key={index} className='p-3 text-white hover:bg-slate-950/90'>
+            &lt;Link to={item.href}>{item.name}&lt;/Link>
+          &lt;/li>
+        ))}
+      &lt;/ul>
+    &lt;/div>
+  );
+  return subMenu;
+}
+
+/**
+ * Creates the mobile dropdown submenu for the provided list of submenu items.
+ * 
+ * @param {Array&lt;Object>} subMenuItems - List of submenu items.
+ * @returns {JSX.Element} The mobile submenu JSX structure.
+ */
+function createMobileSubMenu(subMenuItems) {
+  const mobileSubMenu = (
+    &lt;div className="origin-center bg-slate-900/80 rounded-md flex flex-col justify-center items-center">
+      &lt;ul>
+        {subMenuItems.map((item, index) => (
+          &lt;li key={index} className='p-3 text-white hover:bg-slate-950/90'>
+            &lt;Link to={item.href}>{item.name}&lt;/Link>
+          &lt;/li>
+        ))}
+      &lt;/ul>
+    &lt;/div>
+  );
+  return mobileSubMenu;
+}
+
+/**
+ * Main navigation component.
+ * Contains a responsive navigation menu with dropdown submenus for desktop and mobile.
+ * 
+ * @returns {JSX.Element} The navigation JSX structure.
+ */
+function Nav() {
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const [aboutSubMenu, setAboutSubMenu] = useState(false);
+  const [cfpSubMenu, setCFPSubMenu] = useState(false);
+  const [editionsSubMenu, setEditionsSubMenu] = useState(false);
+
+  const handleMobileMenu = () => {
+    setMobileMenu(!mobileMenu);
+  };
+  const handleAboutSubMenu = () => {
+    setAboutSubMenu(!aboutSubMenu);
+  };
+  const handleCFPSubMenu = () => {
+    setCFPSubMenu(!cfpSubMenu);
+  };
+  const handleEditionsSubMenu = () => {
+    setEditionsSubMenu(!editionsSubMenu);
+  };
+
+  return (
+    &lt;nav className='fixed z-50 w-full'>
+      &lt;div className="relative bg-fixed bg-slate-950 text-white lg:flex justify-between z-49">
+        &lt;div className='font-bold flex justify-center items-center text-2xl mx-5 p-5 md:text-xl'>
+          TEMSMET2025
+        &lt;/div>
+
+        &lt;ul className='hidden lg:flex justify-center items-center mr-5 transition-all ease-in-out'>
+          {navigation.map((navItem, index) => (
+            &lt;li
+              key={index}
+              className="text-slate-300 hover:text-slate-50 cursor-pointer md:text-sm p-2"
+              onMouseEnter={() => {
+                if (navItem.name === 'About') handleAboutSubMenu();
+                if (navItem.name === 'Call for Papers') handleCFPSubMenu();
+                if (navItem.name === 'Past Editions') handleEditionsSubMenu();
+              }}
+              onMouseLeave={() => {
+                if (navItem.name === 'About') handleAboutSubMenu();
+                if (navItem.name === 'Call for Papers') handleCFPSubMenu();
+                if (navItem.name === 'Past Editions') handleEditionsSubMenu();
+              }}
+            >
+              &lt;Link to={navItem.href}>
+                &lt;span className='flex'>
+                  {navItem.name}
+                  {navItem.name === 'About' &amp;&amp; (aboutSubMenu ? &lt;ChevronUp /> : &lt;ChevronDown />)}
+                  {navItem.name === 'Call for Papers' &amp;&amp; (cfpSubMenu ? &lt;ChevronUp /> : &lt;ChevronDown />)}
+                  {navItem.name === 'Past Editions' &amp;&amp; (editionsSubMenu ? &lt;ChevronUp /> : &lt;ChevronDown />)}
+                &lt;/span>
+              &lt;/Link>
+
+              {navItem.name === 'About' &amp;&amp; aboutSubMenu &amp;&amp; createSubMenu(aboutSubmenuItems)}
+              {navItem.name === 'Call for Papers' &amp;&amp; cfpSubMenu &amp;&amp; createSubMenu(cfpSubmenuItems)}
+              {navItem.name === 'Past Editions' &amp;&amp; editionsSubMenu &amp;&amp; createSubMenu(pastEditionsItems)}
+            &lt;/li>
+          ))}
+        &lt;/ul>
+
+        {/* Mobile menu toggle button */}
+        &lt;button onClick={handleMobileMenu} id="mobile-menu" className="lg:hidden absolute right-5 top-5">
+          {!mobileMenu ? &lt;Menu /> : &lt;X />}
+        &lt;/button>
+
+        {mobileMenu &amp;&amp; (
+          &lt;ul className='flex flex-col justify-center items-center mr-5 space-y-2 py-5 font-bold text-lg hover:text-white transition-all duration-300 ease-in-out transform lg:hidden'>
+            {navigation.map((navItem, index) => (
+              &lt;li
+                key={index}
+                className="text-slate-300 hover:text-slate-50 cursor-pointer font-semibold px-2 hover"
+                onClick={() => {
+                  if (navItem.name === 'About') handleAboutSubMenu();
+                  if (navItem.name === 'Call for Papers') handleCFPSubMenu();
+                  if (navItem.name === 'Past Editions') handleEditionsSubMenu();
+                }}
+              >
+                &lt;Link to={navItem.href} onClick={handleMobileMenu}>
+                  &lt;span className='flex'>
+                    {navItem.name}
+                    {navItem.name === 'About' &amp;&amp; (aboutSubMenu ? &lt;ChevronUp /> : &lt;ChevronDown />)}
+                    {navItem.name === 'Call for Papers' &amp;&amp; (cfpSubMenu ? &lt;ChevronUp /> : &lt;ChevronDown />)}
+                    {navItem.name === 'Past Editions' &amp;&amp; (editionsSubMenu ? &lt;ChevronUp /> : &lt;ChevronDown />)}
+                  &lt;/span>
+                &lt;/Link>
+
+                {navItem.name === 'About' &amp;&amp; aboutSubMenu &amp;&amp; createMobileSubMenu(aboutSubmenuItems)}
+                {navItem.name === 'Call for Papers' &amp;&amp; cfpSubMenu &amp;&amp; createMobileSubMenu(cfpSubmenuItems)}
+                {navItem.name === 'Past Editions' &amp;&amp; editionsSubMenu &amp;&amp; createMobileSubMenu(pastEditionsItems)}
+              &lt;/li>
+            ))}
+          &lt;/ul>
+        )}
+      &lt;/div>
+    &lt;/nav>
+  );
+}
+
+export default Nav;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#Carousel">Carousel</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#Home">Home</a></li><li><a href="global.html#Nav">Nav</a></li><li><a href="global.html#SectionList">SectionList</a></li><li><a href="global.html#aboutSubmenuItems">aboutSubmenuItems</a></li><li><a href="global.html#cfpSubmenuItems">cfpSubmenuItems</a></li><li><a href="global.html#createMobileSubMenu">createMobileSubMenu</a></li><li><a href="global.html#createSubMenu">createSubMenu</a></li><li><a href="global.html#images">images</a></li><li><a href="global.html#navigation">navigation</a></li><li><a href="global.html#pastEditionsItems">pastEditionsItems</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Thu Nov 07 2024 11:24:09 GMT+0530 (India Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
