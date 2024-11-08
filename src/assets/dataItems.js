@@ -1,3 +1,4 @@
+// paper tracks
 export const conferenceStructure = [
   {
     track: "Keynote Speeches",

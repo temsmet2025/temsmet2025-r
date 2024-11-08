@@ -6,6 +6,7 @@ import ListView from "./components/ListView"
 import { conferenceTracks } from "./assets/dataItems.js"
 import Footer from './components/Footer.jsx'
 import OrgCommittee from './components/OrgCommitte.jsx'
+import Venue from './components/Venue.jsx'
 
 /**
  * Main application component that sets up routing for different pages.
@@ -55,7 +56,18 @@ function App() {
           <Footer />
         </>
       )
-    }
+    },
+    {
+      path:"/venue",
+      element:(
+        <>
+          <Nav/>
+          <Carousel/>
+          <Venue/>
+          <Footer/>
+        </>
+      )
+    },
   ],
   /**
    * Base path for the application, used when deploying on GitHub Pages.
