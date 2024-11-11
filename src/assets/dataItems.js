@@ -45,6 +45,21 @@ export const potentialSpeakers = [
   }
 ];
 
+export const importantDates = [
+  { event: 'Paper Submission Closes', date: 'Aug 01, 2025' },
+  { event: 'Notification of Acceptance', date: 'Sep 05, 2025' },
+  { event: 'Final Camera-ready Paper', date: 'Sep 18, 2025' },
+  { event: 'Early Submission Paper Registration Closes', date: 'Sep 20, 2025' },
+  { event: 'Regular Paper Registration Closes', date: 'Sep 30, 2025' },
+  { event: 'Conference Date', date: 'Nov 05-07, 2025' },
+];
+
+export const deligates = [
+  { deligate: 'Participant1', fee: '500000' },
+  { deligate: 'Participant2', fee: '250000' },
+  { deligate: 'Participant3', fee: '100000' },
+];
+
 export const sponsorsAndExhibitors = [
   {
     track: "Technology Companies",
