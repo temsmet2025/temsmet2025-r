@@ -74,12 +74,12 @@ function App() {
    * Uncomment the line below for the appropriate deployment path.
    */
   // { basename: "/temsmet.github.io" }, // for GitHub Pages deployment
-  { basename: "/temsmet2025-r" } // for GitHub Pages deployment
+  // { basename: "/temsmet2025-r" } // for GitHub Pages deployment
   )
 
   return (
     <>
-      <RouterProvider router={router} />
+      <RouterProvider router={router} />  
     </>
   )
 }
