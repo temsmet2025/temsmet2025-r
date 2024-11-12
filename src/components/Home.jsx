@@ -1,7 +1,7 @@
 import React from 'react'
 import SectionList from './SectionLIst'
-import { conferenceStructure, potentialSpeakers, sponsorsAndExhibitors } from "./../assets/dataItems"
-
+import { conferenceStructure, deligates, potentialSpeakers, sponsorsAndExhibitors, importantDates } from "./../assets/dataItems"
+import ImportantDatesTable from './ImportantDatesTable'
 /**
  * Home component displaying the conference theme and related sections.
  * It includes a description of the conference theme and calls the SectionList component 
@@ -19,6 +19,10 @@ const Home = () => {
       </div>
       <SectionList title="Conference Structure" dataItem={conferenceStructure} />
       <SectionList title="Potential Speakers" dataItem={potentialSpeakers} />
+
+      <ImportantDatesTable title="Important Dates" dataItem={importantDates} />
+      <deligates dataItem={deligates}/>
+
       <SectionList title="Sponsors And Exhibitors" dataItem={sponsorsAndExhibitors} />
     </section>
   )
