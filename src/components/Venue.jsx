@@ -1,3 +1,4 @@
+import { Carousel } from "flowbite-react";
 import { venueImages } from "./../assets/venueImages";
 import { useState, useEffect } from "react";
 
@@ -22,27 +23,28 @@ const MapSection = () => (
 );
 
 const GallerySection = ({ imageId }) => (
-    <div className="h-full w-full flex flex-col items-center">
-        <h2 className="text-gray-950 text-4xl font-bold">Gallery</h2>
-        <div className="relative mt-16 h-full w-full  flex flex-col items-center">
-            {venueImages.map((images, index) => (
-                <div
-                    key={index}
-                    id="venue-images"
-                    className={`w-full lg:w-2/3 h-full transition-opacity duration-1000 ease-in-out ${
-                        images.id === imageId ? "opacity-100" : "opacity-0"
-                    }`}
-                    style={{ display: images.id === imageId ? "block" : "none" }}
-                >
-                    <img
-                        className="w-full h-96 object-cover"
-                        src={images.name}
-                        alt={`gallery-${images.name}`}
-                    />
-                </div>
-            ))}
-        </div>
+  <div className="h-full w-full flex flex-col items-center">
+    <h2 className="text-gray-950 text-4xl font-bold mb-2">Gallery</h2>
+    <p className="text-xl mb-2 text-indigo-700 font-bold">
+      National Institute of Technology Delhi
+    </p>
+    <div className="mt-7 h-[25rem] w-full flex flex-col items-center">
+      <Carousel>
+        {venueImages.map((images, index) => (
+          <div key={index} id="venue-images relative">
+            <img
+              className="w-full h-96 object-cover"
+              src={images.url}
+              alt={`gallery-${images.name}`}
+            />
+            <p className="text-center text-white text-3xl font-bold absolute bottom-10 w-full bg-opacity-50 bg-black py-2">
+              {images.name}
+            </p>
+          </div>
+        ))}
+      </Carousel>
     </div>
+  </div>
 );
 
 function Venue() {
