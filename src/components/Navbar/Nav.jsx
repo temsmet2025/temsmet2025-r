@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Menu, X, ChevronUp, ChevronDown } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link , useLocation } from 'react-router-dom';
 import { navigation, aboutSubmenuItems, cfpSubmenuItems, pastEditionsItems } from './menuItems';
 
 /**
@@ -56,6 +56,14 @@ function Nav() {
   const [aboutSubMenu, setAboutSubMenu] = useState(false);
   const [cfpSubMenu, setCFPSubMenu] = useState(false);
   const [editionsSubMenu, setEditionsSubMenu] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setMobileMenu(false);
+    setAboutSubMenu(false);
+    setCFPSubMenu(false);
+    setEditionsSubMenu(false);
+  }, [location.pathname]);
 
   const handleMobileMenu = () => {
     setMobileMenu(!mobileMenu);
@@ -94,7 +102,7 @@ function Nav() {
               }}
             >
               <Link to={navItem.href}>
-                <span className='flex'>
+                <span className='flex justify-center items-center'>
                   {navItem.name}
                   {navItem.name === 'About' && (aboutSubMenu ? <ChevronUp /> : <ChevronDown />)}
                   {navItem.name === 'Call for Papers' && (cfpSubMenu ? <ChevronUp /> : <ChevronDown />)}
@@ -109,25 +117,24 @@ function Nav() {
           ))}
         </ul>
 
-        {/* Mobile menu toggle button */}
         <button onClick={handleMobileMenu} id="mobile-menu" className="lg:hidden absolute right-5 top-5">
           {!mobileMenu ? <Menu /> : <X />}
         </button>
 
         {mobileMenu && (
-          <ul className='flex flex-col justify-center items-center mr-5 space-y-2 py-5 font-bold text-lg hover:text-white transition-all duration-300 ease-in-out transform lg:hidden'>
+          <ul className='flex flex-col justify-center items-center space-y-2 py-5 font-bold text-lg hover:text-white transition-all duration-300 ease-in-out transform lg:hidden'>
             {navigation.map((navItem, index) => (
               <li
                 key={index}
-                className="text-slate-300 hover:text-slate-50 cursor-pointer font-semibold px-2 hover"
+                className="text-slate-300 hover:text-slate-50 cursor-pointer font-semibold px-2 hover  w-full"
                 onClick={() => {
                   if (navItem.name === 'About') handleAboutSubMenu();
                   if (navItem.name === 'Call for Papers') handleCFPSubMenu();
                   if (navItem.name === 'Past Editions') handleEditionsSubMenu();
                 }}
               >
-                <Link to={navItem.href} onClick={handleMobileMenu}>
-                  <span className='flex'>
+                <Link to={navItem.href}>
+                  <span className='flex justify-center items-center'>
                     {navItem.name}
                     {navItem.name === 'About' && (aboutSubMenu ? <ChevronUp /> : <ChevronDown />)}
                     {navItem.name === 'Call for Papers' && (cfpSubMenu ? <ChevronUp /> : <ChevronDown />)}
