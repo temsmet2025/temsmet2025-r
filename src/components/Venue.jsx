@@ -11,7 +11,7 @@ function Venue(){
         return () => clearTimeout(timerId);
     }, [imageId, venueImages]);
     return (
-    <section id="venue-and-dates" className="bg-gray-100 flex flex-row justify-center text-gray-950  pb-32 pt-5 ">
+    <section id="venue-and-dates" className="bg-gray-100 flex flex-row justify-between text-gray-950  pb-32 pt-5 ">
         {/* map */}
         <div className="w-full max-w-6xl ml-40">
             <h2 className="text-3xl font-bold mb-2">Venue</h2>
@@ -23,12 +23,12 @@ function Venue(){
                 style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
         {/* images of venue */}
-        <div className="h-full w-full " style={{height:"25rem", width:"45rem"}}>
+        <div className="h-full w-full " style={{height:"25rem", width:"100rem"}}>
             <h2 className="text-gray-950 text-4xl font-bold">Gallery</h2>
-            <div className="relative mt-16 h-full w-full" style={{height:"25rem", width:"45rem"}}>
+            <div className="relative mt-16 h-full w-full" style={{height:"25rem", width:"100rem"}}>
                 {venueImages.map((images, index) => (
                     <div key={index} id="venue-images" className= {`w-2/3 h-full absolute top-0 transition-all duration-1000 ease-in-out ${(images.id === imageId) ? "z-10 opacity-100":"z-0 opacity-0"}`}>
-                        <img className="absolute top-0" src={images.name} alt={`gallery-${images.name}`} style={{height:"25rem", width:"45rem"}}/>
+                        <img className="absolute top-0" src={images.name} alt={`gallery-${images.name}`} style={{height:"25rem", width:"100rem"}}/>
                     </div>
                 ))}
                 {/* <div className="absolute z-20 border-solid border-slate-400">

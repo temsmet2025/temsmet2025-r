@@ -94,7 +94,7 @@ function Carousel() {
           {/* Welcome Message */}
           <div id="welcome-note" className="z-30 w-full">
             <h1 className='text-xl w-full flex flex-wrap justify-center space-x-2 font-bold bg-gradient-to-r from-fuchsia-100 via-fuchsia-400 to-fuchsia-500 sm:text-4xl sm:font-extrabold bg-clip-text text-transparent'>
-              <span>Welcome</span> <span> To </span> <span>TEMSMET2025</span>
+              <span>Welcome</span> <span> To </span> <span>TEMSMET 2025</span>
             </h1>
           </div>
           
