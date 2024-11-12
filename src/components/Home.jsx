@@ -1,7 +1,7 @@
 import React from 'react'
 import SectionList from './SectionLIst'
-import { conferenceStructure, deligates, potentialSpeakers, sponsorsAndExhibitors } from "./../assets/dataItems"
-
+import { conferenceStructure, deligates, potentialSpeakers, sponsorsAndExhibitors, importantDates } from "./../assets/dataItems"
+import ImportantDatesTable from './ImportantDatesTable'
 /**
  * Home component displaying the conference theme and related sections.
  * It includes a description of the conference theme and calls the SectionList component 
