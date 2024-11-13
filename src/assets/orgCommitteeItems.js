@@ -31,8 +31,8 @@ export const programChairs = [
 ];
 
 export const technicalProgrammeCommittee = [
-  { id: 0, name: "M. Devanathan", affiliation: "IEEE TEMS (Chair)", imagePath: "/orgCommittee/techProgCommittee/deva1.jpeg" },
-  { id: 1, name: "Pushpendra P. Singh", affiliation: "IIT Ropar (Co-Chair)", imagePath: "/orgCommittee/techProgCommittee/pushp.jpeg" },
+  { id: 0, name: "M. Devanathan", affiliation: "IEEE TEMS (Chair)", imagePath: "./orgCommittee/techProgCommittee/deva1.jpeg" },
+  { id: 1, name: "Pushpendra P. Singh", affiliation: "IIT Ropar (Co-Chair)", imagePath: "./orgCommittee/techProgCommittee/pushp.jpeg" },
   { id: 2, name: "Pankaj Mukhija", affiliation: "NIT Delhi (Co-Chair)", imagePath: "/orgCommittee/techProgCommittee/punkMukhija.jpeg" },
   { id: 3, name: "Namita Mittal", affiliation: "MNIT Jaipur (Co-Chair)", imagePath: "/orgCommittee/techProgCommittee/namita.jpeg" },
   { id: 4, name: "Bijoy Chand Chatterjee", affiliation: "SAU, Delhi", imagePath: "/orgCommittee/techProgCommittee/bijoy.jpeg" },
