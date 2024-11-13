@@ -104,17 +104,17 @@ export const informationCommittee = [
   { id: 4, name: "Amandeep Kaur", affiliation: "NIT Delhi", imagePath: "./orgCommittee/informationCommittee/amandeep.webp" },
   { id: 5, name: "Rituparna Datta", affiliation: "University of South Alabama, USA", imagePath: "./orgCommittee/techProgCommittee/rituparns.jpeg" },
   { id: 6, name: "Manish Verma", affiliation: "NIT Delhi", imagePath: "./orgCommittee/informationCommittee/manish.jpeg" },
-  { id: 7, name: "Amit Kumar Singh", affiliation: "NIT Delhi", imagePath: "../orgCommittee/informationCommittee/amit.webp" }
+  { id: 7, name: "Amit Kumar Singh", affiliation: "NIT Delhi", imagePath: "./orgCommittee/informationCommittee/amit.webp" }
 ];
 
-export const .ationCommittee = [
-  { id: 0, name: "Georgios Konstantinou", affiliation: "UNSW Australia (Chair)", imagePath: "assets/.ationCommittee/Georgios_Konstantinou.jpeg" },
-  { id: 1, name: "Gautam Kumar", affiliation: "NIT Delhi", imagePath: "assets/.ationCommittee/Gautam_Kumar.jpeg" },
-  { id: 2, name: "Mahesh K Singh", affiliation: "NIT Delhi (Co-Chair)", imagePath: "assets/.ationCommittee/Mahesh_K_Singh.jpeg" },
-  { id: 3, name: "Praveen Bansal", affiliation: "MITS Gwalior", imagePath: "assets/.ationCommittee/Praveen_Bansal.jpeg" },
-  { id: 4, name: "Praduymn Chaturvedi", affiliation: "VNIT Nagpur", imagePath: "assets/.ationCommittee/Praduymn_Chaturvedi.jpeg" },
-  { id: 5, name: "Vinod Kurmi", affiliation: "IISER Bhopal", imagePath: "assets/.ationCommittee/Vinod_Kurmi.jpeg" },
-  { id: 6, name: "Rajesh Bhatt", affiliation: "IIT Kanpur", imagePath: "assets/.ationCommittee/Rajesh_Bhatt.jpeg" }
+export const publicationCommittee = [
+  { id: 0, name: "Georgios Konstantinou", affiliation: "UNSW Australia (Chair)", imagePath: "assets/publicationCommittee/Georgios_Konstantinou.jpeg" },
+  { id: 1, name: "Gautam Kumar", affiliation: "NIT Delhi", imagePath: "assets/publicationCommittee/Gautam_Kumar.jpeg" },
+  { id: 2, name: "Mahesh K Singh", affiliation: "NIT Delhi (Co-Chair)", imagePath: "assets/publicationCommittee/Mahesh_K_Singh.jpeg" },
+  { id: 3, name: "Praveen Bansal", affiliation: "MITS Gwalior", imagePath: "assets/publicationCommittee/Praveen_Bansal.jpeg" },
+  { id: 4, name: "Praduymn Chaturvedi", affiliation: "VNIT Nagpur", imagePath: "assets/publicationCommittee/Praduymn_Chaturvedi.jpeg" },
+  { id: 5, name: "Vinod Kurmi", affiliation: "IISER Bhopal", imagePath: "assets/publicationCommittee/Vinod_Kurmi.jpeg" },
+  { id: 6, name: "Rajesh Bhatt", affiliation: "IIT Kanpur", imagePath: "assets/publicationCommittee/Rajesh_Bhatt.jpeg" }
 ];
 
 export const webMasterAndTechnicalCoordinationCommittee = [
