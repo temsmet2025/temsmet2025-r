@@ -8,12 +8,13 @@ import {
 import Profiles  from './Profiles'
 function OrgCommittee() {
     return (
-        <div id={`org-committe`} className="ml-32 mr-32 mt-10 mb-10">
-            <h1 className='font-bold text-4xl '> Organisation Committee </h1>
+        <div id={`org-committe`} className="mt-5 sm:ml-32 sm:mr-32 sm:mt-10 sm:mb-10">
+            <h1 className='font-bold text-2xl text-center sm:text-4xl '> Organisation Committee </h1>
             <Profiles title="Patrons" profiles = {patrons} />
             <Profiles title="General Chairs" profiles = {generalChairs} />
             <Profiles title="General Co-Chairs" profiles = {generalCoChairs} />
             <Profiles title="Finance Committee Conference Secretaries" profiles = {financeCommitteeConferenceSecretaries} />
+            <Profiles title="Program Chairs" profiles = {programChairs} />
             <Profiles title="Technical Programme Committee" profiles = {technicalProgrammeCommittee} />
             <Profiles title="Information Committee" profiles = {informationCommittee} />
             <Profiles title="Publication Committee" profiles = {publicationCommittee} />
