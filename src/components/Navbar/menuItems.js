@@ -65,7 +65,7 @@ export const cfpSubmenuItems = [
  * @property {boolean} current - A boolean indicating if the past edition item is currently active.
  */
 export const pastEditionsItems = [
-  { name: "2020", href: "/", current: false },
-  { name: "2021", href: "/", current: false },
-  { name: "2023", href: "/", current: false },
+  { name: "2020", href: "https://ieeexplore.ieee.org/xpl/conhome/9557352/proceeding", current: false },
+  { name: "2021", href: "https://ieeexplore.ieee.org/xpl/conhome/9768306/proceeding", current: false },
+  { name: "2023", href: "https://ieeexplore.ieee.org/xpl/conhome/10149893/proceeding", current: false },
 ];

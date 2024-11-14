@@ -123,14 +123,14 @@ function Carousel() {
           {/* Date and Venue */}
           {/* <div id="date-venue-text" className="z-30 mt-10">
             <p className="flex flex-col text-center text-bold text-base sm:text-2xl text-red-200">
-              <span>05-07 November 2025</span>
+              <span>08-10 October 2025</span>
               <span>National Institute of Technology Delhi, New Delhi, India</span>
             </p>
           </div> */}
           <div style={{position: 'relative', zIndex: 30, marginTop: '10px', padding: '10px'}}>
   <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgb(10, 10, 10)', opacity: 0.5, border: '1px solid black', zIndex: -1, }}></div>
   <p style={{display: 'flex',flexDirection: 'column',textAlign: 'center',fontWeight: 'extrabold',fontSize: '1.45rem',color: '#FEE2E2'}}>
-    <span>05-07 November 2025</span>
+    <span>08-10 October 2025</span>
     <span>National Institute of Technology Delhi, New Delhi, India</span>
   </p>
 </div>

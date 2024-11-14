@@ -46,12 +46,12 @@ export const potentialSpeakers = [
 ];
 
 export const importantDates = [
-  { event: 'Paper Submission Closes', date: 'Aug 01, 2025' },
-  { event: 'Notification of Acceptance', date: 'Sep 05, 2025' },
-  { event: 'Final Camera-ready Paper', date: 'Sep 18, 2025' },
-  { event: 'Early Submission Paper Registration Closes', date: 'Sep 20, 2025' },
-  { event: 'Regular Paper Registration Closes', date: 'Sep 30, 2025' },
-  { event: 'Conference Date', date: 'Nov 05-07, 2025' },
+  { event: 'Paper Submission Closes', date: 'July, 05 2025' },
+  { event: 'Notification of Acceptance', date: 'August, 08 2025' },
+  { event: 'Final Camera-ready Paper', date: 'August, 21 2025' },
+  { event: 'Early Submission Paper Registration Closes', date: 'August, 23 2025' },
+  { event: 'Regular Paper Registration Closes', date: 'September, 02 2025' },
+  { event: 'Conference Date', date: 'October, 08-10, 2025' },
 ];
 
 export const deligates = [
