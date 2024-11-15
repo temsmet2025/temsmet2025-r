@@ -9,7 +9,7 @@ export const honoraryChair = [
 
 export const generalChairs = [
   { id: 0, name: "Anurag Singh", affiliation: "NIT Delhi", imagePath: "./orgCommittee/general_chairs/AnuragSingh.jpeg" },
-  { id: 1, name: "Sabrina Gaito", affiliation: "University of Milan, Italy", imagePath: "./orgCommittee/techProgCommittee/image5.jpeg" }
+  { id: 1, name: "Sabrina Gaito", affiliation: "University of Milan, Italy", imagePath: "./orgCommittee/general_chairs/sabrina.jpeg" }
 ];
 
 export const generalCoChairs = [
