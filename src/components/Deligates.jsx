@@ -2,28 +2,33 @@ import React from 'react';
 
 const Deligates = ({ dataItem }) => {
   return (
-    <div style={{ margin: '0 auto', padding: '20px', maxWidth: '1100px', boxSizing: 'border-box' }}>
-      <h1 className='font-bold sm:text-4xl text-2xl text-gray-800'>Registration</h1>
-      <table style={{ width: '100%', borderCollapse: 'collapse', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
-        <thead>
-          <tr style={{ backgroundColor: '#e0e0e0', color: '#333', textAlign: 'left' }}>
-            <th style={{ padding: '12px', fontWeight: 'bold' }}>DELIGATES</th>
-            <th style={{ padding: '12px', fontWeight: 'bold' }}>FEES</th>
-          </tr>
-        </thead>
-        <tbody>
-          {dataItem.map((row, index) => (
-            <tr key={index} style={{ backgroundColor: index % 2 === 0 ? '#fafafa' : 'white' }}>
-              <td style={{ padding: '12px', borderBottom: '1px solid #ddd', fontWeight: 'normal' }}>
-                {row.deligate}
-              </td>
-              <td style={{ padding: '12px', borderBottom: '1px solid #ddd', color: '#333' }}>
-                {row.fee}
-              </td>
+    <div id="deligates-section" className="sm:ml-32 sm:mr-32 sm:mt-10 sm:mb-10 p-8">
+      <h1 className="font-bold text-2xl sm:text-4xl text-gray-800">Registration</h1>
+      <div className="overflow-x-auto mt-6">
+        <table className="w-full border-collapse rounded-lg shadow-md">
+          <thead>
+            <tr className="bg-gray-200 text-gray-800 text-left">
+              <th className="px-6 py-4 font-bold">DELIGATES</th>
+              <th className="px-6 py-4 font-bold">FEES</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {dataItem.map((row, index) => (
+              <tr
+                key={index}
+                className={`${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}
+              >
+                <td className="px-6 py-4 border-b border-gray-300">
+                  <span className="font-bold">{row.deligate}</span>
+                </td>
+                <td className="px-6 py-4 border-b border-gray-300 text-gray-800">
+                  {row.fee}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
