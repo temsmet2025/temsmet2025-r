@@ -46,18 +46,29 @@ export const potentialSpeakers = [
 ];
 
 export const importantDates = [
-  { event: 'Paper Submission Closes', date: 'July, 05 2025' },
-  { event: 'Notification of Acceptance', date: 'August, 08 2025' },
-  { event: 'Final Camera-ready Paper', date: 'August, 21 2025' },
-  { event: 'Early Submission Paper Registration Closes', date: 'August, 23 2025' },
-  { event: 'Regular Paper Registration Closes', date: 'September, 02 2025' },
-  { event: 'Conference Date', date: 'October, 08-10, 2025' },
+  { tableData: ['Paper Submission Closes', 'July, 05 2025'] },
+  { tableData: ['Notification of Acceptance',  'August, 08 2025'] },
+  { tableData: ['Final Camera-ready Paper',  'August, 21 2025'] },
+  { tableData: ['Early Submission Paper Registration Closes','August, 23 2025'] },
+  { tableData: ['Regular Paper Registration Closes',  'September, 02 2025' ]},
+  { tableData: ['Conference Date', 'October, 08-10, 2025'] },
+];
+
+export const registrationFees = [
+  { tableData: ['IEEE Member', '9,000 INR', '350 USD', '11,000 INR', '400 USD'] },
+  { tableData: ['Non-IEEE Member', '11,000 INR', '450 USD', '13,000 INR', '500 USD'] },
+  { tableData: ['IEEE TEMS Member', '8,000 INR', '300 USD', '10,000 INR', '350 USD'] },
+  { tableData: ['IEEE Student Member', '6,500 INR', '225 USD', '7,500 INR', '275 USD'] },
+  { tableData: ['Non-IEEE Student Member', '7,500 INR', '250 USD', '8,500 INR', '300 USD'] },
+  { tableData: ['IEEE TEMS Student Member', '6,000 INR', '200 USD', '7,000 INR', '250 USD'] },
+  { tableData: ['Charges per additional accepted paper (Student author)', '5,000 INR', '175 USD', '5,000 INR', '175 USD'] },
+  { tableData: ['Charges per additional accepted paper (Regular author)', '5,000 INR', '175 USD', '5,000 INR', '175 USD'] },
 ];
 
 export const deligates = [
-  { deligate: 'Participant1', fee: '500000' },
-  { deligate: 'Participant2', fee: '250000' },
-  { deligate: 'Participant3', fee: '100000' },
+  { tableData: ['IEEE Member',  '2,000 INR / Day'] },
+  { tableData: ['IEEE TEMS Member',  '1,500 INR / Day']},
+  { tableData: ['Non-IEEE Member',  '2,500 INR / Day']},
 ];
 
 export const sponsorsAndExhibitors = [

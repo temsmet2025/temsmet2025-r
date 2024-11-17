@@ -1,8 +1,7 @@
 import React from 'react'
 import SectionList from './SectionLIst'
-import { conferenceStructure, deligates, potentialSpeakers, sponsorsAndExhibitors, importantDates } from "./../assets/dataItems"
-import ImportantDatesTable from "./ImportantDatesTable"
-import Deligates from './Deligates'
+import { conferenceStructure, deligates, potentialSpeakers, sponsorsAndExhibitors, importantDates, registrationFees } from "./../assets/dataItems"
+import TableView from './TableView'
 /**
  * Home component displaying the conference theme and related sections.
  * It includes a description of the conference theme and calls the SectionList component 
@@ -21,11 +20,12 @@ const Home = () => {
       <SectionList title="Conference Structure" dataItem={conferenceStructure} />
       <SectionList title="Potential Speakers" dataItem={potentialSpeakers} />
 
-      <ImportantDatesTable dataItem={importantDates} />
+      <TableView tableName="Important Dates" highLightRow={0} tableHead={['EVENTS', 'DATE']} dataItem={importantDates} />
 
       <SectionList title="Sponsors And Exhibitors" dataItem={sponsorsAndExhibitors} />
 
-      <Deligates dataItem={deligates}/>
+      <TableView tableName="Registration" tableHead={['Author Category',	'Early Bird (Indian)', 'Early Bird (Foreign)',	'Regular (Indian)',	'Regular (Foreign)']} dataItem={registrationFees}/>
+      <TableView tableName="" tableHead={['Delegates / Participants',	'Fees']} dataItem={deligates}/>
     </section>
   )
 }
