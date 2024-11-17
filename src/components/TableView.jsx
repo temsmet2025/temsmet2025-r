@@ -16,7 +16,7 @@ function TableView(props) {
                     {props.dataItem.map((item, index) => (
                     <tr
                         key={index}
-                        className={`${index % 2 === 0 ? 'bg-sky-300/25' : 'bg-white'}` }
+                        className={`${index % 2 === 0 ? 'bg-sky-300/25' : 'bg-white'} ${(props.tableName === 'Important Dates' && index === highLightRow && 'font-bold text-red-500')}` }
                     >
                         {item.tableData.map((data, index) => (
                               
