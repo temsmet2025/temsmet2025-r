@@ -1,5 +1,5 @@
 export const patrons = [
-  { id: 0, name: "Shri C. K. Birla", affiliation: "", imagePath: "./orgCommittee/techProgCommittee/image1.jpeg" }
+  { id: 0, name: "Shri C. K. Birla", affiliation: "", imagePath: "./orgCommittee/patrons/birla.jpeg" }
 ];
 
 export const honoraryChair = [
