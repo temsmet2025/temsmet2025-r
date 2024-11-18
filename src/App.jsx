@@ -7,6 +7,7 @@ import { conferenceTracks } from "./assets/dataItems.js"
 import Footer from './components/Footer.jsx'
 import OrgCommittee from './components/OrgCommitte.jsx'
 import Venue from './components/Venue.jsx'
+import SubmissionGuidelines from './components/SubmissionGuidelines.jsx'
 
 /**
  * Main application component that sets up routing for different pages.
@@ -64,6 +65,17 @@ function App() {
           <Nav/>
           <Carousel/>
           <Venue/>
+          <Footer/>
+        </>
+      )
+    },
+    {
+      path:"/submission-guidelines",
+      element:(
+        <>
+          <Nav/>
+          <Carousel/>
+          <SubmissionGuidelines/>
           <Footer/>
         </>
       )

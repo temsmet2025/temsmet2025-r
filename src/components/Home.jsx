@@ -30,7 +30,6 @@ const Home = () => {
       <TableView tableName="Registration" tableHead={['Author Category',	'Early Bird (Indian)', 'Early Bird (Foreign)',	'Regular (Indian)',	'Regular (Foreign)']} dataItem={registrationFees}/>
       <TableView tableName="" tableHead={['Delegates / Participants',	'Fees']} dataItem={deligates}/>
 
-      <SubmissionGuidelines/>
 
     </section>
   )
