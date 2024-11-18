@@ -1,12 +1,12 @@
 // paper tracks
 export const conferenceStructure = [
   {
-    track: "Keynote Speeches",
-    description: "Delivered by renowned experts in AI, engineering, and technology management."
+    track: "Keynote Talks",
+    description: "Delivered by renowned experts in AI, Engineering, and Technology Management."
   },
   {
     track: "Panel Discussions",
-    description: "Covering topics such as AI Ethics, the future of engineering education, and the role of technology in sustainable development."
+    description: "Covering topics such as AI Ethics, the future of engineering education, and the role of technological innovations."
   },
   {
     track: "Technical Sessions",
@@ -18,7 +18,7 @@ export const conferenceStructure = [
   },
   {
     track: "Poster Sessions",
-    description: "Opportunities for researchers and students to present their work in AI and related fields."
+    description: "Opportunities for researchers and students to present their work on conference theme."
   },
   {
     track: "Networking Events",

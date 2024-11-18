@@ -94,15 +94,15 @@ function Carousel() {
           {/* Welcome Message */}
 
           <div id="welcome-note" className="z-30 w-full">
-            <h2 className="text-lg sm:text-2xl md:text-4xl lg:text-4xl w-full flex flex-wrap justify-center space-x-2 font-bold bg-gradient-to-r from-fuchsia-100 via-fuchsia-400 to-fuchsia-500 bg-clip-text text-transparent">
+            <h2 style={{WebkitTextStroke:"2px rgba(0,0,0,8)"}} className="text-3xl tracking-wider md:text-4xl w-full flex flex-wrap justify-center text-center space-x-2 font-black bg-gradient-to-r from-sky-700  to-sky-950 bg-clip-text text-transparent">
               <span>Welcome</span> <span>To</span> <span>TEMSMET 2025</span>
             </h2>
           </div>
 
           {/* Conference Name */}
           <div className="relative z-30 mt-0.5 p-[10px] sm:p-[15px]">
-            <div className="absolute inset-0 bg-black bg-opacity-60 border border-black z-[-1]"></div>
-            <p className="flex flex-col text-center text-[#FEE2E2] leading-relaxed px-1.5 text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl">
+            <div className="absolute inset-0 bg-black bg-opacity-60  z-[-1]"></div>
+            <p className="flex flex-col text-center text-[#FEE2E2] leading-relaxed px-1.5 text-sm md:text-lg lg:text-xl xl:text-2xl">
               <span>IEEE 4th International Conference</span>
               <span>on</span>
               <span>Technology, Engineering, Management for Societal Impact</span>
@@ -114,10 +114,11 @@ function Carousel() {
 
           {/* Date and Venue */}
           <div className="relative z-30 mt-1.5 p-[10px] sm:p-[15px]">
-            <div className="absolute inset-0 bg-black bg-opacity-60 border border-black z-[-1]"></div>
-            <p className="flex flex-col text-center text-[#FEE2E2] leading-relaxed px-1.5 text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl">
+            <div className="absolute inset-0 bg-black bg-opacity-60 z-[-1]"></div>
+            <p className="flex flex-col text-center text-[#FEE2E2] leading-relaxed px-1.5 text-sm md:text-lg lg:text-xl xl:text-2xl">
               <span>08-10 October 2025</span>
-              <span>National Institute of Technology Delhi, New Delhi, India</span>
+              <span>National Institute of Technology Delhi</span>
+              <span>New Delhi, India</span>
             </p>
           </div>
         </div>
