@@ -15,10 +15,10 @@ function SectionList(props) {
     const title = props.title;
 
     return (
-        <div id={`section-list-${title}`} className="sm:ml-32 sm:mr-32 sm:mt-10 ">
+        <div id={`section-list-${title}`} className="sm:ml-32 sm:mt-10 ">
             <h1 className='font-bold sm:text-5xl text-2xl text-gray-800'>{title}</h1>
             <div class="sm:visible mt-2 h-0.5 bg-gray-950 w-5/6"></div>
-            <ul className="text-justify mt-5">
+            <ul className="text-justify mt-5 pr-10">
                 {dataItem.map((item, index) => (
                     <li key={index} className="ml-7 mr-7 list-disc">
                         <span className="font-bold text-base sm:text-xl">{item.track} : </span>

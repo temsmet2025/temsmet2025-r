@@ -1422,12 +1422,20 @@ input[type="range"]::-ms-fill-lower {
   margin-top: 2rem;
 }
 
-.mt-0 {
-  margin-top: 0px;
+.ml-32 {
+  margin-left: 8rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
 }
 
 .block {
@@ -1671,10 +1679,6 @@ input[type="range"]::-ms-fill-lower {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-96 {
-  width: 24rem;
 }
 
 .min-w-11 {
@@ -3147,6 +3151,10 @@ input[type="range"]::-ms-fill-lower {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
 }
 
 .text-left {
@@ -6003,6 +6011,10 @@ input[type="range"]::-ms-fill-lower {
     margin: 1.25rem;
   }
 
+  .sm\:m-0 {
+    margin: 0px;
+  }
+
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -6016,10 +6028,6 @@ input[type="range"]::-ms-fill-lower {
     margin-bottom: 2.5rem;
   }
 
-  .sm\:mb-5 {
-    margin-bottom: 1.25rem;
-  }
-
   .sm\:ml-32 {
     margin-left: 8rem;
   }
@@ -6030,22 +6038,6 @@ input[type="range"]::-ms-fill-lower {
 
   .sm\:mt-10 {
     margin-top: 2.5rem;
-  }
-
-  .sm\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
-  .sm\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
-  .sm\:mt-3 {
-    margin-top: 0.75rem;
-  }
-
-  .sm\:mt-8 {
-    margin-top: 2rem;
   }
 
   .sm\:flex {
@@ -6072,6 +6064,10 @@ input[type="range"]::-ms-fill-lower {
     width: 2.5rem;
   }
 
+  .sm\:w-5\/6 {
+    width: 83.333333%;
+  }
+
   .sm\:w-6 {
     width: 1.5rem;
   }
@@ -6084,10 +6080,6 @@ input[type="range"]::-ms-fill-lower {
     width: auto;
   }
 
-  .sm\:w-5\/6 {
-    width: 83.333333%;
-  }
-
   .sm\:justify-normal {
     justify-content: normal;
   }
@@ -6098,6 +6090,10 @@ input[type="range"]::-ms-fill-lower {
 
   .sm\:p-\[15px\] {
     padding: 15px;
+  }
+
+  .sm\:p-0 {
+    padding: 0px;
   }
 
   .sm\:px-4 {
@@ -6143,21 +6139,12 @@ input[type="range"]::-ms-fill-lower {
     line-height: 1rem;
   }
 
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .sm\:font-bold {
     font-weight: 700;
   }
 }
 
 @media (min-width: 768px) {
-  .md\:visible {
-    visibility: visible;
-  }
-
   .md\:inset-0 {
     inset: 0px;
   }
