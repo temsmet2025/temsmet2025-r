@@ -1422,6 +1422,14 @@ input[type="range"]::-ms-fill-lower {
   margin-top: 2rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1619,6 +1627,10 @@ input[type="range"]::-ms-fill-lower {
   width: 1.25rem;
 }
 
+.w-5\/6 {
+  width: 83.333333%;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -1659,6 +1671,10 @@ input[type="range"]::-ms-fill-lower {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-96 {
+  width: 24rem;
 }
 
 .min-w-11 {
@@ -2183,11 +2199,6 @@ input[type="range"]::-ms-fill-lower {
   border-top-width: 4px;
 }
 
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
-}
-
 .border-blue-500 {
   --tw-border-opacity: 1;
   border-color: rgb(63 131 248 / var(--tw-border-opacity, 1));
@@ -2488,6 +2499,11 @@ input[type="range"]::-ms-fill-lower {
 
 .bg-gray-900\/50 {
   background-color: rgb(17 24 39 / 0.5);
+}
+
+.bg-gray-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 7 18 / var(--tw-bg-opacity, 1));
 }
 
 .bg-green-100 {
@@ -3189,6 +3205,10 @@ input[type="range"]::-ms-fill-lower {
   line-height: 1rem;
 }
 
+.font-black {
+  font-weight: 950;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -3203,10 +3223,6 @@ input[type="range"]::-ms-fill-lower {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-black {
-  font-weight: 950;
 }
 
 .uppercase {
@@ -6020,6 +6036,18 @@ input[type="range"]::-ms-fill-lower {
     margin-top: 1.25rem;
   }
 
+  .sm\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .sm\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
+  .sm\:mt-8 {
+    margin-top: 2rem;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -6056,6 +6084,10 @@ input[type="range"]::-ms-fill-lower {
     width: auto;
   }
 
+  .sm\:w-5\/6 {
+    width: 83.333333%;
+  }
+
   .sm\:justify-normal {
     justify-content: normal;
   }
@@ -6081,11 +6113,6 @@ input[type="range"]::-ms-fill-lower {
     text-align: center;
   }
 
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -6096,24 +6123,29 @@ input[type="range"]::-ms-fill-lower {
     line-height: 2.5rem;
   }
 
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 
-  .sm\:text-lg {
-    font-size: 1.125rem;
+  .sm\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .sm\:font-bold {
@@ -6122,6 +6154,10 @@ input[type="range"]::-ms-fill-lower {
 }
 
 @media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+
   .md\:inset-0 {
     inset: 0px;
   }
