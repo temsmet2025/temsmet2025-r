@@ -7,15 +7,15 @@ const Profiles = (props) => {
           <h1 className="sm:text-3xl text-xl font-semibold mt-5 ml-2 sm:mt-10">{props.title}</h1>
           <div id={`profiles-${props.title}`} className='flex flex-wrap justify-center sm:justify-normal' >
               {data.map((profile, index)=>(
-                  <div key={index} className="card relative w-64 sm:w-80 h-52 bg-slate-50 rounded-md shadow-lg hover:bg-slate-300/80 m-1 sm:m-5">
-                    <div className="card-body w-64 sm:w-80 h-52  absolute flex flex-col justify-center items-center text-wrap sm:p-3">
-                        <div className="bg-slate-900/10 w-20 h-20 rounded-full">
-                            <img src={profile.imagePath} alt={`img-${profile.name}`} className='w-20 h-20 rounded-full'/>
+                  <div key={index} className="card relative w-64 sm:w-80 h-96 lg:h-52 bg-slate-50 rounded-md border hover:bg-slate-300/80 m-1 sm:m-5">
+                    <div className="card-body w-64 sm:w-80 h-52  absolute flex flex-col lg:flex-row justify-between lg:justify-around items-center text-wrap sm:p-3">
+                        <div className="bg-slate-900/10 w-64 h-64 lg:w-32 lg:h-32 rounded-lg">
+                            <img src={profile.imagePath} alt={`img-${profile.name}`} className='w-64 h-64 lg:w-32 lg:h-32 rounded-lg'/>
                         </div>
                         <div className="details text-center  text-amber-950 mt-2">
-                              <p className='font-bold flex flex-col'>
-                                  <span className="font-medium text-lg ">{profile.name}</span>
-                                  {profile.affiliation != "" && <span>{ profile.affiliation }</span>}
+                              <p className=' flex flex-col'>
+                                  <span className="font-bold text-xl ">{profile.name}</span>
+                                  {profile.affiliation != "" && <span className='text-base'>{ profile.affiliation }</span>}
                                 </p>
                         </div>
                     </div>

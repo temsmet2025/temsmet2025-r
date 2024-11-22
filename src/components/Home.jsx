@@ -2,7 +2,6 @@ import React from 'react'
 import SectionList from './SectionLIst'
 import { conferenceStructure, deligates, potentialSpeakers, sponsorsAndExhibitors, importantDates, registrationFees, submissionGuidelines } from "./../assets/dataItems"
 import TableView from './TableView'
-import SubmissionGuidelines from './SubmissionGuidelines'
 
 /**
  * Home component displaying the conference theme and related sections.

@@ -68,7 +68,7 @@ export const technicalProgrammeCommittee = [
   { id: 34, name: "Deepak Mishra", affiliation: "IIST Trivandrum", imagePath: "./orgCommittee/techProgCommittee/deepak.jpeg" },
   { id: 35, name: "Arvind Mishra", affiliation: "Head E-Mobility at AVL India", imagePath: "./orgCommittee/techProgCommittee/arvindMishra.jpeg" },
   { id: 36, name: "Surendra Reddy Salkuti", affiliation: "Woosung University, South Korea", imagePath: "./orgCommittee/techProgCommittee/surender.jpeg" },
-  { id: 37, name: "Praduymn Chaturvedi", affiliation: "VNIT Nagpur", imagePath: "./orgCommittee/techProgCommittee/prdumn.jpeg" },
+  { id: 37, name: "Pradyumn Chaturvedi", affiliation: "VNIT Nagpur", imagePath: "./orgCommittee/techProgCommittee/pradyumn.jpeg" },
   { id: 38, name: "Shivam Gupta", affiliation: "NEOMA Business School, Mont-Saint-Aignan, France", imagePath: "./orgCommittee/techProgCommittee/shivam.jpeg" },
   { id: 39, name: "KK Lai", affiliation: "Chaoyang University of Technology, Taichung, Taiwan", imagePath: "./orgCommittee/techProgCommittee/kkLai.jpeg" },
   { id: 40, name: "Vimal Kumar", affiliation: "Chaoyang University of Technology, Taichung, Taiwan", imagePath: "./orgCommittee/techProgCommittee/vimal.jpeg" },
@@ -86,7 +86,7 @@ export const technicalProgrammeCommittee = [
   { id: 52, name: "Tony Jacob", affiliation: "IIT Guwahati", imagePath: "./orgCommittee/techProgCommittee/tony.jpeg" },
   { id: 53, name: "Gaurav Goel", affiliation: "Parallel Wireless, Pune", imagePath: "./orgCommittee/techProgCommittee/gourav.jpeg" },
   { id: 54, name: "Gyan Singh Yadav", affiliation: "IIIT Kota", imagePath: "./orgCommittee/techProgCommittee/gyan.jpeg" },
-  { id: 55, name: "Ganga Pandey", affiliation: "Pandit Deendayal Petroleum University, Gandhinagar, Gujarat", imagePath: "./orgCommittee/techProgCommittee/gyan.jpeg" },
+  { id: 55, name: "Ganga Pandey", affiliation: "Pandit Deendayal Petroleum University, Gandhinagar, Gujarat", imagePath: "./orgCommittee/techProgCommittee/ganga.jpeg" },
   { id: 56, name: "Mrinal Kaushik", affiliation: "IIT Kharagpur", imagePath: "./orgCommittee/techProgCommittee/mrinal.jpeg" },
   { id: 57, name: "Pradyumn Pandey", affiliation: "IIT Roorkee", imagePath: "./orgCommittee/techProgCommittee/prdumn.jpeg" },
   { id: 58, name: "Prasanna Kumar Misra", affiliation: "IIIT Allahabad", imagePath: "./orgCommittee/techProgCommittee/prasanna.jpeg" },
@@ -109,10 +109,10 @@ export const informationCommittee = [
 
 export const publicationCommittee = [
   { id: 0, name: "Georgios Konstantinou", affiliation: "UNSW Australia (Chair)", imagePath: "./orgCommittee/publicationCommittee/georios.jpg" },
-  { id: 1, name: "Gautam Kumar", affiliation: "NIT Delhi", imagePath: "./orgCommittee/publicationCommittee/goutam.jpg" },
+  { id: 1, name: "Gautam Kumar", affiliation: "NIT Delhi (Co-Chair)", imagePath: "./orgCommittee/publicationCommittee/goutam.jpg" },
   { id: 2, name: "Mahesh K Singh", affiliation: "NIT Delhi (Co-Chair)", imagePath: "./orgCommittee/publicationCommittee/mahesh.png" },
   { id: 3, name: "Praveen Bansal", affiliation: "MITS Gwalior", imagePath: "./orgCommittee/publicationCommittee/praveen.jpg" },
-  { id: 4, name: "Praduymn Chaturvedi", affiliation: "VNIT Nagpur", imagePath: "./orgCommittee/techProgCommittee/prdumn.jpeg" },
+  { id: 4, name: "Pradyumn Chaturvedi", affiliation: "VNIT Nagpur", imagePath: "./orgCommittee/techProgCommittee/pradyumn.jpeg" },
   { id: 5, name: "Vinod Kurmi", affiliation: "IISER Bhopal", imagePath: "./orgCommittee/publicationCommittee/vinod.jpg" },
   { id: 6, name: "Rajesh Bhatt", affiliation: "IIT Kanpur", imagePath: "assets/publicationCommittee/Rajesh_Bhatt.jpeg" }
 ];
