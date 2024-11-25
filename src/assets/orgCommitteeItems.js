@@ -13,7 +13,7 @@ export const generalChairs = [
 ];
 
 export const generalCoChairs = [
-  { id: 0, name: "Yathindranath Tarikere", affiliation: "CEO, DhiiHii Labs Pvt Ltd", imagePath: "./orgCommittee/generalCoChairs/y-n-tharikere.jpeg" },
+  { id: 0, name: "Yathindranath Tarikere", affiliation: "CEO, DhiiHii Labs Pvt Ltd", imagePath: "./orgCommittee/generalCoChairs/y-n-tharikere.png" },
   { id: 1, name: "Vinay Singh", affiliation: "ABV IIITM Gwalior", imagePath: "./orgCommittee/generalCoChairs/vinaySingh.jpeg" }
 ];
 
@@ -82,7 +82,7 @@ export const technicalProgrammeCommittee = [
   { id: 48, name: "Vinod Kumar Jain", affiliation: "IIITDM Jabalpur", imagePath: "./orgCommittee/techProgCommittee/vinod.jpeg" },
   { id: 49, name: "Akrati Saxena", affiliation: "Leiden University, Netherlands", imagePath: "./orgCommittee/techProgCommittee/akriti.jpeg" },
   { id: 50, name: "Prashant Kumar", affiliation: "NIT Delhi", imagePath: "./orgCommittee/techProgCommittee/prashant.jpeg" },
-  { id: 51, name: "Indu Joshi", affiliation: "IIT Ropar", imagePath: "./orgCommittee/techProgCommittee/indu.jpeg" },
+  { id: 51, name: "Indu Joshi", affiliation: "IIT Mandi", imagePath: "./orgCommittee/techProgCommittee/indu.jpeg" },
   { id: 52, name: "Tony Jacob", affiliation: "IIT Guwahati", imagePath: "./orgCommittee/techProgCommittee/tony.jpeg" },
   { id: 53, name: "Gaurav Goel", affiliation: "Parallel Wireless, Pune", imagePath: "./orgCommittee/techProgCommittee/gourav.jpeg" },
   { id: 54, name: "Gyan Singh Yadav", affiliation: "IIIT Kota", imagePath: "./orgCommittee/techProgCommittee/gyan.jpeg" },

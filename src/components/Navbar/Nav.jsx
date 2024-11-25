@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Menu, X, ChevronUp, ChevronDown } from 'lucide-react';
-import { Link , useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { navigation, aboutSubmenuItems, cfpSubmenuItems, pastEditionsItems } from './menuItems';
 
 /**
@@ -91,12 +91,12 @@ function Nav() {
               key={index}
               className="text-slate-300 hover:text-slate-50 cursor-pointer md:text-sm p-2"
               onMouseEnter={() => {
-                if (navItem.name === 'About') handleAboutSubMenu();
+                // if (navItem.name === 'About') handleAboutSubMenu();
                 if (navItem.name === 'Call for Papers') handleCFPSubMenu();
                 if (navItem.name === 'Past Editions') handleEditionsSubMenu();
               }}
               onMouseLeave={() => {
-                if (navItem.name === 'About') handleAboutSubMenu();
+                // if (navItem.name === 'About') handleAboutSubMenu();
                 if (navItem.name === 'Call for Papers') handleCFPSubMenu();
                 if (navItem.name === 'Past Editions') handleEditionsSubMenu();
               }}
@@ -104,13 +104,13 @@ function Nav() {
               <Link to={navItem.href}>
                 <span className='flex justify-center items-center'>
                   {navItem.name}
-                  {navItem.name === 'About' && (aboutSubMenu ? <ChevronUp /> : <ChevronDown />)}
+                  {/* {navItem.name === 'About' && (aboutSubMenu ? <ChevronUp /> : <ChevronDown />)} */}
                   {navItem.name === 'Call for Papers' && (cfpSubMenu ? <ChevronUp /> : <ChevronDown />)}
                   {navItem.name === 'Past Editions' && (editionsSubMenu ? <ChevronUp /> : <ChevronDown />)}
                 </span>
               </Link>
 
-              {navItem.name === 'About' && aboutSubMenu && createSubMenu(aboutSubmenuItems)}
+              {/* {navItem.name === 'About' && aboutSubMenu && createSubMenu(aboutSubmenuItems)} */}
               {navItem.name === 'Call for Papers' && cfpSubMenu && createSubMenu(cfpSubmenuItems)}
               {navItem.name === 'Past Editions' && editionsSubMenu && createSubMenu(pastEditionsItems)}
             </li>
@@ -122,13 +122,13 @@ function Nav() {
         </button>
 
         {mobileMenu && (
-          <ul className='flex flex-col justify-center items-center space-y-2 py-5 font-bold text-lg hover:text-white transition-all duration-300 ease-in-out transform lg:hidden'>
+          <ul className='flex flex-col justify-center items-center space-y-2 py-5 font-bold text-lg hover:text-white transition-all duration-700 ease-in-out lg:hidden'>
             {navigation.map((navItem, index) => (
               <li
                 key={index}
                 className="text-slate-300 hover:text-slate-50 cursor-pointer font-semibold px-2 hover  w-full"
                 onClick={() => {
-                  if (navItem.name === 'About') handleAboutSubMenu();
+                  // if (navItem.name === 'About') handleAboutSubMenu();
                   if (navItem.name === 'Call for Papers') handleCFPSubMenu();
                   if (navItem.name === 'Past Editions') handleEditionsSubMenu();
                 }}
@@ -136,13 +136,13 @@ function Nav() {
                 <Link to={navItem.href}>
                   <span className='flex justify-center items-center'>
                     {navItem.name}
-                    {navItem.name === 'About' && (aboutSubMenu ? <ChevronUp /> : <ChevronDown />)}
+                    {/* {navItem.name === 'About' && (aboutSubMenu ? <ChevronUp /> : <ChevronDown />)} */}
                     {navItem.name === 'Call for Papers' && (cfpSubMenu ? <ChevronUp /> : <ChevronDown />)}
                     {navItem.name === 'Past Editions' && (editionsSubMenu ? <ChevronUp /> : <ChevronDown />)}
                   </span>
                 </Link>
 
-                {navItem.name === 'About' && aboutSubMenu && createMobileSubMenu(aboutSubmenuItems)}
+                {/* {navItem.name === 'About' && aboutSubMenu && createMobileSubMenu(aboutSubmenuItems)} */}
                 {navItem.name === 'Call for Papers' && cfpSubMenu && createMobileSubMenu(cfpSubmenuItems)}
                 {navItem.name === 'Past Editions' && editionsSubMenu && createMobileSubMenu(pastEditionsItems)}
               </li>
