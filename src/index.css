@@ -2727,6 +2727,10 @@ input[type="range"]::-ms-fill-lower {
   --tw-bg-opacity: 0.6;
 }
 
+.bg-opacity-40 {
+  --tw-bg-opacity: 0.4;
+}
+
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
