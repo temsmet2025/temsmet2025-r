@@ -12,10 +12,10 @@ export const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'Call for Papers', href: '#call-for-papers', current: false },
   { name: 'Submission Guidelines', href: '/submission-guidelines', current: false },
-  { name: 'Registration', href: '/', current: false },
+  { name: 'Registration', href: '/registration', current: false },
   { name: 'Venue And Dates', href: '/venue', current: false },
   { name: 'Organising Committee', href: '/org-committee', current: false },
-  { name: 'Past Editions', href: '/', current: false },
+  { name: 'Past Editions', href: '/', current: "_blank" },
   { name: 'Contact', href: '/', current: false },
 ];
 
@@ -63,7 +63,7 @@ export const cfpSubmenuItems = [
  * @property {boolean} current - A boolean indicating if the past edition item is currently active.
  */
 export const pastEditionsItems = [
-  { name: "2020", href: "https://ieeexplore.ieee.org/xpl/conhome/9557352/proceeding", current: false },
-  { name: "2021", href: "https://ieeexplore.ieee.org/xpl/conhome/9768306/proceeding", current: false },
-  { name: "2023", href: "https://ieeexplore.ieee.org/xpl/conhome/10149893/proceeding", current: false },
+  { name: "2020", href: "https://ieeexplore.ieee.org/xpl/conhome/9557352/proceeding", current: "_blank" },
+  { name: "2021", href: "https://ieeexplore.ieee.org/xpl/conhome/9768306/proceeding", current: "_blank" },
+  { name: "2023", href: "https://ieeexplore.ieee.org/xpl/conhome/10149893/proceeding", current: "_blank" },
 ];

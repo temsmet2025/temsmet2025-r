@@ -30,11 +30,6 @@ const Home = () => {
       <TableView tableName="Important Dates" highLightRow={0} tableHead={['EVENTS', 'DATE']} dataItem={importantDates} />
 
       <SectionList title="Sponsors And Exhibitors" dataItem={sponsorsAndExhibitors} />
-
-      <TableView tableName="Registration" tableHead={['Author Category',	'Early Bird (Indian)', 'Early Bird (Foreign)',	'Regular (Indian)',	'Regular (Foreign)']} dataItem={registrationFees}/>
-      <TableView tableName="" tableHead={['Delegates / Participants',	'Fees']} dataItem={deligates}/>
-
-
     </section>
   )
 }

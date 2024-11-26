@@ -15,7 +15,7 @@ function createSubMenu(subMenuItems) {
       <ul>
         {subMenuItems.map((item, index) => (
           <li key={index} className='p-3 text-white hover:bg-slate-950/90'>
-            <Link to={item.href}>{item.name}</Link>
+            <Link to={item.href} target={item.current}>{item.name}</Link>
           </li>
         ))}
       </ul>
@@ -36,7 +36,7 @@ function createMobileSubMenu(subMenuItems) {
       <ul>
         {subMenuItems.map((item, index) => (
           <li key={index} className='p-3 text-white hover:bg-slate-950/90'>
-            <Link to={item.href}>{item.name}</Link>
+            <Link to={item.href} target={item.current}>{item.name}</Link>
           </li>
         ))}
       </ul>

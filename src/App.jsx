@@ -8,6 +8,8 @@ import Footer from './components/Footer.jsx'
 import OrgCommittee from './components/OrgCommitte.jsx'
 import Venue from './components/Venue.jsx'
 import SubmissionGuidelines from './components/SubmissionGuidelines.jsx'
+import { registrationFees, deligates } from './assets/dataItems.js'
+import TableView from './components/TableView.jsx'
 
 /**
  * Main application component that sets up routing for different pages.
@@ -59,39 +61,51 @@ function App() {
       )
     },
     {
-      path:"/venue",
-      element:(
+      path: "/venue",
+      element: (
         <>
-          <Nav/>
-          <Carousel/>
-          <Venue/>
-          <Footer/>
+          <Nav />
+          <Carousel />
+          <Venue />
+          <Footer />
         </>
       )
     },
     {
-      path:"/submission-guidelines",
-      element:(
+      path: "/submission-guidelines",
+      element: (
         <>
-          <Nav/>
-          <Carousel/>
-          <SubmissionGuidelines/>
-          <Footer/>
+          <Nav />
+          <Carousel />
+          <SubmissionGuidelines />
+          <Footer />
         </>
       )
     },
+    {
+      path: "/registration",
+      element: (
+        <>
+          <Nav />
+          <Carousel />
+          <TableView tableName="Registration" tableHead={['Author Category', 'Early Bird (Indian)', 'Early Bird (Foreign)', 'Regular (Indian)', 'Regular (Foreign)']} dataItem={registrationFees} />
+          <TableView tableName="" tableHead={['Delegates / Participants', 'Fees']} dataItem={deligates} />
+          <Footer />
+        </>
+      )
+    }
   ],
-  /**
-   * Base path for the application, used when deploying on GitHub Pages.
-   * Uncomment the line below for the appropriate deployment path.
-   */
-  // { basename: "/temsmet.github.io" }, // for GitHub Pages deployment
-  // { basename: "/temsmet2025-r" } // for GitHub Pages deployment
+    /**
+     * Base path for the application, used when deploying on GitHub Pages.
+     * Uncomment the line below for the appropriate deployment path.
+     */
+    // { basename: "/temsmet.github.io" }, // for GitHub Pages deployment
+    // { basename: "/temsmet2025-r" } // for GitHub Pages deployment
   )
 
   return (
     <>
-      <RouterProvider router={router} />  
+      <RouterProvider router={router} />
     </>
   )
 }
