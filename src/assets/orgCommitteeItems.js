@@ -93,7 +93,9 @@ export const technicalProgrammeCommittee = [
   { id: 59, name: "Ramesh Kumar Sonkar", affiliation: "IIT Guwahati", imagePath: "./orgCommittee/techProgCommittee/ramesh.jpeg" },
   { id: 60, name: "Ranveer", affiliation: "IIT Indore", imagePath: "./orgCommittee/techProgCommittee/ranveer.jpeg" },
   { id: 61, name: "Rituparna Datta", affiliation: "University of South Alabama, USA", imagePath: "./orgCommittee/techProgCommittee/rituparns.jpeg" },
-  { id: 62, name: "Pallavi Athe", affiliation: "IISER Bhopal", imagePath: "./orgCommittee/techProgCommittee/pallavi.jpeg" }
+  { id: 62, name: "Pallavi Athe", affiliation: "IISER Bhopal", imagePath: "./orgCommittee/techProgCommittee/pallavi.jpeg" },
+  { id: 62, name: "Kaushik Das", affiliation: "Senior Scientist, TCS Research Lab", imagePath: "./orgCommittee/techProgCommittee/kaushik.jpeg" },
+  { id: 62, name: "Samrat Dutta", affiliation: "Scientist, TCS Research Lab", imagePath: "./orgCommittee/techProgCommittee/samrat.jpeg" }
 ];
 
 export const informationCommittee = [
