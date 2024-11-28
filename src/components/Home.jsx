@@ -16,7 +16,7 @@ const Home = () => {
       <div className="conference-theme sm:ml-32 mt-10">
         <div className="ml-8 sm:m-0">
           <h1 className='sm:font-bold sm:text-5xl text-gray-800 text-2xl font-bold'>Conference Theme</h1>
-          <div class="mt-2 mb-5 h-0.5 bg-gray-950 w-5/6"></div>
+          <div className="mt-2 mb-5 h-0.5 bg-gray-950 w-5/6"></div>
         </div>
         <div className="p-8 pt-0 sm:p-0">
           <span className="font-bold text-base sm:text-xl  text-wrap">“Innovation and Technology Management in the era of Gen AI”</span>

@@ -79,10 +79,11 @@ function Nav() {
   };
 
   return (
-    <nav className='fixed z-50 w-full'>
+    <nav className='z-50 w-full'>
       <div className="relative bg-fixed bg-slate-950 text-white lg:flex justify-between z-49">
         <div className='font-extrabold  w-48 text-2xl  p-5 md:text-3xl'>
-          <img src="./logos/IEEE TEMS logo/17-TA-213 TEMS logo RGB_bg_removed.png" className='w-48 hover:scale-105 cursor-pointer' alt="Temsmet 2025" srcset="" />
+          {/* <img src="./logos/IEEE TEMS logo/17-TA-213 TEMS logo RGB_bg_removed.png" className='w-48 hover:scale-105 cursor-pointer' alt="Temsmet 2025" /> */}
+          <p>TEMSMET2025</p>
         </div>
 
         <ul className='hidden text-base font-bold lg:flex justify-center items-center mr-3 transition-all duration-500 ease-in-out'>

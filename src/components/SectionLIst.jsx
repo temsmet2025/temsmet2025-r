@@ -18,7 +18,7 @@ function SectionList(props) {
         <div id={`section-list-${title}`} className="sm:ml-32 sm:mt-10 mb-10">
             <div className="ml-8 sm:m-0">
                 <h1 className='font-bold sm:text-5xl text-2xl text-gray-800'>{title}</h1>
-                <div class="sm:visible mt-2 h-0.5 bg-gray-950 w-5/6"></div>
+                <div className="sm:visible mt-2 h-0.5 bg-gray-950 w-5/6"></div>
             </div>
             <ul className="text-justify mt-5 p-8 pt-0 sm:p-0">
                 {dataItem.map((item, index) => (
