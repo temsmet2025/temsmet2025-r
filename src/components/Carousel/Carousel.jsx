@@ -102,7 +102,7 @@ function Carousel() {
           {/* Conference Name */}
           <div className="relative z-30 mt-0.5 p-[10px] sm:p-[15px]">
             <div className="absolute inset-0 bg-black bg-opacity-40  z-[-1]"></div>
-            <p className="flex flex-col text-center text-[#FEE2E2] leading-relaxed px-1.5 text-sm md:text-lg lg:text-xl xl:text-2xl">
+            <p className="flex md:font-bold flex-col text-center text-[#FEE2E2] leading-relaxed px-1.5 text-sm md:text-lg lg:text-xl xl:text-2xl">
               <span>IEEE 4th International Conference</span>
               <span>on</span>
               <span>Technology, Engineering, Management for Societal Impact</span>
@@ -115,8 +115,8 @@ function Carousel() {
           {/* Date and Venue */}
           <div className="relative z-30 mt-1.5 p-[10px] sm:p-[15px]">
             <div className="absolute inset-0 bg-black bg-opacity-40 z-[-1]"></div>
-            <p className="flex flex-col text-center text-[#FEE2E2] leading-relaxed px-1.5 text-sm md:text-lg lg:text-xl xl:text-2xl">
-              <span>08-10 October 2025</span>
+            <p className="flex md:font-bold flex-col text-center text-[#FEE2E2] leading-relaxed px-1.5 text-sm md:text-lg lg:text-xl xl:text-2xl">
+              <span>October 08-10, 2025</span>
               <span>National Institute of Technology Delhi</span>
               <span>New Delhi, India</span>
             </p>

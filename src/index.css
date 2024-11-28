@@ -1567,6 +1567,14 @@ input[type="range"]::-ms-fill-lower {
   height: 100vh;
 }
 
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-3\/4 {
+  height: 75%;
+}
+
 .max-h-\[90dvh\] {
   max-height: 90dvh;
 }
@@ -1679,6 +1687,14 @@ input[type="range"]::-ms-fill-lower {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-0\.5 {
+  width: 0.125rem;
+}
+
+.w-40 {
+  width: 10rem;
 }
 
 .min-w-11 {
@@ -1818,6 +1834,12 @@ input[type="range"]::-ms-fill-lower {
 .scale-75 {
   --tw-scale-x: .75;
   --tw-scale-y: .75;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-50 {
+  --tw-scale-x: .5;
+  --tw-scale-y: .5;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -3231,6 +3253,10 @@ input[type="range"]::-ms-fill-lower {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .uppercase {
@@ -6262,8 +6288,22 @@ input[type="range"]::-ms-fill-lower {
     line-height: 1.75rem;
   }
 
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:font-medium {
     font-weight: 500;
+  }
+
+  .md\:font-bold {
+    font-weight: 700;
   }
 
   .md\:text-cyan-700 {

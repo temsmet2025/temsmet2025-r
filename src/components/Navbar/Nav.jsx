@@ -81,15 +81,15 @@ function Nav() {
   return (
     <nav className='fixed z-50 w-full'>
       <div className="relative bg-fixed bg-slate-950 text-white lg:flex justify-between z-49">
-        <div className='font-bold flex justify-center items-center text-2xl mx-5 p-5 md:text-xl'>
-          TEMSMET2025
+        <div className='font-extrabold  w-48 text-2xl  p-5 md:text-3xl'>
+          <img src="./logos/IEEE TEMS logo/17-TA-213 TEMS logo RGB_bg_removed.png" className='w-48 hover:scale-105 cursor-pointer' alt="Temsmet 2025" srcset="" />
         </div>
 
-        <ul className='hidden lg:flex justify-center items-center mr-5 transition-all ease-in-out'>
+        <ul className='hidden text-base font-bold lg:flex justify-center items-center mr-3 transition-all duration-500 ease-in-out'>
           {navigation.map((navItem, index) => (
             <li
               key={index}
-              className="text-slate-300 hover:text-slate-50 cursor-pointer md:text-sm p-2"
+              className="text-slate-300 hover:text-slate-50 cursor-pointer ml-3"
               onMouseEnter={() => {
                 // if (navItem.name === 'About') handleAboutSubMenu();
                 if (navItem.name === 'Call for Papers') handleCFPSubMenu();

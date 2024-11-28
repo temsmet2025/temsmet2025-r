@@ -9,14 +9,14 @@
  * @property {boolean} current - A boolean indicating if the link is currently active.
  */
 export const navigation = [
-  { name: 'Home', href: '/', current: true },
-  { name: 'Call for Papers', href: '#call-for-papers', current: false },
-  { name: 'Submission Guidelines', href: '/submission-guidelines', current: false },
-  { name: 'Registration', href: '/registration', current: false },
-  { name: 'Venue And Dates', href: '/venue', current: false },
-  { name: 'Organising Committee', href: '/org-committee', current: false },
-  { name: 'Past Editions', href: '/', current: "_blank" },
-  { name: 'Contact', href: '/', current: false },
+  { name: 'Home', href: '/', current: "_self" },
+  { name: 'Call for Papers', href: '#call-for-papers', current: "_self" },
+  { name: 'Submission Guidelines', href: '/submission-guidelines', current: "_self" },
+  { name: 'Registration', href: '/registration', current: "_self" },
+  { name: 'Venue And Dates', href: '/venue', current: "_self" },
+  { name: 'Organising Committee', href: '/org-committee', current: "_self" },
+  { name: 'Past Editions', href: '/', current: "_self" },
+  { name: 'Contact', href: '/', current: "_self" },
 ];
 
 /**
@@ -30,10 +30,10 @@ export const navigation = [
  * @property {boolean} current - A boolean indicating if the submenu item is currently active.
  */
 export const aboutSubmenuItems = [
-  { name: "Conference Theme", href: "/", current: false },
-  { name: "Objectives", href: "/", current: false },
-  { name: "Target Audience", href: "/", current: false },
-  { name: "Conference Structure", href: "/", current: false },
+  { name: "Conference Theme", href: "/", current: "_self" },
+  { name: "Objectives", href: "/", current: "_self" },
+  { name: "Target Audience", href: "/", current: "_self" },
+  { name: "Conference Structure", href: "/", current: "_self" },
 ];
 
 /**
@@ -47,9 +47,9 @@ export const aboutSubmenuItems = [
  * @property {boolean} current - A boolean indicating if the submenu item is currently active.
  */
 export const cfpSubmenuItems = [
-  { name: "Conference Tracks", href: "/call-for-papers", current: false },
-  { name: "Paper Preparation & Submission Guidelines for Authors", href: "/", current: false },
-  { name: "Important Dates", href: "/", current: false },
+  { name: "Conference Tracks", href: "/call-for-papers", current: "_self" },
+  { name: "Paper Preparation & Submission Guidelines for Authors", href: "/", current: "_self" },
+  { name: "Important Dates", href: "/", current: "_self" },
 ];
 
 /**

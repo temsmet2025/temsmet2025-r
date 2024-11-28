@@ -46,12 +46,12 @@ export const potentialSpeakers = [
 ];
 
 export const importantDates = [
-  { tableData: ['Paper Submission Closes', 'July, 05 2025'] },
-  { tableData: ['Notification of Acceptance',  'August, 08 2025'] },
-  { tableData: ['Final Camera-ready Paper',  'August, 21 2025'] },
-  { tableData: ['Early Submission Paper Registration Closes','August, 23 2025'] },
-  { tableData: ['Regular Paper Registration Closes',  'September, 02 2025' ]},
-  { tableData: ['Conference Date', 'October, 08-10, 2025'] },
+  { tableData: ['Paper Submission Closes', 'July 05, 2025'] },
+  { tableData: ['Notification of Acceptance',  'August 08, 2025'] },
+  { tableData: ['Final Camera-ready Paper',  'August 21, 2025'] },
+  { tableData: ['Early Submission Paper Registration Closes','August 23, 2025'] },
+  { tableData: ['Regular Paper Registration Closes',  'September 02, 2025' ]},
+  { tableData: ['Conference Date', 'October 08-10, 2025'] },
 ];
 
 export const registrationFees = [

@@ -128,6 +128,7 @@ export const webMasterAndTechnicalCoordinationCommittee = [
 export const localOrganizingCommittee = [
   { id: 0, name: "Prashant Kumar", affiliation: "NIT Delhi (Chair)", imagePath: "./orgCommittee/techProgCommittee/prashant.jpeg" },
   { id: 1, name: "Bijoy Chand Chatterjee", affiliation: "SAU, Delhi (Co-Chair)", imagePath: "./orgCommittee/techProgCommittee/bijoy.jpeg" },
+  { id: 12, name: "Preeti Singh", affiliation: "Bhagwan Parshuram Institute of Technology, Delhi (co-chair)", imagePath: "./orgCommittee/localOrg/preeti.jpeg" },
   { id: 2, name: "Karan Verma", affiliation: "NIT Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/karan.webp" },
   { id: 3, name: "Gautam Kumar", affiliation: "NIT Delhi", imagePath: "./orgCommittee/publicationCommittee/goutam.jpg" },
   { id: 4, name: "Mahesh K. Singh", affiliation: "NIT Delhi", imagePath: "./orgCommittee/publicationCommittee/mahesh.png" },
@@ -138,6 +139,5 @@ export const localOrganizingCommittee = [
   { id: 9, name: "Tarun Kumar Rawat", affiliation: "NSUT, Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/tarun.jpg" },
   { id: 10, name: "Sachin Singh", affiliation: "NIT Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/sachin.jpg" },
   { id: 11, name: "A P Singh", affiliation: "NIT Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/apsingh.jpeg" },
-  { id: 12, name: "Preeti Singh", affiliation: "Bhagwan Parshuram Institute of Technology, Delhi", imagePath: "./orgCommittee/localOrg/preeti.jpeg" },
 ];
 
