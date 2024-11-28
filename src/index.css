@@ -6211,10 +6211,6 @@ input[type="range"]::-ms-fill-lower {
     align-items: center;
   }
 
-  .md\:justify-start {
-    justify-content: flex-start;
-  }
-
   .md\:justify-between {
     justify-content: space-between;
   }

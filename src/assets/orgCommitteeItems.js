@@ -137,6 +137,7 @@ export const localOrganizingCommittee = [
   { id: 8, name: "Tanvir Ahmad", affiliation: "Jamia Millia Islamia, Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/tanvir.jpg" },
   { id: 9, name: "Tarun Kumar Rawat", affiliation: "NSUT, Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/tarun.jpg" },
   { id: 10, name: "Sachin Singh", affiliation: "NIT Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/sachin.jpg" },
-  { id: 11, name: "A P Singh", affiliation: "NIT Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/apsingh.jpeg" }
+  { id: 11, name: "A P Singh", affiliation: "NIT Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/apsingh.jpeg" },
+  { id: 12, name: "Preeti Singh", affiliation: "Bhagwan Parshuram Institute of Technology, Delhi", imagePath: "./orgCommittee/localOrg/preeti.jpeg" },
 ];
 
