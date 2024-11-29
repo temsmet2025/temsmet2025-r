@@ -1044,6 +1044,10 @@ input[type="range"]::-ms-fill-lower {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .inset-0 {
   inset: 0px;
 }
@@ -1220,6 +1224,10 @@ input[type="range"]::-ms-fill-lower {
 
 .z-auto {
   z-index: auto;
+}
+
+.-z-50 {
+  z-index: -50;
 }
 
 .-m-1\.5 {
@@ -1421,18 +1429,6 @@ input[type="range"]::-ms-fill-lower {
   margin-top: 2rem;
 }
 
-.mr-8 {
-  margin-right: 2rem;
-}
-
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
-.mr-5 {
-  margin-right: 1.25rem;
-}
-
 .block {
   display: block;
 }
@@ -1505,10 +1501,6 @@ input[type="range"]::-ms-fill-lower {
   height: 0.875rem;
 }
 
-.h-3\/4 {
-  height: 75%;
-}
-
 .h-36 {
   height: 9rem;
 }
@@ -1527,10 +1519,6 @@ input[type="range"]::-ms-fill-lower {
 
 .h-6 {
   height: 1.5rem;
-}
-
-.h-60 {
-  height: 15rem;
 }
 
 .h-64 {
@@ -1553,12 +1541,16 @@ input[type="range"]::-ms-fill-lower {
   height: 24rem;
 }
 
+.h-\[10rem\] {
+  height: 10rem;
+}
+
 .h-\[25rem\] {
   height: 25rem;
 }
 
-.h-\[30rem\] {
-  height: 30rem;
+.h-\[8rem\] {
+  height: 8rem;
 }
 
 .h-auto {
@@ -1580,34 +1572,6 @@ input[type="range"]::-ms-fill-lower {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-72 {
-  height: 18rem;
-}
-
-.h-1\/2 {
-  height: 50%;
-}
-
-.h-\[10rem\] {
-  height: 10rem;
-}
-
-.h-\[20rem\] {
-  height: 20rem;
-}
-
-.h-\[15rem\] {
-  height: 15rem;
-}
-
-.h-\[12rem\] {
-  height: 12rem;
-}
-
-.h-\[8rem\] {
-  height: 8rem;
 }
 
 .max-h-\[90dvh\] {
@@ -1662,10 +1626,6 @@ input[type="range"]::-ms-fill-lower {
   width: 0.875rem;
 }
 
-.w-3\/4 {
-  width: 75%;
-}
-
 .w-36 {
   width: 9rem;
 }
@@ -1690,10 +1650,6 @@ input[type="range"]::-ms-fill-lower {
   width: 1.5rem;
 }
 
-.w-60 {
-  width: 15rem;
-}
-
 .w-64 {
   width: 16rem;
 }
@@ -1712,6 +1668,14 @@ input[type="range"]::-ms-fill-lower {
 
 .w-9 {
   width: 2.25rem;
+}
+
+.w-\[10rem\] {
+  width: 10rem;
+}
+
+.w-\[20rem\] {
+  width: 20rem;
 }
 
 .w-\[25rem\] {
@@ -1734,18 +1698,6 @@ input[type="range"]::-ms-fill-lower {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-\[10rem\] {
-  width: 10rem;
-}
-
-.w-\[35rem\] {
-  width: 35rem;
-}
-
-.w-\[20rem\] {
-  width: 20rem;
 }
 
 .min-w-11 {
