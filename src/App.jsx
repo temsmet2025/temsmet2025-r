@@ -32,7 +32,7 @@ function App() {
       path: "/",
       element: (
         <>
-          <PreNav/>
+          <PreNav />
           <Nav />
           <Carousel />
           <Home />
@@ -44,7 +44,7 @@ function App() {
       path: "/call-for-papers",
       element: (
         <>
-          <PreNav/>
+          <PreNav />
           <Nav />
           <Carousel />
           <ListView title="Call For Papers" data={conferenceTracks} />
@@ -56,7 +56,7 @@ function App() {
       path: "/org-committee",
       element: (
         <>
-          <PreNav/>
+          <PreNav />
           <Nav />
           <Carousel />
           <OrgCommittee />
@@ -68,7 +68,7 @@ function App() {
       path: "/venue",
       element: (
         <>
-          <PreNav/>
+          <PreNav />
           <Nav />
           <Carousel />
           <Venue />
@@ -80,7 +80,7 @@ function App() {
       path: "/submission-guidelines",
       element: (
         <>
-          <PreNav/>
+          <PreNav />
           <Nav />
           <Carousel />
           <SubmissionGuidelines />
@@ -92,7 +92,7 @@ function App() {
       path: "/registration",
       element: (
         <>
-          <PreNav/>
+          <PreNav />
           <Nav />
           <Carousel />
           <TableView tableName="Registration" tableHead={['Author Category', 'Early Bird (Indian)', 'Early Bird (Foreign)', 'Regular (Indian)', 'Regular (Foreign)']} dataItem={registrationFees} />

@@ -86,11 +86,11 @@ function Nav() {
           <p>TEMSMET2025</p>
         </div>
 
-        <ul className='hidden text-base font-bold lg:flex justify-center items-center mr-3 transition-all duration-500 ease-in-out'>
+        <ul className='hidden lg:visible text-base font-bold lg:flex justify-center items-center mr-3 transition-all duration-500 ease-in-out'>
           {navigation.map((navItem, index) => (
             <li
               key={index}
-              className="text-slate-300 hover:text-slate-50 cursor-pointer ml-3"
+              className="text-white hover:text-slate-200 cursor-pointer ml-3"
               onMouseEnter={() => {
                 // if (navItem.name === 'About') handleAboutSubMenu();
                 if (navItem.name === 'Call for Papers') handleCFPSubMenu();
