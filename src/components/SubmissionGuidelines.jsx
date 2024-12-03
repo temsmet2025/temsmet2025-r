@@ -19,7 +19,7 @@ const SubmissionGuidelines = () => {
       </p>
       <ul className="list-disc ml-7 mr-7 text-black text-sm sm:text-base leading-relaxed mt-4">
         {submissionGuidelines.map((guideline, index) => (
-          <li key={index} className="mb-3">{guideline}</li>
+          <li key={index} className="mb-3" dangerouslySetInnerHTML={{ __html: guideline }} />
         ))}
       </ul>
     </div>

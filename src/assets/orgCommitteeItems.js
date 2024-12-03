@@ -75,7 +75,7 @@ export const technicalProgrammeCommittee = [
   { id: 41, name: "J K Jha", affiliation: "Industrial & Systems Engineering, Indian Institute of Technology Kharagpur", imagePath: "./orgCommittee/techProgCommittee/jitendra.jpeg" },
   { id: 42, name: "Vishal Vyas", affiliation: "ABV-IIITM Gwalior", imagePath: "./orgCommittee/techProgCommittee/vishalVyar.jpeg" },
   { id: 43, name: "Arun Kumar", affiliation: "ABV-IIITM Gwalior", imagePath: "./orgCommittee/techProgCommittee/arun.jpeg" },
-  { id: 44, name: "Mazalov Vladimir", affiliation: "Institute of Applied Mathematical Research, Karelia Research Center of Russian Academy of Sciences, Russia", imagePath: "./orgCommittee/techProgCommittee/mazalov.jpeg" },
+  { id: 44, name: "Mazalov Vladimir", affiliation: "Institute of Applied Mathematical Research, KarRC RAS, Russia", imagePath: "./orgCommittee/techProgCommittee/mazalov.jpeg" },
   { id: 45, name: "Bapi Chaterji", affiliation: "IIIT Delhi", imagePath: "./orgCommittee/techProgCommittee/bapi.jpeg" },
   { id: 46, name: "Ashish Tiwari", affiliation: "VNIT Nagpur", imagePath: "./orgCommittee/techProgCommittee/ashishTiwari.jpeg" },
   { id: 47, name: "Chantal Cherifi", affiliation: "University of Lyon, France", imagePath: "./orgCommittee/techProgCommittee/chantalcherifi.jpeg" },
