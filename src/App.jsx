@@ -11,6 +11,7 @@ import SubmissionGuidelines from './components/SubmissionGuidelines.jsx'
 import { registrationFees, deligates } from './assets/dataItems.js'
 import TableView from './components/TableView.jsx'
 import PreNav from './components/PreNav.jsx'
+import KeynoteSpeakers from './components/KeynoteSpeakers.jsx'
 
 /**
  * Main application component that sets up routing for different pages.
@@ -60,6 +61,18 @@ function App() {
           <Nav />
           <Carousel />
           <OrgCommittee />
+          <Footer />
+        </>
+      )
+    },
+    {
+      path: "/keynote-speakers",
+      element: (
+        <>
+          <PreNav/>
+          <Nav />
+          <Carousel />
+          <KeynoteSpeakers />
           <Footer />
         </>
       )
