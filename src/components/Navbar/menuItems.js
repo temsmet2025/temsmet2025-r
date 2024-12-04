@@ -17,6 +17,7 @@ export const navigation = [
     current: "_self",
   },
   { name: "Registration", href: "/registration", current: "_self" },
+  { name: "Keynote Speakers", href: "/keynote-speakers", current: "_self" },
   { name: "Venue And Dates", href: "/venue", current: "_self" },
   { name: "Organising Committee", href: "/org-committee", current: "_self" },
   { name: "Past Editions", href: "/", current: "_self" },
