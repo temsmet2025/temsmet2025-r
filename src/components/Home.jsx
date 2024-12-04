@@ -19,8 +19,8 @@ const Home = () => {
           <div className="mt-2 mb-5 h-0.5 bg-gray-950 w-5/6"></div>
         </div>
         <div className="p-8 pt-0 sm:p-0">
-          <span className="font-bold text-base sm:text-xl  text-wrap">“Innovation and Technology Management in the era of Gen AI”</span>
-          <p className='text-justify text-sm sm:text-xl text-wrap sm:w-5/6'>The conference focuses on the intersection of technology, management, innovation, and sustainable development within the context of the rapidly advancing era of Generative Artificial Intelligence (Gen AI). It explores how Gen AI, a subset of AI that can generate new content, designs, solutions, and ideas, is reshaping industries, influencing management strategies, and driving sustainable practices across the globe. The conference offers an international platform for scientists, researchers, engineers, and students to share the latest innovations and advancements in Technology, Engineering, Management, and Science. It features plenary sessions and invited talks by eminent experts, showcasing cutting-edge research. Original research contributions are invited.</p>
+          <span className="font-bold text-base sm:text-xl  text-wrap">“Innovation and Technology Management in the Era of Gen AI”</span>
+          <p className='text-justify text-sm sm:text-xl text-wrap sm:w-5/6'>The conference focuses on the intersection of technology, management, innovation, and sustainable development within the context of the rapidly advancing Era of Generative Artificial Intelligence (Gen AI). It explores how Gen AI, a subset of AI that can generate new content, designs, solutions, and ideas, is reshaping industries, influencing management strategies, and driving sustainable practices across the globe. The conference offers an international platform for scientists, researchers, engineers, and students to share the latest innovations and advancements in Technology, Engineering, Management, and Science. It features plenary sessions and invited talks by eminent experts, showcasing cutting-edge research. Original research contributions are invited.</p>
         </div>
       </div>
 
