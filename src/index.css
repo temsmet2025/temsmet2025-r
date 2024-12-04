@@ -1554,10 +1554,6 @@ input[type="range"]::-ms-fill-lower {
   height: 100vh;
 }
 
-.h-40 {
-  height: 10rem;
-}
-
 .max-h-\[90dvh\] {
   max-height: 90dvh;
 }
@@ -6311,14 +6307,6 @@ input[type="range"]::-ms-fill-lower {
     display: none;
   }
 
-  .lg\:h-52 {
-    height: 13rem;
-  }
-
-  .lg\:h-full {
-    height: 100%;
-  }
-
   .lg\:h-40 {
     height: 10rem;
   }
@@ -6331,36 +6319,32 @@ input[type="range"]::-ms-fill-lower {
     width: 75%;
   }
 
-  .lg\:w-48 {
-    width: 12rem;
+  .lg\:w-64 {
+    width: 16rem;
   }
 
   .lg\:w-80 {
     width: 20rem;
   }
 
-  .lg\:w-full {
-    width: 100%;
-  }
-
-  .lg\:w-52 {
-    width: 13rem;
-  }
-
   .lg\:w-96 {
     width: 24rem;
   }
 
-  .lg\:w-64 {
-    width: 16rem;
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:flex-row {
     flex-direction: row;
   }
 
-  .lg\:justify-start {
-    justify-content: flex-start;
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+
+  .lg\:justify-around {
+    justify-content: space-around;
   }
 
   .lg\:text-3xl {

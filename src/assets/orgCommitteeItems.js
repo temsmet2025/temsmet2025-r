@@ -13,7 +13,7 @@ export const generalChairs = [
 ];
 
 export const generalCoChairs = [
-  { id: 0, name: "Yathindranath Tarikere", affiliation: "CEO, DhiiHii Labs Pvt Ltd", imagePath: "./orgCommittee/generalCoChairs/y-n-tharikere.png" },
+  { id: 0, name: "Yatheendranath Tarikere", affiliation: "CEO, DhiiHii Labs Pvt Ltd", imagePath: "./orgCommittee/generalCoChairs/y-n-tharikere.png" },
   { id: 1, name: "Vinay Singh", affiliation: "ABV IIITM Gwalior", imagePath: "./orgCommittee/generalCoChairs/vinaySingh.jpeg" }
 ];
 
