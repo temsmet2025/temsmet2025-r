@@ -1,6 +1,6 @@
 import React from 'react'
 import SectionList from './SectionLIst'
-import { conferenceStructure, deligates, potentialSpeakers, sponsorsAndExhibitors, importantDates, registrationFees, submissionGuidelines } from "./../assets/dataItems"
+import { conferenceStructure, deligates, potentialSpeakers, sponsorsAndExhibitors, importantDates, registrationFees, submissionGuidelines, aboutConference } from "./../assets/dataItems"
 import TableView from './TableView'
 
 /**
@@ -24,6 +24,7 @@ const Home = () => {
         </div>
       </div>
 
+      <SectionList title="About Fourth IEEE TEMSMET 2025" dataItem={aboutConference} />
       <SectionList title="Conference Structure" dataItem={conferenceStructure} />
       <SectionList title="Potential Speakers" dataItem={potentialSpeakers} />
 

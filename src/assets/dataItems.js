@@ -1,3 +1,5 @@
+import { Description } from "@headlessui/react";
+
 // paper tracks
 export const conferenceStructure = [
   {
@@ -182,3 +184,25 @@ export const submissionGuidelines = [
   "The completed IEEE electronic copyright form (ECF) needs to be transferred (as and when it is made available) as per IEEE requirements.",
   "Paper <a class='text-blue-700' href='https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FTEMSMET2025' target='_blank'>Submission Link</a>.",
 ];
+
+export const aboutConference = [
+  {
+    description: "Second IEEE TEMSMET 2021 is a global series and an annual flagship conference of IEEE Technology and Engineering Management Society (TEMS)."
+  },
+
+  {
+    description: "The series started in the year 2020, attracting researchers from across the world to deliberate on broad understanding of technical and business practices in the world of technological advancements."
+  },
+
+  {
+    description: "The Second IEEE TEMSMET 2021 will be a unique platform offering deliberations on multiple dimensions of Innovation, Technology, Management and Humanity. The conference invites original research and innovative solutions or papers on interdisciplinary approaches, methods and frameworks, theories and standards used as innovation to help technology management."
+  },
+
+  {
+    description: "The conference ensures presentation and discussion on quality research work done in recent times by academicians, researchers both from technology and management background, students, industry experts, analysts, business managers and practitioners."
+  },
+
+  {
+    description: "Plenary sessions by recognized researchers and presentation of research papers accepted after quality review process are the major attractions for the research fraternity across industry and academia."
+  },
+]

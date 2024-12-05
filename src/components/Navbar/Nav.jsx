@@ -86,7 +86,7 @@ function Nav() {
           <p>TEMSMET2025</p>
         </div>
 
-        <ul className='hidden lg:visible text-base font-bold lg:flex justify-center items-center mr-3 transition-all duration-500 ease-in-out'>
+        <ul className='hidden xl:visible  text-base font-bold xl:flex justify-center items-center mr-3 transition-all duration-500 ease-in-out'>
           {navigation.map((navItem, index) => (
             <li
               key={index}
@@ -118,16 +118,16 @@ function Nav() {
           ))}
         </ul>
 
-        <button onClick={handleMobileMenu} id="mobile-menu" className="lg:hidden absolute right-5 top-5">
+        <button onClick={handleMobileMenu} id="mobile-menu" className="xl:hidden absolute right-5 top-5">
           {!mobileMenu ? <Menu /> : <X />}
         </button>
 
         {mobileMenu && (
-          <ul className='flex flex-col justify-center items-center space-y-2 py-5 font-bold text-lg hover:text-white transition-all duration-700 ease-in-out lg:hidden'>
+          <ul className='flex flex-col justify-center items-center space-y-2 py-5 font-bold text-lg hover:text-white transition-all duration-700 ease-in-out xl:hidden'>
             {navigation.map((navItem, index) => (
               <li
                 key={index}
-                className="text-slate-300 hover:text-slate-50 cursor-pointer font-semibold px-2 hover  w-full"
+                className="text-slate-300 hover:text-slate-50 cursor-pointer font-semibold px-2 hover w-full"
                 onClick={() => {
                   // if (navItem.name === 'About') handleAboutSubMenu();
                   if (navItem.name === 'Call for Papers') handleCFPSubMenu();
