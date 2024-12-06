@@ -108,8 +108,8 @@ function App() {
           <PreNav />
           <Nav />
           <Carousel />
-          <TableView tableName="Registration" tableHead={['Author Category', 'Early Bird (Indian)', 'Early Bird (Foreign)', 'Regular (Indian)', 'Regular (Foreign)']} dataItem={registrationFees} />
-          <TableView tableName="" tableHead={['Delegates / Participants', 'Fees']} dataItem={deligates} />
+          <TableView tableName="Registration" tableHead={['Author Category', 'Early Bird (Indian)', 'Early Bird (Foreign)', 'Regular (Indian)', 'Regular (Foreign)']} dataItem={registrationFees} classes="sm:w-5/6" />
+          <TableView tableName="" tableHead={['Delegates / Participants', 'Fees']} dataItem={deligates} classes="sm:w-5/6" />
           <Footer />
         </>
       )
