@@ -28,13 +28,13 @@ function PreNav() {
             </div>
             <div id="tems-logos" className="flex justify-center p-5 sm:p-0 lg:flex-row xl:w-full" style={{ width: isDesktop ? '30rem' : isTablet ? '24rem' : '10rem' }}>
                 <div id="tems-management" className='flex justify-center'>
-                    {isDesktop && <img src="./logos/IEEE TEMS logo/17-TA-213 TEMS logo RGB_bg_removed.png" className="w-full" alt="TEMS-LOGO" />}
+                    {isDesktop && <img src="./logos/IEEE TEMS logo/17-TA-213 TEMS logo RGB_bg_removed.png" className="w-full h-16 pl-10" alt="TEMS-LOGO" />}
                     {isTablet && !isDesktop && <img src="./logos/IEEE TEMS logo/17-TA-213 TEMS logo mobile.jpeg" className="w-full" alt="TEMS-LOGO" />}
                     {!isDesktop && !isTablet && <img src="./logos/IEEE TEMS logo/17-TA-213 TEMS logo mobile.jpeg" className="w-full" alt="TEMS-LOGO" />}
                 </div>
             </div>
             <div id="temsmet" className='flex justify-center'>
-                <img src="./logos/IEEE TEMS logo/Temsmet 2025.png" className="w-36 lg:w-80" alt="TEMS-LOGO" />
+                <img src="./logos/IEEE TEMS logo/Temsmet 2025.png" className="w-36 lg:w-80 md:mr-14" alt="TEMS-LOGO" />
             </div>
             <div id="ieee-logo" className="flex justify-center" style={{ width: isDesktop ? '15rem' : isTablet ? '10rem' : '6rem' }}>
                 <img src="./logos/IEEE-logo/IEEE_logo.svg" alt="IEEE-LOGO" className="w-full" />

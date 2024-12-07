@@ -116,7 +116,7 @@ export const publicationCommittee = [
   { id: 3, name: "Praveen Bansal", affiliation: "MITS Gwalior", imagePath: "./orgCommittee/publicationCommittee/praveen.jpg" },
   { id: 4, name: "Pradyumn Chaturvedi", affiliation: "VNIT Nagpur", imagePath: "./orgCommittee/techProgCommittee/pradyumn.jpeg" },
   { id: 5, name: "Vinod Kurmi", affiliation: "IISER Bhopal", imagePath: "./orgCommittee/publicationCommittee/vinod.jpg" },
-  { id: 6, name: "Rajesh Bhatt", affiliation: "IIT Kanpur", imagePath: "assets/publicationCommittee/Rajesh_Bhatt.jpeg" }
+  { id: 6, name: "Rajesh Bhatt", affiliation: "IIT Kanpur", imagePath: "./orgCommittee/techProgCommittee/rajesh.jpeg" }
 ];
 
 export const webMasterAndTechnicalCoordinationCommittee = [
