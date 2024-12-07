@@ -12,6 +12,8 @@ import { registrationFees, deligates } from './assets/dataItems.js'
 import TableView from './components/TableView.jsx'
 import PreNav from './components/PreNav.jsx'
 import KeynoteSpeakers from './components/KeynoteSpeakers.jsx'
+import Contact from "./components/Contact"
+
 
 /**
  * Main application component that sets up routing for different pages.
@@ -37,6 +39,7 @@ function App() {
           <Nav />
           <Carousel />
           <Home />
+          <Contact />
           <Footer />
         </>
       )
@@ -48,6 +51,7 @@ function App() {
           <PreNav />
           <Nav />
           <Carousel />
+          <Contact />
           <ListView title="Call For Papers" data={conferenceTracks} />
           <Footer />
         </>
@@ -60,6 +64,7 @@ function App() {
           <PreNav />
           <Nav />
           <Carousel />
+          <Contact />
           <OrgCommittee />
           <Footer />
         </>
@@ -72,6 +77,7 @@ function App() {
           <PreNav />
           <Nav />
           <Carousel />
+          <Contact />
           <KeynoteSpeakers />
           <Footer />
         </>
@@ -85,6 +91,7 @@ function App() {
           <Nav />
           <Carousel />
           <Venue />
+          <Contact />
           <Footer />
         </>
       )
@@ -96,6 +103,7 @@ function App() {
           <PreNav />
           <Nav />
           <Carousel />
+          <Contact />
           <SubmissionGuidelines />
           <Footer />
         </>
@@ -108,6 +116,8 @@ function App() {
           <PreNav />
           <Nav />
           <Carousel />
+          <Contact />
+
           <TableView tableName="Registration" tableHead={['Author Category', 'Early Bird (Indian)', 'Early Bird (Foreign)', 'Regular (Indian)', 'Regular (Foreign)']} dataItem={registrationFees} classes="sm:w-5/6" />
           <TableView tableName="" tableHead={['Delegates / Participants', 'Fees']} dataItem={deligates} classes="sm:w-5/6" />
           <Footer />

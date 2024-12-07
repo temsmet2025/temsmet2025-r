@@ -9,19 +9,20 @@
  * @property {boolean} current - A boolean indicating if the link is currently active.
  */
 export const navigation = [
-  { name: "Home", href: "/", current: "_self" },
-  { name: "Call for Papers", href: "#call-for-papers", current: "_self" },
+  { name: "Home", href: "/", current: "_self", id: "home-link" },
+  { name: "Call for Papers", href: "#call-for-papers", current: "_self", id: "cfp-link" },
   {
     name: "Submission Guidelines",
     href: "/submission-guidelines#submission-guidelines",
     current: "_self",
+    id: "sg-link",
   },
-  { name: "Registration", href: "/registration", current: "_self" },
-  { name: "Keynote Speakers", href: "/keynote-speakers", current: "_self" },
-  { name: "Venue", href: "/venue", current: "_self" },
-  { name: "Committee", href: "/org-committee", current: "_self" },
-  { name: "Past Editions", href: "/", current: "_self" },
-  { name: "Contact", href: "/", current: "_self" },
+  { name: "Registration", href: "/registration", current: "_self", id: "reg-link" },
+  { name: "Keynote Speakers", href: "/keynote-speakers", current: "_self", id: "ks-link" },
+  { name: "Venue", href: "/venue", current: "_self", id: "venue-link" },
+  { name: "Committee", href: "/org-committee", current: "_self", id: "committee-link" },
+  { name: "Past Editions", href: "/", current: "_self", id: "pe-link" },
+  { name: "Contact", href: "/", current: "_self", id: "contact-link" },
 ];
 
 /**
