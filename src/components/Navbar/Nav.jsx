@@ -129,7 +129,7 @@ function Nav() {
               <li
                 key={index}
                 className="text-slate-300 hover:text-slate-50 cursor-pointer font-semibold px-2 hover w-full"
-                id={navItem.id}
+                id={`mobile-${navItem.id}`}
                 onClick={() => {
                   // if (navItem.name === 'About') handleAboutSubMenu();
                   if (navItem.name === 'Call for Papers') handleCFPSubMenu();
