@@ -6383,6 +6383,10 @@ input[type="range"]::-ms-fill-lower {
     height: 10rem;
   }
 
+  .lg\:h-44 {
+    height: 11rem;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -6405,6 +6409,11 @@ input[type="range"]::-ms-fill-lower {
 
   .lg\:w-60 {
     width: 15rem;
+  }
+
+  .lg\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .lg\:flex-row {
