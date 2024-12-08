@@ -215,14 +215,6 @@ export const aboutHost = [
     description: "NIT Delhi is an autonomous Institute which functions under the aegis of Ministry of Education, Government of India. It aims to provide instructions and research facilities in various disciplines of Engineering, Science and Technology, Management, Social Sciences and Humanities for advance learning and dissemination of knowledge."
   },
   {
-    track: "MISSION",
-    description: "Application of Knowledge through learning and inculcating Research Oriented mindset towards Design and Innovative Development for Realistic Societal Solutions."
-  },
-  {
-    track: "VISION",
-    description: "Committed to holistic development of Lives and Society by imparting Knowledge of Science and Technology and Crystallizing the future."
-  },
-  {
     description: "The Institute has secured a remarkable NIRF 45 rank in 2024 among 4000 engineering colleges in India. The highest package awarded to the student of NIT Delhi is Rs. 87 LPA in 2023 and the average package awarded to the students of NIT Delhi is Rs. 17.72 LPA "
   },
 ]

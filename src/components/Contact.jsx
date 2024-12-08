@@ -39,7 +39,7 @@ function Contact() {
 
                     <div className="flex justify-center w-full">
                         <span className="font-semibold">Email: </span>
-                        <span> temsmet2025@nitdlehi.ac.in</span>
+                        <span> temsmet2025@nitdelhi.ac.in</span>
                     </div>
                 </div>
                 <button className="absolute bottom-5 right-5 border-solid border-2 border-green-400  px-7 py-1 rounded-lg
