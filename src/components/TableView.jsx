@@ -27,6 +27,7 @@ function TableView(props) {
                                         {data}
                                     </td>
                                 ))}
+                                {console.log(item.tableData)}
                             </tr>
                         ))}
                     </tbody>

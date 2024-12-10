@@ -13,7 +13,7 @@ import TableView from './components/TableView.jsx'
 import PreNav from './components/PreNav.jsx'
 import KeynoteSpeakers from './components/KeynoteSpeakers.jsx'
 import Contact from "./components/Contact"
-import { useState } from 'react'
+
 
 /**
  * Main application component that sets up routing for different pages.
@@ -30,18 +30,16 @@ function App() {
    * - `/call-for-papers`: Displays Nav, Carousel, ListView with conferenceTracks data, and Footer.
    * - `/org-committee`: Displays Nav, Carousel, OrgCommittee, and Footer components.
    */
-  const [showContact, setShowContact] = useState(false);
-
   const router = createBrowserRouter([
     {
       path: "/",
       element: (
         <>
           <PreNav />
-          <Nav setShowContact={setShowContact} />
+          <Nav />
           <Carousel />
           <Home />
-          <Contact setShowContact={setShowContact} showContact={showContact} />
+          <Contact />
           <Footer />
         </>
       )
@@ -51,9 +49,9 @@ function App() {
       element: (
         <>
           <PreNav />
-          <Nav setShowContact={setShowContact} />
+          <Nav />
           <Carousel />
-          <Contact setShowContact={setShowContact} showContact={showContact} />
+          <Contact />
           <ListView title="Call For Papers" data={conferenceTracks} />
           <Footer />
         </>
@@ -64,9 +62,9 @@ function App() {
       element: (
         <>
           <PreNav />
-          <Nav setShowContact={setShowContact} />
+          <Nav />
           <Carousel />
-          <Contact setShowContact={setShowContact} showContact={showContact} />
+          <Contact />
           <OrgCommittee />
           <Footer />
         </>
@@ -77,9 +75,9 @@ function App() {
       element: (
         <>
           <PreNav />
-          <Nav setShowContact={setShowContact} />
+          <Nav />
           <Carousel />
-          <Contact setShowContact={setShowContact} showContact={showContact} />
+          <Contact />
           <KeynoteSpeakers />
           <Footer />
         </>
@@ -90,10 +88,10 @@ function App() {
       element: (
         <>
           <PreNav />
-          <Nav setShowContact={setShowContact} />
+          <Nav />
           <Carousel />
           <Venue />
-          <Contact setShowContact={setShowContact} showContact={showContact} />
+          <Contact />
           <Footer />
         </>
       )
@@ -103,9 +101,9 @@ function App() {
       element: (
         <>
           <PreNav />
-          <Nav setShowContact={setShowContact} />
+          <Nav />
           <Carousel />
-          <Contact setShowContact={setShowContact} showContact={showContact} />
+          <Contact />
           <SubmissionGuidelines />
           <Footer />
         </>
@@ -116,9 +114,9 @@ function App() {
       element: (
         <>
           <PreNav />
-          <Nav setShowContact={setShowContact} />
+          <Nav />
           <Carousel />
-          <Contact setShowContact={setShowContact} showContact={showContact} />
+          <Contact />
 
           <TableView tableName="Registration" tableHead={['Author Category', 'Early Bird (Indian)', 'Early Bird (Foreign)', 'Regular (Indian)', 'Regular (Foreign)']} dataItem={registrationFees} classes="sm:w-5/6" />
           <TableView tableName="" tableHead={['Delegates / Participants', 'Fees']} dataItem={deligates} classes="sm:w-5/6" />
