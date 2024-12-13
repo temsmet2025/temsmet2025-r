@@ -27,7 +27,7 @@ const Home = () => {
       <SectionList title="About Fourth IEEE TEMSMET 2025" dataItem={aboutConference} classes="list-none mb-7 !ml-0 text-justify text-wrap sm:w-5/6" />
       <SectionList title="About the Host of Fourth IEEE TEMSMET 2025" dataItem={aboutHost} classes="list-none mb-7 !ml-0 text-justify text-wrap sm:w-5/6" />
       <SectionList title="Conference Structure" dataItem={conferenceStructure} />
-      <SectionList title="Potential Speakers" dataItem={potentialSpeakers} />
+      <SectionList title="Potential Speakers" dataItem={potentialSpeakers} isButton={"SquareArrowOutUpRight"} />
 
       <TableView tableName="Important Dates" highLightRow={0} tableHead={['EVENTS', 'DATE']} dataItem={importantDates} classes="sm:w-5/6" />
 
