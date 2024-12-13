@@ -7,7 +7,7 @@ function Footer() {
     return (
         <div className="relative z-50 bottom-0 w-full bg-slate-950 flex justify-center items-center py-4">
             <span className="text-sm sm:text-base md:text-lg lg:text-xl text-amber-100 text-center">
-                &copy; {new Date().getFullYear()} TEMSMET. All rights reserved.
+                &copy; Copyright 2025 IEEE – All rights reserved.
             </span>
         </div>
     );

@@ -31,6 +31,10 @@ const Home = () => {
 
       <TableView tableName="Important Dates" highLightRow={0} tableHead={['EVENTS', 'DATE']} dataItem={importantDates} classes="sm:w-5/6" />
 
+      <div className="sm:ml-32 sm:w-5/6">
+        <p className='font-extrabold text-lg sm:text-xl md:text-2xl text-blue-800'>"All accepted papers will be published in IEEE Xplore, subject to IEEE's discretion."</p>
+      </div>
+
       <SectionList title="Sponsors And Exhibitors" dataItem={sponsorsAndExhibitors} />
     </section>
   )
