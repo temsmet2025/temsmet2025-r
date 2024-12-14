@@ -52,7 +52,7 @@ function App() {
           <Nav />
           <Carousel />
           <Contact />
-          <ListView title="Call For Papers" data={conferenceTracks} />
+          <ListView title="Call For Papers" data={conferenceTracks} classes="flex flex-col flex-wrap w-full justify-around md:flex-row md:pl-10" />
           <Footer />
         </>
       )
