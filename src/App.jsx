@@ -13,7 +13,7 @@ import TableView from './components/TableView.jsx'
 import PreNav from './components/PreNav.jsx'
 import KeynoteSpeakers from './components/KeynoteSpeakers.jsx'
 import Contact from "./components/Contact"
-
+import { useState } from 'react'
 
 /**
  * Main application component that sets up routing for different pages.
@@ -30,16 +30,18 @@ function App() {
    * - `/call-for-papers`: Displays Nav, Carousel, ListView with conferenceTracks data, and Footer.
    * - `/org-committee`: Displays Nav, Carousel, OrgCommittee, and Footer components.
    */
+  const [showContact, setShowContact] = useState(false);
+
   const router = createBrowserRouter([
     {
       path: "/",
       element: (
         <>
           <PreNav />
-          <Nav />
+          <Nav setShowContact={setShowContact} />
           <Carousel />
           <Home />
-          <Contact />
+          <Contact setShowContact={setShowContact} showContact={showContact} />
           <Footer />
         </>
       )
@@ -49,9 +51,9 @@ function App() {
       element: (
         <>
           <PreNav />
-          <Nav />
+          <Nav setShowContact={setShowContact} />
           <Carousel />
-          <Contact />
+          <Contact setShowContact={setShowContact} showContact={showContact} />
           <ListView title="Call For Papers" data={conferenceTracks} classes="flex flex-col flex-wrap w-full justify-around md:flex-row md:pl-10" />
           <Footer />
         </>
@@ -62,9 +64,9 @@ function App() {
       element: (
         <>
           <PreNav />
-          <Nav />
+          <Nav setShowContact={setShowContact} />
           <Carousel />
-          <Contact />
+          <Contact setShowContact={setShowContact} showContact={showContact} />
           <OrgCommittee />
           <Footer />
         </>
@@ -75,9 +77,9 @@ function App() {
       element: (
         <>
           <PreNav />
-          <Nav />
+          <Nav setShowContact={setShowContact} />
           <Carousel />
-          <Contact />
+          <Contact setShowContact={setShowContact} showContact={showContact} />
           <KeynoteSpeakers />
           <Footer />
         </>
@@ -88,10 +90,10 @@ function App() {
       element: (
         <>
           <PreNav />
-          <Nav />
+          <Nav setShowContact={setShowContact} />
           <Carousel />
           <Venue />
-          <Contact />
+          <Contact setShowContact={setShowContact} showContact={showContact} />
           <Footer />
         </>
       )
@@ -101,9 +103,9 @@ function App() {
       element: (
         <>
           <PreNav />
-          <Nav />
+          <Nav setShowContact={setShowContact} />
           <Carousel />
-          <Contact />
+          <Contact setShowContact={setShowContact} showContact={showContact} />
           <SubmissionGuidelines />
           <Footer />
         </>
@@ -114,9 +116,9 @@ function App() {
       element: (
         <>
           <PreNav />
-          <Nav />
+          <Nav setShowContact={setShowContact} />
           <Carousel />
-          <Contact />
+          <Contact setShowContact={setShowContact} showContact={showContact} />
 
           <TableView tableName="Registration" tableHead={['Author Category', 'Early Bird (Indian)', 'Early Bird (Foreign)', 'Regular (Indian)', 'Regular (Foreign)']} dataItem={registrationFees} classes="sm:w-5/6" />
           <TableView tableName="" tableHead={['Delegates / Participants', 'Fees']} dataItem={deligates} classes="sm:w-5/6" />

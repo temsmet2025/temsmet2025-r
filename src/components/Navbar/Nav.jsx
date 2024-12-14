@@ -51,11 +51,12 @@ function createMobileSubMenu(subMenuItems) {
  * 
  * @returns {JSX.Element} The navigation JSX structure.
  */
-function Nav() {
+function Nav({ setShowContact }) {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [aboutSubMenu, setAboutSubMenu] = useState(false);
   const [cfpSubMenu, setCFPSubMenu] = useState(false);
   const [editionsSubMenu, setEditionsSubMenu] = useState(false);
+
   const location = useLocation();
 
   useEffect(() => {
@@ -102,6 +103,9 @@ function Nav() {
                 if (navItem.name === 'Call for Papers') handleCFPSubMenu();
                 if (navItem.name === 'Past Editions') handleEditionsSubMenu();
               }}
+              onClick={() => {
+                (navItem.name === 'Contact' && setShowContact(true));
+              }}
             >
               <Link to={navItem.href}>
                 <span className='flex justify-center items-center'>
@@ -134,8 +138,10 @@ function Nav() {
                   // if (navItem.name === 'About') handleAboutSubMenu();
                   if (navItem.name === 'Call for Papers') handleCFPSubMenu();
                   if (navItem.name === 'Past Editions') handleEditionsSubMenu();
+                  navItem.name === 'Contact' && setShowContact(true);
                 }}
               >
+
                 <Link to={navItem.href}>
                   <span className='flex justify-center items-center'>
                     {navItem.name}
@@ -144,7 +150,6 @@ function Nav() {
                     {navItem.name === 'Past Editions' && (editionsSubMenu ? <ChevronUp /> : <ChevronDown />)}
                   </span>
                 </Link>
-
                 {/* {navItem.name === 'About' && aboutSubMenu && createMobileSubMenu(aboutSubmenuItems)} */}
                 {navItem.name === 'Call for Papers' && cfpSubMenu && createMobileSubMenu(cfpSubmenuItems)}
                 {navItem.name === 'Past Editions' && editionsSubMenu && createMobileSubMenu(pastEditionsItems)}

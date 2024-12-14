@@ -1692,6 +1692,10 @@ input[type="range"]::-ms-fill-lower {
   width: max-content;
 }
 
+.w-\[20rem\] {
+  width: 20rem;
+}
+
 .min-w-11 {
   min-width: 2.75rem;
 }
@@ -6359,6 +6363,11 @@ input[type="range"]::-ms-fill-lower {
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .md\:font-bold {
