@@ -104,10 +104,8 @@ export const informationCommittee = [
   { id: 1, name: "Rikmantra Basu", affiliation: "NIT Delhi (Co-Chair)", imagePath: "./orgCommittee/informationCommittee/rikmantra.jpg" },
   { id: 2, name: "Mohd Muneer Arif", affiliation: "Atlassian, Delhi (Co-Chair)", imagePath: "./orgCommittee/informationCommittee/muneer.jpeg" },
   { id: 3, name: "Abha Saxena", affiliation: "Bloomberg LP, New York", imagePath: "./orgCommittee/techProgCommittee/abha.jpeg" },
-  { id: 4, name: "Amandeep Kaur", affiliation: "NIT Delhi", imagePath: "./orgCommittee/informationCommittee/amandeep.webp" },
-  { id: 5, name: "Rituparna Datta", affiliation: "University of South Alabama, USA", imagePath: "./orgCommittee/techProgCommittee/rituparns.jpeg" },
-  { id: 6, name: "Manish Verma", affiliation: "NIT Delhi", imagePath: "./orgCommittee/informationCommittee/manish.jpeg" },
-  { id: 7, name: "Amit Kumar Singh", affiliation: "NIT Delhi", imagePath: "./orgCommittee/informationCommittee/amit.webp" }
+  { id: 4, name: "Rituparna Datta", affiliation: "University of South Alabama, USA", imagePath: "./orgCommittee/techProgCommittee/rituparns.jpeg" },
+  { id: 5, name: "Manish Verma", affiliation: "NIT Delhi", imagePath: "./orgCommittee/informationCommittee/manish.jpeg" },
 ];
 
 export const publicationCommittee = [
