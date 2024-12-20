@@ -140,3 +140,42 @@ export const localOrganizingCommittee = [
   { id: 11, name: "A P Singh", affiliation: "NIT Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/apsingh.jpeg" },
 ];
 
+export const volunteers = [
+  { 
+    id: 0, 
+    name: "Parvej Khan", 
+    affiliation: "Student at NIT Delhi", 
+    imagePath: "./orgCommittee/volunteers/parvej.JPG",
+    link:"https://www.linkedin.com/in/khan-parvej-pk/"
+  },
+  { 
+    id: 1, 
+    name: "Ashish Kumar", 
+    affiliation: "Student at NIT Delhi", 
+    imagePath: "./orgCommittee/volunteers/ashish.JPG",
+    link:"https://www.linkedin.com/in/ashish-kumar123/"
+  },
+  { 
+     id: 2, 
+     name: "Sriharsutan G", 
+     affiliation: "Student at NIT Delhi", 
+     imagePath: "./orgCommittee/volunteers/harsutan.jpeg" ,
+     link:"https://www.linkedin.com/in/sriharsutan-gollapalli-180515246/"
+  },
+  { 
+     id: 3, 
+     name: "Dhruv Tyagi", 
+     affiliation: "Student at NIT Delhi", 
+     imagePath: "./orgCommittee/volunteers/dhruv.jpeg" ,
+     link:"https://www.linkedin.com/in/dhruv-tyagi-58a9aa22a/"
+  },
+  { 
+    id: 4, 
+    name: "Pradneya Prabhudesai", 
+    affiliation: "Student at NIT Delhi", 
+    // imagePath: "./orgCommittee/volunteers/pradneya.jpeg",
+    imagePath: "./orgCommittee/default.png",
+    link:"https://www.linkedin.com/in/pradneya-prabhudesai-422956256/"
+ },
+];
+
