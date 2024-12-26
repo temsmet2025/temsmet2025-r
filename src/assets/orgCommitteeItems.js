@@ -106,6 +106,7 @@ export const informationCommittee = [
   { id: 3, name: "Abha Saxena", affiliation: "Bloomberg LP, New York", imagePath: "./orgCommittee/techProgCommittee/abha.jpeg" },
   { id: 4, name: "Rituparna Datta", affiliation: "University of South Alabama, USA", imagePath: "./orgCommittee/techProgCommittee/rituparns.jpeg" },
   { id: 5, name: "Manish Verma", affiliation: "NIT Delhi", imagePath: "./orgCommittee/informationCommittee/manish.jpeg" },
+  { id: 6, name: "Amandeep Kaur", affiliation: "NIT Delhi", imagePath: "./orgCommittee/informationCommittee/amandeep.webp" },
 ];
 
 export const publicationCommittee = [
@@ -119,7 +120,7 @@ export const publicationCommittee = [
 ];
 
 export const webMasterAndTechnicalCoordinationCommittee = [
-  { id: 0, name: "Karan Verma", affiliation: "NIT Delhi (Chair)", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/karan.webp" },
+  { id: 0, name: "Karan Verma", affiliation: "NIT Delhi (Chair)", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/karan.jpeg" },
   { id: 1, name: "Gautam Kumar", affiliation: "NIT Delhi (Co-Chair)", imagePath: "./orgCommittee/publicationCommittee/goutam.jpg" },
   { id: 2, name: "Niran N.", affiliation: "Volunteer, IEEE TEMS", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/niran.jpeg" }
 ];
@@ -128,7 +129,7 @@ export const localOrganizingCommittee = [
   { id: 0, name: "Prashant Kumar", affiliation: "NIT Delhi (Chair)", imagePath: "./orgCommittee/techProgCommittee/prashant.jpeg" },
   { id: 1, name: "Bijoy Chand Chatterjee", affiliation: "SAU, Delhi (Co-Chair)", imagePath: "./orgCommittee/techProgCommittee/bijoy.jpeg" },
   { id: 12, name: "Preeti Singh", affiliation: "Bhagwan Parshuram Institute of Technology, Delhi (co-chair)", imagePath: "./orgCommittee/localOrg/preeti.jpeg" },
-  { id: 2, name: "Karan Verma", affiliation: "NIT Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/karan.webp" },
+  { id: 2, name: "Karan Verma", affiliation: "NIT Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/karan.jpeg" },
   { id: 3, name: "Gautam Kumar", affiliation: "NIT Delhi", imagePath: "./orgCommittee/publicationCommittee/goutam.jpg" },
   { id: 4, name: "Mahesh K. Singh", affiliation: "NIT Delhi", imagePath: "./orgCommittee/publicationCommittee/mahesh.png" },
   { id: 5, name: "Kapil Kumar", affiliation: "DTU, Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/kapil.jpeg" },
@@ -141,41 +142,55 @@ export const localOrganizingCommittee = [
 ];
 
 export const volunteers = [
-  { 
-    id: 0, 
-    name: "Parvej Khan", 
-    affiliation: "Student at NIT Delhi", 
+  {
+    id: 0,
+    name: "Parvej Khan",
+    affiliation: "Student at NIT Delhi",
     imagePath: "./orgCommittee/volunteers/parvej.JPG",
-    link:"https://www.linkedin.com/in/khan-parvej-pk/"
+    link: "https://www.linkedin.com/in/khan-parvej-pk/"
   },
-  { 
-    id: 1, 
-    name: "Ashish Kumar", 
-    affiliation: "Student at NIT Delhi", 
+  {
+    id: 1,
+    name: "Ashish Kumar",
+    affiliation: "Student at NIT Delhi",
     imagePath: "./orgCommittee/volunteers/ashish.JPG",
-    link:"https://www.linkedin.com/in/ashish-kumar123/"
+    link: "https://www.linkedin.com/in/ashish-kumar123/"
   },
-  { 
-     id: 2, 
-     name: "Sriharsutan G", 
-     affiliation: "Student at NIT Delhi", 
-     imagePath: "./orgCommittee/volunteers/harsutan.jpeg" ,
-     link:"https://www.linkedin.com/in/sriharsutan-gollapalli-180515246/"
+  {
+    id: 2,
+    name: "Sriharsutan G",
+    affiliation: "Student at NIT Delhi",
+    imagePath: "./orgCommittee/volunteers/harsutan.jpeg",
+    link: "https://www.linkedin.com/in/sriharsutan-gollapalli-180515246/"
   },
-  { 
-     id: 3, 
-     name: "Dhruv Tyagi", 
-     affiliation: "Student at NIT Delhi", 
-     imagePath: "./orgCommittee/volunteers/dhruv.jpeg" ,
-     link:"https://www.linkedin.com/in/dhruv-tyagi-58a9aa22a/"
+  {
+    id: 3,
+    name: "Dhruv Tyagi",
+    affiliation: "Student at NIT Delhi",
+    imagePath: "./orgCommittee/volunteers/dhruv.jpeg",
+    link: "https://www.linkedin.com/in/dhruv-tyagi-58a9aa22a/"
   },
-  { 
-    id: 4, 
-    name: "Pradneya Prabhudesai", 
-    affiliation: "Student at NIT Delhi", 
-    imagePath: "./orgCommittee/volunteers/pradneya.jpg",
-    // imagePath: "./orgCommittee/default.png",
-    link:"https://www.linkedin.com/in/pradneya-prabhudesai-422956256/"
- },
+  {
+    id: 4,
+    name: "Pradneya Prabhudesai",
+    affiliation: "Student at NIT Delhi",
+    imagePath: "./orgCommittee/volunteers/pradneya.jpeg",
+    link: "https://www.linkedin.com/in/pradneya-prabhudesai-422956256/"
+  },
+  {
+    id: 5,
+    name: "Ankur kumar Singhal",
+    affiliation: "Research Scholar at NIT Delhi",
+    imagePath: "./orgCommittee/volunteers/ankur.jpeg",
+    link: "https://www.linkedin.com/in/singhal-ank"
+  },
+  {
+    id: 6,
+    name: "Govinda Mandal",
+    affiliation: "Student at NIT Delhi",
+    imagePath: "./orgCommittee/volunteers/govinda.jpeg",
+    link: "https://www.linkedin.com/in/govinda-mandal/"
+  },
+
 ];
 
