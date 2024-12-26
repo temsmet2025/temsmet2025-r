@@ -120,7 +120,7 @@ export const publicationCommittee = [
 ];
 
 export const webMasterAndTechnicalCoordinationCommittee = [
-  { id: 0, name: "Karan Verma", affiliation: "NIT Delhi (Chair)", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/karan.webp" },
+  { id: 0, name: "Karan Verma", affiliation: "NIT Delhi (Chair)", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/karan.jpeg" },
   { id: 1, name: "Gautam Kumar", affiliation: "NIT Delhi (Co-Chair)", imagePath: "./orgCommittee/publicationCommittee/goutam.jpg" },
   { id: 2, name: "Niran N.", affiliation: "Volunteer, IEEE TEMS", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/niran.jpeg" }
 ];
@@ -129,7 +129,7 @@ export const localOrganizingCommittee = [
   { id: 0, name: "Prashant Kumar", affiliation: "NIT Delhi (Chair)", imagePath: "./orgCommittee/techProgCommittee/prashant.jpeg" },
   { id: 1, name: "Bijoy Chand Chatterjee", affiliation: "SAU, Delhi (Co-Chair)", imagePath: "./orgCommittee/techProgCommittee/bijoy.jpeg" },
   { id: 12, name: "Preeti Singh", affiliation: "Bhagwan Parshuram Institute of Technology, Delhi (co-chair)", imagePath: "./orgCommittee/localOrg/preeti.jpeg" },
-  { id: 2, name: "Karan Verma", affiliation: "NIT Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/karan.webp" },
+  { id: 2, name: "Karan Verma", affiliation: "NIT Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/karan.jpeg" },
   { id: 3, name: "Gautam Kumar", affiliation: "NIT Delhi", imagePath: "./orgCommittee/publicationCommittee/goutam.jpg" },
   { id: 4, name: "Mahesh K. Singh", affiliation: "NIT Delhi", imagePath: "./orgCommittee/publicationCommittee/mahesh.png" },
   { id: 5, name: "Kapil Kumar", affiliation: "DTU, Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/kapil.jpeg" },
