@@ -173,8 +173,8 @@ export const volunteers = [
     id: 4, 
     name: "Pradneya Prabhudesai", 
     affiliation: "Student at NIT Delhi", 
-    // imagePath: "./orgCommittee/volunteers/pradneya.jpeg",
-    imagePath: "./orgCommittee/default.png",
+    imagePath: "./orgCommittee/volunteers/pradneya.jpg",
+    // imagePath: "./orgCommittee/default.png",
     link:"https://www.linkedin.com/in/pradneya-prabhudesai-422956256/"
  },
 ];
