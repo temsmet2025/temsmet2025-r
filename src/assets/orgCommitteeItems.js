@@ -141,41 +141,47 @@ export const localOrganizingCommittee = [
 ];
 
 export const volunteers = [
-  { 
-    id: 0, 
-    name: "Parvej Khan", 
-    affiliation: "Student at NIT Delhi", 
+  {
+    id: 0,
+    name: "Parvej Khan",
+    affiliation: "Student at NIT Delhi",
     imagePath: "./orgCommittee/volunteers/parvej.JPG",
-    link:"https://www.linkedin.com/in/khan-parvej-pk/"
+    link: "https://www.linkedin.com/in/khan-parvej-pk/"
   },
-  { 
-    id: 1, 
-    name: "Ashish Kumar", 
-    affiliation: "Student at NIT Delhi", 
+  {
+    id: 1,
+    name: "Ashish Kumar",
+    affiliation: "Student at NIT Delhi",
     imagePath: "./orgCommittee/volunteers/ashish.JPG",
-    link:"https://www.linkedin.com/in/ashish-kumar123/"
+    link: "https://www.linkedin.com/in/ashish-kumar123/"
   },
-  { 
-     id: 2, 
-     name: "Sriharsutan G", 
-     affiliation: "Student at NIT Delhi", 
-     imagePath: "./orgCommittee/volunteers/harsutan.jpeg" ,
-     link:"https://www.linkedin.com/in/sriharsutan-gollapalli-180515246/"
+  {
+    id: 2,
+    name: "Sriharsutan G",
+    affiliation: "Student at NIT Delhi",
+    imagePath: "./orgCommittee/volunteers/harsutan.jpeg",
+    link: "https://www.linkedin.com/in/sriharsutan-gollapalli-180515246/"
   },
-  { 
-     id: 3, 
-     name: "Dhruv Tyagi", 
-     affiliation: "Student at NIT Delhi", 
-     imagePath: "./orgCommittee/volunteers/dhruv.jpeg" ,
-     link:"https://www.linkedin.com/in/dhruv-tyagi-58a9aa22a/"
+  {
+    id: 3,
+    name: "Dhruv Tyagi",
+    affiliation: "Student at NIT Delhi",
+    imagePath: "./orgCommittee/volunteers/dhruv.jpeg",
+    link: "https://www.linkedin.com/in/dhruv-tyagi-58a9aa22a/"
   },
-  { 
-    id: 4, 
-    name: "Pradneya Prabhudesai", 
-    affiliation: "Student at NIT Delhi", 
-    // imagePath: "./orgCommittee/volunteers/pradneya.jpeg",
-    imagePath: "./orgCommittee/default.png",
-    link:"https://www.linkedin.com/in/pradneya-prabhudesai-422956256/"
- },
+  {
+    id: 4,
+    name: "Pradneya Prabhudesai",
+    affiliation: "Student at NIT Delhi",
+    imagePath: "./orgCommittee/volunteers/pradneya.jpeg",
+    link: "https://www.linkedin.com/in/pradneya-prabhudesai-422956256/"
+  },
+  {
+    id: 5,
+    name: "Ankur kumar Singhal",
+    affiliation: "Research Scholar at NIT Delhi",
+    imagePath: "./orgCommittee/volunteers/ankur.jpeg",
+    link: "https://www.linkedin.com/in/singhal-ank"
+  },
 ];
 
