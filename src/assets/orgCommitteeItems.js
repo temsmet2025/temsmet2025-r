@@ -184,5 +184,13 @@ export const volunteers = [
     imagePath: "./orgCommittee/volunteers/ankur.jpeg",
     link: "https://www.linkedin.com/in/singhal-ank"
   },
+  {
+    id: 6,
+    name: "Govinda Mandal",
+    affiliation: "Student at NIT Delhi",
+    imagePath: "./orgCommittee/volunteers/govinda.jpeg",
+    link: "https://www.linkedin.com/in/govinda-mandal/"
+  },
+
 ];
 
