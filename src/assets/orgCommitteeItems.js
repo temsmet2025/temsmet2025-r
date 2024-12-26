@@ -106,6 +106,7 @@ export const informationCommittee = [
   { id: 3, name: "Abha Saxena", affiliation: "Bloomberg LP, New York", imagePath: "./orgCommittee/techProgCommittee/abha.jpeg" },
   { id: 4, name: "Rituparna Datta", affiliation: "University of South Alabama, USA", imagePath: "./orgCommittee/techProgCommittee/rituparns.jpeg" },
   { id: 5, name: "Manish Verma", affiliation: "NIT Delhi", imagePath: "./orgCommittee/informationCommittee/manish.jpeg" },
+  { id: 6, name: "Amandeep Kaur", affiliation: "NIT Delhi", imagePath: "./orgCommittee/informationCommittee/amandeep.webp" },
 ];
 
 export const publicationCommittee = [
