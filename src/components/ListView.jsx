@@ -3,7 +3,7 @@ function ListView(props) {
   const dataItem = props.data;
   return (
     <div
-      id={`props.title`}
+      id={`${props.title}`}
       className="mt-8 mb-8"
     >
       <div className="">

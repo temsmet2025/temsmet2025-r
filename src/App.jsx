@@ -13,6 +13,7 @@ import TableView from './components/TableView.jsx';
 import PreNav from './components/PreNav.jsx';
 import KeynoteSpeakers from './components/KeynoteSpeakers.jsx';
 import Contact from './components/Contact';
+import ScrollToTop from './components/ScrollToTop.jsx';
 import { useState } from 'react';
 
 /**
@@ -32,6 +33,7 @@ function App() {
       path: '/',
       element: (
         <>
+          {/* <ScrollToTop elementId="home" /> */}
           <PreNav />
           <Nav setShowContact={setShowContact} />
           <Carousel />
@@ -45,6 +47,7 @@ function App() {
       path: '/call-for-papers',
       element: (
         <>
+          <ScrollToTop elementId="Call For Papers" />
           <PreNav />
           <Nav setShowContact={setShowContact} />
           <Carousel />
@@ -62,6 +65,7 @@ function App() {
       path: '/org-committee',
       element: (
         <>
+          <ScrollToTop elementId="org-committe" />
           <PreNav />
           <Nav setShowContact={setShowContact} />
           <Carousel />
@@ -75,6 +79,7 @@ function App() {
       path: '/keynote-speakers',
       element: (
         <>
+          <ScrollToTop elementId="keynote-speakers" />
           <PreNav />
           <Nav setShowContact={setShowContact} />
           <Carousel />
@@ -88,6 +93,7 @@ function App() {
       path: '/venue',
       element: (
         <>
+          <ScrollToTop elementId="venue-and-dates" />
           <PreNav />
           <Nav setShowContact={setShowContact} />
           <Carousel />
@@ -101,6 +107,7 @@ function App() {
       path: '/submission-guidelines',
       element: (
         <>
+          <ScrollToTop elementId="submission-guidelines" />
           <PreNav />
           <Nav setShowContact={setShowContact} />
           <Carousel />
@@ -114,6 +121,7 @@ function App() {
       path: '/registration',
       element: (
         <>
+          <ScrollToTop elementId="Registration" />
           <PreNav />
           <Nav setShowContact={setShowContact} />
           <Carousel />

@@ -94,8 +94,8 @@ export const technicalProgrammeCommittee = [
   { id: 60, name: "Ranveer", affiliation: "IIT Indore", imagePath: "./orgCommittee/techProgCommittee/ranveer.jpeg", link: "" },
   { id: 61, name: "Rituparna Datta", affiliation: "University of South Alabama, USA", imagePath: "./orgCommittee/techProgCommittee/rituparns.jpeg", link: "" },
   { id: 62, name: "Pallavi Athe", affiliation: "IISER Bhopal", imagePath: "./orgCommittee/techProgCommittee/pallavi.jpeg", link: "" },
-  { id: 62, name: "Kaushik Das", affiliation: "Senior Scientist, TCS Research Lab", imagePath: "./orgCommittee/techProgCommittee/kaushik.jpeg", link: "" },
-  { id: 62, name: "Samrat Dutta", affiliation: "Scientist, TCS Research Lab", imagePath: "./orgCommittee/techProgCommittee/samrat.jpeg", link: "" }
+  { id: 63, name: "Kaushik Das", affiliation: "Senior Scientist, TCS Research Lab", imagePath: "./orgCommittee/techProgCommittee/kaushik.jpeg", link: "" },
+  { id: 64, name: "Samrat Dutta", affiliation: "Scientist, TCS Research Lab", imagePath: "./orgCommittee/techProgCommittee/samrat.jpeg", link: "" }
 ];
 
 
@@ -196,7 +196,7 @@ export const volunteers = [
     name: "Shivank",
     affiliation: "Research Scholar at NIT Delhi",
     imagePath: "./orgCommittee/volunteers/shivank.jpeg",
-    link:"",
+    link: "",
   },
 
 ];
