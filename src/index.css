@@ -1670,8 +1670,8 @@ input[type="range"]::-ms-fill-lower {
   width: 2.25rem;
 }
 
-.w-\[25rem\] {
-  width: 25rem;
+.w-\[20rem\] {
+  width: 20rem;
 }
 
 .w-auto {
@@ -1690,10 +1690,6 @@ input[type="range"]::-ms-fill-lower {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-\[20rem\] {
-  width: 20rem;
 }
 
 .min-w-11 {
@@ -3207,10 +3203,6 @@ input[type="range"]::-ms-fill-lower {
 
 .text-start {
   text-align: start;
-}
-
-.align-middle {
-  vertical-align: middle;
 }
 
 .font-mono {

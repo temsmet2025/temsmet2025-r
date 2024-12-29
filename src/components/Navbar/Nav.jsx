@@ -78,6 +78,15 @@ function Nav({ setShowContact }) {
   const handleEditionsSubMenu = () => {
     setEditionsSubMenu(!editionsSubMenu);
   };
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+  
+
+  
 
   return (
     <nav className='sticky top-0 z-40 w-full'>
@@ -104,8 +113,21 @@ function Nav({ setShowContact }) {
                 if (navItem.name === 'Past Editions') handleEditionsSubMenu();
               }}
               onClick={() => {
+                if(navItem.id){
+                  scrollToSection(navItem.id);
+                }
                 (navItem.name === 'Contact' && setShowContact(true));
               }}
+
+              // onClick={() => {
+              //   if (navItem.id) scrollToSection(navItem.id);
+              //   if (navItem.name === 'Call for Papers') setCFPSubMenu((prev) => !prev);
+              //   if (navItem.name === 'Past Editions') setEditionsSubMenu((prev) => !prev);
+              //   if (navItem.name === 'Contact') setShowContact(true);
+              // }}
+              
+
+              
             >
               <Link to={navItem.href}>
                 <span className='flex justify-center items-center'>
@@ -138,7 +160,9 @@ function Nav({ setShowContact }) {
                   // if (navItem.name === 'About') handleAboutSubMenu();
                   if (navItem.name === 'Call for Papers') handleCFPSubMenu();
                   if (navItem.name === 'Past Editions') handleEditionsSubMenu();
+                  scrollToSection(navItem.id); // Smooth scroll for mobile
                   navItem.name === 'Contact' && setShowContact(true);
+                  //scrollToSection(navItem.id);
                 }}
               >
 
