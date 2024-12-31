@@ -18,7 +18,7 @@ export const navigation = [
     id: "sg-link",
   },
   { name: "Registration", href: "/registration", current: "_self", id: "reg-link" },
-  { name: "Keynote Speakers", href: "/keynote-speakers", current: "_self", id: "ks-link" },
+  { name: "Speakers", href: "/keynote-speakers", current: "_self", id: "ks-link" },
   { name: "Venue", href: "/venue", current: "_self", id: "venue-link" },
   { name: "Committee", href: "/org-committee", current: "_self", id: "committee-link" },
   { name: "Past Editions", href: "/", current: "_self", id: "pe-link" },  
