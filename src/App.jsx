@@ -52,11 +52,14 @@ function App() {
           <Nav setShowContact={setShowContact} />
           <Carousel />
           <Contact setShowContact={setShowContact} showContact={showContact} />
-          <ListView
-            title="Call For Papers"
-            data={conferenceTracks}
-            classes="flex flex-col flex-wrap w-full justify-around md:flex-row md:pl-10"
-          />
+          <div id='cfp-link'> 
+            <ListView
+              title="Call For Papers"
+              data={conferenceTracks}
+              classes="flex flex-col flex-wrap w-full justify-around md:flex-row md:pl-10"
+            />
+          </div>
+          
           <Footer />
         </>
       ),
@@ -70,7 +73,10 @@ function App() {
           <Nav setShowContact={setShowContact} />
           <Carousel />
           <Contact setShowContact={setShowContact} showContact={showContact} />
-          <OrgCommittee />
+          <div id='committee-link'>
+            <OrgCommittee />
+          </div>
+          
           <Footer />
         </>
       ),
@@ -84,7 +90,10 @@ function App() {
           <Nav setShowContact={setShowContact} />
           <Carousel />
           <Contact setShowContact={setShowContact} showContact={showContact} />
-          <KeynoteSpeakers />
+          <div id='ks-link'>
+            <KeynoteSpeakers />
+          </div>
+          
           <Footer />
         </>
       ),
@@ -97,7 +106,10 @@ function App() {
           <PreNav />
           <Nav setShowContact={setShowContact} />
           <Carousel />
-          <Venue />
+          <div id='venue-link'>
+            <Venue />
+          </div>
+          
           <Contact setShowContact={setShowContact} showContact={showContact} />
           <Footer />
         </>
@@ -110,9 +122,12 @@ function App() {
           <ScrollToTop elementId="submission-guidelines" />
           <PreNav />
           <Nav setShowContact={setShowContact} />
+          {/* <Nav onNavClick={handleScrollToSection} /> */}
           <Carousel />
+          <div id='sg-list'>
+            <SubmissionGuidelines />
+          </div>
           <Contact setShowContact={setShowContact} showContact={showContact} />
-          <SubmissionGuidelines />
           <Footer />
         </>
       ),
@@ -125,19 +140,22 @@ function App() {
           <PreNav />
           <Nav setShowContact={setShowContact} />
           <Carousel />
-          <Contact setShowContact={setShowContact} showContact={showContact} />
-          <TableView
-            tableName="Registration"
-            tableHead={['Author Category', 'Early Bird (Indian)', 'Early Bird (Foreign)', 'Regular (Indian)', 'Regular (Foreign)']}
-            dataItem={registrationFees}
-            classes="sm:w-5/6"
-          />
-          <TableView
-            tableName=""
-            tableHead={['Delegates / Participants', 'Fees']}
-            dataItem={deligates}
-            classes="sm:w-5/6"
-          />
+          {/* <Contact setShowContact={setShowContact} showContact={showContact} /> */}
+          <div id='reg-link'> 
+            <TableView
+              tableName="Registration"
+              tableHead={['Author Category', 'Early Bird (Indian)', 'Early Bird (Foreign)', 'Regular (Indian)', 'Regular (Foreign)']}
+              dataItem={registrationFees}
+              classes="sm:w-5/6"
+            />
+            <TableView
+              tableName=""
+              tableHead={['Delegates / Participants', 'Fees']}
+              dataItem={deligates}
+              classes="sm:w-5/6"
+            />
+          </div>
+          
           <Footer />
         </>
       ),
