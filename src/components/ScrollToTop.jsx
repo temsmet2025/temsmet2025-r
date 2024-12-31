@@ -5,7 +5,6 @@ const ScrollToTop = (props) => {
     useEffect(() => {
         const timeOUt = setTimeout(() => {
             const element = document.getElementById(props.elementId);
-            console.log(element)
             if (element) {
                 const rect = element?.getBoundingClientRect();
                 const scrollOffset = window.scrollY + rect.y - 75;

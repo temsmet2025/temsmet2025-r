@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 tailwind.py
 token
+liveBuild-v0.3
+

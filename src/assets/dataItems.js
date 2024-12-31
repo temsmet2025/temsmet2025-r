@@ -187,7 +187,7 @@ export const submissionGuidelines = [
 
 export const aboutConference = [
   {
-    description: "Fourth IEEE TEMSMET 2025 is a global series and an annual flagship conference of IEEE Technology and Engineering Management Society (TEMS)."
+    description: "4th IEEE TEMSMET 2025 is a global series and an annual flagship conference of IEEE Technology and Engineering Management Society (TEMS)."
   },
 
   {
@@ -195,7 +195,7 @@ export const aboutConference = [
   },
 
   {
-    description: "Fourth IEEE TEMSMET 2025 will be a unique platform offering deliberations on multiple dimensions of Innovation, Technology, Management and Humanity. The conference invites original research and innovative solutions or papers on interdisciplinary approaches, methods and frameworks, theories and standards used as innovation to help technology management."
+    description: "4th IEEE TEMSMET 2025 will be a unique platform offering deliberations on multiple dimensions of Innovation, Technology, Management and Humanity. The conference invites original research and innovative solutions or papers on interdisciplinary approaches, methods and frameworks, theories and standards used as innovation to help technology management."
   },
 
   {

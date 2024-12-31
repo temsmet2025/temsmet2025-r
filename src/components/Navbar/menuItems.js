@@ -54,11 +54,11 @@ export const aboutSubmenuItems = [
  */
 export const cfpSubmenuItems = [
   { name: "Conference Tracks", href: "/call-for-papers", current: "_self" },
-  {
-    name: "Paper Preparation & Submission Guidelines for Authors",
-    href: "/",
-    current: "_self",
-  },
+  // {
+  //   name: "Paper Preparation & Submission Guidelines for Authors",
+  //   href: "/",
+  //   current: "_self",
+  // },
   { name: "Important Dates", href: "/", current: "_self" },
 ];
 

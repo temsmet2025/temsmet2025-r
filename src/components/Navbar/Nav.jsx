@@ -2,19 +2,45 @@ import React, { useEffect, useState } from 'react';
 import { Menu, X, ChevronUp, ChevronDown } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { navigation, aboutSubmenuItems, cfpSubmenuItems, pastEditionsItems } from './menuItems';
+import ScrollToTop from '.././ScrollToTop'
 
 /**
  * Creates the dropdown submenu for the provided list of submenu items.
  * 
  * @param {Array<Object>} subMenuItems - List of submenu items.
  * @returns {JSX.Element} The submenu JSX structure.
- */
+*/
+
+const scrollToSection = (id) => {
+  const timer = setTimeout(() => {
+    const element = document.getElementById(id);
+    if (element) {
+      const rect = element?.getBoundingClientRect();
+      const scrollOffset = window.scrollY + rect.y;
+      window.scroll({
+        top: scrollOffset,
+        behavior: "smooth",
+      });
+    }
+  }, 0)
+  return () => {
+    clearTimeout(timer);
+  }
+
+}
+
 function createSubMenu(subMenuItems) {
   const subMenu = (
     <div className="z-50 absolute bg-slate-900/80 rounded-md">
       <ul>
         {subMenuItems.map((item, index) => (
-          <li key={index} className='p-3 text-white hover:bg-slate-950/90'>
+          <li
+            key={index} className='p-3 text-white hover:bg-slate-950/90'
+            onClick={() => {
+              item.name === "Important Dates" && scrollToSection(item.name);
+              console.log("scroll");
+            }}
+          >
             <Link to={item.href} target={item.current}>{item.name}</Link>
           </li>
         ))}
@@ -78,15 +104,9 @@ function Nav({ setShowContact }) {
   const handleEditionsSubMenu = () => {
     setEditionsSubMenu(!editionsSubMenu);
   };
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
-  
 
-  
+
+
 
   return (
     <nav className='sticky top-0 z-40 w-full'>
@@ -103,31 +123,16 @@ function Nav({ setShowContact }) {
               className="text-white hover:text-slate-200 cursor-pointer ml-1"
               id={navItem.id}
               onMouseEnter={() => {
-                // if (navItem.name === 'About') handleAboutSubMenu();
                 if (navItem.name === 'Call for Papers') handleCFPSubMenu();
                 if (navItem.name === 'Past Editions') handleEditionsSubMenu();
               }}
               onMouseLeave={() => {
-                // if (navItem.name === 'About') handleAboutSubMenu();
                 if (navItem.name === 'Call for Papers') handleCFPSubMenu();
                 if (navItem.name === 'Past Editions') handleEditionsSubMenu();
               }}
               onClick={() => {
-                if(navItem.id){
-                  scrollToSection(navItem.id);
-                }
                 (navItem.name === 'Contact' && setShowContact(true));
               }}
-
-              // onClick={() => {
-              //   if (navItem.id) scrollToSection(navItem.id);
-              //   if (navItem.name === 'Call for Papers') setCFPSubMenu((prev) => !prev);
-              //   if (navItem.name === 'Past Editions') setEditionsSubMenu((prev) => !prev);
-              //   if (navItem.name === 'Contact') setShowContact(true);
-              // }}
-              
-
-              
             >
               <Link to={navItem.href}>
                 <span className='flex justify-center items-center'>
@@ -160,7 +165,7 @@ function Nav({ setShowContact }) {
                   // if (navItem.name === 'About') handleAboutSubMenu();
                   if (navItem.name === 'Call for Papers') handleCFPSubMenu();
                   if (navItem.name === 'Past Editions') handleEditionsSubMenu();
-                  scrollToSection(navItem.id); // Smooth scroll for mobile
+                  // scrollToSection(navItem.id); // Smooth scroll for mobile
                   navItem.name === 'Contact' && setShowContact(true);
                   //scrollToSection(navItem.id);
                 }}
