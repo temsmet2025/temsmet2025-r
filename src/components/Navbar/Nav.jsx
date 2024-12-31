@@ -61,7 +61,13 @@ function createMobileSubMenu(subMenuItems) {
     <div className="origin-center bg-slate-900/80 rounded-md flex flex-col justify-center items-center">
       <ul>
         {subMenuItems.map((item, index) => (
-          <li key={index} className='p-3 text-white hover:bg-slate-950/90'>
+          <li
+            key={index} className='p-3 text-white hover:bg-slate-950/90'
+            onClick={() => {
+              item.name === "Important Dates" && scrollToSection(item.name);
+              console.log("scroll");
+            }}
+          >
             <Link to={item.href} target={item.current}>{item.name}</Link>
           </li>
         ))}
