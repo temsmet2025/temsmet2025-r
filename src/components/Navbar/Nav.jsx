@@ -107,11 +107,19 @@ function Nav({ setShowContact }) {
             <li
               key={index}
               className="text-white hover:text-slate-200 cursor-pointer submenu"
-              onClick={() => {
+              onMouseEnter={() => {
                 if (navItem.name === "Call for Papers") toggleSubMenu("cfp");
                 if (navItem.name === "Past Editions")
                   toggleSubMenu("pastEditions");
                 if (navItem.name === "Travel") toggleSubMenu("travel");
+              }}
+              onMouseLeave={() => {
+                if (navItem.name === "Call for Papers") toggleSubMenu("cfp");
+                if (navItem.name === "Past Editions")
+                  toggleSubMenu("pastEditions");
+                if (navItem.name === "Travel") toggleSubMenu("travel");
+              }}
+              onClick={() => {
                 if (navItem.name === "Contact") setShowContact(true);
               }}
             >
