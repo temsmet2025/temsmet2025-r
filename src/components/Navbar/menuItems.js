@@ -10,20 +10,39 @@
  */
 export const navigation = [
   { name: "Home", href: "/", current: "_self", id: "home-link" },
-  { name: "Call for Papers", href: "#call-for-papers", current: "_self", id: "cfp-link" },
+  {
+    name: "Call for Papers",
+    current: "_self",
+    id: "cfp-link",
+  },
   {
     name: "Submission Guidelines",
     href: "/submission-guidelines#submission-guidelines",
     current: "_self",
     id: "sg-link",
   },
-  { name: "Registration", href: "/registration", current: "_self", id: "reg-link" },
-  { name: "Keynote Speakers", href: "/keynote-speakers", current: "_self", id: "ks-link" },
+  {
+    name: "Registration",
+    href: "/registration",
+    current: "_self",
+    id: "reg-link",
+  },
+  {
+    name: "Speakers",
+    href: "/keynote-speakers",
+    current: "_self",
+    id: "ks-link",
+  },
   { name: "Venue", href: "/venue", current: "_self", id: "venue-link" },
-  { name: "Committee", href: "/org-committee", current: "_self", id: "committee-link" },
-  { name: "Past Editions", href: "/", current: "_self", id: "pe-link" },  
+  {
+    name: "Committee",
+    href: "/org-committee",
+    current: "_self",
+    id: "committee-link",
+  },
+  { name: "Past Editions", current: "_self", id: "pe-link" },
   { name: "Contact", href: "/", current: "_self", id: "contact-link" },
-  { name: "Travel", href: "/", current: "_self", id: "travel-link"},
+  { name: "Travel", current: "_self", id: "travel-link" },
 ];
 
 /**
@@ -102,8 +121,12 @@ export const pastEditionsItems = [
  * @property {boolean} current - A boolean indicating if the submenu item is currently active.
  */
 export const travelItems = [
-  { name: "Travel", href: "/travel", current: "_self" },
-  { name: "Travel to Delhi", href: "/travel-to-delhi", current: "_self" },
-  { name: "Tourist Destinations", href: "/tourist-destinations", current: "_self" },
-  { name: "Accommodation and Facilities", href: "/accommodation-and-facilities", current: "_self" },
+  { name: "Travel", href: "/", current: "_self" },
+  { name: "Travel to Delhi", href: "/", current: "_self" },
+  {
+    name: "Tourist Destinations",
+    href: "/tourist-destinations",
+    current: "_self",
+  },
+  { name: "Accommodation and Facilities", href: "/", current: "_self" },
 ];
