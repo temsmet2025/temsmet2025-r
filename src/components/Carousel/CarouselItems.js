@@ -17,7 +17,7 @@ export const images = [
   // { id: 7, name: './redFort.jpeg' },
   // { id: 8, name: './redFortDay.webp' },
   // { id: 9, name: './siteCollage.jpg' },
-  { id: 0, name: './cropped-admin5.jpeg' },
+  { id: 0, name: './new_images/cropped-admin5.jpeg' },
   { id: 1, name: './new_images/red-fort.jpeg' },
   { id: 2, name: './new_images/akshardham-temple-2.jpeg' },
   { id: 3, name: './new_images/lotus-temple.jpeg' },
