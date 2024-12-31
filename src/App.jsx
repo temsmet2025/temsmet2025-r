@@ -3,17 +3,17 @@ import Carousel from './components/Carousel/Carousel';
 import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Home from './components/Home';
 import ListView from './components/ListView';
-import { conferenceTracks } from './assets/dataItems.js';
+import { conferenceTracks, registrationFees, deligates, registrationNotes } from './assets/dataItems.js';
 import Footer from './components/Footer.jsx';
 import OrgCommittee from './components/OrgCommitte.jsx';
 import Venue from './components/Venue.jsx';
 import SubmissionGuidelines from './components/SubmissionGuidelines.jsx';
-import { registrationFees, deligates } from './assets/dataItems.js';
 import TableView from './components/TableView.jsx';
 import PreNav from './components/PreNav.jsx';
 import KeynoteSpeakers from './components/KeynoteSpeakers.jsx';
 import Contact from './components/Contact';
 import ScrollToTop from './components/ScrollToTop.jsx';
+import SectionList from './components/SectionLIst.jsx';
 import { useState } from 'react';
 
 /**
@@ -52,14 +52,14 @@ function App() {
           <Nav setShowContact={setShowContact} />
           <Carousel />
           <Contact setShowContact={setShowContact} showContact={showContact} />
-          <div id='cfp-link'> 
+          <div id='cfp-link'>
             <ListView
               title="Call For Papers"
               data={conferenceTracks}
               classes="flex flex-col flex-wrap w-full justify-around md:flex-row md:pl-10"
             />
           </div>
-          
+
           <Footer />
         </>
       ),
@@ -76,7 +76,7 @@ function App() {
           <div id='committee-link'>
             <OrgCommittee />
           </div>
-          
+
           <Footer />
         </>
       ),
@@ -93,7 +93,7 @@ function App() {
           <div id='ks-link'>
             <KeynoteSpeakers />
           </div>
-          
+
           <Footer />
         </>
       ),
@@ -109,7 +109,7 @@ function App() {
           <div id='venue-link'>
             <Venue />
           </div>
-          
+
           <Contact setShowContact={setShowContact} showContact={showContact} />
           <Footer />
         </>
@@ -141,7 +141,7 @@ function App() {
           <Nav setShowContact={setShowContact} />
           <Carousel />
           {/* <Contact setShowContact={setShowContact} showContact={showContact} /> */}
-          <div id='reg-link'> 
+          <div id='reg-link'>
             <TableView
               tableName="Registration"
               tableHead={['Author Category', 'Early Bird (Indian)', 'Early Bird (Foreign)', 'Regular (Indian)', 'Regular (Foreign)']}
@@ -155,7 +155,9 @@ function App() {
               classes="sm:w-5/6"
             />
           </div>
-          
+          <div id="notes">
+            <SectionList dataItem={registrationNotes} title="Notes" />
+          </div>
           <Footer />
         </>
       ),

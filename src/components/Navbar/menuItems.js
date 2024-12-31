@@ -10,7 +10,7 @@
  */
 export const navigation = [
   { name: "Home", href: "/", current: "_self", id: "home-link" },
-  { name: "Call for Papers", href: "#call-for-papers", current: "_self", id: "cfp-link" },
+  { name: "Call for Papers", href: "", current: "_self", id: "cfp-link" },
   {
     name: "Submission Guidelines",
     href: "/submission-guidelines#submission-guidelines",

@@ -27,7 +27,9 @@ export const programChairs = [
   { id: 1, name: "Kashem Muttaqi", affiliation: "University of Wollongong, Australia", imagePath: "./orgCommittee/programChairs/kashem.png", link: "https://scholars.uow.edu.au/kashem-muttaqi" },
   { id: 2, name: "Hocine Cherifi", affiliation: "University of Burgundy, France", imagePath: "./orgCommittee/programChairs/hocine.jpeg", link: "https://futureearth.org/contacts/hocine-cherifi/" },
   { id: 3, name: "Priyesh Chauhan", affiliation: "IIITRAM, Ahmedabad", imagePath: "./orgCommittee/programChairs/Priyesh.jpeg", link: "https://www.linkedin.com/in/pjchauhan/" },
-  { id: 4, name: "Jawar Singh", affiliation: "IIT Patna", imagePath: "./orgCommittee/programChairs/jawar.jpg", link: "https://www.linkedin.com/in/jawar-singh-25495a17/" }
+  { id: 4, name: "Jawar Singh", affiliation: "IIT Patna", imagePath: "./orgCommittee/programChairs/jawar.jpg", link: "https://www.linkedin.com/in/jawar-singh-25495a17/" },
+  { id: 5, name: "Anima Majumder", affiliation: "TCS Innovation labs, Bangalore", imagePath: "./orgCommittee/techProgCommittee/anima.jpeg", link: "https://in.linkedin.com/in/anima-majumder-1082a01a" },
+  { id: 6, name: "Chantal Cherifi", affiliation: "University of Lyon, France", imagePath: "./orgCommittee/techProgCommittee/chantalcherifi.jpeg", link: "https://scholar.google.fr/citations?user=4KP81WAAAAAJ&hl=fr" },
 ];
 
 export const technicalProgrammeCommittee = [
@@ -61,7 +63,6 @@ export const technicalProgrammeCommittee = [
   { id: 27, name: "Radhe Shyam Sharma", affiliation: "IIT Mandi", imagePath: "./orgCommittee/techProgCommittee/radhe.jpeg", link: "http://faculty.iitmandi.ac.in/~radheshyam/" },
   { id: 28, name: "Raju Ranjan", affiliation: "3Frames Software Labs Private Limited", imagePath: "./orgCommittee/techProgCommittee/raju.jpeg", link: "https://in.linkedin.com/in/rajuran" },
   { id: 29, name: "Rupesh Kumar", affiliation: "Yamaha Motors Solution India Pvt. Ltd.", imagePath: "./orgCommittee/techProgCommittee/rupesh.jpeg", link: "https://in.linkedin.com/in/rupesh-kumar-b07ba22b" },
-  { id: 30, name: "Anima Majumder", affiliation: "TCS Innovation labs, Bangalore", imagePath: "./orgCommittee/techProgCommittee/anima.jpeg", link: "https://in.linkedin.com/in/anima-majumder-1082a01a" },
   { id: 31, name: "Rekha Raja", affiliation: "IIT Hyderabad", imagePath: "./orgCommittee/techProgCommittee/Rekha-Raja.jpeg", link: "https://iith.ac.in/ai/rekha.raja/" },
   { id: 32, name: "Shailendra Jain", affiliation: "MANIT Bhopal", imagePath: "./orgCommittee/techProgCommittee/shailendraJain.jpeg", link: "https://www.manit.ac.in/content/dr-shailendra-jain" },
   { id: 33, name: "Srinavasa Rao Satti", affiliation: "NTNU, Norway", imagePath: "./orgCommittee/techProgCommittee/srinivas.jpeg", link: "https://www.ntnu.edu/employees/srinivasa.r.satti" },
@@ -78,7 +79,6 @@ export const technicalProgrammeCommittee = [
   { id: 44, name: "Mazalov Vladimir", affiliation: "Institute of Applied Mathematical Research, KarRC RAS, Russia", imagePath: "./orgCommittee/techProgCommittee/mazalov.jpeg", link: "" },
   { id: 45, name: "Bapi Chaterji", affiliation: "IIIT Delhi", imagePath: "./orgCommittee/techProgCommittee/bapi.jpeg", link: "" },
   { id: 46, name: "Ashish Tiwari", affiliation: "VNIT Nagpur", imagePath: "./orgCommittee/techProgCommittee/ashishTiwari.jpeg", link: "" },
-  { id: 47, name: "Chantal Cherifi", affiliation: "University of Lyon, France", imagePath: "./orgCommittee/techProgCommittee/chantalcherifi.jpeg", link: "" },
   { id: 48, name: "Vinod Kumar Jain", affiliation: "IIITDM Jabalpur", imagePath: "./orgCommittee/techProgCommittee/vinod.jpeg", link: "" },
   { id: 49, name: "Akrati Saxena", affiliation: "Leiden University, Netherlands", imagePath: "./orgCommittee/techProgCommittee/akriti.jpeg", link: "" },
   { id: 50, name: "Prashant Kumar", affiliation: "NIT Delhi", imagePath: "./orgCommittee/techProgCommittee/prashant.jpeg", link: "" },

@@ -25,7 +25,7 @@ function SectionList(props) {
                 </div>
                 <div className="sm:visible mt-2 h-0.5 bg-gray-950 w-5/6"></div>
             </div>
-            <ul className="text-justify mt-5 p-8 pt-0 sm:p-0">
+            <ul className="text-justify mt-5 p-8 pt-0 sm:p-0 w-5/6">
                 {dataItem.map((item, index) => (
                     <li key={index} className={`ml-7 mr-7 list-disc ${props.classes}`}>
                         {item.track != undefined && <span className="font-bold text-base sm:text-xl">{item.track} : </span>}
