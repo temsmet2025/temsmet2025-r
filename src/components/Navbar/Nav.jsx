@@ -1,193 +1,205 @@
-import React, { useEffect, useState } from 'react';
-import { Menu, X, ChevronUp, ChevronDown } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
-import { navigation, aboutSubmenuItems, cfpSubmenuItems, pastEditionsItems } from './menuItems';
-import ScrollToTop from '.././ScrollToTop'
+import React, { useEffect, useState } from "react";
+import { Menu, X, ChevronUp, ChevronDown } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
+import {
+  navigation,
+  cfpSubmenuItems,
+  pastEditionsItems,
+  travelItems,
+} from "./menuItems";
 
 /**
- * Creates the dropdown submenu for the provided list of submenu items.
- * 
- * @param {Array<Object>} subMenuItems - List of submenu items.
- * @returns {JSX.Element} The submenu JSX structure.
-*/
-
-const scrollToSection = (id) => {
-  const timer = setTimeout(() => {
-    const element = document.getElementById(id);
-    if (element) {
-      const rect = element?.getBoundingClientRect();
-      const scrollOffset = window.scrollY + rect.y;
-      window.scroll({
-        top: scrollOffset,
-        behavior: "smooth",
-      });
-    }
-  }, 0)
-  return () => {
-    clearTimeout(timer);
-  }
-
-}
-
-function createSubMenu(subMenuItems) {
-  const subMenu = (
-    <div className="z-50 absolute bg-slate-900/80 rounded-md">
-      <ul>
-        {subMenuItems.map((item, index) => (
-          <li
-            key={index} className='p-3 text-white hover:bg-slate-950/90'
-            onClick={() => {
-              item.name === "Important Dates" && scrollToSection(item.name);
-              console.log("scroll");
-            }}
-          >
-            <Link to={item.href} target={item.current}>{item.name}</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-  return subMenu;
-}
-
-/**
- * Creates the mobile dropdown submenu for the provided list of submenu items.
- * 
- * @param {Array<Object>} subMenuItems - List of submenu items.
- * @returns {JSX.Element} The mobile submenu JSX structure.
+ * Smoothly scrolls to a section on the page identified by the provided ID.
+ * @param {string} id - The ID of the target section.
  */
-function createMobileSubMenu(subMenuItems) {
-  const mobileSubMenu = (
-    <div className="origin-center bg-slate-900/80 rounded-md flex flex-col justify-center items-center">
-      <ul>
-        {subMenuItems.map((item, index) => (
+const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    const rect = element.getBoundingClientRect();
+    window.scroll({
+      top: window.scrollY + rect.top,
+      behavior: "smooth",
+    });
+  }
+};
+
+/**
+ * SubMenu component for rendering submenu items.
+ * @param {Object} props - Component props.
+ * @param {Array<Object>} props.items - List of submenu items.
+ * @param {Function} [props.onClose] - Callback function to handle submenu closure.
+ * @returns {JSX.Element} The submenu JSX structure.
+ */
+const SubMenu = ({ items, onClose }) => (
+  <div className="relative bg-slate-950 text-white rounded-md">
+    <div className="absolute right-0 bg-slate-900/80 rounded-md overflow-hidden max-w-[90vw]">
+      <ul className="flex flex-col space-y-1 p-2">
+        {items.map((item, index) => (
           <li
-            key={index} className='p-3 text-white hover:bg-slate-950/90'
+            key={index}
+            className="p-3 text-white hover:bg-slate-950/90 whitespace-nowrap"
             onClick={() => {
-              item.name === "Important Dates" && scrollToSection(item.name);
-              console.log("scroll");
+              if (item.name === "Important Dates") scrollToSection(item.name);
+              onClose && onClose();
             }}
           >
-            <Link to={item.href} target={item.current}>{item.name}</Link>
+            <Link to={item.href} target={item.current}>
+              {item.name}
+            </Link>
           </li>
         ))}
       </ul>
     </div>
-  );
-  return mobileSubMenu;
-}
+  </div>
+);
 
 /**
  * Main navigation component.
- * Contains a responsive navigation menu with dropdown submenus for desktop and mobile.
- * 
+ * @param {Object} props - Component props.
+ * @param {Function} props.setShowContact - Function to toggle the contact modal.
  * @returns {JSX.Element} The navigation JSX structure.
  */
 function Nav({ setShowContact }) {
   const [mobileMenu, setMobileMenu] = useState(false);
-  const [aboutSubMenu, setAboutSubMenu] = useState(false);
-  const [cfpSubMenu, setCFPSubMenu] = useState(false);
-  const [editionsSubMenu, setEditionsSubMenu] = useState(false);
-
+  const [subMenuStates, setSubMenuStates] = useState({});
   const location = useLocation();
 
+  // Reset mobile menu and submenu states when the route changes.
   useEffect(() => {
     setMobileMenu(false);
-    setAboutSubMenu(false);
-    setCFPSubMenu(false);
-    setEditionsSubMenu(false);
+    setSubMenuStates({});
   }, [location.pathname]);
 
-  const handleMobileMenu = () => {
-    setMobileMenu(!mobileMenu);
-  };
-  const handleAboutSubMenu = () => {
-    setAboutSubMenu(!aboutSubMenu);
-  };
-  const handleCFPSubMenu = () => {
-    setCFPSubMenu(!cfpSubMenu);
-  };
-  const handleEditionsSubMenu = () => {
-    setEditionsSubMenu(!editionsSubMenu);
-  };
+  /**
+   * Closes all submenus when the user clicks outside the navigation area.
+   */
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest(".submenu, nav")) {
+        setSubMenuStates({});
+      }
+    };
 
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
-
+  /**
+   * Toggles the specified submenu while ensuring all others are closed.
+   * @param {string} key - The key of the submenu to toggle.
+   */
+  const toggleSubMenu = (key) => {
+    setSubMenuStates({ [key]: !subMenuStates[key] });
+  };
 
   return (
-    <nav className='sticky top-0 z-40 w-full'>
+    <nav className="sticky top-0 z-40 w-full">
       <div className="relative bg-fixed bg-slate-950 text-white lg:flex justify-between z-50">
-        <div className=' visible font-bold  xl:hidden w-48 text-xl p-3 md:text-3xl'>
-          {/* <img src="./logos/IEEE TEMS logo/17-TA-213 TEMS logo RGB_bg_removed.png" className='w-48 hover:scale-105 cursor-pointer' alt="Temsmet 2025" /> */}
+        <div className="visible font-bold xl:hidden w-48 text-xl p-3 md:text-3xl">
           <p>TEMSMET2025</p>
         </div>
 
-        <ul className='hidden xl:visible xl:p-5 w-full  text-lg font-mono font-bold xl:flex justify-around items-center mr-3 transition-all duration-500 ease-in-out'>
+        {/* Desktop Navigation */}
+        <ul className="hidden xl:flex xl:p-5 w-full text-lg font-mono font-bold justify-around items-center">
           {navigation.map((navItem, index) => (
             <li
               key={index}
-              className="text-white hover:text-slate-200 cursor-pointer ml-1"
-              id={navItem.id}
-              onMouseEnter={() => {
-                if (navItem.name === 'Call for Papers') handleCFPSubMenu();
-                if (navItem.name === 'Past Editions') handleEditionsSubMenu();
-              }}
-              onMouseLeave={() => {
-                if (navItem.name === 'Call for Papers') handleCFPSubMenu();
-                if (navItem.name === 'Past Editions') handleEditionsSubMenu();
-              }}
+              className="text-white hover:text-slate-200 cursor-pointer submenu"
               onClick={() => {
-                (navItem.name === 'Contact' && setShowContact(true));
+                if (navItem.name === "Call for Papers") toggleSubMenu("cfp");
+                if (navItem.name === "Past Editions")
+                  toggleSubMenu("pastEditions");
+                if (navItem.name === "Travel") toggleSubMenu("travel");
+                if (navItem.name === "Contact") setShowContact(true);
               }}
             >
               <Link to={navItem.href}>
-                <span className='flex justify-center items-center'>
+                <span className="flex items-center">
                   {navItem.name}
-                  {/* {navItem.name === 'About' && (aboutSubMenu ? <ChevronUp /> : <ChevronDown />)} */}
-                  {navItem.name === 'Call for Papers' && (cfpSubMenu ? <ChevronUp /> : <ChevronDown />)}
-                  {navItem.name === 'Past Editions' && (editionsSubMenu ? <ChevronUp /> : <ChevronDown />)}
+                  {navItem.name === "Call for Papers" &&
+                    (subMenuStates.cfp ? <ChevronUp /> : <ChevronDown />)}
+                  {navItem.name === "Past Editions" &&
+                    (subMenuStates.pastEditions ? (
+                      <ChevronUp />
+                    ) : (
+                      <ChevronDown />
+                    ))}
+                  {navItem.name === "Travel" &&
+                    (subMenuStates.travel ? <ChevronUp /> : <ChevronDown />)}
                 </span>
               </Link>
-
-              {/* {navItem.name === 'About' && aboutSubMenu && createSubMenu(aboutSubmenuItems)} */}
-              {navItem.name === 'Call for Papers' && cfpSubMenu && createSubMenu(cfpSubmenuItems)}
-              {navItem.name === 'Past Editions' && editionsSubMenu && createSubMenu(pastEditionsItems)}
+              {navItem.name === "Call for Papers" && subMenuStates.cfp && (
+                <SubMenu items={cfpSubmenuItems} />
+              )}
+              {navItem.name === "Past Editions" &&
+                subMenuStates.pastEditions && (
+                  <SubMenu items={pastEditionsItems} />
+                )}
+              {navItem.name === "Travel" && subMenuStates.travel && (
+                <SubMenu items={travelItems} />
+              )}
             </li>
           ))}
         </ul>
 
-        <button onClick={handleMobileMenu} id="mobile-menu" className="xl:hidden absolute right-5 top-5">
-          {!mobileMenu ? <Menu /> : <X />}
+        {/* Mobile Navigation */}
+        <button
+          onClick={() => setMobileMenu(!mobileMenu)}
+          className="xl:hidden absolute right-5 top-5"
+        >
+          {mobileMenu ? <X /> : <Menu />}
         </button>
 
         {mobileMenu && (
-          <ul className='flex flex-col justify-center items-center space-y-2 py-5 font-bold text-lg hover:text-white transition-all duration-700 ease-in-out xl:hidden'>
+          <ul className="flex flex-col items-center space-y-2 py-5 font-bold text-lg text-slate-300 xl:hidden">
             {navigation.map((navItem, index) => (
               <li
                 key={index}
-                className="text-slate-300 hover:text-slate-50 cursor-pointer font-semibold px-2 hover w-full"
-                id={`mobile-${navItem.id}`}
+                className="hover:text-slate-50 cursor-pointer submenu"
                 onClick={() => {
-                  // if (navItem.name === 'About') handleAboutSubMenu();
-                  if (navItem.name === 'Call for Papers') handleCFPSubMenu();
-                  if (navItem.name === 'Past Editions') handleEditionsSubMenu();
-                  // scrollToSection(navItem.id); // Smooth scroll for mobile
-                  navItem.name === 'Contact' && setShowContact(true);
-                  //scrollToSection(navItem.id);
+                  if (navItem.name === "Call for Papers") toggleSubMenu("cfp");
+                  if (navItem.name === "Past Editions")
+                    toggleSubMenu("pastEditions");
+                  if (navItem.name === "Travel") toggleSubMenu("travel");
+                  if (navItem.name === "Contact") setShowContact(true);
                 }}
               >
-
                 <Link to={navItem.href}>
-                  <span className='flex justify-center items-center'>
+                  <span className="flex items-center">
                     {navItem.name}
-                    {/* {navItem.name === 'About' && (aboutSubMenu ? <ChevronUp /> : <ChevronDown />)} */}
-                    {navItem.name === 'Call for Papers' && (cfpSubMenu ? <ChevronUp /> : <ChevronDown />)}
-                    {navItem.name === 'Past Editions' && (editionsSubMenu ? <ChevronUp /> : <ChevronDown />)}
+                    {navItem.name === "Call for Papers" &&
+                      (subMenuStates.cfp ? <ChevronUp /> : <ChevronDown />)}
+                    {navItem.name === "Past Editions" &&
+                      (subMenuStates.pastEditions ? (
+                        <ChevronUp />
+                      ) : (
+                        <ChevronDown />
+                      ))}
+                    {navItem.name === "Travel" &&
+                      (subMenuStates.travel ? <ChevronUp /> : <ChevronDown />)}
                   </span>
                 </Link>
-                {/* {navItem.name === 'About' && aboutSubMenu && createMobileSubMenu(aboutSubmenuItems)} */}
-                {navItem.name === 'Call for Papers' && cfpSubMenu && createMobileSubMenu(cfpSubmenuItems)}
-                {navItem.name === 'Past Editions' && editionsSubMenu && createMobileSubMenu(pastEditionsItems)}
+                {navItem.name === "Call for Papers" && subMenuStates.cfp && (
+                  <SubMenu
+                    items={cfpSubmenuItems}
+                    onClose={() => setMobileMenu(false)}
+                  />
+                )}
+                {navItem.name === "Past Editions" &&
+                  subMenuStates.pastEditions && (
+                    <SubMenu
+                      items={pastEditionsItems}
+                      onClose={() => setMobileMenu(false)}
+                    />
+                  )}
+                {navItem.name === "Travel" && subMenuStates.travel && (
+                  <SubMenu
+                    items={travelItems}
+                    onClose={() => setMobileMenu(false)}
+                  />
+                )}
               </li>
             ))}
           </ul>
