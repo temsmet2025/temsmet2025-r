@@ -32,23 +32,30 @@ const scrollToSection = (id) => {
  * @param {Function} [props.onClose] - Callback function to handle submenu closure.
  * @returns {JSX.Element} The submenu JSX structure.
  */
-const SubMenu = ({ items, onClose }) => (
+const SubMenu = ({ items, onClose, isMobile }) => (
   <div className="relative bg-slate-950 text-white rounded-md">
-    <div className="absolute right-0 bg-slate-900/80 rounded-md overflow-hidden max-w-[90vw]">
+    <div
+      className={
+        " bg-slate-900/80 " +
+        (isMobile
+          ? "right-0 rounded-md overflow-hidden max-w-[90vw]"
+          : "bg-slate-900/80 rounded-md flex flex-col justify-center items-center w-screen")
+      }
+    >
       <ul className="flex flex-col space-y-1 p-2">
         {items.map((item, index) => (
-          <li
-            key={index}
-            className="p-3 text-white hover:bg-slate-950/90 whitespace-nowrap"
-            onClick={() => {
-              if (item.name === "Important Dates") scrollToSection(item.name);
-              onClose && onClose();
-            }}
-          >
-            <Link to={item.href} target={item.current}>
+          <Link to={item.href} target={item.current}>
+            <li
+              key={index}
+              className="p-1 text-white hover:bg-slate-950/90 whitespace-nowrap"
+              onClick={() => {
+                if (item.name === "Important Dates") scrollToSection(item.name);
+                onClose && onClose();
+              }}
+            >
               {item.name}
-            </Link>
-          </li>
+            </li>
+          </Link>
         ))}
       </ul>
     </div>
@@ -97,7 +104,7 @@ function Nav({ setShowContact }) {
   };
 
   return (
-    <nav className="sticky top-0 z-40 w-full">
+    <nav className="sticky -top-1 z-40 w-full">
       <div className="relative bg-fixed bg-slate-950 text-white lg:flex justify-between z-50">
         <div className="visible font-bold xl:hidden w-48 text-xl p-3 md:text-3xl">
           <p>TEMSMET2025</p>
@@ -157,7 +164,7 @@ function Nav({ setShowContact }) {
         {/* Mobile Navigation */}
         <button
           onClick={() => setMobileMenu(!mobileMenu)}
-          className="xl:hidden absolute right-5 top-5"
+          className="xl:hidden absolute right-5 top-3"
         >
           {mobileMenu ? <X /> : <Menu />}
         </button>
@@ -177,7 +184,7 @@ function Nav({ setShowContact }) {
                 }}
               >
                 <Link to={navItem.href}>
-                  <span className="flex items-center">
+                  <span className="flex items-center justify-center">
                     {navItem.name}
                     {navItem.name === "Call for Papers" &&
                       (subMenuStates.cfp ? <ChevronUp /> : <ChevronDown />)}
