@@ -8,7 +8,6 @@ import Footer from "./components/Footer.jsx";
 import OrgCommittee from "./components/OrgCommitte.jsx";
 import Venue from "./components/Venue.jsx";
 import SubmissionGuidelines from "./components/SubmissionGuidelines.jsx";
-import { registrationFees, deligates } from "./assets/dataItems.js";
 import TableView from "./components/TableView.jsx";
 import PreNav from "./components/PreNav.jsx";
 import KeynoteSpeakers from "./components/KeynoteSpeakers.jsx";
@@ -16,7 +15,7 @@ import Contact from "./components/Contact";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import { useState } from "react";
 import TouristDestinations from "./components/TouristDestinations.jsx";
-
+import SectionList from "./components/SectionLIst.jsx";
 /**
  * Main application component that sets up routing for different pages using HashRouter.
  *
