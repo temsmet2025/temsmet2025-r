@@ -23,7 +23,6 @@ const scrollToSection = (id) => {
       });
     }
   }, 0);
-
 };
 
 /**
@@ -33,22 +32,38 @@ const scrollToSection = (id) => {
  * @param {Function} [props.onClose] - Callback function to handle submenu closure.
  * @returns {JSX.Element} The submenu JSX structure.
  */
-const SubMenu = ({ items, onClose, isMobile }) => (
+const SubMenu = ({ items, onClose }) => (
   <div className="relative bg-slate-950 text-white rounded-md">
-    <div
-      className={
-        " bg-slate-900/80 " +
-        (isMobile
-          ? "right-0 rounded-md overflow-hidden max-w-[90vw]"
-          : "bg-slate-900/80 rounded-md flex flex-col justify-center items-center w-screen")
-      }
-    >
+    <div className=" bg-slate-900/80 rounded-md absolute right-0 overflow-hidden max-w-[90vw]">
       <ul className="flex flex-col space-y-1 p-2">
         {items.map((item, index) => (
           <Link to={item.href} target={item.current}>
             <li
               key={index}
               className="p-1 text-white hover:bg-slate-950/90 whitespace-nowrap"
+              onClick={() => {
+                if (item.name === "Important Dates") scrollToSection(item.name);
+                onClose && onClose();
+              }}
+            >
+              {item.name}
+            </li>
+          </Link>
+        ))}
+      </ul>
+    </div>
+  </div>
+);
+
+const MobileSubMenu = ({ items, onClose }) => (
+  <div className=" bg-slate-950 text-white rounded-md">
+    <div className="bg-slate-900/80 rounded-md bg-slate-900/80flex flex-col justify-center items-center w-screen">
+      <ul className="flex flex-col space-y-1 p-2">
+        {items.map((item, index) => (
+          <Link to={item.href} target={item.current}>
+            <li
+              key={index}
+              className="p-1 text-white hover:bg-slate-950/90 whitespace-nowrap text-center"
               onClick={() => {
                 if (item.name === "Important Dates") scrollToSection(item.name);
                 onClose && onClose();
@@ -106,7 +121,7 @@ function Nav({ setShowContact }) {
 
   return (
     <nav className="sticky -top-1 z-40 w-full">
-      <div className="relative bg-fixed bg-slate-950 text-white lg:flex justify-between z-50">
+      <div className="relative bg-fixed bg-slate-950 text-white xl:flex justify-between z-50">
         <div className="visible font-bold xl:hidden w-48 text-xl p-3 md:text-3xl">
           <p>TEMSMET2025</p>
         </div>
@@ -171,7 +186,7 @@ function Nav({ setShowContact }) {
         </button>
 
         {mobileMenu && (
-          <ul className="flex flex-col items-center space-y-2 py-5 font-bold text-lg text-slate-300 xl:hidden">
+          <ul className="flex flex-col items-center justify-center space-y-2 py-5 font-bold text-lg text-slate-300 xl:hidden">
             {navigation.map((navItem, index) => (
               <li
                 key={index}
@@ -200,20 +215,20 @@ function Nav({ setShowContact }) {
                   </span>
                 </Link>
                 {navItem.name === "Call for Papers" && subMenuStates.cfp && (
-                  <SubMenu
+                  <MobileSubMenu
                     items={cfpSubmenuItems}
                     onClose={() => setMobileMenu(false)}
                   />
                 )}
                 {navItem.name === "Past Editions" &&
                   subMenuStates.pastEditions && (
-                    <SubMenu
+                    <MobileSubMenu
                       items={pastEditionsItems}
                       onClose={() => setMobileMenu(false)}
                     />
                   )}
                 {navItem.name === "Travel" && subMenuStates.travel && (
-                  <SubMenu
+                  <MobileSubMenu
                     items={travelItems}
                     onClose={() => setMobileMenu(false)}
                   />
