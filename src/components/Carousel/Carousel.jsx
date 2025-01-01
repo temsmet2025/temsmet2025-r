@@ -64,9 +64,8 @@ function Carousel() {
             key={index}
             src={image.name}
             alt={`carousel image ${image.id}`}
-            className={`absolute inset-0 w-full transition-all duration-1000 ease-in-out ${
-              imageIndex === image.id ? "opacity-100 z-10" : "opacity-0 z-0"
-            }`}
+            className={`absolute inset-0 w-full transition-all duration-1000 ease-in-out ${imageIndex === image.id ? "opacity-100 z-10" : "opacity-0 z-0"
+              }`}
             style={{ height: "35rem" }}
           />
         ))}
@@ -141,7 +140,7 @@ function Carousel() {
               </span>
               <span>using</span>
               <span>Marketing, Entrepreneurship, and Talent (TEMSMET)</span>
-              <span>Conference Number : #65536 </span>
+              <span>IEEE Conference Number : #65536 </span>
             </p>
           </div>
 

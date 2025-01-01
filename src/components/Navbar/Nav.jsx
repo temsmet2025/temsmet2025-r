@@ -23,6 +23,7 @@ const scrollToSection = (id) => {
       });
     }
   }, 0);
+
 };
 
 /**
@@ -108,7 +109,7 @@ function Nav({ setShowContact }) {
           {navigation.map((navItem, index) => (
             <li
               key={index}
-              className="text-white hover:text-slate-200 cursor-pointer submenu"
+              className="text-white hover:text-slate-200 cursor-pointer submenu "
               onMouseEnter={() => {
                 if (navItem.name === "Call for Papers") toggleSubMenu("cfp");
                 if (navItem.name === "Past Editions")
@@ -167,7 +168,7 @@ function Nav({ setShowContact }) {
             {navigation.map((navItem, index) => (
               <li
                 key={index}
-                className="hover:text-slate-50 cursor-pointer submenu"
+                className="hover:text-slate-50 cursor-pointer submenu "
                 onClick={() => {
                   if (navItem.name === "Call for Papers") toggleSubMenu("cfp");
                   if (navItem.name === "Past Editions")
