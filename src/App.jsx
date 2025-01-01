@@ -101,7 +101,7 @@ function App() {
       ),
     },
     {
-      path: "/venue",
+      path: "/venue&directions",
       element: (
         <>
           <ScrollToTop elementId="venue-and-dates" />

@@ -101,8 +101,8 @@ export const pastEditionsItems = [
  * @property {boolean} current - A boolean indicating if the submenu item is currently active.
  */
 export const travelItems = [
-  { name: "Venue", href: "/venue", current: "_self", id: "venue-link" },
-  { name: "Travel to Delhi", href: "/travel-to-delhi", current: "_self" },
-  { name: "Tourist Destinations", href: "/tourist-destinations", current: "_self" },
+  { name: "Venue & Directions", href: "/venue&directions", current: "_self", id: "venue-link" },
+  { name: "Explore Delhi", href: "/travel-to-delhi", current: "_self" },
+  { name: "Explore Delhi Neighbours", href: "/tourist-destinations", current: "_self" },
   { name: "Accommodation and Facilities", href: "/", current: "_self" },
 ];

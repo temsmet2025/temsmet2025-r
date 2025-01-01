@@ -2,7 +2,7 @@ function TableView(props) {
     const highLightRow = 0;
     return (
         <div id={`${props.tableName}`} className={`pl-8 pr-8 pt-0 pb-0 sm:p-0 sm:ml-32  sm:mt-10 mb-5 `}>
-            {props.tableName?.length > 0 && <h1 className="font-bold text-2xl sm:text-5xl text-gray-800">{props.tableName}</h1>}
+            {props.tableName?.length > 0 && <h1 className="font-bold sm:text-4xl text-2xl text-gray-800">{props.tableName}</h1>}
             <div className={`${props.tableName === "" ? "hidden" : "mt-2 h-0.5 bg-gray-950 w-5/6"}`}></div>
             <div className={`${props.classes} overflow-x-auto mt-6 sm:mr-28 shadow-lg`}>
                 <table className="w-full border-collapse rounded-lg">
