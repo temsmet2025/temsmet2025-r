@@ -16,6 +16,8 @@ import ScrollToTop from "./components/ScrollToTop.jsx";
 import { useState } from "react";
 import TouristDestinations from "./components/TouristDestinations.jsx";
 import SectionList from "./components/SectionLIst.jsx";
+import TravelToDelhi from "./components/TravelToDelhi.jsx";
+
 /**
  * Main application component that sets up routing for different pages using HashRouter.
  *
@@ -126,6 +128,22 @@ function App() {
           <Carousel />
           <div id="sg-list">
             <SubmissionGuidelines />
+          </div>
+          <Contact setShowContact={setShowContact} showContact={showContact} />
+          <Footer />
+        </>
+      ),
+    },
+    {
+      path: "/travel-to-delhi",
+      element: (
+        <>
+          <ScrollToTop elementId="travel-to-delhi" />
+          <PreNav />
+          <Nav setShowContact={setShowContact} />
+          <Carousel />
+          <div id="t-delhi">
+            <TravelToDelhi />
           </div>
           <Contact setShowContact={setShowContact} showContact={showContact} />
           <Footer />

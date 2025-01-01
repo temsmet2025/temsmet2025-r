@@ -13,14 +13,16 @@ import {
  * @param {string} id - The ID of the target section.
  */
 const scrollToSection = (id) => {
-  const element = document.getElementById(id);
-  if (element) {
-    const rect = element.getBoundingClientRect();
-    window.scroll({
-      top: window.scrollY + rect.top,
-      behavior: "smooth",
-    });
-  }
+  const timer = setTimeout(() => {
+    const element = document.getElementById(id);
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      window.scroll({
+        top: window.scrollY + rect.top,
+        behavior: "smooth",
+      });
+    }
+  }, 0);
 };
 
 /**

@@ -7,11 +7,11 @@ function TouristDestinations() {
       className="sm:ml-32 sm:mr-32 sm:mt-10 sm:mb-10 p-8"
     >
       <h1 className="font-bold sm:text-4xl text-2xl text-gray-800">Tourist Destinations</h1>
-
+      <div className="mt-2 mb-5 h-0.5 bg-gray-950 w-full"></div>
       <p className="text-black text-sm sm:text-base mt-6 mb-6 text-justify">
-        Delhi, the capital city of India, is a fascinating mix of rich history, diverse culture, and modern living. 
-        With its unique blend of ancient monuments, bustling markets, colonial architecture, and a vibrant food scene, 
-        Delhi stands as a testament to India's diverse heritage. Whether you're a history buff, a culture enthusiast, 
+        Delhi, the capital city of India, is a fascinating mix of rich history, diverse culture, and modern living.
+        With its unique blend of ancient monuments, bustling markets, colonial architecture, and a vibrant food scene,
+        Delhi stands as a testament to India's diverse heritage. Whether you're a history buff, a culture enthusiast,
         or a food lover, Delhi has something for everyone.
       </p>
 
