@@ -15,7 +15,7 @@ const Home = () => {
     <section id="home" className="home ">
       <div className="conference-theme sm:ml-32 mt-10">
         <div className="ml-8 sm:m-0">
-          <h1 className='sm:font-bold sm:text-5xl text-gray-800 text-2xl font-bold'>Conference Theme</h1>
+          <h1 className='font-bold sm:text-4xl text-2xl text-gray-800'>Conference Theme</h1>
           <div className="mt-2 mb-5 h-0.5 bg-gray-950 w-5/6"></div>
         </div>
         <div className="p-8 pt-0 sm:p-0">
