@@ -1574,6 +1574,10 @@ input[type="range"]::-ms-fill-lower {
   height: 100vh;
 }
 
+.h-56 {
+  height: 14rem;
+}
+
 .max-h-\[90dvh\] {
   max-height: 90dvh;
 }
@@ -1732,6 +1736,10 @@ input[type="range"]::-ms-fill-lower {
   max-width: 100vw;
 }
 
+.max-w-\[90vw\] {
+  max-width: 90vw;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
@@ -1774,10 +1782,6 @@ input[type="range"]::-ms-fill-lower {
 
 .origin-\[0\] {
   transform-origin: 0;
-}
-
-.origin-center {
-  transform-origin: center;
 }
 
 .-translate-x-1\/2 {
@@ -1924,6 +1928,10 @@ input[type="range"]::-ms-fill-lower {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1978,6 +1986,10 @@ input[type="range"]::-ms-fill-lower {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .-space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -6153,6 +6165,10 @@ input[type="range"]::-ms-fill-lower {
     height: 20rem;
   }
 
+  .sm\:h-64 {
+    height: 16rem;
+  }
+
   .sm\:w-10 {
     width: 2.5rem;
   }
@@ -6173,6 +6189,10 @@ input[type="range"]::-ms-fill-lower {
     width: auto;
   }
 
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:p-0 {
     padding: 0px;
   }
@@ -6184,6 +6204,11 @@ input[type="range"]::-ms-fill-lower {
   .sm\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .sm\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .sm\:pr-8 {
@@ -6222,6 +6247,11 @@ input[type="range"]::-ms-fill-lower {
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .sm\:font-bold {
@@ -6436,6 +6466,10 @@ input[type="range"]::-ms-fill-lower {
     width: 50rem;
   }
 
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -6459,6 +6493,11 @@ input[type="range"]::-ms-fill-lower {
     line-height: 1.75rem;
   }
 
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .lg\:text-gray-950 {
     --tw-text-opacity: 1;
     color: rgb(3 7 18 / var(--tw-text-opacity, 1));
@@ -6466,10 +6505,6 @@ input[type="range"]::-ms-fill-lower {
 }
 
 @media (min-width: 1280px) {
-  .xl\:visible {
-    visibility: visible;
-  }
-
   .xl\:flex {
     display: flex;
   }
@@ -6489,6 +6524,11 @@ input[type="range"]::-ms-fill-lower {
   .xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
