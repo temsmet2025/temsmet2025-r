@@ -103,7 +103,7 @@ export const pastEditionsItems = [
  */
 export const travelItems = [
   { name: "Travel", href: "/", current: "_self" },
-  { name: "Travel to Delhi", href: "/", current: "_self" },
+  { name: "Travel to Delhi", href: "/travel-to-delhi", current: "_self" },
   { name: "Tourist Destinations", href: "/tourist-destinations", current: "_self" },
   { name: "Accommodation and Facilities", href: "/", current: "_self" },
 ];
