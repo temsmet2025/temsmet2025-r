@@ -97,8 +97,8 @@ function Carousel() {
             <button onClick={() => handleCircleBtn(image.id)} className="p-2">
               <Circle
                 color={index === imageIndex ? "black" : "white"}
-                strokeWidth={index === imageIndex ? 5 : 4}
-                size={index === imageIndex ? 38 : 28}
+                strokeWidth={index === imageIndex ? 4 : 3}
+                size={index === imageIndex ? 28 : 20}
               />
             </button>
           </div>

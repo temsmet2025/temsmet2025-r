@@ -41,10 +41,12 @@ const SubMenu = ({ items, onClose }) => (
             <li
               key={index}
               className="p-1 text-white hover:bg-slate-950/90 whitespace-nowrap"
-              onClick={() => {
+              onClick={(e) => {
                 if (item.name === "Important Dates") scrollToSection(item.name);
                 onClose && onClose();
+                if (item.name === "Travel Visa") { e.preventDefault(); alert("Comimg Soon!!!!") };
               }}
+
             >
               {item.name}
             </li>
