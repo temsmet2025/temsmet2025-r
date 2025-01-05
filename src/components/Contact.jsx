@@ -32,7 +32,7 @@ function Contact({ showContact, setShowContact }) {
 
                     <div className="flex justify-center w-full">
                         <span className="font-semibold">Phone: </span>
-                        <span> +11-33861120</span>
+                        <span> +11-33861122/83</span>
                     </div>
 
                     <div className="flex justify-center w-full">

@@ -2,6 +2,7 @@ import React from 'react'
 import SectionList from './SectionLIst'
 import { conferenceStructure, deligates, potentialSpeakers, sponsorsAndExhibitors, importantDates, registrationFees, submissionGuidelines, aboutConference, aboutHost } from "./../assets/dataItems"
 import TableView from './TableView'
+import { HeadingBar } from './SmallComps'
 
 /**
  * Home component displaying the conference theme and related sections.
@@ -12,29 +13,29 @@ import TableView from './TableView'
  */
 const Home = () => {
   return (
-    <section id="home" className="home ">
-      <div className="conference-theme sm:ml-32 mt-10">
-        <div className="ml-8 sm:m-0">
-          <h1 className='font-bold sm:text-4xl text-2xl text-gray-800'>Conference Theme</h1>
-          <div className="mt-2 mb-5 h-0.5 bg-gray-950 w-5/6"></div>
+    <section id="home" className="home p-5 mt-10 sm:p-5 md:ml-16 md:mr-16 lg:ml-20 lg:mr-20">
+      <div className="conference-theme">
+        <div className="">
+          <h1 className='font-bold sm:text-3xl text-2xl text-sky-700'>Conference Theme</h1>
+          <HeadingBar />
         </div>
-        <div className="p-8 pt-0 sm:p-0">
+        <div className="">
           <span className="font-bold text-base sm:text-xl text-wrap">“Innovation and Technology Management in the Era of Gen AI”</span>
-          <p className='text-justify text-sm sm:text-xl text-wrap sm:w-5/6'>The conference focuses on the intersection of technology, management, innovation, and sustainable development within the context of the rapidly advancing Era of Generative Artificial Intelligence (Gen AI). It explores how Gen AI, a subset of AI that can generate new content, designs, solutions, and ideas, is reshaping industries, influencing management strategies, and driving sustainable practices across the globe. The conference offers an international platform for scientists, researchers, engineers, and students to share the latest innovations and advancements in Technology, Engineering, Management, and Science. It features plenary sessions and invited talks by eminent experts, showcasing cutting-edge research. Original research contributions are invited.</p>
+          <p className='text-justify text-base sm:text-xl text-wrap'>The conference focuses on the intersection of technology, management, innovation, and sustainable development within the context of the rapidly advancing Era of Generative Artificial Intelligence (Gen AI). It explores how Gen AI, a subset of AI that can generate new content, designs, solutions, and ideas, is reshaping industries, influencing management strategies, and driving sustainable practices across the globe. The conference offers an international platform for scientists, researchers, engineers, and students to share the latest innovations and advancements in Technology, Engineering, Management, and Science. It features plenary sessions and invited talks by eminent experts, showcasing cutting-edge research. Original research contributions are invited.</p>
         </div>
       </div>
 
-      <SectionList title="About 4th IEEE TEMSMET 2025" dataItem={aboutConference} classes="list-none mb-7 !ml-0 text-justify text-wrap sm:w-5/6" />
-      <SectionList title="About the Host of 4th IEEE TEMSMET 2025" dataItem={aboutHost} classes="list-none mb-7 !ml-0 text-justify text-wrap sm:w-5/6" />
-      <SectionList title="Conference Structure" dataItem={conferenceStructure} />
-      <SectionList title="Potential Speakers" dataItem={potentialSpeakers} isButton={"SquareArrowOutUpRight"} />
+      <SectionList title="About 4th IEEE TEMSMET 2025" dataItem={aboutConference} classes="mt-2 sm:mt-5 md:mt-10" />
+      <SectionList title="About the Host of 4th IEEE TEMSMET 2025" dataItem={aboutHost} classes="mt-2 sm:mt-5 md:mt-10" />
+      <SectionList title="Conference Structure" dataItem={conferenceStructure} classes="mt-2 sm:mt-5 md:mt-10" />
+      <SectionList title="Potential Speakers" dataItem={potentialSpeakers} isButton={"SquareArrowOutUpRight"} classes="mt-2 sm:mt-5 md:mt-10" />
 
-      <TableView tableName="Important Dates" highLightRow={0} tableHead={['EVENTS', 'DATE']} dataItem={importantDates} classes="sm:w-5/6" />
-      <div className="sm:ml-32 sm:w-5/6">
+      <TableView tableName="Important Dates" highLightRow={0} tableHead={['EVENTS', 'DATE']} dataItem={importantDates} classes="mt-2 sm:mt-5 md:mt-10" />
+      <div className="">
         <p className='font-extrabold text-lg sm:text-xl md:text-2xl text-blue-800'>"All presented papers will be submitted to IEEE for possible publication in IEEE Xplore."</p>
       </div>
 
-      <SectionList title="Sponsors And Exhibitors" dataItem={sponsorsAndExhibitors} />
+      <SectionList title="Sponsors And Exhibitors" dataItem={sponsorsAndExhibitors} classes=" mt-5 sm:mt-5 md:mt-10" />
     </section>
   )
 }

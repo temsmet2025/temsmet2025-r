@@ -16,7 +16,7 @@ import ScrollToTop from "./components/ScrollToTop.jsx";
 import { useState } from "react";
 import TouristDestinations from "./components/TouristDestinations.jsx";
 import SectionList from "./components/SectionLIst.jsx";
-import TravelToDelhi from "./components/TravelToDelhi.jsx";
+import ExploreDelhi from "./components/ExploreDelhi.jsx";
 
 /**
  * Main application component that sets up routing for different pages using HashRouter.
@@ -135,15 +135,15 @@ function App() {
       ),
     },
     {
-      path: "/travel-to-delhi",
+      path: "/explore-delhi",
       element: (
         <>
-          <ScrollToTop elementId="travel-to-delhi" />
+          <ScrollToTop elementId="explore-delhi" />
           <PreNav />
           <Nav setShowContact={setShowContact} />
           <Carousel />
-          <div id="t-delhi">
-            <TravelToDelhi />
+          <div id="explore-delhi">
+            <ExploreDelhi />
           </div>
           <Contact setShowContact={setShowContact} showContact={showContact} />
           <Footer />
@@ -175,7 +175,7 @@ function App() {
           <Nav setShowContact={setShowContact} />
           <Carousel />
           {/* <Contact setShowContact={setShowContact} showContact={showContact} /> */}
-          <div id="reg-link">
+          <div id="reg-link" className="p-5 mt-10 sm:p-5 md:ml-16 md:mr-16 lg:ml-20 lg:mr-20">
             <TableView
               tableName="Registration"
               tableHead={[
@@ -186,18 +186,18 @@ function App() {
                 "Regular (Foreign)",
               ]}
               dataItem={registrationFees}
-              classes="sm:w-5/6"
+              classes=""
             />
             <TableView
-              tableName=""
               tableHead={["Delegates / Participants", "Fees"]}
               dataItem={deligates}
-              classes="sm:w-5/6"
+              classes=""
             />
+            <div className="mt-10">
+              <SectionList dataItem={registrationNotes} title="Notes" />
+            </div>
           </div >
-          < div id="notes" >
-            <SectionList dataItem={registrationNotes} title="Notes" />
-          </div >
+
           <Footer />
         </>
       ),

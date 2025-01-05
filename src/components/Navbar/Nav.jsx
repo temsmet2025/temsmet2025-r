@@ -37,7 +37,7 @@ const SubMenu = ({ items, onClose }) => (
     <div className=" bg-slate-900/80 rounded-md absolute right-0 overflow-hidden max-w-[90vw]">
       <ul className="flex flex-col space-y-1 p-2">
         {items.map((item, index) => (
-          <Link to={item.href} target={item.current}>
+          <Link key={index} to={item.href} target={item.current}>
             <li
               key={index}
               className="p-1 text-white hover:bg-slate-950/90 whitespace-nowrap"

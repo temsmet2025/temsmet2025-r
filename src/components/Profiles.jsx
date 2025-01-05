@@ -1,11 +1,12 @@
 import React from 'react'
+import { HeadingBar } from './SmallComps';
 
 const Profiles = (props) => {
   const data = props.profiles;
   return (
     <div className="w-full">
-      <h1 className="sm:text-4xl text-3xl font-semibold mt-5 ml-2 sm:mt-10">{props.title}</h1>
-      <div className="mt-2 mb-5 h-0.5 bg-gray-950 w-10/12"></div>
+      <h1 className="sm:text-3xl text-2xl text-sky-700 font-semibold mt-5 ml-2 sm:mt-10">{props.title}</h1>
+      <HeadingBar />
       <div id={`profiles-${props.title}`} className='flex flex-wrap justify-center lg:justify-around' >
         {data.map((profile, index) => (
           <a href={profile.link} target="_blank" key={index}>

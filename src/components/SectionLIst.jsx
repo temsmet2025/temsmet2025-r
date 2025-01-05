@@ -1,6 +1,7 @@
 import React from 'react';
 import { SquareArrowOutUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { HeadingBar } from './SmallComps'
 
 /**
  * SectionList component used to display a list of items related to a specific section, 
@@ -17,17 +18,17 @@ function SectionList(props) {
     const title = props.title;
 
     return (
-        <div id={`section-list-${title}`} className={`sm:ml-32 sm:mt-10 mb-10`}>
-            <div className="ml-8 sm:m-0">
+        <div id={`section-list-${title}`} className={`${props.classes}`}>
+            <div className="">
                 <div className="flex flex-wrap">
-                    <h1 className='font-bold sm:text-4xl text-2xl text-gray-800'>{title}</h1>
+                    <h1 className='font-bold text-sky-700 sm:text-3xl text-2xl'>{title}</h1>
                     <span className='hover:text-blue-700 cursor-pointer'>{props.isButton === "SquareArrowOutUpRight" && <Link to="/keynote-speakers">  <SquareArrowOutUpRight /></Link>}</span>
                 </div>
-                <div className="sm:visible mt-2 h-0.5 bg-gray-950 w-5/6"></div>
+                <HeadingBar />
             </div>
-            <ul className="text-justify mt-5 p-8 pt-0 sm:p-0 w-5/6">
+            <ul className="text-justify mt-5 p-8 pt-0 sm:p-0 ">
                 {dataItem.map((item, index) => (
-                    <li key={index} className={`ml-7 mr-7 list-disc ${props.classes}`}>
+                    <li key={index} className={`sm:ml-7 sm:mr-7 list-disc`}>
                         {item.track != undefined && <span className="font-bold text-base sm:text-xl">{item.track} : </span>}
                         <span className="text-sm sm:text-xl">{item.description}</span>
                     </li>

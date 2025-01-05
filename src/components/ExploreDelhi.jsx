@@ -1,24 +1,15 @@
-// function TravelToDelhi(){
-//     return (
-//         <div>
-//             <p>Travel To Delhi</p>
-//         </div>
-//     );
-// }
 
-// export default TravelToDelhi;
-
-import React from "react";
 import { delhiPlaces } from "../assets/dataItems";
+import { HeadingBar } from './SmallComps'
 
-const TravelToDelhi = () => {
+const ExploreDelhi = () => {
   return (
     <div className="sm:ml-32 sm:mr-32 sm:mt-10 sm:mb-10 p-8">
-      <h1 className="font-bold sm:text-4xl text-2xl text-gray-800">
+      <h1 className="font-bold sm:text-3xl text-2xl text-sky-700">
         Tourist Places in Delhi
       </h1>
-      <div className="mt-2 mb-5 h-0.5 bg-gray-950 w-full"></div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <HeadingBar />
+      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {delhiPlaces.map((place, index) => (
           <div
             key={index}
@@ -42,4 +33,4 @@ const TravelToDelhi = () => {
   );
 };
 
-export default TravelToDelhi;
+export default ExploreDelhi;

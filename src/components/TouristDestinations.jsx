@@ -1,4 +1,5 @@
 import { destinations } from "../assets/dataItems";
+import { HeadingBar } from './SmallComps'
 
 function TouristDestinations() {
   return (
@@ -6,8 +7,8 @@ function TouristDestinations() {
       id="tourist-destinations"
       className="sm:ml-32 sm:mr-32 sm:mt-10 sm:mb-10 p-8"
     >
-      <h1 className="font-bold sm:text-4xl text-2xl text-gray-800">Tourist Destinations</h1>
-      <div className="mt-2 mb-5 h-0.5 bg-gray-950 w-full"></div>
+      <h1 className="font-bold sm:text-4xl text-2xl text-sky-700">Tourist Destinations</h1>
+      <HeadingBar />
       <p className="text-black text-sm sm:text-base mt-6 mb-6 text-justify">
         Delhi, the capital city of India, is a fascinating mix of rich history, diverse culture, and modern living.
         With its unique blend of ancient monuments, bustling markets, colonial architecture, and a vibrant food scene,

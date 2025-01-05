@@ -48,7 +48,7 @@ export const potentialSpeakers = [
 ];
 
 export const importantDates = [
-  { tableData: ['Paper Submission Closes', 'June 20, 2025'] },
+  { tableData: ['Paper Submission Closes', 'July 05, 2025'] },
   { tableData: ['Notification of Acceptance', 'August 08, 2025'] },
   { tableData: ['Final Camera-ready Paper', 'August 21, 2025'] },
   { tableData: ['Early Submission Paper Registration Closes', 'August 23, 2025'] },
@@ -236,63 +236,63 @@ export const aboutHost = [
 export const destinations = [
   {
     name: "Agra",
-    image: "./new_images/taj-agra.jpg", 
+    image: "./new_images/taj-agra.jpg",
     description: "Agra, home to the magnificent Taj Mahal, is one of India's most iconic cities. Apart from the Taj, you can explore the Agra Fort, Fatehpur Sikri, and several Mughal-era monuments.",
     distance: "230 km from Delhi",
     travelOptions: "Car: 3.5-4 hours | Bus: 4-5 hours | Train: 2-2.5 hours"
   },
   {
     name: "Vrindavan",
-    image: "./new_images/vrindhavan.webp", 
+    image: "./new_images/vrindhavan.webp",
     description: "Vrindavan, another sacred city associated with Lord Krishna, is known for its ancient temples, serene ghats, and the vibrant Holi celebrations. Visit the Banke Bihari Temple and the Prem Mandir for spiritual experiences.",
     distance: "159 km from Delhi",
     travelOptions: "Car: 3-3.5 hours | Bus: 4-5 hours | Train (via Mathura): 2.5-3 hours"
   },
   {
     name: "Mathura",
-    image: "./new_images/mathura.jpg", 
+    image: "./new_images/mathura.jpg",
     description: "Mathura, the birthplace of Lord Krishna, is a sacred city filled with temples and ghats. The famous Dwarkadhish Temple, Banke Bihari Temple, and the Krishna Janmabhoomi Temple are must-visit spots.",
     distance: "162 km from Delhi",
     travelOptions: "Car: 3-3.5 hours | Bus: 4-5 hours | Train: 2.5-3 hours"
   },
   {
     name: "Haridwar",
-    image: "./new_images/haridwar.jpg", 
+    image: "./new_images/haridwar.jpg",
     description: "Haridwar is a sacred city known for its temples and ghats along the River Ganga. The evening Ganga Aarti at Har Ki Pauri is a mesmerizing sight. It's one of the seven holiest places in Hinduism.",
     distance: "225 km from Delhi",
     travelOptions: "Car: 5-6 hours | Bus: 6-7 hours | Train: 5-6 hours"
   },
   {
     name: "Rishikesh",
-    image: "./new_images/rishikesh.jpg", 
+    image: "./new_images/rishikesh.jpg",
     description: "Rishikesh, the 'Yoga Capital of the World,' offers spiritual experiences along with adventure sports like rafting and trekking. The Beatles Ashram and the Ganga Aarti at Triveni Ghat are major attractions.",
     distance: "240 km from Delhi",
     travelOptions: "Car: 5-6 hours | Bus: 6-7 hours | Train (via Haridwar): 5.5-6 hours"
   },
   {
     name: "Mussoorie",
-    image: "./new_images/mussoorie.jpg", 
+    image: "./new_images/mussoorie.jpg",
     description: "Mussoorie is a charming hill station with breathtaking views of the Himalayan range. Famous for its colonial charm, the Camel's Back Road, Kempty Falls, and Mussoorie Lake are major attractions.",
     distance: "297 km from Delhi",
     travelOptions: "Car: 7-8 hours | Bus: 8-9 hours | Train (via Dehradun): 6-7 hours"
   },
   {
     name: "Devprayag",
-    image: "./new_images/devprayag.jpg", 
+    image: "./new_images/devprayag.jpg",
     description: "Devprayag is a sacred town where the Bhagirathi and Alaknanda rivers meet to form the Ganges. Known for its spiritual significance and scenic beauty, it is a quiet retreat for those seeking peace and meditation.",
     distance: "320 km from Delhi",
     travelOptions: "Car: 10-11 hours | Bus: 12 hours | Train (via Rishikesh): 10 hours"
   },
   {
     name: "Shimla",
-    image: "./new_images/shimla.jpg", 
+    image: "./new_images/shimla.jpg",
     description: "Shimla, the capital of Himachal Pradesh, is a picturesque hill station known for its colonial architecture, scenic views, and cool weather. Popular spots include Mall Road, Ridge, and Jakhoo Temple.",
     distance: "366 km from Delhi",
     travelOptions: "Car: 7-8 hours | Bus: 8-10 hours | Train (Kalka-Shimla Toy Train): 6-7 hours"
   },
   {
     name: "Manali",
-    image: "./new_images/manali.jpg", 
+    image: "./new_images/manali.jpg",
     description: "Manali, a popular hill station in Himachal Pradesh, is known for its adventure sports, scenic landscapes, and snow-capped mountains. Solang Valley, Rohtang Pass, and Old Manali are key attractions.",
     distance: "520 km from Delhi",
     travelOptions: "Car: 12-14 hours | Bus: 14-16 hours | Train (via Chandigarh): 11 hours"
@@ -303,7 +303,7 @@ export const delhiPlaces = [
   {
     name: "Red Fort",
     description: "Built by Emperor Shah Jahan in 1648, the Red Fort is an iconic symbol of India’s history and freedom. This UNESCO World Heritage Site served as the main residence of the Mughal emperors and now hosts the Prime Minister’s Independence Day speech. Its stunning red sandstone walls, intricate Mughal architecture, and the bustling Chatta Chowk market inside attract millions of visitors annually.",
-    image: "./new_images/delhi-images/red-fort.jpg" 
+    image: "./new_images/delhi-images/red-fort.jpg"
   },
   {
     name: "Qutub Minar",
