@@ -13,7 +13,7 @@ import { HeadingBar } from './SmallComps'
  */
 const Home = () => {
   return (
-    <section id="home" className="home p-5 mt-10 sm:p-5 md:ml-16 md:mr-16 lg:ml-20 lg:mr-20">
+    <section id="home" className="home p-5 sm:mt-10 sm:p-5 md:ml-16 md:mr-16 lg:ml-20 lg:mr-20">
       <div className="conference-theme">
         <div className="">
           <h1 className='font-bold sm:text-3xl text-2xl text-sky-700'>Conference Theme</h1>

@@ -52,21 +52,21 @@ function Carousel() {
 
   return (
     <section
-      className="relative w-full carousel-container"
-      style={{ height: "35rem" }}
+      className="relative w-full carousel-container h-[22rem] sm:h-[27rem] md:h-[32rem] lg:h-[35rem]"
+    // style={{ height: "35rem" }}
     >
       <div
-        className="image-container m-auto w-full"
-        style={{ height: "35rem" }}
+        className="image-container m-auto w-full h-[22rem] sm:h-[27rem] md:h-[32rem] lg:h-[35rem]"
+      // style={{ height: "35rem" }}
       >
         {images.map((image, index) => (
           <img
             key={index}
             src={image.name}
             alt={`carousel image ${image.id}`}
-            className={`absolute inset-0 w-full transition-all duration-1000 ease-in-out ${imageIndex === image.id ? "opacity-100 z-10" : "opacity-0 z-0"
+            className={`absolute h-[22rem] sm:h-[27rem] md:h-[32rem] lg:h-[35rem] object-cover lg:object-fill inset-0 w-full transition-all duration-1000 ease-in-out ${imageIndex === image.id ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
-            style={{ height: "35rem" }}
+          // style={{ height: "35rem" }}
           />
         ))}
       </div>
@@ -97,7 +97,8 @@ function Carousel() {
             <button onClick={() => handleCircleBtn(image.id)} className="p-2">
               <Circle
                 color={index === imageIndex ? "black" : "white"}
-                strokeWidth={3}
+                strokeWidth={index === imageIndex ? 5 : 4}
+                size={index === imageIndex ? 38 : 28}
               />
             </button>
           </div>
@@ -110,29 +111,29 @@ function Carousel() {
       {/* Text Content Over Carousel */}
       <div
         id="carousel-text"
-        className="absolute top-0 w-full"
-        style={{ height: "35rem" }}
+        className="absolute top-0 md:top-2 lg:top-0 w-full h-[22rem] sm:h-[27rem] md:h-[32rem] lg:h-[35rem]"
+      // style={{ height: "35rem" }}
       >
         <div
           id="text-body"
-          className="flex flex-col justify-center items-center w-full p-10 z-30"
-          style={{ height: "35rem" }}
+          className="flex flex-col justify-center items-center w-full p-10 z-30 h-[22rem] sm:h-[25rem] md:h-[28rem] lg:h-[35rem]"
+        // style={{ height: "35rem" }}
         >
           {/* Welcome Message */}
 
           <div id="welcome-note" className="z-30 w-full">
             <h2
               style={{ WebkitTextStroke: "2px rgba(0,0,0,8)" }}
-              className="text-3xl tracking-wider md:text-4xl w-full flex flex-wrap justify-center text-center space-x-2 font-black bg-gradient-to-r from-sky-700  to-sky-950 bg-clip-text text-transparent"
+              className="text-3xl sm:tracking-tight md:tracking-wider md:text-5xl lg:text-6xl w-full flex flex-wrap justify-center text-center space-x-2 font-black bg-gradient-to-r from-sky-700  to-sky-950 bg-clip-text text-transparent"
             >
               <span>Welcome</span> <span>To</span> <span>TEMSMET 2025</span>
             </h2>
           </div>
 
           {/* Conference Name */}
-          <div className="relative z-30 mt-0.5 p-[10px] sm:p-[15px]">
-            <div className="absolute inset-0 bg-black bg-opacity-40  z-[-1]"></div>
-            <p className="flex md:font-bold flex-col text-center text-[#FEE2E2] leading-relaxed px-1.5 text-sm md:text-lg lg:text-xl xl:text-2xl">
+          <div className="relative z-30 mt-0.5 p-[6px] sm:p-[15px] lg:px-[25px] md:mt-2 ">
+            <div className="absolute inset-0 bg-black bg-opacity-60 rounded-lg  z-[-1]" />
+            <p className="flex font-semibold sm:font-bold md:font-bold flex-col text-center text-fuchsia-100 leading-5 md:leading-snug md:tracking-wide  px-1.5 text-sm  md:text-2xl xl:text-3xl">
               <span>4th IEEE International Conference</span>
               <span>on</span>
               <span>
@@ -145,11 +146,11 @@ function Carousel() {
           </div>
 
           {/* Date and Venue */}
-          <div className="relative z-30 mt-1.5 p-[10px] sm:p-[15px]">
-            <div className="absolute inset-0 bg-black bg-opacity-40 z-[-1]"></div>
-            <p className="flex md:font-bold flex-col text-center text-[#FEE2E2] leading-relaxed px-1.5 text-sm md:text-lg lg:text-xl xl:text-2xl">
+          <div className="relative z-30 mt-0.5 p-[6px] sm:p-[15px] lg:px-[25px] md:mt-3">
+            <div className="absolute inset-0 bg-black bg-opacity-60 rounded-lg z-[-1]"></div>
+            <p className="flex font-semibold sm:font-bold md:font-bold flex-col text-center text-fuchsia-100 leading-5 md:leading-snug md:tracking-wide  px-1.5 text-sm  md:text-2xl xl:text-3xl">
               <span>October 08-10, 2025</span>
-              <span>National Institute of Technology Delhi</span>
+              <span>National Institute of Technology Delhi, </span>
               <span>New Delhi, India</span>
             </p>
           </div>

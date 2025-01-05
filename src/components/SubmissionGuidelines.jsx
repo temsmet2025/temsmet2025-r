@@ -10,16 +10,16 @@ import { HeadingBar } from "./SmallComps"
  */
 const SubmissionGuidelines = () => {
   return (
-    <div id="submission-guidelines" className="sm:ml-32 sm:mr-32 sm:mt-10 sm:mb-10 p-8">
+    <div id="submission-guidelines" className="p-5 sm:mt-10 sm:p-5 md:ml-16 md:mr-16 lg:ml-20 lg:mr-20">
       <h1 className="font-bold sm:text-3xl text-2xl text-sky-700">Submission Guidelines</h1>
       <HeadingBar />
-      <p className="text-black text-lg sm:text-xl mt-4 text-justify w-5/6">
+      <p className="text-black text-base sm:text-xl text-wrap mt-4 text-justify">
         Prospective authors are invited to submit original technical papers for
         publication in the TEMSMET 2025. All presented papers will be submitted
         to the IEEE for possible inclusion in IEEE Xplore. All papers should
         adhere to the following guidelines:
       </p>
-      <ul className="list-disc ml-7 mr-7 text-black text-lg sm:text-xl leading-relaxed mt-4 w-5/6">
+      <ul className="list-disc p-7 text-black text-sm sm:text-xl leading-relaxed text-wrap text-justify">
         {submissionGuidelines.map((guideline, index) => (
           <li key={index} className="mb-3" dangerouslySetInnerHTML={{ __html: guideline }} />
         ))}
