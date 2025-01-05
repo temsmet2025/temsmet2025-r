@@ -1,6 +1,6 @@
 import { Description } from "@headlessui/react";
 
-// paper tracks
+// paper 
 export const conferenceStructure = [
   {
     track: "Keynote Talks",
@@ -100,7 +100,10 @@ export const sponsorsAndExhibitors = [
 ];
 export const conferenceTracks = [
   {
+    id: 0,
     track: "Track 1 - Innovations in Power Engineering",
+    bgColor: "bg-green-400", // Tailwind Green for sustainability and power
+    textColor: "text-gray-800", // Dark text for good contrast with green
     topics: [
       "Sustainable Power Generation, transportation",
       "Power Electronic Converters and Topologies",
@@ -115,7 +118,10 @@ export const conferenceTracks = [
     ]
   },
   {
+    id: 1,
     track: "Track 2 - Artificial Intelligence, Machine Learning and Cyber Security",
+    bgColor: "bg-blue-500", // Tailwind Blue for technology and AI
+    textColor: "text-yellow-100", // Lighter text for contrast against blue
     topics: [
       "Recurrent Neural Networks (RNNs) and Long Short-Term Memory (LSTM) networks",
       "Generative AI",
@@ -131,7 +137,10 @@ export const conferenceTracks = [
     ]
   },
   {
+    id: 2,
     track: "Track 3 - Smart Systems and Communications",
+    bgColor: "bg-orange-400", // Tailwind Orange for communication and innovation
+    textColor: "text-gray-800", // Dark text for good contrast with orange
     topics: [
       "Edge Computing and Fog Computing",
       "IoT, Sensor Networks and Data Acquisition",
@@ -147,7 +156,10 @@ export const conferenceTracks = [
     ]
   },
   {
+    id: 3,
     track: "Track 4 - Engineering and Smart Management",
+    bgColor: "bg-purple-400", // Tailwind Purple for management and innovation
+    textColor: "text-white", // White text for contrast
     topics: [
       "Software Engineering and Management",
       "Smart Manufacturing and Automation",
@@ -162,7 +174,10 @@ export const conferenceTracks = [
     ]
   },
   {
+    id: 4,
     track: "Track 5 - Advancements in VLSI, Embedded systems and Signal Processing",
+    bgColor: "bg-red-400", // Tailwind Red for engineering and processing
+    textColor: "text-white", // White text for contrast
     topics: [
       "Audio & Acoustic Signal Processing",
       "Image, Video & Multidimensional Signal Processing, Computer Vision",
@@ -175,7 +190,10 @@ export const conferenceTracks = [
     ]
   },
   {
+    id: 5,
     track: "Track 6 - Innovations and Entrepreneurship",
+    bgColor: "bg-yellow-400", // Tailwind Yellow for innovation and entrepreneurship
+    textColor: "text-gray-800", // Dark text for good contrast with yellow
     topics: [
       "Disruptive product ideas",
       "Inclusive business models",
@@ -183,6 +201,9 @@ export const conferenceTracks = [
     ]
   }
 ];
+
+
+
 
 export const submissionGuidelines = [
   "All conference submissions should be written in English with a maximum paper length of six (6) printed pages (10-point font), including figures and tables.",

@@ -58,7 +58,7 @@ function App() {
             <ListView
               title="Call For Papers"
               data={conferenceTracks}
-              classes="flex flex-col flex-wrap w-full justify-around md:flex-row md:pl-10"
+            // classes="flex flex-col flex-wrap w-full justify-around md:flex-row md:pl-10"
             />
           </div>
 
