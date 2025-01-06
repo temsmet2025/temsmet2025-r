@@ -30,6 +30,8 @@ export const programChairs = [
   { id: 4, name: "Jawar Singh", affiliation: "IIT Patna", imagePath: "./orgCommittee/programChairs/jawar.jpg", link: "https://www.linkedin.com/in/jawar-singh-25495a17/" },
   { id: 5, name: "Anima Majumder", affiliation: "TCS Innovation labs, Bangalore", imagePath: "./orgCommittee/techProgCommittee/anima.jpeg", link: "https://in.linkedin.com/in/anima-majumder-1082a01a" },
   { id: 6, name: "Chantal Cherifi", affiliation: "University of Lyon, France", imagePath: "./orgCommittee/techProgCommittee/chantalcherifi.jpeg", link: "https://scholar.google.fr/citations?user=4KP81WAAAAAJ&hl=fr" },
+  { id: 6, name: "Tarini Baswal", affiliation: "IRSEE 1987 || Director REMCL || Railway Electrification Head Of RITES", imagePath: "./orgCommittee/programChairs/tarini.jpeg", link: "https://www.linkedin.com/in/tarini-baswal-b5250b12a/" },
+
 ];
 
 export const technicalProgrammeCommittee = [
