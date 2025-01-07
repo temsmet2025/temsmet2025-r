@@ -29,19 +29,19 @@ const SubmissionGuidelines = () => {
         <h1 className="text-xl sm:text-2xl font-bold text-sky-700">For Reference Download these Formats: </h1>
         <HeadingBar />
         <div className="mt-10 flex flex-col gap-10 justify-center items-center text-sky-600 font-bold">
-          <a href="./downloadable/conference-template-letter_June-2023-1.docx" download>
+          <a href="./downloadable/conference-template-letter.docx" download>
             <span className="px-6 py-3 border-2 border-sky-700 rounded-md hover:border-sky-800 transition-colors duration-500 ease-in-out hover:shadow-lg hover:text-sky-700 hover:bg-sky-300/70 ">Word Template</span>
           </a>
-          <a href="./downloadable/conference-template-letter_June-2023-1.pdf" download>
+          <a href="./downloadable/conference-template-letter.pdf" download>
             <span className="px-6 py-3 border-2 border-sky-700 rounded-md hover:border-sky-800 transition-colors duration-500 ease-in-out hover:shadow-lg hover:text-sky-700 hover:bg-sky-300/70 ">PDF Template</span>
           </a>
           <a href="./downloadable/LaTeX-Template.zip" download>
             <span className="px-6 py-3 border-2 border-sky-700 rounded-md hover:border-sky-800 transition-colors duration-500 ease-in-out hover:shadow-lg hover:text-sky-700 hover:bg-sky-300/70 ">LaTex Template</span>
           </a>
-          <a href="./downloadable/Template-for-IEEE-ETFG-2023-Oral-Presentation-1.pptx" download>
+          <a href="./downloadable/Template-for-IEEE.pptx" download>
             <span className="px-6 py-3 border-2 border-sky-700 rounded-md hover:border-sky-800 transition-colors duration-500 ease-in-out hover:shadow-lg hover:text-sky-700 hover:bg-sky-300/70 ">Paper Presentation Template</span>
           </a>
-          <a href="./downloadable/Poster-Template-for-IEEE-ETFG-2023-1.pptx" download>
+          <a href="./downloadable/Poster-Template-for-IEEE.pptx" download>
             <span className="px-6 py-3 border-2 border-sky-700 rounded-md hover:border-sky-800 transition-colors duration-500 ease-in-out hover:shadow-lg hover:text-sky-700 hover:bg-sky-300/70 ">Poster Presentation Template</span>
           </a>
         </div>
