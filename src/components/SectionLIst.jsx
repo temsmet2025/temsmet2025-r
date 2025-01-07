@@ -21,7 +21,13 @@ function SectionList(props) {
         <div id={`section-list-${title}`} className={`${props.classes}`}>
             <div className="">
                 <div className="flex flex-wrap">
-                    <h1 className='font-bold text-sky-700 sm:text-3xl text-2xl'>{title}</h1>
+                    <h1 className='font-bold text-sky-700 sm:text-3xl text-2xl'>{title.split("4th").map((part, index) => (
+                        <React.Fragment key={index}>
+                            {console.log(part)}
+                            {part}
+                            {index < title.split("4th").length - 1 && <>4<sup>th</sup></>}
+                        </React.Fragment>
+                    ))}</h1>
                     <span className='hover:text-blue-700 cursor-pointer'>{props.isButton === "SquareArrowOutUpRight" && <Link to="/keynote-speakers">  <SquareArrowOutUpRight /></Link>}</span>
                 </div>
                 <HeadingBar />
@@ -30,7 +36,13 @@ function SectionList(props) {
                 {dataItem.map((item, index) => (
                     <li key={index} className={`sm:ml-7 sm:mr-7 list-disc`}>
                         {item.track != undefined && <span className="font-bold text-base sm:text-xl">{item.track} : </span>}
-                        <span className="text-sm sm:text-xl">{item.description}</span>
+                        <span className="text-sm sm:text-xl">{item.description.split("4th").map((part, part_index) => (
+                            <React.Fragment key={part_index}>
+                                {part}
+                                {part_index < item.description.split("4th").length - 1 && <>4<sup>th</sup></>}
+                            </React.Fragment>
+
+                        ))}</span>
                     </li>
                 ))}
             </ul>

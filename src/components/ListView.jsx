@@ -12,7 +12,7 @@ function ListView(props) {
         <HeadingBar classes="w-full" />
         <div className={`${props.classes} grid grid-cols-1 lg:grid-cols-2 mt-5 gap-10 text-wrap text-justify md:mt-7 lg:mt-10`}>
           {dataItem.map((item, index) => (
-            <div key={index} id={`tracks-${index}`} className={`w-full h-full text-justify p-8 rounded-lg hover:scale-105 transition-all duration-300 ease-in-out ${item.textColor}  ${item.bgColor}`}>
+            <div key={index} id={`tracks-${index}`} className={`w-full h-full  text-justify p-8 rounded-lg hover:scale-105 transition-all duration-300 ease-in-out ${item.textColor}  ${item.bgColor}`}>
               <h1 className="font-bold text-lg sm:text-xl">{item.track}</h1>
               <ul className="list-disc text-base sm:text-lg ml-6 sm:ml-10">
                 {item.topics.map((topic, index) => (

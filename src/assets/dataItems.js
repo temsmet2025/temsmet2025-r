@@ -140,7 +140,7 @@ export const conferenceTracks = [
     id: 2,
     track: "Track 3 - Smart Systems and Communications",
     bgColor: "bg-orange-400", // Tailwind Orange for communication and innovation
-    textColor: "text-gray-800", // Dark text for good contrast with orange
+    textColor: "text-yellow-950", // Dark text for good contrast with orange
     topics: [
       "Edge Computing and Fog Computing",
       "IoT, Sensor Networks and Data Acquisition",
