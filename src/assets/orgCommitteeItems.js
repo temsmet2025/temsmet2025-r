@@ -197,7 +197,7 @@ export const volunteers = [
     id: 7,
     name: "Shivank",
     affiliation: "Research Scholar at NIT Delhi",
-    imagePath: "./orgCommittee/volunteers/shivank.jpeg",
+    imagePath: "./orgCommittee/volunteers/shivank.png",
     link: "",
   },
 

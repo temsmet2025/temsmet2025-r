@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { X } from 'lucide-react'
 function Contact({ showContact, setShowContact }) {
     const HandleBtn = () => {
         setShowContact((prev) => !prev);
@@ -20,8 +21,7 @@ function Contact({ showContact, setShowContact }) {
     // }
     // }, [])
     return (
-        <section className={`${showContact ? "fixed inset-0 backdrop-blur-md bg-black/30" : "hidden"} z-40`}>
-
+        <section className={`${showContact ? "fixed inset-0 backdrop-blur-md bg-black/30" : "hidden"}  z-40`}>
             <div
                 id="contact"
                 className="bg-white relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border border-gray-500 rounded-lg shadow-lg p-6 w-[20rem] h-[12rem] sm:w-[30rem] sm:h-[20rem] lg:w-[50rem] lg:h-[20rem] z-50"

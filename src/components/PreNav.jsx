@@ -39,7 +39,8 @@ function PreNav() {
             <div id="ieee-logo" className="flex justify-center" style={{ width: isDesktop ? '15rem' : isTablet ? '10rem' : '6rem' }}>
                 <img src="./logos/IEEE-logo/IEEE_logo.svg" alt="IEEE-LOGO" className="w-full" />
             </div>
+
         </section>
     )
 }
-export default PreNav;
+export default PreNav; 

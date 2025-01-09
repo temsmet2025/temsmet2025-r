@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Menu, X, ChevronUp, ChevronDown } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   navigation,
   cfpSubmenuItems,
@@ -89,7 +89,6 @@ const MobileSubMenu = ({ items, onClose }) => (
 function Nav({ setShowContact }) {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [subMenuStates, setSubMenuStates] = useState({});
-  const location = useLocation();
 
   // Reset mobile menu and submenu states when the route changes.
   useEffect(() => {
@@ -121,19 +120,25 @@ function Nav({ setShowContact }) {
     setSubMenuStates({ [key]: !subMenuStates[key] });
   };
 
+  const [active, setActive] = useState(1000);
+  const handleActive = (id) => {
+    setActive(id);
+  }
+
+
   return (
     <nav className="sticky -top-1 z-40 w-full">
-      <div className="relative bg-fixed bg-slate-950 text-white xl:flex justify-between z-50">
+      <div className="relative bg-fixed bg-slate-950/90 border-b-4 border-zinc-950 text-white xl:flex justify-between z-50">
         <div className="visible font-bold xl:hidden w-48 text-xl p-3 md:text-3xl">
           <p>TEMSMET2025</p>
         </div>
 
         {/* Desktop Navigation */}
-        <ul className="hidden xl:flex xl:p-5 w-full text-lg font-mono font-bold justify-around items-center">
+        <ul className="hidden xl:flex w-full font-mono text-lg font-bold justify-around items-center">
           {navigation.map((navItem, index) => (
             <li
               key={index}
-              className="text-white hover:text-slate-200 cursor-pointer submenu "
+              className={` hover:text-slate-200 cursor-pointer submenu px-4 py-6 ${navItem.index === active ? "text-zinc-50" : "text-sky-300"}`}
               onMouseEnter={() => {
                 if (navItem.name === "Call for Papers") toggleSubMenu("cfp");
                 if (navItem.name === "Past Editions")
@@ -146,11 +151,16 @@ function Nav({ setShowContact }) {
                   toggleSubMenu("pastEditions");
                 if (navItem.name === "Travel") toggleSubMenu("travel");
               }}
-              onClick={() => {
-                if (navItem.name === "Contact") setShowContact(true);
+              onClick={(e) => {
+                if (navItem.name === "Contact") {
+                  setShowContact(true)
+                };
+                if (navItem.name !== "Contact") {
+                  handleActive(navItem.index)
+                }
               }}
             >
-              <Link to={navItem.href}>
+              <Link to={navItem.href !== undefined && navItem.href}>
                 <span className="flex items-center">
                   {navItem.name}
                   {navItem.name === "Call for Papers" &&
@@ -198,7 +208,7 @@ function Nav({ setShowContact }) {
                   if (navItem.name === "Past Editions")
                     toggleSubMenu("pastEditions");
                   if (navItem.name === "Travel") toggleSubMenu("travel");
-                  if (navItem.name === "Contact") setShowContact(true);
+                  if (navItem.name === "Contact") contactClickHandle(true);
                 }}
               >
                 <Link to={navItem.href}>

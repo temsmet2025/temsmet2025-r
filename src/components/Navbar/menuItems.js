@@ -9,20 +9,20 @@
  * @property {boolean} current - A boolean indicating if the link is currently active.
  */
 export const navigation = [
-  { name: "Home", href: "/", current: "_self", id: "home-link" },
-  { name: "Call for Papers", href: "", current: "_self", id: "cfp-link" },
+  { index: 0, name: "Home", href: "/", current: "_self", id: "home-link" },
+  { index: 1, name: "Call for Papers", href: "", current: "_self", id: "cfp-link" },
   {
-    name: "Submission Guidelines",
+    index: 2, name: "Submission Guidelines",
     href: "/submission-guidelines#submission-guidelines",
     current: "_self",
     id: "sg-link",
   },
-  { name: "Registration", href: "/registration", current: "_self", id: "reg-link" },
-  { name: "Speakers", href: "/keynote-speakers", current: "_self", id: "ks-link" },
-  { name: "Committee", href: "/org-committee", current: "_self", id: "committee-link" },
-  { name: "Past Editions", href: "/", current: "_self", id: "pe-link" },
-  { name: "Contact", href: "/", current: "_self", id: "contact-link" },
-  { name: "Travel", current: "_self", id: "travel-link" },
+  { index: 3, name: "Registration", href: "/registration", current: "_self", id: "reg-link" },
+  { index: 4, name: "Speakers", href: "/keynote-speakers", current: "_self", id: "ks-link" },
+  { index: 5, name: "Committee", href: "/org-committee", current: "_self", id: "committee-link" },
+  { index: 6, name: "Past Editions", href: "/", current: "_self", id: "pe-link" },
+  { index: 7, name: "Travel", current: "_self", id: "travel-link" },
+  { index: 8, name: "Contact", current: "_self", id: "contact-link" },
 ];
 
 /**

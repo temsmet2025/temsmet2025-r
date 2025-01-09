@@ -26,7 +26,6 @@ import ExploreDelhi from "./components/ExploreDelhi.jsx";
  */
 function App() {
   const [showContact, setShowContact] = useState(false);
-
   /**
    * Router object defining routes and their respective components using HashRouter.
    */
