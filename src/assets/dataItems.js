@@ -63,8 +63,8 @@ export const registrationFees = [
   { tableData: ['IEEE Student Member', '6,500 INR', '225 USD', '7,500 INR', '275 USD'] },
   { tableData: ['Non-IEEE Student Member', '7,500 INR', '250 USD', '8,500 INR', '300 USD'] },
   { tableData: ['IEEE TEMS Student Member', '6,000 INR', '200 USD', '7,000 INR', '250 USD'] },
-  { tableData: ['Charges per additional accepted paper (Student author)', '5,000 INR', '175 USD', '5,000 INR', '175 USD'] },
-  { tableData: ['Charges per additional accepted paper (Regular author)', '5,000 INR', '175 USD', '5,000 INR', '175 USD'] },
+  { tableData: ['Charges per additional accepted paper (Student authors)', '5,000 INR', '175 USD', '5,000 INR', '175 USD'] },
+  { tableData: ['Charges per additional accepted paper (Other authors)', '5,000 INR', '175 USD', '5,000 INR', '175 USD'] },
 ];
 
 export const registrationNotes = [
@@ -75,7 +75,7 @@ export const registrationNotes = [
   { description: "Author registration includes only one paper free.Please add the extra paper in your registration if you have more than one paper to present, and pay the additional fee for extra paper.", },
   { description: "All papers must be registered.Unregistered papers will not be included in the Program.", },
   { description: "All conference registration categories will have access to technical sessions, welcome reception, inauguration, closing ceremony, daily working lunch, and conference banquet.", },
-  { track: "Cancellation Policy", description: "Registration fee is non - refundable", },
+  { track: "Cancellation Policy", description: "Registration fee is non - refundable.", },
 ]
 
 export const deligates = [

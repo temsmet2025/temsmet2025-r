@@ -17,12 +17,13 @@ export const navigation = [
     current: "_self",
     id: "sg-link",
   },
-  { index: 3, name: "Registration", href: "/registration", current: "_self", id: "reg-link" },
-  { index: 4, name: "Speakers", href: "/keynote-speakers", current: "_self", id: "ks-link" },
-  { index: 5, name: "Committee", href: "/org-committee", current: "_self", id: "committee-link" },
-  { index: 6, name: "Past Editions", href: "/", current: "_self", id: "pe-link" },
-  { index: 7, name: "Travel", current: "_self", id: "travel-link" },
-  { index: 8, name: "Contact", current: "_self", id: "contact-link" },
+  { index: 3, name: "Sponsorship Invitation", current: "_self", id: "reg-link" },
+  { index: 4, name: "Registration", href: "/registration", current: "_self", id: "reg-link" },
+  { index: 5, name: "Speakers", href: "/keynote-speakers", current: "_self", id: "ks-link" },
+  { index: 6, name: "Committee", href: "/org-committee", current: "_self", id: "committee-link" },
+  { index: 7, name: "Past Editions", href: "/", current: "_self", id: "pe-link" },
+  { index: 8, name: "Travel", current: "_self", id: "travel-link" },
+  { index: 9, name: "Contact", current: "_self", id: "contact-link" },
 ];
 
 /**

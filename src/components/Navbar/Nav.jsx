@@ -120,9 +120,14 @@ function Nav({ setShowContact }) {
     setSubMenuStates({ [key]: !subMenuStates[key] });
   };
 
-  const [active, setActive] = useState(1000);
+  const [active, setActive] = useState(0);
   const handleActive = (id) => {
     setActive(id);
+    console.log(id, "id")
+    const timer = setTimeout(() => {
+      console.log(active);
+
+    }, 4000)
   }
 
 
@@ -134,7 +139,7 @@ function Nav({ setShowContact }) {
         </div>
 
         {/* Desktop Navigation */}
-        <ul className="hidden xl:flex w-full font-mono text-lg font-bold justify-around items-center">
+        <ul className="hidden xl:flex w-full flex-wrap font-mono text-lg font-bold justify-start 2xl:justify-around items-center">
           {navigation.map((navItem, index) => (
             <li
               key={index}
@@ -157,6 +162,11 @@ function Nav({ setShowContact }) {
                 };
                 if (navItem.name !== "Contact") {
                   handleActive(navItem.index)
+                  console.log(navItem.index, "clicked")
+                }
+                if(navItem.name === "Sponsorship Invitation"){
+                  e.preventDefault();
+                  alert("Something Amazing Is Cooking Up...")
                 }
               }}
             >

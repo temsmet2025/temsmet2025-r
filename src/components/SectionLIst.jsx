@@ -23,7 +23,6 @@ function SectionList(props) {
                 <div className="flex flex-wrap">
                     <h1 className='font-bold text-sky-700 sm:text-3xl text-2xl'>{title.split("4th").map((part, index) => (
                         <React.Fragment key={index}>
-                            {console.log(part)}
                             {part}
                             {index < title.split("4th").length - 1 && <>4<sup>th</sup></>}
                         </React.Fragment>

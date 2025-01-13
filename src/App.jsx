@@ -17,6 +17,7 @@ import { useState } from "react";
 import TouristDestinations from "./components/TouristDestinations.jsx";
 import SectionList from "./components/SectionLIst.jsx";
 import ExploreDelhi from "./components/ExploreDelhi.jsx";
+import Sponsorship from "./components/Sponsorship";
 
 /**
  * Main application component that sets up routing for different pages using HashRouter.
@@ -134,6 +135,23 @@ function App() {
       ),
     },
     {
+      path: "/sponsorhip-invitation",
+      element: (
+        <>
+          <ScrollToTop elementId="sponsorhip-invitation" />
+          <PreNav />
+          <Nav setShowContact={setShowContact} />
+          {/* <Nav onNavClick={handleScrollToSection} /> */}
+          <Carousel />
+          <div id="sg-list">
+            <Sponsorship></Sponsorship>
+          </div>
+          <Contact setShowContact={setShowContact} showContact={showContact} />
+          <Footer />
+        </>
+      ),
+    },
+    {
       path: "/explore-delhi",
       element: (
         <>
@@ -178,7 +196,7 @@ function App() {
             <TableView
               tableName="Registration"
               tableHead={[
-                "Author Category",
+                "Author Categories",
                 "Early Bird (Indian)",
                 "Early Bird (Foreign)",
                 "Regular (Indian)",
