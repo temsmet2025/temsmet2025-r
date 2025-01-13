@@ -28,14 +28,6 @@ import Sponsorship from "./components/Sponsorship";
 function App() {
   const [showContact, setShowContact] = useState(false);
    const [active, setActive] = useState(0);
-  const handleActive = (id) => {
-    setActive(id);
-    console.log(id, "id")
-    const timer = setTimeout(() => {
-      console.log(active);
-
-    }, 4000)
-  }
   /**
    * Router object defining routes and their respective components using HashRouter.
    */
