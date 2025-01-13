@@ -27,6 +27,15 @@ import Sponsorship from "./components/Sponsorship";
  */
 function App() {
   const [showContact, setShowContact] = useState(false);
+   const [active, setActive] = useState(0);
+  const handleActive = (id) => {
+    setActive(id);
+    console.log(id, "id")
+    const timer = setTimeout(() => {
+      console.log(active);
+
+    }, 4000)
+  }
   /**
    * Router object defining routes and their respective components using HashRouter.
    */
@@ -37,7 +46,7 @@ function App() {
         <>
           {/* <ScrollToTop elementId="home" /> */}
           <PreNav />
-          <Nav setShowContact={setShowContact} />
+          <Nav setShowContact={setShowContact} linkActive={active} setLinkActive = {setActive}/>
           <Carousel />
           <Home />
           <Contact setShowContact={setShowContact} showContact={showContact} />
@@ -51,7 +60,7 @@ function App() {
         <>
           <ScrollToTop elementId="Call For Papers" />
           <PreNav />
-          <Nav setShowContact={setShowContact} />
+          <Nav setShowContact={setShowContact} linkActive={active} setLinkActive = {setActive}/>
           <Carousel />
           <Contact setShowContact={setShowContact} showContact={showContact} />
           <div id="cfp-link">
@@ -72,7 +81,7 @@ function App() {
         <>
           <ScrollToTop elementId="org-committe" />
           <PreNav />
-          <Nav setShowContact={setShowContact} />
+          <Nav setShowContact={setShowContact} linkActive={active} setLinkActive = {setActive}/>
           <Carousel />
           <Contact setShowContact={setShowContact} showContact={showContact} />
           <div id="committee-link">
@@ -89,7 +98,7 @@ function App() {
         <>
           <ScrollToTop elementId="keynote-speakers" />
           <PreNav />
-          <Nav setShowContact={setShowContact} />
+          <Nav setShowContact={setShowContact} linkActive={active} setLinkActive = {setActive}/>
           <Carousel />
           <Contact setShowContact={setShowContact} showContact={showContact} />
           <div id="ks-link">
@@ -106,7 +115,7 @@ function App() {
         <>
           <ScrollToTop elementId="venue-and-dates" />
           <PreNav />
-          <Nav setShowContact={setShowContact} />
+          <Nav setShowContact={setShowContact} linkActive={active} setLinkActive = {setActive}/>
           <Carousel />
           <div id="venue-link">
             <Venue />
@@ -123,7 +132,7 @@ function App() {
         <>
           <ScrollToTop elementId="submission-guidelines" />
           <PreNav />
-          <Nav setShowContact={setShowContact} />
+          <Nav setShowContact={setShowContact} linkActive={active} setLinkActive = {setActive}/>
           {/* <Nav onNavClick={handleScrollToSection} /> */}
           <Carousel />
           <div id="sg-list">
@@ -140,7 +149,7 @@ function App() {
         <>
           <ScrollToTop elementId="sponsorhip-invitation" />
           <PreNav />
-          <Nav setShowContact={setShowContact} />
+          <Nav setShowContact={setShowContact} linkActive={active} setLinkActive = {setActive}/>
           {/* <Nav onNavClick={handleScrollToSection} /> */}
           <Carousel />
           <div id="sg-list">
@@ -157,7 +166,7 @@ function App() {
         <>
           <ScrollToTop elementId="explore-delhi" />
           <PreNav />
-          <Nav setShowContact={setShowContact} />
+          <Nav setShowContact={setShowContact} linkActive={active} setLinkActive = {setActive}/>
           <Carousel />
           <div id="explore-delhi">
             <ExploreDelhi />
@@ -173,7 +182,7 @@ function App() {
         <>
           <ScrollToTop elementId="tourist-destinations" />
           <PreNav />
-          <Nav setShowContact={setShowContact} />
+          <Nav setShowContact={setShowContact} linkActive={active} setLinkActive = {setActive}/>
           <Carousel />
           <div id="t-dest">
             <TouristDestinations />
@@ -189,7 +198,7 @@ function App() {
         <>
           <ScrollToTop elementId="Registration" />
           <PreNav />
-          <Nav setShowContact={setShowContact} />
+          <Nav setShowContact={setShowContact} linkActive={active} setLinkActive = {setActive}/>
           <Carousel />
           {/* <Contact setShowContact={setShowContact} showContact={showContact} /> */}
           <div id="reg-link" className="p-5 mt-10 sm:p-5 md:ml-16 md:mr-16 lg:ml-20 lg:mr-20">

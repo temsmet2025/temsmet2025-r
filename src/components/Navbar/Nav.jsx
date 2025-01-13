@@ -86,7 +86,7 @@ const MobileSubMenu = ({ items, onClose }) => (
  * @param {Function} props.setShowContact - Function to toggle the contact modal.
  * @returns {JSX.Element} The navigation JSX structure.
  */
-function Nav({ setShowContact }) {
+function Nav({ setShowContact, linkActive, setLinkActive }) {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [subMenuStates, setSubMenuStates] = useState({});
 
@@ -120,16 +120,6 @@ function Nav({ setShowContact }) {
     setSubMenuStates({ [key]: !subMenuStates[key] });
   };
 
-  const [active, setActive] = useState(0);
-  const handleActive = (id) => {
-    setActive(id);
-    console.log(id, "id")
-    const timer = setTimeout(() => {
-      console.log(active);
-
-    }, 4000)
-  }
-
 
   return (
     <nav className="sticky -top-1 z-40 w-full">
@@ -143,7 +133,7 @@ function Nav({ setShowContact }) {
           {navigation.map((navItem, index) => (
             <li
               key={index}
-              className={` hover:text-slate-200 cursor-pointer submenu px-4 py-6 ${navItem.index === active ? "text-zinc-50" : "text-sky-300"}`}
+              className={` hover:text-slate-200 cursor-pointer submenu px-4 py-6 ${navItem.index === linkActive ? "text-zinc-50" : "text-sky-300"}`}
               onMouseEnter={() => {
                 if (navItem.name === "Call for Papers") toggleSubMenu("cfp");
                 if (navItem.name === "Past Editions")
@@ -161,13 +151,13 @@ function Nav({ setShowContact }) {
                   setShowContact(true)
                 };
                 if (navItem.name !== "Contact") {
-                  handleActive(navItem.index)
                   console.log(navItem.index, "clicked")
                 }
                 if(navItem.name === "Sponsorship Invitation"){
                   e.preventDefault();
                   alert("Something Amazing Is Cooking Up...")
                 }
+                  setLinkActive(navItem.index);
               }}
             >
               <Link to={navItem.href !== undefined && navItem.href}>
