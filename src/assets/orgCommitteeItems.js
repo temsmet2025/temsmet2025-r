@@ -98,7 +98,9 @@ export const technicalProgrammeCommittee = [
   { id: 62, name: "Pallavi Athe", affiliation: "IISER Bhopal", imagePath: "./orgCommittee/techProgCommittee/pallavi.jpeg", link: "" },
   { id: 63, name: "Kaushik Das", affiliation: "Senior Scientist, TCS Research Lab", imagePath: "./orgCommittee/techProgCommittee/kaushik.jpeg", link: "" },
   { id: 64, name: "Samrat Dutta", affiliation: "Scientist, TCS Research Lab", imagePath: "./orgCommittee/techProgCommittee/samrat.jpeg", link: "" },
-  { id: 65, name: "Vijay K Dutt", affiliation: "Indian Railways", imagePath: "./orgCommittee/default.avif", link: "https://vtsociety.org/contact/vijay-k-dutt" }
+  { id: 65, name: "Vijay K Dutt", affiliation: "Indian Railways", imagePath: "./orgCommittee/default.avif", link: "https://vtsociety.org/contact/vijay-k-dutt" },
+  { id: 66, name: "Rajiv Srivastava", affiliation: "Indian Institute of Technology, Kanpur, India", imagePath: "./orgCommittee/techProgCommittee/rajiv.png", link: "https://www.mecs-press.org/authors/112686.html" }
+  
 ];
 
 
