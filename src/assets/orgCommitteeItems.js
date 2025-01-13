@@ -99,7 +99,8 @@ export const technicalProgrammeCommittee = [
   { id: 63, name: "Kaushik Das", affiliation: "Senior Scientist, TCS Research Lab", imagePath: "./orgCommittee/techProgCommittee/kaushik.jpeg", link: "" },
   { id: 64, name: "Samrat Dutta", affiliation: "Scientist, TCS Research Lab", imagePath: "./orgCommittee/techProgCommittee/samrat.jpeg", link: "" },
   { id: 65, name: "Vijay K Dutt", affiliation: "Indian Railways", imagePath: "./orgCommittee/default.avif", link: "https://vtsociety.org/contact/vijay-k-dutt" },
-  { id: 66, name: "Rajiv Srivastava", affiliation: "Indian Institute of Technology, Kanpur, India", imagePath: "./orgCommittee/techProgCommittee/rajiv.png", link: "https://www.mecs-press.org/authors/112686.html" }
+  { id: 66, name: "Rajiv Srivastava", affiliation: "Indian Institute of Technology, Kanpur, India", imagePath: "./orgCommittee/techProgCommittee/rajiv.png", link: "https://www.mecs-press.org/authors/112686.html" },
+  { id: 67, name: "Neeraj Kumar Pandey", affiliation: "R&D Manager at synopsys Bangalore", imagePath: "./orgCommittee/techProgCommittee/neeraj.jpeg", link: "https://www.linkedin.com/in/neeraj-kumar-pandey-1b630536/?trk=public_profile_samename-profile&originalSubdomain=in" },
   
 ];
 
