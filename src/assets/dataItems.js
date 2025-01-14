@@ -388,3 +388,35 @@ export const delhiPlaces = [
   }
 ];
 
+export const delhiFoodPlaces = [
+  {
+    name: "Amrik Sukhdev",
+    description: "A legendary roadside dhaba in Murthal, Haryana, known for its butter-loaded paranthas and lassi. It’s a must-visit for authentic North Indian flavors.",
+    image: "./new_images/food-images/amrit-sukhdev.jpeg" 
+  },
+  {
+    name: "Saravana Bhavan",
+    description: "A renowned South Indian restaurant chain, Saravana Bhavan is famous for its crispy dosas, flavorful idlis, and delicious filter coffee. A perfect spot for a traditional South Indian breakfast or meal.",
+    image: "./new_images/food-images/saravana-bhavan.webp" 
+  },
+  {
+    name: "Leo's Artisan Pizza",
+    description: "Located in Gurgaon, Leo's Artisan Pizza is famous for its wood-fired Neapolitan-style pizzas. Their Margherita Pizza and Pepperoni Pizza are the crowd favorites, crafted with fresh ingredients and perfect flavor.",
+    image: "./new_images/food-images/leo-pizza.jpg" 
+  },
+  {
+    name: "Bukhara",
+    description: "Located in the ITC Maurya, Bukhara is famous for its North Indian cuisine, especially its signature Dal Bukhara and the Tandoori Raan. Known for its rustic ambiance and traditional cooking style.",
+    image: "./new_images/food-images/bukhara.webp" 
+  },
+  {
+    name: "Indian Accent",
+    description: "Indian Accent in New Delhi offers a modern take on traditional Indian dishes, with innovative creations like Slow-Cooked Lamb Shank and Tandoori Lamb Chops. Known for its fine dining experience and creative menu.",
+    image: "./new_images/food-images/indian-accent.jpg" 
+  },
+  {
+    name: "Café Delhi Heights",
+    description: "Located in Gurgaon, Café Delhi Heights serves delicious Juicy Lucy Burgers and Pastas with a trendy café ambiance.",
+    image: "./new_images/food-images/cafe-delhi.jpg" 
+  },
+];

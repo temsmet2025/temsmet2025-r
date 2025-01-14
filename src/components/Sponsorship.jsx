@@ -1,39 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { PDFViewer } from '@react-pdf/renderer';
-import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
+import React, { useState } from 'react';
+import { PDFViewer, Document, Page, Text, StyleSheet } from '@react-pdf/renderer';
 
-// Create styles
+// Create styles for the PDF content
 const styles = StyleSheet.create({
   page: {
-    flexDirection: 'row',
-    backgroundColor: '#E4E4E4'
+    flexDirection: 'column',
+    backgroundColor: '#F3F4F6',
+    padding: 20,
   },
-  section: {
-    margin: 10,
-    padding: 10,
-    flexGrow: 1
-  }
+  text: {
+    margin: 12,
+    fontSize: 14,
+    textAlign: 'center',
+    color: '#1F2937',
+  },
 });
 
-// Create Document Component
-const MyDocument = () => {
- return (
-     <Document file="./Temsmet2025_Sponsorship_Brochure.pdf">
-    
-    </Document>
- )
+const Sponsorship = () => {
+  return (
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <iframe
+        src="/Temsmet2025_Sponsorship_Brochure.pdf"
+        className="w-full h-[800px] border border-gray-300 shadow-lg"
+        title="Sponsorship Invitation PDF"
+      />
+    </div>
+  );
 };
 
-const Sponsorship = () => {
-  <PDFViewer>
-    <MyDocument />
-  </PDFViewer>
-ReactDOM.render(<App />, document.getElementById('root'));
-  
-}
-
 export default Sponsorship;
-// src/components/PDFViewer.js
-
-

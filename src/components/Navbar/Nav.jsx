@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Menu, X, ChevronUp, ChevronDown } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   navigation,
   cfpSubmenuItems,
@@ -119,7 +119,8 @@ function Nav({ setShowContact, linkActive, setLinkActive }) {
   const toggleSubMenu = (key) => {
     setSubMenuStates({ [key]: !subMenuStates[key] });
   };
-
+  
+  const navigate = useNavigate();
 
   return (
     <nav className="sticky -top-1 z-40 w-full">
@@ -155,7 +156,9 @@ function Nav({ setShowContact, linkActive, setLinkActive }) {
                 }
                 if(navItem.name === "Sponsorship Invitation"){
                   e.preventDefault();
-                  alert("Something Amazing Is Cooking Up...")
+                  navigate("/sponsorhip-invitation");
+                  //window.open("/Temsmet2025_Sponsorship_Brochure.pdf", "_blank");
+                  //alert("Something Amazing Is Cooking Up...")
                 }
                   setLinkActive(navItem.index);
               }}

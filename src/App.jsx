@@ -145,7 +145,7 @@ function App() {
           {/* <Nav onNavClick={handleScrollToSection} /> */}
           <Carousel />
           <div id="sg-list">
-            <Sponsorship></Sponsorship>
+            <Sponsorship/>
           </div>
           <Contact setShowContact={setShowContact} showContact={showContact} />
           <Footer />
