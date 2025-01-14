@@ -139,7 +139,7 @@ function App() {
       path: "/sponsorhip-invitation",
       element: (
         <>
-          <ScrollToTop elementId="sponsorhip-invitation" />
+          <ScrollToTop elementId="sponsorship-invitation" />
           <PreNav />
           <Nav setShowContact={setShowContact} linkActive={active} setLinkActive = {setActive}/>
           {/* <Nav onNavClick={handleScrollToSection} /> */}

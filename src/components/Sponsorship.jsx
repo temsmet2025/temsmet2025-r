@@ -1,29 +1,20 @@
 import React, { useState } from 'react';
-import { PDFViewer, Document, Page, Text, StyleSheet } from '@react-pdf/renderer';
-
-// Create styles for the PDF content
-const styles = StyleSheet.create({
-  page: {
-    flexDirection: 'column',
-    backgroundColor: '#F3F4F6',
-    padding: 20,
-  },
-  text: {
-    margin: 12,
-    fontSize: 14,
-    textAlign: 'center',
-    color: '#1F2937',
-  },
-});
+import {HeadingBar} from './SmallComps'
 
 const Sponsorship = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <iframe
-        src="/Temsmet2025_Sponsorship_Brochure.pdf"
-        className="w-full h-[800px] border border-gray-300 shadow-lg"
-        title="Sponsorship Invitation PDF"
+    <div id="sponsorship-invitation" className=" min-h-screen p-5 sm:mt-10 sm:p-5 md:ml-16 md:mr-16 lg:ml-20 lg:mr-20">
+      <h1 className="font-bold text-2xl sm:text-3xl text-sky-700">Sponsorship Details:</h1>
+      <HeadingBar classes="w-full mb-5" />
+      <div className="flex items-center justify-center">
+        <iframe
+        src="/Brochure.pdf#zoom=FitW&toolbar=0"
+        className="w-full h-screen border border-gray-300 shadow-lg overflow-hidden"
+        title="Sponsorship Invitation"
+        loading='lazy'
       />
+      </div>
+      
     </div>
   );
 };

@@ -7,6 +7,7 @@ function ListView(props) {
       id={`${props.title}`}
       className="mt-8 mb-8 p-5 sm:mt-10 sm:p-5 md:ml-16 md:mr-16 lg:ml-20 lg:mr-20"
     >
+      {/* <div className="bg-green-400 text-gray-800 bg-blue-500 text-yellow-100 bg-orange-400 text-yellow-950 bg-purple-400 text-white bg-red-400 text-white bg-yellow-400 text-gray-800"></div> */}
       <div className="flex flex-col justify-center items-center">
         <h1 className="font-bold text-2xl sm:text-3xl text-center text-sky-700">{props.title}</h1>
         <HeadingBar classes="w-full" />
