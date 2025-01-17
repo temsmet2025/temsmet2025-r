@@ -154,17 +154,11 @@ function Nav({ setShowContact, linkActive, setLinkActive }) {
                 if (navItem.name !== "Contact") {
                   console.log(navItem.index, "clicked")
                 }
-                if(navItem.name === "Sponsorship Invitation"){
-                  e.preventDefault();
-                  navigate("/sponsorhip-invitation");
-                  //window.open("/Temsmet2025_Sponsorship_Brochure.pdf", "_blank");
-                  //alert("Something Amazing Is Cooking Up...")
-                }
                   setLinkActive(navItem.index);
               }}
             >
               <Link to={navItem.href !== undefined && navItem.href}>
-                <span className="flex items-center">
+                <span className="flex justify-center items-center">
                   {navItem.name}
                   {navItem.name === "Call for Papers" &&
                     (subMenuStates.cfp ? <ChevronUp /> : <ChevronDown />)}

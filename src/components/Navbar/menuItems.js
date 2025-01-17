@@ -17,7 +17,7 @@ export const navigation = [
     current: "_self",
     id: "sg-link",
   },
-  { index: 3, name: "Sponsorship Invitation", current: "_self", id: "reg-link" },
+  { index: 3, name: "Sponsorship Invitation", href:'/sponsorhip-invitation', current: "_self", id: "reg-link" },
   { index: 4, name: "Registration", href: "/registration", current: "_self", id: "reg-link" },
   { index: 5, name: "Speakers", href: "/keynote-speakers", current: "_self", id: "ks-link" },
   { index: 6, name: "Committee", href: "/org-committee", current: "_self", id: "committee-link" },
