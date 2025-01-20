@@ -7,7 +7,7 @@ export default defineConfig({
   // base: "/temsmet2025-r",   //when pushing on temsmet and also change in router in app.jsx
   // base:"",
   build: {
-    outDir: '../temsmet builds/liveBuild-v2.7', // Ensure this is set to 'dist' (the default build output folder)
+    outDir: '../temsmet builds/liveBuild-v3.0', // Ensure this is set to 'dist' (the default build output folder)
     // outDir: 'dist', // Ensure this is set to 'dist' (the default build output folder)
   },
   plugins: [react()],

@@ -396,9 +396,9 @@ const Sponsorship = () => {
             </p>
             <div class="text-center">
               <a
-                href="/Brochure.pdf"
+                href="./downloadable/Brochure.pdf"
                 download="Sponsorship_Details.pdf"
-                class="bg-orange-600 text-white py-2 px-4 rounded-lg shadow-md hover:bg-orange-700 focus:outline-none focus:ring focus:ring-orange-300"
+                className="bg-orange-600 text-white py-2 px-4 rounded-lg shadow-md hover:bg-orange-700 focus:outline-none focus:ring focus:ring-orange-300"
               >
                 Download Sponsorship PDF
               </a>

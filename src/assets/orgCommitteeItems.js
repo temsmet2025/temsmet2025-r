@@ -101,7 +101,7 @@ export const technicalProgrammeCommittee = [
   { id: 65, name: "Vijay K Dutt", affiliation: "Indian Railways", imagePath: "./orgCommittee/techProgCommittee/vkdutt.jpeg", link: "https://vtsociety.org/contact/vijay-k-dutt" },
   { id: 66, name: "Rajiv Srivastava", affiliation: "Indian Institute of Technology, Kanpur, India", imagePath: "./orgCommittee/techProgCommittee/rajiv.png", link: "https://www.mecs-press.org/authors/112686.html" },
   { id: 67, name: "Neeraj Kumar Pandey", affiliation: "R&D Manager at synopsys Bangalore", imagePath: "./orgCommittee/techProgCommittee/neerajkumar.jpeg", link: "https://www.linkedin.com/in/neeraj-kumar-pandey-1b630536/?trk=public_profile_samename-profile&originalSubdomain=in" },
-  { id: 68, name: "Anupam Gupta", affiliation: "Chief Technology Officer at BlockApps AI", imagePath: "./orgCommittee/techProgCommittee/anupam.png", link: "https://www.linkedin.com/in/mapunag/?originalSubdomain=in" },
+  { id: 68, name: "Anupam Gupta", affiliation: "Chief Technology Officer at BlockApps AI", imagePath: "./orgCommittee/techProgCommittee/anupam.jpeg", link: "https://www.linkedin.com/in/mapunag/?originalSubdomain=in" },
   
  
 ];
@@ -122,10 +122,9 @@ export const publicationCommittee = [
   { id: 0, name: "Georgios Konstantinou", affiliation: "UNSW Australia (Chair)", imagePath: "./orgCommittee/publicationCommittee/georios.jpg" },
   { id: 1, name: "Gautam Kumar", affiliation: "NIT Delhi (Co-Chair)", imagePath: "./orgCommittee/publicationCommittee/goutam.jpg" },
   { id: 2, name: "Mahesh K Singh", affiliation: "NIT Delhi (Co-Chair)", imagePath: "./orgCommittee/publicationCommittee/mahesh.png" },
-  { id: 3, name: "Praveen Bansal", affiliation: "MITS Gwalior", imagePath: "./orgCommittee/publicationCommittee/praveen.jpg" },
-  { id: 4, name: "Pradyumn Chaturvedi", affiliation: "VNIT Nagpur", imagePath: "./orgCommittee/techProgCommittee/pradyumn.jpeg" },
-  { id: 5, name: "Vinod Kurmi", affiliation: "IISER Bhopal", imagePath: "./orgCommittee/publicationCommittee/vinod.jpg" },
-  { id: 6, name: "Rajesh Bhatt", affiliation: "IIT Kanpur", imagePath: "./orgCommittee/techProgCommittee/rajesh.jpeg" }
+  { id: 3, name: "Pradyumn Chaturvedi", affiliation: "VNIT Nagpur", imagePath: "./orgCommittee/techProgCommittee/pradyumn.jpeg" },
+  { id: 4, name: "Vinod Kurmi", affiliation: "IISER Bhopal", imagePath: "./orgCommittee/publicationCommittee/vinod.jpg" },
+  { id: 5, name: "Rajesh Bhatt", affiliation: "IIT Kanpur", imagePath: "./orgCommittee/techProgCommittee/rajesh.jpeg" }
 ];
 
 export const webMasterAndTechnicalCoordinationCommittee = [
@@ -149,6 +148,8 @@ export const localOrganizingCommittee = [
   { id: 10, name: "Sachin Singh", affiliation: "NIT Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/sachin.jpg" },
   { id: 11, name: "A P Singh", affiliation: "NIT Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/apsingh.jpeg" },
   { id: 12, name: "Vijay K Dutt", affiliation: "Indian Railways", imagePath: "./orgCommittee/techProgCommittee/vkdutt.jpeg", link: "https://vtsociety.org/contact/vijay-k-dutt" },
+  { id: 3, name: "Praveen Bansal", affiliation: "MITS Gwalior", imagePath: "./orgCommittee/publicationCommittee/praveen.jpg" },
+
 ];
 
 export const volunteers = [
