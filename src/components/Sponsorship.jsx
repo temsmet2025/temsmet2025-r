@@ -16,36 +16,36 @@ const Sponsorship = () => {
       <div className="lg:flex items-center justify-center">
         <div className="lg:max-w-4xl my-8 p-4 bg-white rounded-md">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-2xl font-semibold text-orange-700 text-center">
+            <h2 className="text-2xl font-semibold text-sky-700 text-center">
               Sponsorship Tier Comparison
             </h2>
           </div>
 
           <table className="table-auto w-full border-collapse border border-gray-400 hidden lg:table">
             <thead>
-              <tr className="bg-orange-200">
-                <th className="border border-gray-400 p-3 text-gray-800 w-1/6">
+              <tr className="bg-gray-800 text-gray-100 text-left">
+                <th className="border border-gray-400 p-3 text-gray-100 w-1/6">
                   Benefits
                 </th>
-                <th className="border border-gray-400 p-3 text-gray-800 w-1/6">
+                <th className="border border-gray-400 p-3 text-gray-100 w-1/6">
                   Platinum
                 </th>
-                <th className="border border-gray-400 p-3 text-gray-800 w-1/6">
+                <th className="border border-gray-400 p-3 text-gray-100 w-1/6">
                   Diamond
                 </th>
-                <th className="border border-gray-400 p-3 text-gray-800 w-1/6">
+                <th className="border border-gray-400 p-3 text-gray-100 w-1/6">
                   Gold
                 </th>
-                <th className="border border-gray-400 p-3 text-gray-800 w-1/6">
+                <th className="border border-gray-400 p-3 text-gray-100 w-1/6">
                   Silver
                 </th>
-                <th className="border border-gray-400 p-3 text-gray-800 w-1/6">
+                <th className="border border-gray-400 p-3 text-gray-100 w-1/6">
                   Bronze
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr className="bg-gray-50">
+              <tr className="bg-sky-300/25">
                 <td className="border border-gray-400 p-3">Cost (INR)</td>
                 <td className="border border-gray-400 p-3">₹8 Lakhs</td>
                 <td className="border border-gray-400 p-3">₹5 Lakhs</td>
@@ -69,7 +69,7 @@ const Sponsorship = () => {
                 </td>
                 <td className="border border-gray-400 p-3">None</td>
               </tr>
-              <tr className="bg-gray-50">
+              <tr className="bg-sky-300/25">
                 <td className="border border-gray-400 p-3">
                   Stage Recognition
                 </td>
@@ -102,7 +102,7 @@ const Sponsorship = () => {
                 <td className="border border-gray-400 p-3">Same as Platinum</td>
                 <td className="border border-gray-400 p-3">Same as Platinum</td>
               </tr>
-              <tr className="bg-gray-50">
+              <tr className="bg-sky-300/25">
                 <td className="border border-gray-400 p-3">
                   Presentation Time
                 </td>
@@ -121,17 +121,17 @@ const Sponsorship = () => {
               <Accordion.Content>
                 <table className="border-collapse border border-gray-400 w-full">
                   <thead>
-                    <tr className="bg-orange-200">
-                      <th className="border border-gray-400 p-3 text-gray-800">
+                    <tr className="bg-gray-800 text-gray-100 text-left">
+                      <th className="border border-gray-400 p-3 text-gray-100">
                         Benefits
                       </th>
-                      <th className="border border-gray-400 p-3 text-gray-800">
+                      <th className="border border-gray-400 p-3 text-gray-100">
                         Platinum
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="bg-gray-50">
+                    <tr className="bg-sky-300/25">
                       <td className="border border-gray-400 p-3">Cost (INR)</td>
                       <td className="border border-gray-400 p-3">₹8 Lakhs</td>
                     </tr>
@@ -143,7 +143,7 @@ const Sponsorship = () => {
                         2 spaces (5x5 sqm)
                       </td>
                     </tr>
-                    <tr className="bg-gray-50">
+                    <tr className="bg-sky-300/25">
                       <td className="border border-gray-400 p-3">
                         Stage Recognition
                       </td>
@@ -160,7 +160,7 @@ const Sponsorship = () => {
                         media posters
                       </td>
                     </tr>
-                    <tr className="bg-gray-50">
+                    <tr className="bg-sky-300/25">
                       <td className="border border-gray-400 p-3">
                         Presentation Time
                       </td>
@@ -176,17 +176,17 @@ const Sponsorship = () => {
               <Accordion.Content>
                 <table className="border-collapse border border-gray-400 w-full">
                   <thead>
-                    <tr className="bg-orange-200">
-                      <th className="border border-gray-400 p-3 text-gray-800">
+                    <tr className="bg-gray-800 text-gray-100 text-left">
+                      <th className="border border-gray-400 p-3 text-gray-100">
                         Benefits
                       </th>
-                      <th className="border border-gray-400 p-3 text-gray-800">
+                      <th className="border border-gray-400 p-3 text-gray-100">
                         Diamond
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="bg-gray-50">
+                    <tr className="bg-sky-300/25">
                       <td className="border border-gray-400 p-3">Cost (INR)</td>
                       <td className="border border-gray-400 p-3">₹5 Lakhs</td>
                     </tr>
@@ -198,7 +198,7 @@ const Sponsorship = () => {
                         2 spaces (3x3 sqm)
                       </td>
                     </tr>
-                    <tr className="bg-gray-50">
+                    <tr className="bg-sky-300/25">
                       <td className="border border-gray-400 p-3">
                         Stage Recognition
                       </td>
@@ -215,7 +215,7 @@ const Sponsorship = () => {
                         media posters
                       </td>
                     </tr>
-                    <tr className="bg-gray-50">
+                    <tr className="bg-sky-300/25">
                       <td className="border border-gray-400 p-3">
                         Presentation Time
                       </td>
@@ -231,17 +231,17 @@ const Sponsorship = () => {
               <Accordion.Content>
                 <table className="border-collapse border border-gray-400 w-full">
                   <thead>
-                    <tr className="bg-orange-200">
-                      <th className="border border-gray-400 p-3 text-gray-800">
+                    <tr className="bg-gray-800 text-gray-100 text-left">
+                      <th className="border border-gray-400 p-3 text-gray-100">
                         Benefits
                       </th>
-                      <th className="border border-gray-400 p-3 text-gray-800">
+                      <th className="border border-gray-400 p-3 text-gray-100">
                         Gold
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="bg-gray-50">
+                    <tr className="bg-sky-300/25">
                       <td className="border border-gray-400 p-3">Cost (INR)</td>
                       <td className="border border-gray-400 p-3">₹3 Lakhs</td>
                     </tr>
@@ -253,7 +253,7 @@ const Sponsorship = () => {
                         1 space (3x3 sqm)
                       </td>
                     </tr>
-                    <tr className="bg-gray-50">
+                    <tr className="bg-sky-300/25">
                       <td className="border border-gray-400 p-3">
                         Stage Recognition
                       </td>
@@ -270,7 +270,7 @@ const Sponsorship = () => {
                         media posters
                       </td>
                     </tr>
-                    <tr className="bg-gray-50">
+                    <tr className="bg-sky-300/25">
                       <td className="border border-gray-400 p-3">
                         Presentation Time
                       </td>
@@ -286,17 +286,17 @@ const Sponsorship = () => {
               <Accordion.Content>
                 <table className="border-collapse border border-gray-400 w-full">
                   <thead>
-                    <tr className="bg-orange-200">
-                      <th className="border border-gray-400 p-3 text-gray-800">
+                    <tr className="bg-gray-800 text-gray-100 text-left">
+                      <th className="border border-gray-400 p-3 text-gray-100">
                         Benefits
                       </th>
-                      <th className="border border-gray-400 p-3 text-gray-800">
+                      <th className="border border-gray-400 p-3 text-gray-100">
                         Silver
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="bg-gray-50">
+                    <tr className="bg-sky-300/25">
                       <td className="border border-gray-400 p-3">Cost (INR)</td>
                       <td className="border border-gray-400 p-3">₹1 Lakh</td>
                     </tr>
@@ -308,7 +308,7 @@ const Sponsorship = () => {
                         1 space (2x2 sqm)
                       </td>
                     </tr>
-                    <tr className="bg-gray-50">
+                    <tr className="bg-sky-300/25">
                       <td className="border border-gray-400 p-3">
                         Stage Recognition
                       </td>
@@ -325,7 +325,7 @@ const Sponsorship = () => {
                         media posters
                       </td>
                     </tr>
-                    <tr className="bg-gray-50">
+                    <tr className="bg-sky-300/25">
                       <td className="border border-gray-400 p-3">
                         Presentation Time
                       </td>
@@ -341,17 +341,17 @@ const Sponsorship = () => {
               <Accordion.Content>
                 <table className="border-collapse border border-gray-400 w-full">
                   <thead>
-                    <tr className="bg-orange-200">
-                      <th className="border border-gray-400 p-3 text-gray-800">
+                    <tr className="bg-gray-800 text-gray-100 text-left">
+                      <th className="border border-gray-400 p-3 text-gray-100">
                         Benefits
                       </th>
-                      <th className="border border-gray-400 p-3 text-gray-800">
+                      <th className="border border-gray-400 p-3 text-gray-100">
                         Bronze
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="bg-gray-50">
+                    <tr className="bg-sky-300/25">
                       <td className="border border-gray-400 p-3">Cost (INR)</td>
                       <td className="border border-gray-400 p-3">₹50,000</td>
                     </tr>
@@ -361,7 +361,7 @@ const Sponsorship = () => {
                       </td>
                       <td className="border border-gray-400 p-3">None</td>
                     </tr>
-                    <tr className="bg-gray-50">
+                    <tr className="bg-sky-300/25">
                       <td className="border border-gray-400 p-3">
                         Stage Recognition
                       </td>
@@ -378,7 +378,7 @@ const Sponsorship = () => {
                         media posters
                       </td>
                     </tr>
-                    <tr className="bg-gray-50">
+                    <tr className="bg-sky-300/25">
                       <td className="border border-gray-400 p-3">
                         Presentation Time
                       </td>
@@ -394,11 +394,11 @@ const Sponsorship = () => {
             <p className="text-sm text-gray-600 mb-5">
               Note: For more details, please download the PDF.
             </p>
-            <div class="text-center">
+            <div class="mt-10 flex flex-col gap-10 justify-center items-center text-sky-600 font-bold">
               <a
                 href="./downloadable/Brochure.pdf"
                 download="Sponsorship_Details.pdf"
-                className="bg-orange-600 text-white py-2 px-4 rounded-lg shadow-md hover:bg-orange-700 focus:outline-none focus:ring focus:ring-orange-300"
+                className="px-6 py-3 border-2 border-sky-700 rounded-md hover:border-sky-800 transition-colors duration-500 ease-in-out hover:shadow-lg hover:text-sky-700 hover:bg-sky-300/70 "
               >
                 Download Sponsorship PDF
               </a>

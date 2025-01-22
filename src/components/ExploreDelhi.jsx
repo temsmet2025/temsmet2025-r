@@ -39,7 +39,8 @@ const ExploreDelhi = () => {
         {delhiFoodPlaces.map((place, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform"
+            onClick={() => window.open(place.website, "_blank")}
+            className="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer"
           >
             <img
               src={place.image}
@@ -51,11 +52,19 @@ const ExploreDelhi = () => {
                 {place.name}
               </h2>
               <p className="text-gray-600 text-sm mb-2">{place.description}</p>
+              <a
+                href={place.mapsLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 text-sm underline block"
+                onClick={(e) => e.stopPropagation()} // Prevents triggering the card's click event
+              >
+                View Location on Maps
+              </a>
             </div>
           </div>
         ))}
       </div>
-
     </div>
   );
 };

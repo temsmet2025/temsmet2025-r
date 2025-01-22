@@ -392,31 +392,43 @@ export const delhiFoodPlaces = [
   {
     name: "Amrik Sukhdev",
     description: "A legendary roadside dhaba in Murthal, Haryana, known for its butter-loaded paranthas and lassi. It’s a must-visit for authentic North Indian flavors.",
-    image: "./new_images/food-images/amrit-sukhdev.jpeg" 
+    image: "./new_images/food-images/amrit-sukhdev.jpeg",
+    website: "https://www.amriksukhdev.com", 
+    mapsLink: "https://maps.app.goo.gl/WExgKp13bwcDKeg88", 
   },
   {
     name: "Saravana Bhavan",
     description: "A renowned South Indian restaurant chain, Saravana Bhavan is famous for its crispy dosas, flavorful idlis, and delicious filter coffee. A perfect spot for a traditional South Indian breakfast or meal.",
-    image: "./new_images/food-images/saravana-bhavan.webp" 
+    image: "./new_images/food-images/saravana-bhavan.webp",
+    website: "https://www.saravanabhavan.com", 
+    mapsLink: "https://maps.app.goo.gl/96Wc1xNjD5RNHfF18", 
   },
   {
     name: "Leo's Artisan Pizza",
     description: "Located in Gurgaon, Leo's Artisan Pizza is famous for its wood-fired Neapolitan-style pizzas. Their Margherita Pizza and Pepperoni Pizza are the crowd favorites, crafted with fresh ingredients and perfect flavor.",
-    image: "./new_images/food-images/leo-pizza.jpg" 
+    image: "./new_images/food-images/leo-pizza.jpg",
+    website: "https://www.tripadvisor.in/Restaurant_Review-g304551-d12216850-Reviews-Leo_s_Pizzeria-New_Delhi_National_Capital_Territory_of_Delhi.html", 
+    mapsLink: "https://maps.app.goo.gl/zVnvFAjcA5JY8S6M6", 
   },
   {
     name: "Bukhara",
     description: "Located in the ITC Maurya, Bukhara is famous for its North Indian cuisine, especially its signature Dal Bukhara and the Tandoori Raan. Known for its rustic ambiance and traditional cooking style.",
-    image: "./new_images/food-images/bukhara.webp" 
+    image: "./new_images/food-images/bukhara.webp",
+    website: "https://www.itchotels.com/in/en/dining/bukhara", 
+    mapsLink: "https://maps.app.goo.gl/v6KvYC4kSkkhWsjR7", 
   },
   {
     name: "Indian Accent",
     description: "Indian Accent in New Delhi offers a modern take on traditional Indian dishes, with innovative creations like Slow-Cooked Lamb Shank and Tandoori Lamb Chops. Known for its fine dining experience and creative menu.",
-    image: "./new_images/food-images/indian-accent.jpg" 
+    image: "./new_images/food-images/indian-accent.jpg",
+    website: "https://www.indianaccent.com/newdelhi", 
+    mapsLink: "https://maps.app.goo.gl/STcKQ2mi1jE7XcJv7", 
   },
   {
     name: "Café Delhi Heights",
     description: "Located in Gurgaon, Café Delhi Heights serves delicious Juicy Lucy Burgers and Pastas with a trendy café ambiance.",
-    image: "./new_images/food-images/cafe-delhi.jpg" 
+    image: "./new_images/food-images/cafe-delhi.jpg",
+    website: "https://www.cafedelhiheights.com", 
+    mapsLink: "https://maps.app.goo.gl/wyUBknWarg6423XA7", 
   },
 ];
