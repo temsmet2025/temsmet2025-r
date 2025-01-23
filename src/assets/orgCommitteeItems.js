@@ -102,8 +102,17 @@ export const technicalProgrammeCommittee = [
   { id: 66, name: "Rajiv Srivastava", affiliation: "Indian Institute of Technology, Kanpur, India", imagePath: "./orgCommittee/techProgCommittee/rajiv.png", link: "https://www.mecs-press.org/authors/112686.html" },
   { id: 67, name: "Neeraj Kumar Pandey", affiliation: "R&D Manager at synopsys Bangalore", imagePath: "./orgCommittee/techProgCommittee/neerajkumar.jpeg", link: "https://www.linkedin.com/in/neeraj-kumar-pandey-1b630536/?trk=public_profile_samename-profile&originalSubdomain=in" },
   { id: 68, name: "Anupam Gupta", affiliation: "Chief Technology Officer at BlockApps AI", imagePath: "./orgCommittee/techProgCommittee/anupam.jpeg", link: "https://www.linkedin.com/in/mapunag/?originalSubdomain=in" },
+  { id: 69, name: "Sachin Singh Gautam", affiliation: "Associate Professor at Indian Institute of Technology, Guwahati", imagePath: "./orgCommittee/techProgCommittee/sachinGautam.jpeg", link: "https://www.linkedin.com/in/sachin-singh-gautam-631a549/" },
+  { id: 70, name: "V Sateeshkrishna Dhuli", affiliation: "Norwegian University of Science and Technology", imagePath: "./orgCommittee/techProgCommittee/vsateesh.jpeg", link: "https://www.linkedin.com/in/v-sateeshkrishna-dhuli-b9aa1456/" },
+  { id: 71, name: "Satyam Agarwal", affiliation: "Assistant Professor,Department of Electrical Engineering, IIT Ropar", imagePath: "./orgCommittee/techProgCommittee/satyamIITRopar.jpg", link: "https://sites.google.com/iitrpr.ac.in/satyam" },
+  { id: 72, name: "Aparajita Ojha", affiliation: "Professor, IIITDMJ", imagePath: "./orgCommittee/techProgCommittee/aojha.jpg", link: "https://cse.iiitdmj.ac.in/faculty_page.php?id=aojha@iiitdmj.ac.in" },
+  { id: 73, name: "Preeti Khanna", affiliation: "Associate Professor, School of Business Management, SVKM’s NMIMS, Mumbai", imagePath: "./orgCommittee/techProgCommittee/pkhanna.jpeg", link: "https://sbm.nmims.edu/faculty-preeti-khanna" },
+  { id: 74, name: "Ashish Tiwari", affiliation: "Assistant Professor, Computer Science Department, VNIT, Nagpur. India", imagePath: "./orgCommittee/techProgCommittee/AshishNITNagpur.jpeg", link: "https://www.linkedin.com/in/ashish-tiwari-8408aa41/?originalSubdomain=in" },
+  { id: 75, name: "Ganesh C. Patil", affiliation: "Associate Professor at Visvesvaraya National Institute of Technology", imagePath: "./orgCommittee/techProgCommittee/ganPatil.jpeg", link: "https://www.linkedin.com/in/ganesh-c-patil-79b6306/?originalSubdomain=in" },
+  { id: 76, name: "Prasanna Kumar Misra", affiliation: "Assistant Professor at Indian Institute Of Information Technology", imagePath: "./orgCommittee/techProgCommittee/prasanna.gif", link: "https://www.linkedin.com/in/prasanna-kumar-misra-1b3119169/?originalSubdomain=in" },
   
- 
+  
+
 ];
 
 
