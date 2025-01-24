@@ -11,19 +11,19 @@
 export const navigation = [
   { index: 0, name: "Home", href: "/", current: "_self", id: "home-link" },
   { index: 1, name: "Call for Papers", href: "", current: "_self", id: "cfp-link" },
-  {
-    index: 2, name: "Submission Guidelines",
-    href: "/submission-guidelines#submission-guidelines",
-    current: "_self",
-    id: "sg-link",
-  },
-  { index: 3, name: "Sponsorship Invitation", href:'/sponsorhip-invitation', current: "_self", id: "reg-link" },
-  { index: 4, name: "Registration", href: "/registration", current: "_self", id: "reg-link" },
-  { index: 5, name: "Speakers", href: "/keynote-speakers", current: "_self", id: "ks-link" },
-  { index: 6, name: "Committee", href: "/org-committee", current: "_self", id: "committee-link" },
+  // {
+  //   index: 2, name: "Submission Guidelines",
+  //   href: "/submission-guidelines",
+  //   current: "_self",
+  //   id: "sg-link",
+  // },
+  { index: 2, name: "Sponsorship Invitation", href:'/sponsorhip-invitation', current: "_self", id: "reg-link" },
+  { index: 3, name: "Registration", href: "/registration", current: "_self", id: "reg-link" },
+  { index: 4, name: "Speakers", href: "/keynote-speakers", current: "_self", id: "ks-link" },
+  { index: 5, name: "Committee", href: "/org-committee", current: "_self", id: "committee-link" },
+  { index: 6, name: "Travel", current: "_self", id: "travel-link" },
   { index: 7, name: "Past Editions", href: "/", current: "_self", id: "pe-link" },
-  { index: 8, name: "Travel", current: "_self", id: "travel-link" },
-  { index: 9, name: "Contact", current: "_self", id: "contact-link" },
+  { index: 8, name: "Contact", current: "_self", id: "contact-link" },
 ];
 
 /**
@@ -60,6 +60,7 @@ export const cfpSubmenuItems = [
   //   href: "/",
   //   current: "_self",
   // },
+  { name: "Submission Guidelines", href: "/submission-guidelines", current: "_self", id: "sg-link" },
   { name: "Important Dates", href: "/", current: "_self" },
 ];
 
