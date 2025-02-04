@@ -79,7 +79,7 @@ export const technicalProgrammeCommittee = [
   { id: 42, name: "Vishal Vyas", affiliation: "ABV-IIITM Gwalior", imagePath: "./orgCommittee/techProgCommittee/vishalVyar.jpeg", link: "" },
   { id: 43, name: "Arun Kumar", affiliation: "ABV-IIITM Gwalior", imagePath: "./orgCommittee/techProgCommittee/arun.jpeg", link: "" },
   { id: 44, name: "Mazalov Vladimir", affiliation: "Institute of Applied Mathematical Research, KarRC RAS, Russia", imagePath: "./orgCommittee/techProgCommittee/mazalov.jpeg", link: "" },
-  { id: 45, name: "Bapi Chaterji", affiliation: "IIIT Delhi", imagePath: "./orgCommittee/techProgCommittee/bapi.jpeg", link: "" },
+  // { id: 45, name: "Bapi Chaterji", affiliation: "IIIT Delhi", imagePath: "./orgCommittee/techProgCommittee/bapi.jpeg", link: "" },
   { id: 46, name: "Ashish Tiwari", affiliation: "VNIT Nagpur", imagePath: "./orgCommittee/techProgCommittee/ashishTiwari.jpeg", link: "" },
   { id: 48, name: "Vinod Kumar Jain", affiliation: "IIITDM Jabalpur", imagePath: "./orgCommittee/techProgCommittee/vinod.jpeg", link: "" },
   { id: 49, name: "Akrati Saxena", affiliation: "Leiden University, Netherlands", imagePath: "./orgCommittee/techProgCommittee/akriti.jpeg", link: "" },
