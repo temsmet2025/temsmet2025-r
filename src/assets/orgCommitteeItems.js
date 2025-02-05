@@ -31,7 +31,12 @@ export const programChairs = [
   { id: 5, name: "Anima Majumder", affiliation: "TCS Innovation labs, Bangalore", imagePath: "./orgCommittee/techProgCommittee/anima.jpeg", link: "https://in.linkedin.com/in/anima-majumder-1082a01a" },
   { id: 6, name: "Chantal Cherifi", affiliation: "University of Lyon, France", imagePath: "./orgCommittee/techProgCommittee/chantalcherifi.jpeg", link: "https://scholar.google.fr/citations?user=4KP81WAAAAAJ&hl=fr" },
   { id: 6, name: "Tarini Baswal", affiliation: "IRSEE 1987 || Director REMCL || Railway Electrification Head Of RITES", imagePath: "./orgCommittee/programChairs/tarini.jpeg", link: "https://www.linkedin.com/in/tarini-baswal-b5250b12a/" },
-
+  { id: 7, name: "Krishna Sirohi", affiliation: "IIT Delhi", imagePath: "./orgCommittee/programChairs/tarini.jpeg", link: "https://www.linkedin.com/in/krishnasirohi/?originalSubdomain=in" },
+  { id: 8, name: "Swades De", affiliation: "IIT Delhi", imagePath: "./orgCommittee/programChairs/swades-de.png", link: "https://scholar.google.co.in/citations?user=BfVMzzkAAAAJ&hl=en"},
+  {id: 9, name: "Aparajita Ojha", affiliation: "IITDM Jabalpur", imagePath: "./orgCommittee/programChairs/aparajita.jpeg", link: "https://www.linkedin.com/in/aparajita-ojha-02078817/?originalSubdomain=in"},
+  {id: 10, name: "M N Huda", affiliation: "", imagePath: "./orgCommittee/programChairs/", link: ""},
+  {id: 11, name: "S S Tyagi", affiliation: "IITM Nodia", imagePath: "./orgCommittee/programChairs/sstyagi.png", link: "https://scholar.google.com/citations?user=VFo9SdoAAAAJ&hl=en"},
+  
 ];
 
 export const technicalProgrammeCommittee = [
@@ -110,7 +115,15 @@ export const technicalProgrammeCommittee = [
   { id: 74, name: "Ashish Tiwari", affiliation: "Assistant Professor, Computer Science Department, VNIT, Nagpur. India", imagePath: "./orgCommittee/techProgCommittee/AshishNITNagpur.jpeg", link: "https://www.linkedin.com/in/ashish-tiwari-8408aa41/?originalSubdomain=in" },
   { id: 75, name: "Ganesh C. Patil", affiliation: "Associate Professor at Visvesvaraya National Institute of Technology", imagePath: "./orgCommittee/techProgCommittee/ganPatil.jpeg", link: "https://www.linkedin.com/in/ganesh-c-patil-79b6306/?originalSubdomain=in" },
   { id: 76, name: "Prasanna Kumar Misra", affiliation: "Assistant Professor at Indian Institute Of Information Technology", imagePath: "./orgCommittee/techProgCommittee/prasanna.gif", link: "https://www.linkedin.com/in/prasanna-kumar-misra-1b3119169/?originalSubdomain=in" },
-  
+  {id: 77, name: "Joydeep Chandra", affiliation: "IIT Patna", imagePath: "./orgCommittee/techProgCommittee/joydeep.jpeg", link: "https://scholar.google.co.in/citations?user=42t8V90AAAAJ&hl=en"},
+  {id: 78, name: "Sourav Dutta", affiliation: "IIT Patna", imagePath: "", link: ""},
+  {id: 79, name: "Chandrakala Meena", affiliation: "IISER TVM", imagePath: "./orgCommittee/techProgCommittee/meena.jpeg", link: "https://scholar.google.com/citations?user=pioHBPwAAAAJ&hl=en"},
+  {id: 80, name: "Kamlesh Tiwari", affiliation: "BITS Pilani", imagePath: "./orgCommittee/techProgCommittee/kamlesh.jpeg", link: "https://scholar.google.co.in/citations?user=BtURBxsAAAAJ&hl=en"},
+  {id: 81, name: "R K Agrawal", affiliation: "JNU Delhi", imagePath: "./orgCommittee/techProgCommittee/rka.jpg", link: "https://scholar.google.com/citations?user=w3HUzy-W9GYC&hl=en"},
+  {id: 82, name: "Ajay Kumar Shukla", affiliation: "IIT Madras", imagePath: "./orgCommittee/techProgCommittee/ajay-shukla.jpeg", link: "https://scholar.google.co.in/citations?user=PJVmoFQAAAAJ&hl=en"},
+  {id: 83, name: "Amit Ujlayan", affiliation: "GBU", imagePath: "./orgCommittee/techProgCommittee/amit-ujlayan.jpeg", link: "https://scholar.google.co.in/citations?user=cvs6bnIAAAAJ&hl=en"},
+  {id: 84, name: "Sudhanshu Choudhary", affiliation: "NIT Kurukshetra", imagePath: "./orgCommittee/techProgCommittee/sudhanshu.jpeg", link: "https://scholar.google.co.in/citations?user=nNdedcQAAAAJ&hl=en"},
+  {id: 85, name: "Mamilla Ravi Sankar", affiliation: "IIT Tirupati", imagePath: "./orgCommittee/techProgCommittee/mamilla.jpeg", link: "https://scholar.google.co.in/citations?user=svmuyEQAAAAJ&hl=en"},
   
 
 ];
