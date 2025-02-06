@@ -34,9 +34,7 @@ export const programChairs = [
   { id: 7, name: "Krishna Sirohi", affiliation: "IIT Delhi", imagePath: "./orgCommittee/programChairs/krishna-sirohi.jpeg", link: "https://www.linkedin.com/in/krishnasirohi/?originalSubdomain=in" },
   { id: 8, name: "Swades De", affiliation: "IIT Delhi", imagePath: "./orgCommittee/programChairs/swades-de.png", link: "https://scholar.google.co.in/citations?user=BfVMzzkAAAAJ&hl=en"},
   {id: 9, name: "Aparajita Ojha", affiliation: "IITDM Jabalpur", imagePath: "./orgCommittee/programChairs/aparajita.jpeg", link: "https://www.linkedin.com/in/aparajita-ojha-02078817/?originalSubdomain=in"},
-  {id: 10, name: "M N Hoda", affiliation: "Director, Bharati Vidyapeeth's Institute of Computer Applications and Management (BVICAM)", imagePath: "./orgCommittee/programChairs/mnhoda.jpeg", link: "https://www.linkedin.com/in/mn-hoda-0a48b147/"},
-  {id: 11, name: "S S Tyagi", affiliation: "IITM Nodia", imagePath: "./orgCommittee/programChairs/sstyagi.png", link: "https://scholar.google.com/citations?user=VFo9SdoAAAAJ&hl=en"},
-  
+  {id: 10, name: "M N Hoda", affiliation: "Director, Bharati Vidyapeeth's Institute of Computer Applications and Management (BVICAM)", imagePath: "./orgCommittee/programChairs/mnhoda.jpeg", link: "https://www.linkedin.com/in/mn-hoda-0a48b147/"},  
 ];
 
 export const technicalProgrammeCommittee = [
@@ -171,7 +169,7 @@ export const localOrganizingCommittee = [
   { id: 11, name: "A P Singh", affiliation: "NIT Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/apsingh.jpeg" },
   { id: 12, name: "Vijay K Dutt", affiliation: "Indian Railways", imagePath: "./orgCommittee/techProgCommittee/vkdutt.jpeg", link: "https://vtsociety.org/contact/vijay-k-dutt" },
   { id: 3, name: "Praveen Bansal", affiliation: "MITS Gwalior", imagePath: "./orgCommittee/publicationCommittee/praveen.jpg" },
-
+  {id: 11, name: "S S Tyagi", affiliation: "IITM Nodia", imagePath: "./orgCommittee/programChairs/sstyagi.png", link: "https://scholar.google.com/citations?user=VFo9SdoAAAAJ&hl=en"},
 ];
 
 export const sponsorshipCommittee = [

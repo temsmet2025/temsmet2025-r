@@ -15,6 +15,7 @@ function OrgCommittee() {
             <Profiles title="General Chairs" profiles={generalChairs} />
             <Profiles title="General Co-Chairs" profiles={generalCoChairs} />
             <Profiles title="Finance Committee Conference Secretaries" profiles={financeCommitteeConferenceSecretaries} />
+            <Profiles title="Sponsorship Committee" profiles={sponsorshipCommittee} />
             <Profiles title="Program Chairs" profiles={programChairs} />
             <Profiles title="Technical Programme Committee" profiles={technicalProgrammeCommittee} />
             <Profiles title="Information And Sponsorship Committee" profiles={informationCommittee} />
@@ -22,7 +23,6 @@ function OrgCommittee() {
             <Profiles title="Web-Master And Technical Coordination Committee" profiles={webMasterAndTechnicalCoordinationCommittee} />
             <Profiles title="Local Organizing Committee" profiles={localOrganizingCommittee} />
             <Profiles title="Volunteers" profiles={volunteers} />
-            <Profiles title="Sponsorship Committee" profiles={sponsorshipCommittee} />
         </div>
 
     )

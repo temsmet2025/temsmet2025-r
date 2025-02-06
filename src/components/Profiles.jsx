@@ -15,7 +15,7 @@ const Profiles = (props) => {
                 <div className="bg-slate-900/10 w-64 h-64 lg:w-96 lg:h-44 rounded-lg">
                   <img src={profile.imagePath === undefined ? `./orgCommittee/default.avif` :profile.imagePath} alt={`img-${profile.name}`} className='w-64 h-52 lg:w-96 lg:h-44 rounded-lg' />
                 </div>
-                <div className="details text-amber-950 mt-2 p-3">
+                <div className=" text-amber-950 mt-2 p-3">
                   <p className='flex flex-col text-wrap text-center md:w-48'>
                     <span className="font-bold text-xl ">{profile.name}</span>
                     {profile.affiliation != "" && <span className='text-base md:text-sm'>{profile.affiliation}</span>}
