@@ -114,7 +114,7 @@ export const technicalProgrammeCommittee = [
   { id: 75, name: "Ganesh C. Patil", affiliation: "Associate Professor at Visvesvaraya National Institute of Technology", imagePath: "./orgCommittee/techProgCommittee/ganPatil.jpeg", link: "https://www.linkedin.com/in/ganesh-c-patil-79b6306/?originalSubdomain=in" },
   { id: 76, name: "Prasanna Kumar Misra", affiliation: "Assistant Professor at Indian Institute Of Information Technology", imagePath: "./orgCommittee/techProgCommittee/prasanna.gif", link: "https://www.linkedin.com/in/prasanna-kumar-misra-1b3119169/?originalSubdomain=in" },
   {id: 77, name: "Joydeep Chandra", affiliation: "IIT Patna", imagePath: "./orgCommittee/techProgCommittee/joydeep.jpeg", link: "https://scholar.google.co.in/citations?user=42t8V90AAAAJ&hl=en"},
-  {id: 78, name: "Sourav Dutta", affiliation: "IIT Patna", imagePath: "./orgCommittee/default.avif", link: ""},
+  {id: 78, name: "Sourav Kumar Dandapat", affiliation: "Assistant Professor, IIT Patna", imagePath: "./orgCommittee/techProgCommittee/sauravdandapat.jpg", link: "https://www.linkedin.com/in/sourav-dandapat-7394367/"},
   {id: 79, name: "Chandrakala Meena", affiliation: "IISER TVM", imagePath: "./orgCommittee/techProgCommittee/meena.jpeg", link: "https://scholar.google.com/citations?user=pioHBPwAAAAJ&hl=en"},
   {id: 80, name: "Kamlesh Tiwari", affiliation: "BITS Pilani", imagePath: "./orgCommittee/techProgCommittee/kamlesh.jpeg", link: "https://scholar.google.co.in/citations?user=BtURBxsAAAAJ&hl=en"},
   {id: 81, name: "R K Agrawal", affiliation: "JNU Delhi", imagePath: "./orgCommittee/techProgCommittee/rka.jpg", link: "https://scholar.google.com/citations?user=w3HUzy-W9GYC&hl=en"},
