@@ -3,7 +3,7 @@ import {
     financeCommitteeConferenceSecretaries, programChairs,
     technicalProgrammeCommittee, informationCommittee,
     publicationCommittee, webMasterAndTechnicalCoordinationCommittee,
-    localOrganizingCommittee, volunteers
+    localOrganizingCommittee, volunteers, sponsorshipCommittee
 } from './../assets/orgCommitteeItems'
 import Profiles from './Profiles'
 function OrgCommittee() {
@@ -22,6 +22,7 @@ function OrgCommittee() {
             <Profiles title="Web-Master And Technical Coordination Committee" profiles={webMasterAndTechnicalCoordinationCommittee} />
             <Profiles title="Local Organizing Committee" profiles={localOrganizingCommittee} />
             <Profiles title="Volunteers" profiles={volunteers} />
+            <Profiles title="Sponsorship Committee" profiles={sponsorshipCommittee} />
         </div>
 
     )
