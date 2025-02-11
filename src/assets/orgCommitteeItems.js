@@ -122,7 +122,7 @@ export const technicalProgrammeCommittee = [
   {id: 83, name: "Amit Ujlayan", affiliation: "GBU", imagePath: "./orgCommittee/techProgCommittee/amit-ujlayan.jpeg", link: "https://scholar.google.co.in/citations?user=cvs6bnIAAAAJ&hl=en"},
   {id: 84, name: "Sudhanshu Choudhary", affiliation: "NIT Kurukshetra", imagePath: "./orgCommittee/techProgCommittee/sudhanshu.jpeg", link: "https://scholar.google.co.in/citations?user=nNdedcQAAAAJ&hl=en"},
   {id: 85, name: "Mamilla Ravi Sankar", affiliation: "IIT Tirupati", imagePath: "./orgCommittee/techProgCommittee/mamilla.jpeg", link: "https://scholar.google.co.in/citations?user=svmuyEQAAAAJ&hl=en"},
-  
+  { id: 86, name: "Amulya Sai Boppana", affiliation: "BCBS, Alabama", imagePath: "./orgCommittee/sponsorshipCommittee/amulyasai.jpeg" },
 
 ];
 
@@ -136,6 +136,7 @@ export const informationCommittee = [
   { id: 5, name: "Manish Verma", affiliation: "NIT Delhi", imagePath: "./orgCommittee/informationCommittee/manish.jpeg" },
   { id: 6, name: "Amandeep Kaur", affiliation: "NIT Delhi", imagePath: "./orgCommittee/informationCommittee/amandeep.webp" },
   { id: 7, name: "Dannish S.", affiliation: "Technical Coordinator TEMS/IEEE Delhi Section, Sr. Manager (marketing & salès) Max Health Care", imagePath: "./orgCommittee/informationCommittee/dannish.jpeg", link:"https://www.linkedin.com/in/dannish-s-871672128/?originalSubdomain=in"},
+  { id: 8, name: "Amulya Sai Boppana", affiliation: "BCBS, Alabama", imagePath: "./orgCommittee/sponsorshipCommittee/amulyasai.jpeg" },
 ];
 
 export const publicationCommittee = [
@@ -172,9 +173,6 @@ export const localOrganizingCommittee = [
   {id: 11, name: "S S Tyagi", affiliation: "IITM Nodia", imagePath: "./orgCommittee/programChairs/sstyagi.png", link: "https://scholar.google.com/citations?user=VFo9SdoAAAAJ&hl=en"},
 ];
 
-export const sponsorshipCommittee = [
-  { id: 0, name: "Amulya Sai Boppana", affiliation: "BCBS, Alabama", imagePath: "./orgCommittee/sponsorshipCommittee/amulyasai.jpeg" },
-]
 
 export const volunteers = [
   {
