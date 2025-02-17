@@ -24,12 +24,12 @@ function Footer() {
             <div className="flex flex-col items-center space-y-2 mb-4">
                 <div className="flex items-center space-x-2">
                     <FaEnvelope size={20} className="text-sky-300" />
-                    <span className="text-base">contact@ieee.org</span>
+                    <span className="text-base cursor-pointer"> <a href="mailto:temsmet2025@nitdelhi.ac.in">temsmet2025@nitdelhi.ac.in</a></span>
 
                     <span className="hidden sm:block border-l-2 border-sky-300 h-6"></span>
 
                     <FaPhone size={20} className="text-sky-300" />
-                    <span className="text-base">+1 (234) 567-890</span>
+                    <span className="text-base cursor-pointer"> <a href="tel:+11-33861122/83">+11-33861122/83</a> </span>
                 </div>
             </div>
 

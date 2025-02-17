@@ -32,12 +32,12 @@ function Contact({ showContact, setShowContact }) {
 
                     <div className="flex justify-center w-full">
                         <span className="font-semibold">Phone: </span>
-                        <span> +11-33861122/83</span>
+                        <span className="cursor-pointer"><a href="tel:+11-33861122/83">+11-33861122/83</a> </span>
                     </div>
 
                     <div className="flex justify-center w-full">
                         <span className="font-semibold">Email: </span>
-                        <span> temsmet2025@nitdelhi.ac.in</span>
+                        <span className="cursor-pointer"><a href="mailto:temsmet2025@nitdelhi.ac.in">temsmet2025@nitdelhi.ac.in</a> </span>
                     </div>
                 </div>
                 <button className="absolute bottom-5 right-5 border-solid border-2 border-green-400  px-7 py-1 rounded-lg
