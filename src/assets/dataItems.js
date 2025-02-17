@@ -257,63 +257,63 @@ export const aboutHost = [
 export const destinations = [
   {
     name: "Agra",
-    image: "./new_images/taj-agra.jpg",
+    image: "./carousal_images/taj-agra.jpg",
     description: "Agra, home to the magnificent Taj Mahal, is one of India's most iconic cities. Apart from the Taj, you can explore the Agra Fort, Fatehpur Sikri, and several Mughal-era monuments.",
     distance: "230 km from Delhi",
     travelOptions: "Car: 3.5-4 hours | Bus: 4-5 hours | Train: 2-2.5 hours"
   },
   {
     name: "Vrindavan",
-    image: "./new_images/vrindhavan.webp",
+    image: "./carousal_images/vrindhavan.webp",
     description: "Vrindavan, another sacred city associated with Lord Krishna, is known for its ancient temples, serene ghats, and the vibrant Holi celebrations. Visit the Banke Bihari Temple and the Prem Mandir for spiritual experiences.",
     distance: "159 km from Delhi",
     travelOptions: "Car: 3-3.5 hours | Bus: 4-5 hours | Train (via Mathura): 2.5-3 hours"
   },
   {
     name: "Mathura",
-    image: "./new_images/mathura.jpg",
+    image: "./carousal_images/mathura.jpg",
     description: "Mathura, the birthplace of Lord Krishna, is a sacred city filled with temples and ghats. The famous Dwarkadhish Temple, Banke Bihari Temple, and the Krishna Janmabhoomi Temple are must-visit spots.",
     distance: "162 km from Delhi",
     travelOptions: "Car: 3-3.5 hours | Bus: 4-5 hours | Train: 2.5-3 hours"
   },
   {
     name: "Haridwar",
-    image: "./new_images/haridwar.jpg",
+    image: "./carousal_images/haridwar.jpg",
     description: "Haridwar is a sacred city known for its temples and ghats along the River Ganga. The evening Ganga Aarti at Har Ki Pauri is a mesmerizing sight. It's one of the seven holiest places in Hinduism.",
     distance: "225 km from Delhi",
     travelOptions: "Car: 5-6 hours | Bus: 6-7 hours | Train: 5-6 hours"
   },
   {
     name: "Rishikesh",
-    image: "./new_images/rishikesh.jpg",
+    image: "./carousal_images/rishikesh.jpg",
     description: "Rishikesh, the 'Yoga Capital of the World,' offers spiritual experiences along with adventure sports like rafting and trekking. The Beatles Ashram and the Ganga Aarti at Triveni Ghat are major attractions.",
     distance: "240 km from Delhi",
     travelOptions: "Car: 5-6 hours | Bus: 6-7 hours | Train (via Haridwar): 5.5-6 hours"
   },
   {
     name: "Mussoorie",
-    image: "./new_images/mussoorie.jpg",
+    image: "./carousal_images/mussoorie.jpg",
     description: "Mussoorie is a charming hill station with breathtaking views of the Himalayan range. Famous for its colonial charm, the Camel's Back Road, Kempty Falls, and Mussoorie Lake are major attractions.",
     distance: "297 km from Delhi",
     travelOptions: "Car: 7-8 hours | Bus: 8-9 hours | Train (via Dehradun): 6-7 hours"
   },
   {
     name: "Devprayag",
-    image: "./new_images/devprayag.jpg",
+    image: "./carousal_images/devprayag.jpg",
     description: "Devprayag is a sacred town where the Bhagirathi and Alaknanda rivers meet to form the Ganges. Known for its spiritual significance and scenic beauty, it is a quiet retreat for those seeking peace and meditation.",
     distance: "320 km from Delhi",
     travelOptions: "Car: 10-11 hours | Bus: 12 hours | Train (via Rishikesh): 10 hours"
   },
   {
     name: "Shimla",
-    image: "./new_images/shimla.jpg",
+    image: "./carousal_images/shimla.jpg",
     description: "Shimla, the capital of Himachal Pradesh, is a picturesque hill station known for its colonial architecture, scenic views, and cool weather. Popular spots include Mall Road, Ridge, and Jakhoo Temple.",
     distance: "366 km from Delhi",
     travelOptions: "Car: 7-8 hours | Bus: 8-10 hours | Train (Kalka-Shimla Toy Train): 6-7 hours"
   },
   {
     name: "Manali",
-    image: "./new_images/manali.jpg",
+    image: "./carousal_images/manali.jpg",
     description: "Manali, a popular hill station in Himachal Pradesh, is known for its adventure sports, scenic landscapes, and snow-capped mountains. Solang Valley, Rohtang Pass, and Old Manali are key attractions.",
     distance: "520 km from Delhi",
     travelOptions: "Car: 12-14 hours | Bus: 14-16 hours | Train (via Chandigarh): 11 hours"
@@ -324,67 +324,67 @@ export const delhiPlaces = [
   {
     name: "Red Fort",
     description: "Built by Emperor Shah Jahan in 1648, the Red Fort is an iconic symbol of India’s history and freedom. This UNESCO World Heritage Site served as the main residence of the Mughal emperors and now hosts the Prime Minister’s Independence Day speech. Its stunning red sandstone walls, intricate Mughal architecture, and the bustling Chatta Chowk market inside attract millions of visitors annually.",
-    image: "./new_images/delhi-images/red-fort.jpg"
+    image: "./carousal_images/delhi-images/red-fort.jpg"
   },
   {
     name: "Qutub Minar",
     description: "Standing tall at 73 meters, the Qutub Minar is the tallest brick minaret in the world. Built in 1193 by Qutb-ud-din Aibak to celebrate Muslim rule in Delhi, it is surrounded by the Qutub Complex, which includes ancient ruins and the enigmatic Iron Pillar. This site is a testament to Indo-Islamic architecture and remains a significant historical landmark.",
-    image: "./new_images/delhi-images/qutub-minar.jpg"
+    image: "./carousal_images/delhi-images/qutub-minar.jpg"
   },
   {
     name: "India Gate",
     description: "The India Gate, a 42-meter-high war memorial, commemorates 70,000 Indian soldiers who sacrificed their lives during World War I. Designed by Sir Edwin Lutyens, it is surrounded by lush gardens and illuminated beautifully at night, making it a favorite spot for picnics and patriotic gatherings in Delhi.",
-    image: "./new_images/delhi-images/indiagate.webp"
+    image: "./carousal_images/delhi-images/indiagate.webp"
   },
   {
     name: "Lotus Temple",
     description: "Known for its architectural brilliance, the Lotus Temple resembles a blooming lotus flower. This Bahá'í House of Worship, open to people of all faiths, provides a serene space for meditation and reflection. Completed in 1986, its pristine white structure amidst landscaped gardens makes it a must-visit for its peaceful ambiance.",
-    image: "./new_images/delhi-images/lotus-temple.jpeg"
+    image: "./carousal_images/delhi-images/lotus-temple.jpeg"
   },
   {
     name: "Humayun’s Tomb",
     description: "Built in 1570, Humayun’s Tomb is a masterpiece of Mughal architecture and a precursor to the Taj Mahal. This UNESCO World Heritage Site was commissioned by Empress Bega Begum for her husband, Emperor Humayun. Its symmetrical gardens, red sandstone structure, and Persian influences leave visitors awestruck.",
-    image: "./new_images/delhi-images/humayuns.jpg"
+    image: "./carousal_images/delhi-images/humayuns.jpg"
   },
   {
     name: "Chandni Chowk",
     description: "One of Delhi’s oldest and busiest markets, Chandni Chowk was established by Shah Jahan in the 17th century. It offers a vibrant experience with its narrow lanes packed with shops selling traditional jewelry, spices, textiles, and street food. The market also houses historical landmarks like the Gurdwara Sis Ganj Sahib and Fatehpuri Masjid.",
-    image: "./new_images/delhi-images/chandini-chowk.jpg"
+    image: "./carousal_images/delhi-images/chandini-chowk.jpg"
   },
   {
     name: "Jama Masjid",
     description: "The Jama Masjid, built by Shah Jahan in 1656, is one of India’s largest mosques, accommodating over 25,000 worshippers. Its grand red sandstone and marble structure, intricate carvings, and peaceful courtyards offer a spiritual retreat while providing breathtaking views of Old Delhi from its minarets.",
-    image: "./new_images/delhi-images/jama-masjid.jpg"
+    image: "./carousal_images/delhi-images/jama-masjid.jpg"
   },
   {
     name: "Akshardham Temple",
     description: "The Akshardham Temple, inaugurated in 2005, is a modern architectural marvel that showcases India’s ancient culture and spirituality. With intricate carvings, exhibitions, musical fountains, and boat rides, this temple dedicated to Bhagwan Swaminarayan is a celebration of Indian heritage and values.",
-    image: "./new_images/delhi-images/akshardham-temple.jpg"
+    image: "./carousal_images/delhi-images/akshardham-temple.jpg"
   },
   {
     name: "Rashtrapati Bhavan",
     description: "The Rashtrapati Bhavan, home to the President of India, is a stunning example of colonial architecture. Designed by Sir Edwin Lutyens, it sprawls over 320 acres and features the magnificent Mughal Gardens. Visitors admire its grand domes, expansive corridors, and historical significance.",
-    image: "./new_images/delhi-images/rastrapathi.jpg"
+    image: "./carousal_images/delhi-images/rastrapathi.jpg"
   },
   {
     name: "Jantar Mantar",
     description: "Constructed in 1724 by Maharaja Jai Singh II, Jantar Mantar is an astronomical observatory featuring massive stone instruments used to measure time, predict eclipses, and track celestial bodies. This architectural marvel is a testament to India’s scientific advancements and remains a fascinating site for astronomy enthusiasts.",
-    image: "./new_images/delhi-images/jantar-mantar.jpg"
+    image: "./carousal_images/delhi-images/jantar-mantar.jpg"
   },
   // {
   //   name: "Lodhi Gardens",
   //   description: "Lodhi Gardens is a serene haven in the bustling city, featuring 15th-century tombs of Sayyid and Lodhi rulers. This 90-acre garden blends history with nature, offering scenic walking trails, lush greenery, and architectural gems like the Bara Gumbad and Shish Gumbad, making it a favorite spot for picnics and relaxation.",
-  //   image: "./new_images/delhi-images/lodi-gardens.jpg"
+  //   image: "./carousal_images/delhi-images/lodi-gardens.jpg"
   // },
   {
     name: "National Museum",
     description: "The National Museum in Delhi houses an extensive collection of artifacts from India’s diverse history, spanning over 5,000 years. From ancient sculptures and Mughal paintings to the Indus Valley Civilization relics, the museum provides a deep dive into the country’s rich cultural heritage.",
-    image: "./new_images/delhi-images/national-museum-of-india-delhi.webp"
+    image: "./carousal_images/delhi-images/national-museum-of-india-delhi.webp"
   },
   {
     name: "Raj Ghat",
     description: "Raj Ghat is a simple yet poignant memorial dedicated to Mahatma Gandhi. Situated on the banks of the Yamuna River, it marks the site of his cremation in 1948. The black marble platform, surrounded by lush gardens, exudes tranquility and draws visitors paying homage to the Father of the Nation.",
-    image: "./new_images/delhi-images/rajghat.avif"
+    image: "./carousal_images/delhi-images/rajghat.avif"
   }
 ];
 
@@ -392,42 +392,42 @@ export const delhiFoodPlaces = [
   {
     name: "Amrik Sukhdev",
     description: "A legendary roadside dhaba in Murthal, Haryana, known for its butter-loaded paranthas and lassi. It’s a must-visit for authentic North Indian flavors.",
-    image: "./new_images/food-images/amrit-sukhdev.jpeg",
+    image: "./carousal_images/food-images/amrit-sukhdev.jpeg",
     website: "https://www.amriksukhdev.com", 
     mapsLink: "https://maps.app.goo.gl/WExgKp13bwcDKeg88", 
   },
   {
     name: "Saravana Bhavan",
     description: "A renowned South Indian restaurant chain, Saravana Bhavan is famous for its crispy dosas, flavorful idlis, and delicious filter coffee. A perfect spot for a traditional South Indian breakfast or meal.",
-    image: "./new_images/food-images/saravana-bhavan.webp",
+    image: "./carousal_images/food-images/saravana-bhavan.webp",
     website: "https://www.saravanabhavan.com", 
     mapsLink: "https://maps.app.goo.gl/96Wc1xNjD5RNHfF18", 
   },
   {
     name: "Leo's Artisan Pizza",
     description: "Located in Gurgaon, Leo's Artisan Pizza is famous for its wood-fired Neapolitan-style pizzas. Their Margherita Pizza and Pepperoni Pizza are the crowd favorites, crafted with fresh ingredients and perfect flavor.",
-    image: "./new_images/food-images/leo-pizza.jpg",
+    image: "./carousal_images/food-images/leo-pizza.jpg",
     website: "https://www.tripadvisor.in/Restaurant_Review-g304551-d12216850-Reviews-Leo_s_Pizzeria-New_Delhi_National_Capital_Territory_of_Delhi.html", 
     mapsLink: "https://maps.app.goo.gl/zVnvFAjcA5JY8S6M6", 
   },
   {
     name: "Bukhara",
     description: "Located in the ITC Maurya, Bukhara is famous for its North Indian cuisine, especially its signature Dal Bukhara and the Tandoori Raan. Known for its rustic ambiance and traditional cooking style.",
-    image: "./new_images/food-images/bukhara.webp",
+    image: "./carousal_images/food-images/bukhara.webp",
     website: "https://www.itchotels.com/in/en/dining/bukhara", 
     mapsLink: "https://maps.app.goo.gl/v6KvYC4kSkkhWsjR7", 
   },
   {
     name: "Indian Accent",
     description: "Indian Accent in New Delhi offers a modern take on traditional Indian dishes, with innovative creations like Slow-Cooked Lamb Shank and Tandoori Lamb Chops. Known for its fine dining experience and creative menu.",
-    image: "./new_images/food-images/indian-accent.jpg",
+    image: "./carousal_images/food-images/indian-accent.jpg",
     website: "https://www.indianaccent.com/newdelhi", 
     mapsLink: "https://maps.app.goo.gl/STcKQ2mi1jE7XcJv7", 
   },
   {
     name: "Café Delhi Heights",
     description: "Located in Gurgaon, Café Delhi Heights serves delicious Juicy Lucy Burgers and Pastas with a trendy café ambiance.",
-    image: "./new_images/food-images/cafe-delhi.jpg",
+    image: "./carousal_images/food-images/cafe-delhi.jpg",
     website: "https://www.cafedelhiheights.com", 
     mapsLink: "https://maps.app.goo.gl/wyUBknWarg6423XA7", 
   },
