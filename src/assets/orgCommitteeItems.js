@@ -122,8 +122,9 @@ export const technicalProgrammeCommittee = [
   {id: 83, name: "Amit Ujlayan", affiliation: "GBU", imagePath: "./orgCommittee/techProgCommittee/amit-ujlayan.jpeg", link: "https://scholar.google.co.in/citations?user=cvs6bnIAAAAJ&hl=en"},
   {id: 84, name: "Sudhanshu Choudhary", affiliation: "NIT Kurukshetra", imagePath: "./orgCommittee/techProgCommittee/sudhanshu.jpeg", link: "https://scholar.google.co.in/citations?user=nNdedcQAAAAJ&hl=en"},
   {id: 85, name: "Mamilla Ravi Sankar", affiliation: "IIT Tirupati", imagePath: "./orgCommittee/techProgCommittee/mamilla.jpeg", link: "https://scholar.google.co.in/citations?user=svmuyEQAAAAJ&hl=en"},
-  { id: 86, name: "Amulya Sai Boppana", affiliation: "BCBS, Alabama", imagePath: "./orgCommittee/sponsorshipCommittee/amulyasai.jpeg" },
-  { id: 86, name: "Anurag Mangal Giri", affiliation: "Salesforce", imagePath: "./orgCommittee/techProgCommittee/anurag-magal-giri.jpeg", link:"https://www.linkedin.com/in/anurag-giri/" },
+  {id: 86, name: "Amulya Sai Boppana", affiliation: "BCBS, Alabama", imagePath: "./orgCommittee/sponsorshipCommittee/amulyasai.jpeg" },
+  {id: 87, name: "Anurag Mangal Giri", affiliation: "Salesforce", imagePath: "./orgCommittee/techProgCommittee/anurag-magal-giri.jpeg", link:"https://www.linkedin.com/in/anurag-giri/" },
+  {id: 88, name: "Udai Pratap Rao ", affiliation: "Associate Professor at NIT Patna", imagePath: "./orgCommittee/techProgCommittee/udai.webp", link:"https://scholar.google.com/citations?hl=en&user=YQmUD20AAAAJ" },
 ];
 
 
