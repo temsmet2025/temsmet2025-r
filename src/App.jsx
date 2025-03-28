@@ -18,6 +18,7 @@ import TouristDestinations from "./components/TouristDestinations.jsx";
 import SectionList from "./components/SectionLIst.jsx";
 import ExploreDelhi from "./components/ExploreDelhi.jsx";
 import Sponsorship from "./components/Sponsorship";
+import Registration from "./pages/Registration.jsx";
 
 /**
  * Main application component that sets up routing for different pages using HashRouter.
@@ -188,35 +189,7 @@ function App() {
       path: "/registration",
       element: (
         <>
-          <ScrollToTop elementId="Registration" />
-          <PreNav />
-          <Nav setShowContact={setShowContact} linkActive={active} setLinkActive = {setActive}/>
-          <Carousel />
-          {/* <Contact setShowContact={setShowContact} showContact={showContact} /> */}
-          <div id="reg-link" className="p-5 mt-10 sm:p-5 md:ml-16 md:mr-16 lg:ml-20 lg:mr-20">
-            <TableView
-              tableName="Registration"
-              tableHead={[
-                "Author Categories",
-                "Early Bird (Indian)",
-                "Early Bird (Foreign)",
-                "Regular (Indian)",
-                "Regular (Foreign)",
-              ]}
-              dataItem={registrationFees}
-              classes=""
-            />
-            <TableView
-              tableHead={["Delegates / Participants", "Fees"]}
-              dataItem={deligates}
-              classes=""
-            />
-            <div className="mt-10">
-              <SectionList dataItem={registrationNotes} title="Notes" />
-            </div>
-          </div >
-
-          <Footer />
+          <Registration setShowContact={setShowContact} linkActive={active} setLinkActive = {setActive}></Registration>
         </>
       ),
     },

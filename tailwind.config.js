@@ -7,6 +7,8 @@ export default {
     "./src/components/*.{js,ts,jsx,tsx}",
     "./src/components/Navbar/*.{js,ts,jsx,tsx}",
     "./src/components/Carousel/*.{js,ts,jsx,tsx}",
+    "./src/pages/*.{js,ts,jsx,tsx}",
+
     flowbite.content(),
   ],
   theme: {

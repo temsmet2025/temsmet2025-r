@@ -8,13 +8,13 @@
  * @property {string} name - The relative path to the image file.
  */
 export const images = [
-  { id: 0, name: './carousal_images/cropped-admin5.jpeg' },
-  { id: 1, name: './carousal_images/red-fort.jpeg' },
-  { id: 2, name: './carousal_images/akshardham-temple-2.jpeg' },
-  { id: 3, name: './carousal_images/lotus-temple.jpeg' },
-  { id: 4, name: './carousal_images/jama-masjid.jpeg' },
-  { id: 5, name: './carousal_images/qutub-minar.jpeg' },
-  { id: 6, name: './carousal_images/india-gate.jpeg' },
-  { id: 7, name: './carousal_images/humayuns-tomb.jpeg' },
-  { id: 8, name: './carousal_images/parliament.jpeg' },
+  { id: 0, name: './carousal_images/cropped-admin5.webp' },
+  { id: 1, name: './carousal_images/red-fort.webp' },
+  { id: 2, name: './carousal_images/akshardham-temple-2.webp' },
+  { id: 3, name: './carousal_images/lotus-temple.webp' },
+  { id: 4, name: './carousal_images/jama-masjid.webp' },
+  { id: 5, name: './carousal_images/qutub-minar.webp' },
+  { id: 6, name: './carousal_images/india-gate.webp' },
+  { id: 7, name: './carousal_images/humayuns-tomb.webp' },
+  { id: 8, name: './carousal_images/parliament.webp' },
 ];

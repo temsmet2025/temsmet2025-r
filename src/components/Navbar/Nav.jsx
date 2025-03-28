@@ -86,7 +86,7 @@ const MobileSubMenu = ({ items, onClose }) => (
  * @param {Function} props.setShowContact - Function to toggle the contact modal.
  * @returns {JSX.Element} The navigation JSX structure.
  */
-function Nav({ setShowContact, linkActive, setLinkActive }) {
+function Nav({ setShowContact, linkActive, setLinkActive, children }) {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [subMenuStates, setSubMenuStates] = useState({});
 
@@ -123,6 +123,7 @@ function Nav({ setShowContact, linkActive, setLinkActive }) {
   const navigate = useNavigate();
 
   return (
+    <>
     <nav className="sticky -top-1 z-40 w-full">
       <div className="relative bg-fixed bg-slate-950/90 border-b-4 border-zinc-950 text-white xl:flex justify-between z-50">
         <div className="visible font-bold xl:hidden w-48 text-xl p-3 md:text-3xl">
@@ -248,6 +249,9 @@ function Nav({ setShowContact, linkActive, setLinkActive }) {
         )}
       </div>
     </nav>
+    {children}
+    </>
+
   );
 }
 

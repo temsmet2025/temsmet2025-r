@@ -2134,6 +2134,10 @@ input[type="range"]::-ms-fill-lower {
   border-radius: 0px;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -2408,6 +2412,11 @@ input[type="range"]::-ms-fill-lower {
 .border-sky-700 {
   --tw-border-opacity: 1;
   border-color: rgb(3 105 161 / var(--tw-border-opacity, 1));
+}
+
+.border-sky-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(7 89 133 / var(--tw-border-opacity, 1));
 }
 
 .border-teal-300 {
@@ -2708,6 +2717,10 @@ input[type="range"]::-ms-fill-lower {
 .bg-sky-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(3 105 161 / var(--tw-bg-opacity, 1));
+}
+
+.bg-sky-700\/80 {
+  background-color: rgb(3 105 161 / 0.8);
 }
 
 .bg-slate-200 {
@@ -6665,6 +6678,10 @@ input[type="range"]::-ms-fill-lower {
 
   .lg\:w-\[50rem\] {
     width: 50rem;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:max-w-4xl {
