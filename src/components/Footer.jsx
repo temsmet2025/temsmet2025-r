@@ -14,11 +14,11 @@ const scrollToSection = (id) => {
 };
 const Footer = () => {
   return (
-    <footer className=" bg-black text-white p-10 w-[100vw]">
+    <footer className=" bg-black text-white p-3 lg:p-10 w-[100vw]">
         <div className="flex justify-center items-center">
-            <div className="grid grid-flow-row grid-cols-4 gap-10 md:flex-row justify-between w-full">
+            <div className="flex flex-col gap-10 lg:grid lg:grid-flow-row lg:grid-cols-4 lg:gap-10 w-full">
             
-                <div className="text-left col-span-1">
+                <div className="text-left lg:col-span-2 xl:col-span-1 hidden lg:block text-xs sm:text-base">
                     <nav className="flex flex-col gap-3 text-base text-gray-400">
                         <Link to="/call-for-papers" className="hover:text-white">Track1 - Innovations in Power Engineering</Link>
                         <Link to="/call-for-papers" className="hover:text-white">Track2 - AI, ML and Cyber Security</Link>
@@ -29,9 +29,9 @@ const Footer = () => {
                     </nav>
                 </div>
 
-                <div className="flex flex-col items-center justify-center col-span-2">
-                      <h1 className="text-6xl font-bold">TESMET 2025</h1>
-                      <div className="flex flex-row text-lg gap-2 text-gray-400 font-semibold">
+                <div className="flex flex-col gap-1 items-center justify-center lg:col-span-1 xl:col-span-2">
+                      <h1 className="text-3xl sm:text-4xl xl:text-5xl font-bold flex flex-row"><span>TESMET</span> <span>2025</span> </h1>
+                      <div className="flex flex-row flex-wrap justify-center items-center text-xs sm:text-base gap-1 text-gray-400 sm:font-semibold">
                           <Link to="/submission-guidelines" className="hover:text-white">Submission Guidelines  </Link> 
                           <span>|</span>
                           <Link to="/" onClick={(e) => {
@@ -44,10 +44,10 @@ const Footer = () => {
                       </div>
                 </div>
 
-                <div className="ml-10 flex flex-col ">
+                <div className="ml-10 flex flex-col justify-center items-center">
                     <h2 className="text-lg font-bold">NEW DELHI</h2>
-                      <div className="text-gray-400 flex flex-col ">
-                          <span>Zone P1, GT Karnal Road</span>
+                      <div className="text-gray-400 flex flex-col justify-center items-center">
+                    <span>Zone P1, GT Karnal Road</span>
                     <span>Bakoli, 110036</span>
                     <span>+11-33861122/83</span>
                     <span>temsmet2025@nitdelhi.ac.in</span>
