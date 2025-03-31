@@ -1,43 +1,40 @@
-/**
- * Footer component displaying the copyright message with the current year.
- * 
- * @returns {JSX.Element} The footer JSX structure containing the copyright message.
- */
-import { FaLinkedin, FaFacebook, FaInstagram, FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
 
-function Footer() {
-    return (
-        <div id="footer" className="relative z-50 bottom-0 w-full bg-slate-950 flex flex-col items-center py-6 text-amber-100">
-            
-            <div className="flex space-x-6 mb-4">
-                <a href="https://www.linkedin.com/company/temsmet2025-nitdelhi/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-300 transition duration-300">
-                    <FaLinkedin size={24} />
-                </a>
-                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-sky-300 transition duration-300">
-                    <FaFacebook size={24} />
-                </a>
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-sky-300 transition duration-300">
-                    <FaInstagram size={24} />
-                </a>
-            </div>
-
-            <div className="flex flex-col items-center space-y-2 mb-4">
-                <div className="flex items-center space-x-2">
-                    <FaEnvelope size={20} className="text-sky-300" />
-                    <span className="text-base cursor-pointer"> <a href="mailto:temsmet2025@nitdelhi.ac.in">temsmet2025@nitdelhi.ac.in</a></span>
-
-                    <span className="hidden sm:block border-l-2 border-sky-300 h-6"></span>
-
-                    <FaPhone size={20} className="text-sky-300" />
-                    <span className="text-base cursor-pointer"> <a href="tel:+11-33861122/83">+11-33861122/83</a> </span>
-                </div>
-            </div>
-
-            <span className="text-sm sm:text-base md:text-lg lg:text-xl text-center">
-                &copy; 2025 IEEE – All rights reserved.
-            </span>
+const Footer = () => {
+  return (
+    <footer className="bg-black text-white p-10">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between">
+        
+        <div className="w-1/2 text-left">
+          <nav className="flex flex-col space-y-2">
+            <a href="#" className="hover:text-gray-400">Track1 - Innovations in Power Engineering</a>
+            <a href="#" className="hover:text-gray-400">Track2 - AI, ML and Cyber Security</a>
+            <a href="#" className="hover:text-gray-400">Track3 - Smart Systems and Communication</a>
+            <a href="#" className="hover:text-gray-400">Track4 - Engineering and Smart Management</a>
+            <a href="#" className="hover:text-gray-400">Track5 - Advancements in VLSI, Embedded systems and Signal Processing</a>
+            <a href="#" className="hover:text-gray-400">Track6 - Innovations and Entrepreneurship</a>
+          </nav>
         </div>
-    );
-}
+
+        <div className="w-1/2 text-right">
+          <h2 className="text-lg font-bold">NEW DELHI</h2>
+          <p>Zone P1, GT Karnal Road</p>
+          <p>Bakoli, 110036</p>
+          <p>+11-33861122/83</p>
+          <p>temsmet2025@nitdelhi.ac.in</p>
+          <div className="flex justify-end space-x-4 mt-4">
+            <a href="https://www.facebook.com" className="text-white hover:text-gray-400"><FaFacebookF /></a>
+            <a href="https:www.instagram.com" className="text-white hover:text-gray-400"><FaInstagram /></a>
+            <a href="https://www.linkedin.com/company/temsmet2025-nitdelhi" className="text-white hover:text-gray-400"><FaLinkedin /></a>
+          </div>
+        </div>
+      </div>
+
+      <div className="text-center mt-10 text-gray-400">
+        ©2025 IEEE - All Rights Reserved
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;
