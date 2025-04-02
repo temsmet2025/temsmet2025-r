@@ -4,7 +4,7 @@ export const patrons = [
 
 export const honoraryChair = [
   { id: 0, name: "Prof. (Dr.) Ajay K. Sharma", affiliation: "NIT Delhi", imagePath: "./orgCommittee/honoraryChair/ajay.webp", link: "https://www.linkedin.com/in/ajay-k-sharma-a3437a30/" },
-  { id: 1, name: "Sudeendra Koushik", affiliation: "President Elect – IEEE TEMS Global", imagePath: "./orgCommittee/honoraryChair/sudeendra.webp", link: "https://www.linkedin.com/in/sudeendrakoushik/" }
+  { id: 1, name: "Sudeendra Koushik", affiliation: "President Elect – IEEE TEMS Global", imagePath: "./orgCommittee/honoraryChair/sudeendra.webp", link: "https://www.linkedin.com/in/sudeendrakoushik/", bioData:"public/downloadable/bioData/sudeendra.pdf" }
 ];
 
 export const generalChairs = [
@@ -83,7 +83,7 @@ export const technicalProgrammeCommittee = [
   { id: 43, name: "Arun Kumar", affiliation: "ABV-IIITM Gwalior", imagePath: "./orgCommittee/techProgCommittee/arun.webp", link: "" },
   { id: 44, name: "Mazalov Vladimir", affiliation: "Institute of Applied Mathematical Research, KarRC RAS, Russia", imagePath: "./orgCommittee/techProgCommittee/mazalov.webp", link: "" },
   // { id: 45, name: "Bapi Chaterji", affiliation: "IIIT Delhi", imagePath: "./orgCommittee/techProgCommittee/bapi.webp", link: "" },
-  { id: 46, name: "Ashish Tiwari", affiliation: "VNIT Nagpur", imagePath: "./orgCommittee/techProgCommittee/ashishTiwari.webp", link: "" },
+  { id: 46, name: "Ashish Tiwari", affiliation: "Assistant Professor, Computer Science Department, VNIT, Nagpur. India", imagePath: "./orgCommittee/techProgCommittee/ashishTiwari.webp", link: "" },
   { id: 48, name: "Vinod Kumar Jain", affiliation: "IIITDM Jabalpur", imagePath: "./orgCommittee/techProgCommittee/vinod.webp", link: "" },
   { id: 49, name: "Akrati Saxena", affiliation: "Leiden University, Netherlands", imagePath: "./orgCommittee/techProgCommittee/akriti.webp", link: "" },
   { id: 50, name: "Prashant Kumar", affiliation: "NIT Delhi", imagePath: "./orgCommittee/techProgCommittee/prashant.webp", link: "" },
@@ -110,7 +110,7 @@ export const technicalProgrammeCommittee = [
   { id: 71, name: "Satyam Agarwal", affiliation: "Assistant Professor,Department of Electrical Engineering, IIT Ropar", imagePath: "./orgCommittee/techProgCommittee/satyamIITRopar.webp", link: "https://sites.google.com/iitrpr.ac.in/satyam" },
   { id: 72, name: "Aparajita Ojha", affiliation: "Professor, IIITDMJ", imagePath: "./orgCommittee/techProgCommittee/aojha.webp", link: "https://cse.iiitdmj.ac.in/faculty_page.php?id=aojha@iiitdmj.ac.in" },
   { id: 73, name: "Preeti Khanna", affiliation: "Associate Professor, School of Business Management, SVKM’s NMIMS, Mumbai", imagePath: "./orgCommittee/techProgCommittee/pkhanna.webp", link: "https://sbm.nmims.edu/faculty-preeti-khanna" },
-  { id: 74, name: "Ashish Tiwari", affiliation: "Assistant Professor, Computer Science Department, VNIT, Nagpur. India", imagePath: "./orgCommittee/techProgCommittee/AshishNITNagpur.webp", link: "https://www.linkedin.com/in/ashish-tiwari-8408aa41/?originalSubdomain=in" },
+  // { id: 74, name: "Y N Singh", affiliation: "IIT Kanpur", imagePath: "./orgCommittee/techProgCommittee/ynSingh.webp", link: "https://www.linkedin.com/in/ashish-tiwari-8408aa41/?originalSubdomain=in" },
   { id: 75, name: "Ganesh C. Patil", affiliation: "Associate Professor at Visvesvaraya National Institute of Technology", imagePath: "./orgCommittee/techProgCommittee/ganPatil.webp", link: "https://www.linkedin.com/in/ganesh-c-patil-79b6306/?originalSubdomain=in" },
   { id: 76, name: "Prasanna Kumar Misra", affiliation: "Assistant Professor at Indian Institute Of Information Technology", imagePath: "./orgCommittee/techProgCommittee/prasanna.gif", link: "https://www.linkedin.com/in/prasanna-kumar-misra-1b3119169/?originalSubdomain=in" },
   {id: 77, name: "Joydeep Chandra", affiliation: "IIT Patna", imagePath: "./orgCommittee/techProgCommittee/joydeep.webp", link: "https://scholar.google.co.in/citations?user=42t8V90AAAAJ&hl=en"},
@@ -124,7 +124,9 @@ export const technicalProgrammeCommittee = [
   {id: 85, name: "Mamilla Ravi Sankar", affiliation: "IIT Tirupati", imagePath: "./orgCommittee/techProgCommittee/mamilla.webp", link: "https://scholar.google.co.in/citations?user=svmuyEQAAAAJ&hl=en"},
   {id: 86, name: "Amulya Sai Boppana", affiliation: "BCBS, Alabama", imagePath: "./orgCommittee/sponsorshipCommittee/amulyasai.webp" },
   {id: 87, name: "Anurag Mangal Giri", affiliation: "Salesforce", imagePath: "./orgCommittee/techProgCommittee/anurag-magal-giri.webp", link:"https://www.linkedin.com/in/anurag-giri/" },
-  {id: 88, name: "Udai Pratap Rao ", affiliation: "Associate Professor at NIT Patna", imagePath: "./orgCommittee/techProgCommittee/udai.webp", link:"https://scholar.google.com/citations?hl=en&user=YQmUD20AAAAJ" },
+  {id: 88, name: "Udai Pratap Rao", affiliation: "Associate Professor at NIT Patna", imagePath: "./orgCommittee/techProgCommittee/udai.webp", link:"https://scholar.google.com/citations?hl=en&user=YQmUD20AAAAJ" },
+  {id: 89, name: "Waquar Ahmad", affiliation: "Assistant Professor at NIT Calicut", imagePath: "./orgCommittee/techProgCommittee/waqar.webp", link:"https://nitc.ac.in/department/electronics-amp-communication-engineering/faculty-and-staff/faculty/ef54048c-5202-4aa4-99bb-ac3c07f33c17" },
+  {id: 90, name: "Mohd Shariq", affiliation: "Associate Professor at Aligarh Muslim University (AMU)", imagePath: "./orgCommittee/techProgCommittee/shariq.webp", link:"https://www.amu.ac.in/faculty/civil-engineering/mohd-shariq-1" },
 ];
 
 
