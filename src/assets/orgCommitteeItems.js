@@ -4,7 +4,7 @@ export const patrons = [
 
 export const honoraryChair = [
   { id: 0, name: "Prof. (Dr.) Ajay K. Sharma", affiliation: "NIT Delhi", imagePath: "./orgCommittee/honoraryChair/ajay.webp", link: "https://www.linkedin.com/in/ajay-k-sharma-a3437a30/" },
-  { id: 1, name: "Sudeendra Koushik", affiliation: "President Elect – IEEE TEMS Global", imagePath: "./orgCommittee/honoraryChair/sudeendra.webp", link: "https://www.linkedin.com/in/sudeendrakoushik/", bioData:"public/downloadable/bioData/sudeendra.pdf" }
+  { id: 1, name: "Sudeendra Koushik", affiliation: "President Elect – IEEE TEMS Global", imagePath: "./orgCommittee/honoraryChair/sudeendra.webp", link: "https://www.linkedin.com/in/sudeendrakoushik/", bioData:"./downloadable/bioData/sudeendra.pdf" }
 ];
 
 export const generalChairs = [

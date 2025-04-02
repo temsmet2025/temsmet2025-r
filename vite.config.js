@@ -19,8 +19,8 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   // base: "/temsmet2025-r",
   build: {
-    // outDir: 'dist',
-    outDir: '../temsmet builds/liveBuild-v4.3',
+    outDir: 'dist',
+    // outDir: '../temsmet builds/liveBuild-v4.4',
     rollupOptions: {
       output: {
         manualChunks(id) {
