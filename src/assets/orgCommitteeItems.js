@@ -28,13 +28,14 @@ export const programChairs = [
   { id: 2, name: "Hocine Cherifi", affiliation: "University of Burgundy, France", imagePath: "./orgCommittee/programChairs/hocine.webp", link: "https://futureearth.org/contacts/hocine-cherifi/" },
   { id: 3, name: "Priyesh Chauhan", affiliation: "IIITRAM, Ahmedabad", imagePath: "./orgCommittee/programChairs/Priyesh.webp", link: "https://www.linkedin.com/in/pjchauhan/" },
   { id: 4, name: "Jawar Singh", affiliation: "IIT Patna", imagePath: "./orgCommittee/programChairs/jawar.webp", link: "https://www.linkedin.com/in/jawar-singh-25495a17/" },
-  { id: 5, name: "Anima Majumder", affiliation: "TCS Innovation labs, Bangalore (Co-chair)", imagePath: "./orgCommittee/techProgCommittee/anima.webp", link: "https://in.linkedin.com/in/anima-majumder-1082a01a" },
+  { id: 5, name: "Anima Majumder", affiliation: "TCS Innovation labs, Bangalore", imagePath: "./orgCommittee/techProgCommittee/anima.webp", link: "https://in.linkedin.com/in/anima-majumder-1082a01a" },
   { id: 6, name: "Chantal Cherifi", affiliation: "University of Lyon, France", imagePath: "./orgCommittee/techProgCommittee/chantalcherifi.webp", link: "https://scholar.google.fr/citations?user=4KP81WAAAAAJ&hl=fr" },
   { id: 6, name: "Tarini Baswal", affiliation: "IRSEE 1987 || Director REMCL || Railway Electrification Head Of RITES", imagePath: "./orgCommittee/programChairs/tarini.webp", link: "https://www.linkedin.com/in/tarini-baswal-b5250b12a/" },
   { id: 7, name: "Krishna Sirohi", affiliation: "IIT Delhi", imagePath: "./orgCommittee/programChairs/krishna-sirohi.webp", link: "https://www.linkedin.com/in/krishnasirohi/?originalSubdomain=in" },
   { id: 8, name: "Swades De", affiliation: "IIT Delhi", imagePath: "./orgCommittee/programChairs/swades-de.webp", link: "https://scholar.google.co.in/citations?user=BfVMzzkAAAAJ&hl=en"},
   {id: 9, name: "Aparajita Ojha", affiliation: "IITDM Jabalpur", imagePath: "./orgCommittee/programChairs/aparajita.webp", link: "https://www.linkedin.com/in/aparajita-ojha-02078817/?originalSubdomain=in"},
   {id: 10, name: "M N Hoda", affiliation: "Director, Bharati Vidyapeeth's Institute of Computer Applications and Management (BVICAM)", imagePath: "./orgCommittee/programChairs/mnhoda.webp", link: "https://www.linkedin.com/in/mn-hoda-0a48b147/"},  
+  {id: 11, name: "Anima Johari", affiliation: "Scientist at SERB (Co-Chair)", imagePath: "./orgCommittee/programChairs/anima-johari.webp", link: "https://serb.gov.in/page/directory"}
 ];
 
 export const technicalProgrammeCommittee = [
