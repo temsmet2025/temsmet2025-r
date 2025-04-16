@@ -4,5 +4,6 @@ export const keynoteSpeakers = [
     { id: 2, name: "George Koilpillai" , affiliation: "Aerospace Honeywell Technology Solutions Lab", imagePath: "./keynoteSpeakers/george.webp", link:"https://ieeexplore.ieee.org/author/37088643251", bioData:"./downloadable/bioData/george.pdf" },
     { id: 3, name: "Sachin Sinha" , affiliation: "Director, Technology Strategy, Microsoft", imagePath: "./keynoteSpeakers/sachinsinha.webp", link:"https://www.linkedin.com/in/sachinsinha/" },
     { id: 4, name: "Mayank Sawhney" , affiliation: "Senior Engineering Manager, Atlassian", imagePath: "./keynoteSpeakers/mayank.webp", link:"https://www.linkedin.com/in/mayanksawhney/?originalSubdomain=in" },
+    { id: 5, name: "Sandip Patil" , affiliation: "Entrepreneur E-Spin Nanotech", imagePath: "./keynoteSpeakers/sandip.jpeg", link:"https://www.linkedin.com/in/dr-sandip-patil-87863814/?originalSubdomain=in" }
 ];
  
