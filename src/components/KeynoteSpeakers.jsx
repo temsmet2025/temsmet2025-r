@@ -9,6 +9,9 @@ function KeynoteSpeakers() {
       </h1>
       <p>Our keynote speakers are...</p> */}
       <Profiles title="Keynote Speakers" profiles={keynoteSpeakers} />
+      <p className="mt-8 text-center text-lg text-black">
+        More to come...
+      </p>
     </div>
   );
 }

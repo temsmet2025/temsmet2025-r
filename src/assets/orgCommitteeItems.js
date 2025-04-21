@@ -47,7 +47,6 @@ export const technicalProgrammeCommittee = [
   { id: 5, name: "Georgios Konstantinou", affiliation: "UNSW, Australia", imagePath: "./orgCommittee/techProgCommittee/georgios.webp", link: "https://www.unsw.edu.au/staff/georgios-konstantinou" },
   { id: 6, name: "Anish Mukherjee", affiliation: "NVIDIA", imagePath: "./orgCommittee/techProgCommittee/anish.webp", link: "https://www.linkedin.com/in/anish-mukherjee-delft/" },
   { id: 7, name: "Debayan Chakraborty", affiliation: "Accenture Operations Ai Research and Development Team", imagePath: "./orgCommittee/techProgCommittee/deba.webp", link: "https://www.linkedin.com/in/debayan-chakraborty-68477a80/" },
-  { id: 8, name: "Divyesh Dixit", affiliation: "Co-Founder BambooBox", imagePath: "./orgCommittee/techProgCommittee/divyesh.webp", link: "https://www.linkedin.com/in/divyesh-dixit/" },
   { id: 9, name: "Ajit Singh", affiliation: "Adobe, Bengaluru", imagePath: "./orgCommittee/techProgCommittee/ajit.webp", link: "https://www.linkedin.com/in/ajitsingh797/" },
   { id: 10, name: "Vijay Yadav", affiliation: "Microsoft, Hyderabad", imagePath: "./orgCommittee/techProgCommittee/vijay.webp", link: "https://www.linkedin.com/in/vijay-yadav-6729b3b9/" },
   { id: 11, name: "Rishav Agrahari", affiliation: "Atlassian, Bangalore", imagePath: "./orgCommittee/techProgCommittee/rishav.webp", link: "https://www.linkedin.com/in/rishav-agrahari/" },
@@ -132,7 +131,6 @@ export const technicalProgrammeCommittee = [
 
 
 export const informationCommittee = [
-  { id: 0, name: "Abhay Gupta", affiliation: "Efficient World, Vancouver, Canada (Chair)", imagePath: "./orgCommittee/informationCommittee/abhay.webp" },
   { id: 1, name: "Rikmantra Basu", affiliation: "NIT Delhi (Co-Chair)", imagePath: "./orgCommittee/informationCommittee/rikmantra.webp" },
   { id: 2, name: "Mohd Muneer Arif", affiliation: "Atlassian, Delhi (Co-Chair)", imagePath: "./orgCommittee/informationCommittee/muneer.webp" },
   { id: 3, name: "Abha Saxena", affiliation: "Bloomberg LP, New York", imagePath: "./orgCommittee/techProgCommittee/abha.webp" },
