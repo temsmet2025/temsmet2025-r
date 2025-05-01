@@ -43,5 +43,21 @@
     "postcss": "^8.4.48",
     "tailwindcss": "^3.4.14",
     "vite": "^5.4.10"
-  }
+  },
+  "description": "Follow these instructions to get the project up and running on your local machine.",
+  "main": "eslint.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/temsmet2025/temsmet2025-r.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/temsmet2025/temsmet2025-r/issues"
+  },
+  "homepage": "https://github.com/temsmet2025/temsmet2025-r#readme"
 }
