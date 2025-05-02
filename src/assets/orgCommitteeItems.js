@@ -154,7 +154,8 @@ export const publicationCommittee = [
 export const webMasterAndTechnicalCoordinationCommittee = [
   { id: 0, name: "Karan Verma", affiliation: "NIT Delhi (Chair)", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/karan.webp" },
   { id: 1, name: "Gautam Kumar", affiliation: "NIT Delhi (Co-Chair)", imagePath: "./orgCommittee/publicationCommittee/goutam.webp" },
-  { id: 2, name: "Niran N.", affiliation: "Volunteer, IEEE TEMS", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/niran.webp" }
+  { id: 2, name: "Niran N.", affiliation: "Volunteer, IEEE TEMS", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/niran.webp" },
+  { id: 3, name: "Manish Malik", affiliation: "Technical Assistant", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/manish.jpeg" }
 ];
 
 export const localOrganizingCommittee = [
