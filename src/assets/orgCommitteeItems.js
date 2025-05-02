@@ -128,7 +128,6 @@ export const technicalProgrammeCommittee = [
   {id: 88, name: "Udai Pratap Rao", affiliation: "Associate Professor at NIT Patna", imagePath: "./orgCommittee/techProgCommittee/udai.webp", link:"https://scholar.google.com/citations?hl=en&user=YQmUD20AAAAJ" },
   {id: 89, name: "Waquar Ahmad", affiliation: "Assistant Professor at NIT Calicut", imagePath: "./orgCommittee/techProgCommittee/waqar.webp", link:"https://nitc.ac.in/department/electronics-amp-communication-engineering/faculty-and-staff/faculty/ef54048c-5202-4aa4-99bb-ac3c07f33c17" },
   {id: 90, name: "Mohd Shariq", affiliation: "Associate Professor at Aligarh Muslim University (AMU)", imagePath: "./orgCommittee/techProgCommittee/shariq.webp", link:"https://www.amu.ac.in/faculty/civil-engineering/mohd-shariq-1" },
-  {id: 91, name: "Suman Sharma", affiliation: "Technical Assistant, NIT Delhi", imagePath: "public/orgCommittee/webMasterAndTechCoordCommittee/Suman.jpg", link:"www.linkedin.com/in/suman-attri-7b592a363" },
 ];
 
 
@@ -156,7 +155,8 @@ export const publicationCommittee = [
 export const webMasterAndTechnicalCoordinationCommittee = [
   { id: 0, name: "Karan Verma", affiliation: "NIT Delhi (Chair)", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/karan.webp" },
   { id: 1, name: "Gautam Kumar", affiliation: "NIT Delhi (Co-Chair)", imagePath: "./orgCommittee/publicationCommittee/goutam.webp" },
-  { id: 2, name: "Niran N.", affiliation: "Volunteer, IEEE TEMS", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/niran.webp" }
+  { id: 2, name: "Niran N.", affiliation: "Volunteer, IEEE TEMS", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/niran.webp" },
+  {id: 3, name: "Suman Sharma", affiliation: "Technical Assistant, NIT Delhi", imagePath: "public/orgCommittee/webMasterAndTechCoordCommittee/Suman.jpg", link:"www.linkedin.com/in/suman-attri-7b592a363" },
 ];
 
 export const localOrganizingCommittee = [
