@@ -157,6 +157,7 @@ export const webMasterAndTechnicalCoordinationCommittee = [
   { id: 1, name: "Gautam Kumar", affiliation: "NIT Delhi (Co-Chair)", imagePath: "./orgCommittee/publicationCommittee/goutam.webp" },
   { id: 2, name: "Niran N.", affiliation: "Volunteer, IEEE TEMS", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/niran.webp" },
   { id: 3, name: "Suman Sharma", affiliation: "Technical Assistant, NIT Delhi", imagePath: "public/orgCommittee/webMasterAndTechCoordCommittee/Suman.webp", link:"www.linkedin.com/in/suman-attri-7b592a363" },
+  { id: 3, name: "Manish Malik", affiliation: "Technical Assistant", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/manish.jpeg" }
 ];
 
 export const localOrganizingCommittee = [

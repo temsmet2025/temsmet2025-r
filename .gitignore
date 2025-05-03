@@ -31,3 +31,5 @@ liveBuild-v0.3
 dist
 node_modules
 tailwindcss.py
+
+telemetry
