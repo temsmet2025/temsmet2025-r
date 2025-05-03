@@ -124,7 +124,7 @@ function Carousel() {
           <div id="welcome-note" className="z-30 w-full">
             <h2
               style={{ WebkitTextStroke: "2px rgba(0,0,0,8)" }}
-              className="text-3xl sm:tracking-tight md:tracking-wider md:text-5xl lg:text-6xl w-full flex flex-wrap gap-1 justify-center text-center space-x-2 font-black bg-gradient-to-r from-sky-700  to-sky-950 bg-clip-text text-transparent"
+              className="text-3xl sm:tracking-tight md:tracking-wider md:text-4xl lg:text-6xl w-full flex flex-wrap gap-1 justify-center text-center space-x-2 font-black bg-gradient-to-r from-sky-700  to-sky-950 bg-clip-text text-transparent"
             >
               <span>Welcome</span> <span>To</span> <span>TEMSMET 2025</span>
             </h2>

@@ -124,76 +124,80 @@ function Nav({ setShowContact, linkActive, setLinkActive, children }) {
 
   return (
     <>
-    <nav className="sticky -top-1 z-40 w-full">
-      <div className="relative bg-fixed bg-slate-950/90 border-b-4 border-zinc-950 text-white xl:flex justify-between z-50">
-        <div className="visible font-bold xl:hidden w-48 text-xl p-3 md:text-3xl">
-          <p>TEMSMET2025</p>
-        </div>
+    <nav className="sticky top-[4.5rem] sm:top-24 md:top-[110px] lg:top-[150px]  w-full z-50">
+        <div className="relative bg-slate-950 border-b-4 border-zinc-950 text-white z-50">
+          <div className="flex w-full justify-center items-center py-3 md:py-5">
+              <div className="visible ml-4 flex items-center justify-center font-bold text-xl md:text-2xl lg:text-3xl">
+                <p>TEMSMET2025</p>
+              </div>
 
-          {/* Desktop Navigation */}
-          <div className="flex justify-center items-center">
-            <ul className="hidden xl:flex w-full flex-wrap font-mono text-lg font-bold justify-start 2xl:justify-around items-center">
-              {navigation.map((navItem, index) => (
-                <li
-                  key={index}
-                  className={` hover:text-slate-200 cursor-pointer submenu px-4 py-6 ${navItem.index === linkActive ? "text-zinc-50" : "text-sky-300"}`}
-                  onMouseEnter={() => {
-                    if (navItem.name === "Call for Papers") toggleSubMenu("cfp");
-                    if (navItem.name === "Past Editions")
-                      toggleSubMenu("pastEditions");
-                    if (navItem.name === "Travel") toggleSubMenu("travel");
-                  }}
-                  onMouseLeave={() => {
-                    if (navItem.name === "Call for Papers") toggleSubMenu("cfp");
-                    if (navItem.name === "Past Editions")
-                      toggleSubMenu("pastEditions");
-                    if (navItem.name === "Travel") toggleSubMenu("travel");
-                  }}
-                  onClick={(e) => {
-                    if (navItem.name === "Contact") {
-                      setShowContact(true)
-                    };
-                    if (navItem.name !== "Contact") {
-                      console.log(navItem.index, "clicked")
-                    }
-                      setLinkActive(navItem.index);
-                  }}
-                >
-                  <Link to={navItem.href !== undefined && navItem.href}>
-                    <span className="flex justify-center items-center">
-                      {navItem.name}
-                      {navItem.name === "Call for Papers" &&
-                        (subMenuStates.cfp ? <ChevronUp /> : <ChevronDown />)}
-                      {navItem.name === "Past Editions" &&
-                        (subMenuStates.pastEditions ? (
-                          <ChevronUp />
-                        ) : (
-                          <ChevronDown />
-                        ))}
-                      {navItem.name === "Travel" &&
-                        (subMenuStates.travel ? <ChevronUp /> : <ChevronDown />)}
-                    </span>
-                  </Link>
-                  {navItem.name === "Call for Papers" && subMenuStates.cfp && (
-                    <SubMenu items={cfpSubmenuItems} />
-                  )}
-                  {navItem.name === "Past Editions" &&
-                    subMenuStates.pastEditions && (
-                      <SubMenu items={pastEditionsItems} />
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex justify-center items-center w-full ">
+              <ul className="flex text-sm flex-wrap font-semibold justify-end lg:text-lg lg:font-bold w-full gap-[0.7rem] lg:gap-5 mr-5">
+              {/* <ul className="hidden xl:flex w-full flex-wrap font-mono text-lg font-bold justify-start 2xl:justify-around items-center"> */}
+                {navigation.map((navItem, index) => (
+                  <li
+                    key={index}
+                    className={`hover:text-slate-200 cursor-pointer submenu ${navItem.index === linkActive ? "text-zinc-50" : "text-sky-300"}`}
+                    onMouseEnter={() => {
+                      if (navItem.name === "Call for Papers") toggleSubMenu("cfp");
+                      if (navItem.name === "Past Editions")
+                        toggleSubMenu("pastEditions");
+                      if (navItem.name === "Travel") toggleSubMenu("travel");
+                    }}
+                    onMouseLeave={() => {
+                      if (navItem.name === "Call for Papers") toggleSubMenu("cfp");
+                      if (navItem.name === "Past Editions")
+                        toggleSubMenu("pastEditions");
+                      if (navItem.name === "Travel") toggleSubMenu("travel");
+                    }}
+                    onClick={(e) => {
+                      if (navItem.name === "Contact") {
+                        setShowContact(true)
+                      };
+                      if (navItem.name !== "Contact") {
+                        console.log(navItem.index, "clicked")
+                      }
+                        setLinkActive(navItem.index);
+                    }}
+                  >
+                    <Link to={navItem.href !== undefined && navItem.href}>
+                      <span className="flex justify-center items-center">
+                        {navItem.name}
+                        {navItem.name === "Call for Papers" &&
+                          (subMenuStates.cfp ? <ChevronUp /> : <ChevronDown />)}
+                        {navItem.name === "Past Editions" &&
+                          (subMenuStates.pastEditions ? (
+                            <ChevronUp />
+                          ) : (
+                            <ChevronDown />
+                          ))}
+                        {navItem.name === "Travel" &&
+                          (subMenuStates.travel ? <ChevronUp /> : <ChevronDown />)}
+                      </span>
+                    </Link>
+                    {navItem.name === "Call for Papers" && subMenuStates.cfp && (
+                      <SubMenu items={cfpSubmenuItems} />
                     )}
-                  {navItem.name === "Travel" && subMenuStates.travel && (
-                    <SubMenu items={travelItems} />
-                  )}
-                </li>
-              ))}
-            </ul>
+                    {navItem.name === "Past Editions" &&
+                      subMenuStates.pastEditions && (
+                        <SubMenu items={pastEditionsItems} />
+                      )}
+                    {navItem.name === "Travel" && subMenuStates.travel && (
+                      <SubMenu items={travelItems} />
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
+       
         
 
         {/* Mobile Navigation */}
         <button
           onClick={() => setMobileMenu(!mobileMenu)}
-          className="xl:hidden absolute right-5 top-3"
+          className="md:hidden absolute right-5 top-3"
         >
           {mobileMenu ? <X /> : <Menu />}
         </button>
