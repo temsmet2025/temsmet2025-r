@@ -101,6 +101,9 @@ export const sponsorsAndExhibitors = [
 export const conferenceTracks = [
   {
     id: 0,
+    chairs: "Priyesh Chauhan",
+    co_chairs: "Praveen Bansal, Anjanee Kr. Mishra, Anmol Saxena",
+    chair_color:"#3D0301",
     track: "Track 1 - Innovations in Power Engineering",
     bgColor: "bg-green-400", // Tailwind Green for sustainability and power
     textColor: "text-gray-800", // Dark text for good contrast with green
@@ -119,6 +122,9 @@ export const conferenceTracks = [
   },
   {
     id: 1,
+    chairs: "Namita Mittal",
+    co_chairs:"Rahul Goel,, Anima Majumdhar,  Hocine Cherifi",
+    chair_color:"#F5F5F5",
     track: "Track 2 - Artificial Intelligence, Machine Learning and Cyber Security",
     bgColor: "bg-blue-500", // Tailwind Blue for technology and AI
     textColor: "text-yellow-100", // Lighter text for contrast against blue
@@ -138,6 +144,9 @@ export const conferenceTracks = [
   },
   {
     id: 2,
+    chairs: "Md. Shariq",
+    co_chairs:"Gaurav Goel , Adarsh Patel",
+    chair_color:"#FDF6B2",
     track: "Track 3 - Smart Systems and Communications",
     bgColor: "bg-orange-400", // Tailwind Orange for communication and innovation
     textColor: "text-yellow-950", // Dark text for good contrast with orange
@@ -157,6 +166,9 @@ export const conferenceTracks = [
   },
   {
     id: 3,
+    chairs: "Vimal Kumar",
+    co_chairs:"Arun Kumar, Muneer Arif",
+    chair_color:"#3D0301",
     track: "Track 4 - Engineering and Smart Management",
     bgColor: "bg-purple-400", // Tailwind Purple for management and innovation
     textColor: "text-white", // White text for contrast
@@ -175,6 +187,9 @@ export const conferenceTracks = [
   },
   {
     id: 4,
+    chairs: "Jawar Singh",
+    co_chairs:"Prasanna K. Misra, Sudhir Kumar",
+    chair_color:"#1F2937",
     track: "Track 5 - Advancements in VLSI, Embedded systems and Signal Processing",
     bgColor: "bg-red-400", // Tailwind Red for engineering and processing
     textColor: "text-white", // White text for contrast
@@ -191,6 +206,9 @@ export const conferenceTracks = [
   },
   {
     id: 5,
+    chairs: "Sandeep Patil",
+    co_chairs:"Anima Johari, Vinay Kumar Singh",
+    chair_color:"#FFFFFF",
     track: "Track 6 - Innovations and Entrepreneurship",
     bgColor: "bg-yellow-400", // Tailwind Yellow for innovation and entrepreneurship
     textColor: "text-gray-800", // Dark text for good contrast with yellow

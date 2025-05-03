@@ -140,7 +140,7 @@ export const informationCommittee = [
   { id: 6, name: "Amandeep Kaur", affiliation: "NIT Delhi", imagePath: "./orgCommittee/informationCommittee/amandeep.webp" },
   { id: 7, name: "Dannish S.", affiliation: "Technical Coordinator TEMS/IEEE Delhi Section, Sr. Manager (marketing & salès) Max Health Care", imagePath: "./orgCommittee/informationCommittee/dannish.webp", link:"https://www.linkedin.com/in/dannish-s-871672128/?originalSubdomain=in"},
   { id: 8, name: "Amulya Sai Boppana", affiliation: "BCBS, Alabama", imagePath: "./orgCommittee/sponsorshipCommittee/amulyasai.webp" },
-  {id: 8, name: "Subhash Yadav" , affiliation: "NIT Delhi (Co-Chair)", imagePath: "./orgCommittee/sponsorshipCommittee/subhash-yadav.jpg", link:"https://www.linkedin.com/in/subhash-yadav-a492b4339" }
+  { id: 9, name: "Subhash Yadav" , affiliation: "NIT Delhi (Co-Chair)", imagePath: "./orgCommittee/sponsorshipCommittee/subhash-yadav.webp", link:"https://www.linkedin.com/in/subhash-yadav-a492b4339" }
 ];
 
 export const publicationCommittee = [
@@ -156,7 +156,7 @@ export const webMasterAndTechnicalCoordinationCommittee = [
   { id: 0, name: "Karan Verma", affiliation: "NIT Delhi (Chair)", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/karan.webp" },
   { id: 1, name: "Gautam Kumar", affiliation: "NIT Delhi (Co-Chair)", imagePath: "./orgCommittee/publicationCommittee/goutam.webp" },
   { id: 2, name: "Niran N.", affiliation: "Volunteer, IEEE TEMS", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/niran.webp" },
-  {id: 3, name: "Suman Sharma", affiliation: "Technical Assistant, NIT Delhi", imagePath: "public/orgCommittee/webMasterAndTechCoordCommittee/Suman.jpg", link:"www.linkedin.com/in/suman-attri-7b592a363" },
+  { id: 3, name: "Suman Sharma", affiliation: "Technical Assistant, NIT Delhi", imagePath: "public/orgCommittee/webMasterAndTechCoordCommittee/Suman.webp", link:"www.linkedin.com/in/suman-attri-7b592a363" },
 ];
 
 export const localOrganizingCommittee = [
@@ -175,7 +175,7 @@ export const localOrganizingCommittee = [
   { id: 11, name: "A P Singh", affiliation: "NIT Delhi", imagePath: "./orgCommittee/webMasterAndTechCoordCommittee/apsingh.webp" },
   { id: 12, name: "Vijay K Dutt", affiliation: "Indian Railways", imagePath: "./orgCommittee/techProgCommittee/vkdutt.webp", link: "https://vtsociety.org/contact/vijay-k-dutt" },
   { id: 3, name: "Praveen Bansal", affiliation: "MITS Gwalior", imagePath: "./orgCommittee/publicationCommittee/praveen.webp" },
-  {id: 11, name: "S S Tyagi", affiliation: "IITM Nodia", imagePath: "./orgCommittee/programChairs/sstyagi.webp", link: "https://scholar.google.com/citations?user=VFo9SdoAAAAJ&hl=en"},
+  { id: 11, name: "S S Tyagi", affiliation: "IITM Nodia", imagePath: "./orgCommittee/programChairs/sstyagi.webp", link: "https://scholar.google.com/citations?user=VFo9SdoAAAAJ&hl=en"},
 ];
 
 
