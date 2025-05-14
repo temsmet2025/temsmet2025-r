@@ -133,7 +133,7 @@ function Nav({ setShowContact, linkActive, setLinkActive, children }) {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex justify-center items-center w-full ">
-              <ul className="flex text-sm flex-wrap font-semibold justify-end lg:text-lg lg:font-bold w-full gap-[0.7rem] lg:gap-5 mr-5">
+              <ul className="flex text-sm flex-wrap justify-end lg:text-lg w-full gap-[0.7rem] lg:gap-5 mr-5">
               {/* <ul className="hidden xl:flex w-full flex-wrap font-mono text-lg font-bold justify-start 2xl:justify-around items-center"> */}
                 {navigation.map((navItem, index) => (
                   <li
