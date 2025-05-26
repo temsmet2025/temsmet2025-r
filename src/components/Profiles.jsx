@@ -26,8 +26,8 @@ const Profiles = (props) => {
                 <div className=" text-amber-950 mt-2 p-3">
                   <p className='flex flex-col text-wrap text-center md:w-48'>
                     <span className="font-bold text-xl ">{profile.name}</span>
-                    {profile.affiliation != "" && <span className='text-base md:text-sm'>{profile.affiliation}</span>}
-                  </p>
+                    {profile.affiliation != "" && <span className='text-base md:text-sm' style={{whiteSpace:"pre-line"}}>{profile.affiliation}</span>}
+                  </p> 
                 </div>
               </div>
             </div>

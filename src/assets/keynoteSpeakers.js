@@ -7,6 +7,6 @@ export const keynoteSpeakers = [
     { id: 5, name: "Sandip Patil" , affiliation: "Entrepreneur E-Spin Nanotech", imagePath: "./keynoteSpeakers/sandip.jpeg", link:"https://www.linkedin.com/in/dr-sandip-patil-87863814/?originalSubdomain=in" },
     { id: 6, name: "Abhay Gupta", affiliation: "Efficient World, Vancouver, Canada (Chair)", imagePath: "./orgCommittee/informationCommittee/abhay.webp" },
     { id: 7, name: "Divyesh Dixit", affiliation: "Co-Founder BambooBox", imagePath: "./orgCommittee/techProgCommittee/divyesh.webp", link: "https://www.linkedin.com/in/divyesh-dixit/" },
-    { id: 8, name: "Andrea Tagarelli", affiliation: "Minds, Morals, and Mimicry: Probing Language Models’ Human-Like Affective Abilities", imagePath: "./keynoteSpeakers/andrea.jpeg", link: "https://www.linkedin.com/in/andrea-tagarelli/?locale=en_US" }
+    { id: 8, name: "Andrea Tagarelli", affiliation: `Associate Professor, University of Calabria.\nAgenda: Minds, Morals, and Mimicry: Probing Language Models’ Human-Like Affective Abilities`, imagePath: "./keynoteSpeakers/andrea.jpeg", link: "https://www.linkedin.com/in/andrea-tagarelli/?locale=en_US" }
 ];
  
