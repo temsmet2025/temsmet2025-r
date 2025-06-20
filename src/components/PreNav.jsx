@@ -30,8 +30,8 @@ function PreNav() {
                 <div id="tems-logos"  style={{ width: isDesktop ? '30rem' : isTablet ? '24rem' : '10rem' }}>
                     <div id="tems-management" className='flex justify-center'>
                         {isDesktop && <img src="./logos/IEEE TEMS logo/17-TA-213 TEMS logo RGB_bg_removed.png" className="w-full h-16 pl-10" alt="TEMS-LOGO" />}
-                        {isTablet && !isDesktop && <img src="./logos/IEEE TEMS logo/17-TA-213 TEMS logo mobile.jpeg" className="h-[70px]" alt="TEMS-LOGO" />}
-                        {!isDesktop && !isTablet && <img src="./logos/IEEE TEMS logo/17-TA-213 TEMS logo mobile.jpeg" className="w-full" alt="TEMS-LOGO" />}
+                        {isTablet && !isDesktop && <img src="./logos/IEEE TEMS logo/17-TA-213 TEMS logo mobile.jpeg" className="md:h-[70px]" alt="TEMS-LOGO" />}
+                        {!isDesktop && !isTablet && <img src="./logos/IEEE TEMS logo/17-TA-213 TEMS logo mobile.jpeg" className="w-full h-[50px]" alt="TEMS-LOGO" />}
                     </div>
                 </div>
                 <div id="temsmet" className='flex justify-center'>
