@@ -56,7 +56,7 @@ export const technicalProgrammeCommittee = [
   { id: 13, name: "Dipanshu Verma", affiliation: "Microsoft, Noida", imagePath: "./orgCommittee/techProgCommittee/dipanshu.webp", link: "https://www.linkedin.com/in/dipanshu-verma-114a70118/" },
   { id: 14, name: "Rishi Meel", affiliation: "Adobe, Noida", imagePath: "./orgCommittee/techProgCommittee/rishi.webp", link: "https://in.linkedin.com/in/rishi-meel-8a95a365" },
   { id: 15, name: "Gopal Seth", affiliation: "Bain & Company, Gurugram", imagePath: "./orgCommittee/techProgCommittee/gopal.webp", link: "https://in.linkedin.com/in/gopal-seth-25a4a9a7" },
-  //{ id: 16, name: "Rahul Goel", affiliation: "PhD, MTS ML Scientist, PayPal, India", imagePath: "./orgCommittee/techProgCommittee/rahul.webp", link: "https://www.linkedin.com/in/rahul-goel-a7133b225/" },
+  { id: 16, name: "Rahul Goel", affiliation: "PhD, MTS ML Scientist, PayPal, India (Co-Chair)", imagePath: "./orgCommittee/techProgCommittee/rahul.webp", link: "https://www.linkedin.com/in/rahul-goel-a7133b225/" },
   { id: 17, name: "Shivam Bathla", affiliation: "OISSG Consultancy", imagePath:"./orgCommittee/techProgCommittee/shivambathla.webp" },
   { id: 18, name: "Abha Saxena", affiliation: "Bloomberg LP, New York", imagePath: "./orgCommittee/techProgCommittee/abha.webp", link: "" },
   { id: 19, name: "Ravi Kant Jain", affiliation: "CMERI", imagePath: "./orgCommittee/techProgCommittee/raviKant.webp", link: "https://www.linkedin.com/in/dr-ravi-kant-jain-28985517/" },
