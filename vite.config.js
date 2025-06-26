@@ -5,7 +5,7 @@ export default defineConfig({
   // base: "/temsmet2025-r",
   build: {
   //  outDir: 'dist',
-    outDir: '../temsmet builds/liveBuild-v7.2',
+    outDir: '../temsmet builds/liveBuild-v7.3',
     rollupOptions: {
       output: {
         manualChunks(id) {

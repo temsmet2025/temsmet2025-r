@@ -28,21 +28,12 @@ const getUpdatedImportantDates = (today, targetDate, strikeLineNumber) => {
 
 const toDateOnly = (date) => new Date(date.getFullYear(), date.getMonth(), date.getDate());
 const getUpdatedColors = (today, updatedImportantDates) => {
-  // const eventTimeLine = [
-  //   toDateOnly(new Date('2025-07-25')), // Paper Submission Closes
-  //   toDateOnly(new Date('2025-08-08')), // Notification
-  //   toDateOnly(new Date('2025-08-21')), // Camera-ready
-  //   toDateOnly(new Date('2025-08-23')), // Early Registration
-  //   toDateOnly(new Date('2025-09-02')), // Regular Registration
-  //   toDateOnly(new Date('2999-10-08')), // Conference
-  // ]
   const eventTimeLine = [
-    toDateOnly(new Date('2025-06-26')), // Paper Submission Closes
-    toDateOnly(new Date('2025-06-27')), // Notification
+    toDateOnly(new Date('2025-07-25')), // Paper Submission Closes
+    toDateOnly(new Date('2025-08-08')), // Notification
     toDateOnly(new Date('2025-08-21')), // Camera-ready
     toDateOnly(new Date('2025-08-23')), // Early Registration
     toDateOnly(new Date('2025-09-02')), // Regular Registration
-    toDateOnly(new Date('2025-10-08')), // Conference
     toDateOnly(new Date('2999-10-08')), // Conference
   ]
   
@@ -72,7 +63,7 @@ const getUpdatedColors = (today, updatedImportantDates) => {
 
 const Home = () => {
   const today = toDateOnly(new Date());
-  const targetDate = toDateOnly(new Date('2025-06-27'))
+  const targetDate = toDateOnly(new Date('2025-07-06'))
   const strikeLineNumber = 0
   const updatedImportantDates = getUpdatedImportantDates(today, targetDate, strikeLineNumber);
   const updatColorForDates = getUpdatedColors(today, updatedImportantDates)
