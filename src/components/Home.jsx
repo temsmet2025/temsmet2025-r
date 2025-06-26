@@ -34,7 +34,6 @@ const getUpdatedColors = (today, updatedImportantDates) => {
   //   toDateOnly(new Date('2025-08-21')), // Camera-ready
   //   toDateOnly(new Date('2025-08-23')), // Early Registration
   //   toDateOnly(new Date('2025-09-02')), // Regular Registration
-  //   toDateOnly(new Date('2025-10-08')), // Conference
   //   toDateOnly(new Date('2999-10-08')), // Conference
   // ]
   const eventTimeLine = [
@@ -46,6 +45,7 @@ const getUpdatedColors = (today, updatedImportantDates) => {
     toDateOnly(new Date('2025-10-08')), // Conference
     toDateOnly(new Date('2999-10-08')), // Conference
   ]
+  
   const updatedColorTable = updatedImportantDates.map((event, index) => {
     
     const prevDate = index == 0 ? new Date('1999-08-04') : eventTimeLine[index-1];
