@@ -40,6 +40,9 @@ function PreNav() {
                 <div id="ieee-logo" className="flex justify-center" style={{ width: isDesktop ? '15rem' : isTablet ? '10rem' : '6rem' }}>
                     <img src="./logos/IEEE-logo/IEEE_logo.svg" alt="IEEE-LOGO" className="w-full" />
                 </div>
+                <div id="ieee-logo" className="flex justify-center" style={{ width: isDesktop ? '15rem' : isTablet ? '10rem' : '6rem' }}>
+                    <img src="./logos/ANRF logo/ANRF_logo_2.jpg" alt="IEEE-LOGO" className="w-full" />
+                </div>
             </div>
            
 
