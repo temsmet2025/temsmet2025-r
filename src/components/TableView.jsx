@@ -1,7 +1,6 @@
 import { HeadingBar } from './SmallComps'
 
 function TableView(props) {
-    const highLightRow = 0;
     return (
         <div id={`${props.tableName}`} className={`${props.classes} `}>
             {props.tableName?.length > 0 && <h1 className="font-bold sm:text-2xl md:text-3xl text-xl text-sky-700">{props.tableName}</h1>}
@@ -19,7 +18,7 @@ function TableView(props) {
                         {props.dataItem.map((item, index) => (
                             <tr
                                 key={index}
-                                className={`${index % 2 === 0 ? 'bg-sky-300/25' : 'bg-white'} ${(props.tableName === 'Important Dates' && index === highLightRow && 'font-bold text-red-500')}`}
+                                className={`${index % 2 === 0 ? 'bg-sky-300/25' : 'bg-white'}`}
                             >
                                 {item.tableData.map((data, index) => (
 

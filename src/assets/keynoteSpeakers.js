@@ -5,7 +5,10 @@ export const keynoteSpeakers = [
     { id: 3, name: "Sachin Sinha" , affiliation: "Director, Technology Strategy, Microsoft", imagePath: "./keynoteSpeakers/sachinsinha.webp", link:"https://www.linkedin.com/in/sachinsinha/" },
     { id: 4, name: "Mayank Sawhney" , affiliation: "Senior Engineering Manager, Atlassian", imagePath: "./keynoteSpeakers/mayank.webp", link:"https://www.linkedin.com/in/mayanksawhney/?originalSubdomain=in" },
     { id: 5, name: "Sandip Patil" , affiliation: "Entrepreneur E-Spin Nanotech", imagePath: "./keynoteSpeakers/sandip.jpeg", link:"https://www.linkedin.com/in/dr-sandip-patil-87863814/?originalSubdomain=in" },
-    { id: 6, name: "Abhay Gupta", affiliation: "Efficient World, Vancouver, Canada (Chair)", imagePath: "./orgCommittee/informationCommittee/abhay.webp" },
-    { id: 7, name: "Divyesh Dixit", affiliation: "Co-Founder BambooBox", imagePath: "./orgCommittee/techProgCommittee/divyesh.webp", link: "https://www.linkedin.com/in/divyesh-dixit/" },
+    // { id: 6, name: "Abhay Gupta", affiliation: "Efficient World, Vancouver, Canada (Chair)", imagePath: "./orgCommittee/informationCommittee/abhay.webp" },
+    // { id: 7, name: "Divyesh Dixit", affiliation: "Co-Founder BambooBox", imagePath: "./orgCommittee/techProgCommittee/divyesh.webp", link: "https://www.linkedin.com/in/divyesh-dixit/" },
+    { id: 8, name: "Andrea Tagarelli", affiliation: `Associate Professor, University of Calabria.\nAgenda: Minds, Morals, and Mimicry: Probing Language Models’ Human-Like Affective Abilities`, imagePath: "./keynoteSpeakers/andrea.jpeg", link: "https://www.linkedin.com/in/andrea-tagarelli/?locale=en_US" },
+    { id: 9, name: "Andy Chen", affiliation: "Founding General Partner, REDDS Capital", imagePath: "./keynoteSpeakers/andy_chen.webp", link: "https://www.linkedin.com/in/chenatl/" },
+    { id: 10, name: "Steve Tockey", affiliation: "Principal Consultant at Construx Software", imagePath: "./keynoteSpeakers/steve.webp", link: "https://www.linkedin.com/in/steve-tockey-2a595/", bioData:"./downloadable/bioData/steve.pdf" },
 ];
  

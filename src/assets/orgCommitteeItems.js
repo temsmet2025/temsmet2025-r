@@ -14,7 +14,9 @@ export const generalChairs = [
 
 export const generalCoChairs = [
   { id: 0, name: "Yatheendranath Tarikere", affiliation: "CEO, DhiiHii Labs Pvt Ltd", imagePath: "./orgCommittee/generalCoChairs/y-n-tharikere.webp", link: "https://www.linkedin.com/in/yathee/" },
-  { id: 1, name: "Vinay Singh", affiliation: "ABV IIITM Gwalior", imagePath: "./orgCommittee/generalCoChairs/vinaySingh.webp", link: "https://www.linkedin.com/in/dr-vinay-singh-784566a3/" }
+  { id: 1, name: "Vinay Singh", affiliation: "ABV IIITM Gwalior", imagePath: "./orgCommittee/generalCoChairs/vinaySingh.webp", link: "https://www.linkedin.com/in/dr-vinay-singh-784566a3/" },
+  { id: 2, name: "Rahul Goel", affiliation: "PhD, MTS ML Scientist, PayPal, India", imagePath: "./orgCommittee/techProgCommittee/rahul.webp", link: "https://www.linkedin.com/in/rahul-goel-a7133b225/" },
+
 ];
 
 export const financeCommitteeConferenceSecretaries = [
@@ -54,7 +56,7 @@ export const technicalProgrammeCommittee = [
   { id: 13, name: "Dipanshu Verma", affiliation: "Microsoft, Noida", imagePath: "./orgCommittee/techProgCommittee/dipanshu.webp", link: "https://www.linkedin.com/in/dipanshu-verma-114a70118/" },
   { id: 14, name: "Rishi Meel", affiliation: "Adobe, Noida", imagePath: "./orgCommittee/techProgCommittee/rishi.webp", link: "https://in.linkedin.com/in/rishi-meel-8a95a365" },
   { id: 15, name: "Gopal Seth", affiliation: "Bain & Company, Gurugram", imagePath: "./orgCommittee/techProgCommittee/gopal.webp", link: "https://in.linkedin.com/in/gopal-seth-25a4a9a7" },
-  { id: 16, name: "Rahul Goel", affiliation: "PhD, MTS ML Scientist, PayPal, India", imagePath: "./orgCommittee/techProgCommittee/rahul.webp", link: "https://www.linkedin.com/in/rahul-goel-a7133b225/" },
+  { id: 16, name: "Rahul Goel", affiliation: "PhD, MTS ML Scientist, PayPal, India (Co-Chair)", imagePath: "./orgCommittee/techProgCommittee/rahul.webp", link: "https://www.linkedin.com/in/rahul-goel-a7133b225/" },
   { id: 17, name: "Shivam Bathla", affiliation: "OISSG Consultancy", imagePath:"./orgCommittee/techProgCommittee/shivambathla.webp" },
   { id: 18, name: "Abha Saxena", affiliation: "Bloomberg LP, New York", imagePath: "./orgCommittee/techProgCommittee/abha.webp", link: "" },
   { id: 19, name: "Ravi Kant Jain", affiliation: "CMERI", imagePath: "./orgCommittee/techProgCommittee/raviKant.webp", link: "https://www.linkedin.com/in/dr-ravi-kant-jain-28985517/" },
@@ -128,6 +130,7 @@ export const technicalProgrammeCommittee = [
   {id: 88, name: "Udai Pratap Rao", affiliation: "Associate Professor at NIT Patna", imagePath: "./orgCommittee/techProgCommittee/udai.webp", link:"https://scholar.google.com/citations?hl=en&user=YQmUD20AAAAJ" },
   {id: 89, name: "Waquar Ahmad", affiliation: "Assistant Professor at NIT Calicut", imagePath: "./orgCommittee/techProgCommittee/waqar.webp", link:"https://nitc.ac.in/department/electronics-amp-communication-engineering/faculty-and-staff/faculty/ef54048c-5202-4aa4-99bb-ac3c07f33c17" },
   {id: 90, name: "Mohd Shariq", affiliation: "Associate Professor at Aligarh Muslim University (AMU)", imagePath: "./orgCommittee/techProgCommittee/shariq.webp", link:"https://www.amu.ac.in/faculty/civil-engineering/mohd-shariq-1" },
+  {id: 90, name: "Dr. Chandra Prakash", affiliation: "Assistant Professor, SVNIT Surat", imagePath: "./orgCommittee/techProgCommittee/chandra-prakash.webp", link:"https://scholar.google.co.in/citations?user=9h6pX3sAAAAJ&hl=en" }
 ];
 
 

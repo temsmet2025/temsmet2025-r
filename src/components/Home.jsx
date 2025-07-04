@@ -11,7 +11,63 @@ import { HeadingBar } from './SmallComps'
  * 
  * @returns {JSX.Element} The Home section containing the theme and section lists.
  */
+const getUpdatedImportantDates = (today, targetDate, strikeLineNumber) => {
+  const newDates = [...importantDates]
+  if (today >= targetDate) {
+    newDates[strikeLineNumber] = {
+      tableData: [
+        'Paper Submission Closes',
+        <>
+          <s className='text-black text-sm'>July 05, 2025</s>, July 25, 2025
+        </>
+      ]
+    }
+  }
+  return newDates;
+}
+
+const toDateOnly = (date) => new Date(date.getFullYear(), date.getMonth(), date.getDate());
+const getUpdatedColors = (today, updatedImportantDates) => {
+  const eventTimeLine = [
+    toDateOnly(new Date('2025-07-25')), // Paper Submission Closes
+    toDateOnly(new Date('2025-08-08')), // Notification
+    toDateOnly(new Date('2025-08-21')), // Camera-ready
+    toDateOnly(new Date('2025-08-23')), // Early Registration
+    toDateOnly(new Date('2025-09-02')), // Regular Registration
+    toDateOnly(new Date('2999-10-08')), // Conference
+  ]
+  
+  const updatedColorTable = updatedImportantDates.map((event, index) => {
+    
+    const prevDate = index == 0 ? new Date('1999-08-04') : eventTimeLine[index-1];
+    const nextDate = eventTimeLine[index];
+    console.log("prevDate =", prevDate)
+    console.log("nextDate =", nextDate)
+    const isActive = (today > prevDate && today <= nextDate);
+
+    // style date text red if it's the active one
+    return {
+      tableData: [
+        isActive
+          ? <span className="text-red-600 font-bold">{event.tableData[0]}</span>
+          : event.tableData[0], // label
+        isActive
+          ? <span className="text-red-600 font-bold">{event.tableData[1]}</span>
+          : event.tableData[1]
+      ]
+    };
+  });
+
+  return updatedColorTable;
+}
+
 const Home = () => {
+  const today = toDateOnly(new Date());
+  const targetDate = toDateOnly(new Date('2025-07-06'))
+  const strikeLineNumber = 0
+  const updatedImportantDates = getUpdatedImportantDates(today, targetDate, strikeLineNumber);
+  const updatColorForDates = getUpdatedColors(today, updatedImportantDates)
+
   return (
     <section id="home" className="home p-5 sm:mt-10 sm:p-5 md:ml-16 md:mr-16 lg:ml-20 lg:mr-20">
       <div className="conference-theme">
@@ -30,7 +86,7 @@ const Home = () => {
       <SectionList title="Conference Structure" dataItem={conferenceStructure} classes="mt-2 sm:mt-5 md:mt-10" />
       <SectionList title="Potential Speakers" dataItem={potentialSpeakers} isButton={"SquareArrowOutUpRight"} classes="mt-2 sm:mt-5 md:mt-10" />
 
-      <TableView tableName="Important Dates" highLightRow={0} tableHead={['EVENTS', 'DATE']} dataItem={importantDates} classes="mt-2 sm:mt-5 md:mt-10" />
+      <TableView tableName="Important Dates" highLightRow={0} tableHead={['EVENTS', 'DATE']} dataItem={updatColorForDates} classes="mt-2 sm:mt-5 md:mt-10" />
       <div className="">
         <p className='font-extrabold text-lg sm:text-xl md:text-2xl text-blue-800'>"All presented papers will be submitted to IEEE for possible publication in IEEE Xplore."</p>
       </div>
