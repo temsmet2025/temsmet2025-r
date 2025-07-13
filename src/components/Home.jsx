@@ -18,7 +18,7 @@ const getUpdatedImportantDates = (today, targetDate, strikeLineNumber) => {
       tableData: [
         'Paper Submission Closes',
         <>
-          <s className='text-black text-sm'>July 05, 2025</s>, July 25, 2025
+          <s>July 05, 2025</s> → <strong>July 25, 2025</strong> (Firm Deadline)
         </>
       ]
     }
