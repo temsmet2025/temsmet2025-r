@@ -8,6 +8,7 @@ export default {
     "./src/components/Navbar/*.{js,ts,jsx,tsx}",
     "./src/components/Carousel/*.{js,ts,jsx,tsx}",
     "./src/pages/*.{js,ts,jsx,tsx}",
+    "./src/*.{js,ts,jsx,tsx}",
 
     flowbite.content(),
   ],
@@ -30,4 +31,5 @@ export default {
   plugins: [
     flowbite.plugin(),
   ],
+  
 }

@@ -1,25 +1,22 @@
 import React from 'react'
-import Nav from '../components/Navbar/Nav'
-// import ScrollToTop, PreNav, TableView, SectionList from ''
 import ScrollToTop from '../components/ScrollToTop'
-import PreNav from '../components/PreNav'
 import Carousel from '../components/Carousel/Carousel'
 import TableView from '../components/TableView'
 import SectionList from '../components/SectionLIst'
 import Footer from '../components/Footer'
 import { registrationFees, deligates, registrationNotes } from '../assets/dataItems';
-import { Link } from 'react-router-dom'
-
-const Registration = ({setShowContact, active, setActive}) => {
+import Sidebar from '../components/Sidebar'
+import Navbar from './Navbar'
+const Registration = () => {
   return (
         <>
             <ScrollToTop elementId="Registration" />
-            <PreNav />
-            <Nav setShowContact={setShowContact} linkActive={active} setLinkActive = {setActive}/>
+            <Navbar></Navbar>
             <Carousel />
-            {/* <Contact setShowContact={setShowContact} showContact={showContact} /> */}
-            <div id="reg-link" className="p-5 mt-10 sm:p-5 md:ml-16 md:mr-16 lg:ml-20 lg:mr-20">
-                <TableView
+            <div className="grid grid-cols-1 sm:grid-cols-5 md:grid-cols-6 w-full gap-2">
+                <div className="sm:col-span-3 md:col-span-4 p-5 bg-white rounded-b-xl sm:rounded-l-none sm:rounded-r-xl">
+                    <div id="reg-link" className="">
+                <TableView  
                 tableName="Registration"
                 tableHead={[
                     "Author Categories",
@@ -44,6 +41,9 @@ const Registration = ({setShowContact, active, setActive}) => {
                     <SectionList dataItem={registrationNotes} title="Notes" />
                 </div>
             </div >
+                </div>
+            <div className="sm:col-span-2 md:col-span-2 bg-white p-5 rounded-t-xl sm:rounded-r-none sm:rounded-l-xl"><Sidebar /></div>
+            </div>
 
             <Footer />
         </>

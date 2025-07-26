@@ -14,7 +14,7 @@ const scrollToSection = (id) => {
 };
 const Footer = () => {
   return (
-    <footer className=" bg-black text-white w-full">
+    <footer id="footer" className=" bg-black text-white w-full">
       <div className="flex flex-wrap justify-around w-full p-3 lg:p-10 gap-10">
           <div className="flex flex-col gap-5 w-full sm:w-auto">
             <div className="flex gap-3">

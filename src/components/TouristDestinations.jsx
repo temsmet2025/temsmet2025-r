@@ -5,7 +5,6 @@ function TouristDestinations() {
   return (
     <div
       id="tourist-destinations"
-      className="sm:ml-32 sm:mr-32 sm:mt-10 sm:mb-10 p-8"
     >
       <h1 className="font-bold sm:text-4xl text-2xl text-sky-700">Tourist Destinations</h1>
       <HeadingBar />

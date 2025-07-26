@@ -6,7 +6,7 @@ const Sponsorship = () => {
   return (
     <div
       id="sponsorship-invitation"
-      className=" min-h-screen p-5 sm:mt-10 sm:p-5 md:ml-16 md:mr-16 lg:ml-20 lg:mr-20"
+      className=" min-h-screen"
     >
       <h1 className="font-bold text-2xl sm:text-3xl text-sky-700">
         Sponsorship Details:
@@ -14,8 +14,8 @@ const Sponsorship = () => {
       <HeadingBar classes="w-full mb-5" />
 
       <div className="lg:flex items-center justify-center">
-        <div className="lg:max-w-4xl my-8 p-4 bg-white rounded-md">
-          <div className="flex justify-between items-center mb-6">
+        <div className="lg:max-w-4xl bg-white rounded-md">
+          <div className="flex justify-between items-center mb-2">
             <h2 className="text-2xl font-semibold text-sky-700 text-center">
               Sponsorship Tier Comparison
             </h2>

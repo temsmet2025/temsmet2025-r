@@ -124,7 +124,7 @@ function Nav({ setShowContact, linkActive, setLinkActive, children }) {
 
   return (
     <>
-    <nav className="sticky top-[4.5rem] sm:top-24 md:top-[110px] lg:top-[150px]  w-full z-50">
+    <nav className="w-full z-50">
         <div className="relative bg-slate-950 border-b-4 border-zinc-950 text-white z-50">
           <div className="flex w-full justify-center items-center py-3 md:py-5">
               <div className="visible ml-4 flex items-center justify-center font-bold text-xl md:text-2xl lg:text-3xl">
@@ -133,7 +133,7 @@ function Nav({ setShowContact, linkActive, setLinkActive, children }) {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex justify-center items-center w-full ">
-              <ul className="flex text-sm flex-wrap justify-end lg:text-lg w-full gap-[0.7rem] lg:gap-5 mr-5">
+              <ul className="flex text-sm flex-wrap justify-end lg:text-base w-full gap-[0.7rem] lg:gap-3 mr-5">
               {/* <ul className="hidden xl:flex w-full flex-wrap font-mono text-lg font-bold justify-start 2xl:justify-around items-center"> */}
                 {navigation.map((navItem, index) => (
                   <li
@@ -152,13 +152,9 @@ function Nav({ setShowContact, linkActive, setLinkActive, children }) {
                       if (navItem.name === "Travel") toggleSubMenu("travel");
                     }}
                     onClick={(e) => {
-                      if (navItem.name === "Contact") {
-                        setShowContact(true)
-                      };
-                      if (navItem.name !== "Contact") {
-                        console.log(navItem.index, "clicked")
+                      if (navItem.name == "Contact") {
+                        scrollToSection("footer")
                       }
-                        setLinkActive(navItem.index);
                     }}
                   >
                     <Link to={navItem.href !== undefined && navItem.href}>

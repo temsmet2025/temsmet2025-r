@@ -41,8 +41,6 @@ const getUpdatedColors = (today, updatedImportantDates) => {
     
     const prevDate = index == 0 ? new Date('1999-08-04') : eventTimeLine[index-1];
     const nextDate = eventTimeLine[index];
-    console.log("prevDate =", prevDate)
-    console.log("nextDate =", nextDate)
     const isActive = (today > prevDate && today <= nextDate);
 
     // style date text red if it's the active one
@@ -69,7 +67,7 @@ const Home = () => {
   const updatColorForDates = getUpdatedColors(today, updatedImportantDates)
 
   return (
-    <section id="home" className="home p-5 sm:mt-10 sm:p-5 md:ml-16 md:mr-16 lg:ml-20 lg:mr-20">
+    <section id="home" className="home">
       <div className="conference-theme">
         <div className="">
           <h1 className='font-bold sm:text-3xl text-2xl text-sky-700'>Conference Theme</h1>

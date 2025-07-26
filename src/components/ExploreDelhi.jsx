@@ -5,7 +5,7 @@ import { HeadingBar } from './SmallComps'
 
 const ExploreDelhi = () => {
   return (
-    <div className="sm:ml-32 sm:mr-32 sm:mt-10 sm:mb-10 p-8">
+    <div className="">
       <h1 className="font-bold sm:text-3xl text-2xl text-sky-700">
         Tourist Places in Delhi
       </h1>

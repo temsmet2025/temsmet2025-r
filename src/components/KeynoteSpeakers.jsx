@@ -20,9 +20,21 @@ function KeynoteSpeakers() {
       fetchSpeakers();
     }, []);
   return (
-    <div id="keynote-speakers" className="p-5 mt-10 sm:p-5 md:ml-16 md:mr-16 lg:ml-20 lg:mr-20">
-      
-      <Profiles title="Keynote Speakers" profiles={speakers} />
+    <div id="keynote-speakers" className="">
+       {loading ? (
+                // 👇 Skeleton or spinner
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-10 animate-pulse">
+                    {[...Array(6)].map((_, index) => (
+                        <div key={index} className="bg-gray-200 rounded-lg p-4 h-48 shadow-inner">
+                            <div className="bg-gray-300 h-24 w-24 rounded-full mx-auto mb-3" />
+                            <div className="h-4 bg-gray-300 rounded w-3/4 mx-auto mb-2"></div>
+                            <div className="h-3 bg-gray-300 rounded w-1/2 mx-auto"></div>
+                        </div>
+                    ))}
+                </div>
+            ):
+        < Profiles title="Keynote Speakers" profiles={speakers} />
+        }
       <p className="mt-8 text-center text-lg text-black">
         More to come...
       </p>

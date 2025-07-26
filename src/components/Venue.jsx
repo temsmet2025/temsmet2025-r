@@ -54,16 +54,16 @@ function Venue() {
   return (
     <section
       id="venue-and-dates"
-      className="flex flex-col justify-center items-center h-full w-full mt-8"
+      className="flex flex-col justify-center items-center h-full w-full"
     >
-      <h2 className="font-bold sm:text-4xl text-2xl text-gray-800 mb-4">Venue</h2>
+      <h2 className="font-bold sm:text-4xl text-2xl mb-4 text-sky-700 ">Venue</h2>
       <p className="text-2xl lg:text-3xlmb-2 mb-4 text-indigo-700 font-bold">
         National Institute of Technology Delhi
       </p>
       <p className="sm:text-3xl text-2xl text-gray-800">
         <strong>City:</strong> New Delhi, India
       </p>
-      <div className="flex flex-col lg:flex-row justify-center lg:text-gray-950 mt-3 h-full w-full p-8 gap-4">
+      <div className="flex flex-col lg:flex-row justify-center lg:text-gray-950 mt-3 h-full w-full gap-2">
         <div className="lg:w-1/2 w-full flex justify-center">
           <MapSection />
         </div>
@@ -72,9 +72,9 @@ function Venue() {
         </div>
       </div>
 
-      <h2 className="font-bold sm:text-4xl text-2xl text-gray-800">Directions</h2>
+      <h2 className="font-bold mt-10 sm:text-4xl text-2xl text-gray-800">Directions</h2>
       
-      <div className="sm:ml-32 sm:mr-32 sm:mt-10 sm:mb-10 p-8">
+      <div className=" p-8">
         <h2 className="font-bold sm:text-3xl text-2xl text-gray-800 mb-4">Reaching NIT Delhi from IGI Airport (Terminals 1, 2, and 3):</h2>
 
         <h3 className="font-bold sm:text-2xl text-xl text-gray-800 ">By Car:</h3>

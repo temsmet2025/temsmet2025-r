@@ -10,7 +10,7 @@ import { HeadingBar } from "./SmallComps"
  */
 const SubmissionGuidelines = () => {
   return (
-    <div id="submission-guidelines" className="p-5 sm:mt-10 sm:p-5 md:ml-16 md:mr-16 lg:ml-20 lg:mr-20">
+    <div id="submission-guidelines" className="">
       <h1 className="font-bold sm:text-3xl text-2xl text-sky-700">Submission Guidelines</h1>
       <HeadingBar />
       <p className="text-black text-base sm:text-xl text-wrap mt-4 text-justify">
