@@ -34,24 +34,37 @@ const Sidebar = () => {
             }
         };
         fetchSponsors();
-    }, [])
+    }, [loading])
   return (
       <div className="flex flex-col justify-center items-center gap-2">
           <span className="text-4xl  sm:text-3xl sm:font-semibold text-sky-700">Sponsored By</span>
-            <HeadingBar />
-          {data?.map((sponsor, index) => (
-              <div key={index} className="w-full flex flex-col gap-2 justify-center">
-                  <h1 className='text-2xl text-center sm:font-semibold text-sky-700'>{sponsor.tier_name} Sponsors</h1>
-                  <div className='flex flex-col gap-2'>
-                      {sponsor?.sponsor?.map((sponsor, index) => (
-                          <a href={sponsor?.link} target="_blank">
-                                <img key={`inner-${index}`} loading='lazy' src={sponsor?.logo} alt="temsmet2025" />
-                            </a>
-                        ))}
-                  </div>
-                  
+          <HeadingBar />
+          {loading ? (
+                // 👇 Skeleton or spinner
+                <div className="flex flex-col gap-1 mt-10 animate-pulse">
+                    {[...Array(6)].map((_, index) => (
+                        <div key={index} className="bg-gray-200 rounded-lg p-4  w-full shadow-inner">
+                            <div className="bg-gray-300 h-5 w-24 rounded-full mx-auto mb-3" />
+                        </div>
+                    ))}
                 </div>
-          ))}
+            ) : (
+                data.map((sponsor, index) => (
+                <div key={index} className="w-full flex flex-col gap-2 justify-center">
+                    <h1 className='text-2xl text-center sm:font-semibold text-sky-700'>{sponsor.tier_name} Sponsors</h1>
+                    <div className='flex flex-col gap-2'>
+                        {sponsor?.sponsor?.map((sponsor, index) => (
+                            <a href={sponsor?.link} target="_blank">
+                                    <img key={`inner-${index}`} loading='lazy' src={sponsor?.logo} alt="temsmet2025" />
+                                </a>
+                            ))}
+                    </div>
+                    
+                    </div>
+                ))
+            )}
+
+          
     </div>
   )
 }
