@@ -11,7 +11,7 @@ const KeynotesPage = () => {
           <ScrollToTop elementId="keynote-speakers" />
           <Navbar />
           <Carousel />
-     <div className="grid grid-cols-1 sm:grid-cols-5 md:grid-cols-6 w-full gap-2">
+     <div className="grid grid-cols-1 sm:grid-cols-5 md:grid-cols-6 w-full gap-1">
           <div className="sm:col-span-3 md:col-span-4 p-5 bg-white rounded-b-xl sm:rounded-l-none sm:rounded-r-xl">
             <div id="ks-link">
                 <KeynoteSpeakers />

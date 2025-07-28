@@ -23,13 +23,13 @@ function OrgCommittee() {
                     committee_name,
                     members,
                 }));
-
                 setCommittees(groupedArray);
+                setLoading(false);
             } catch (error) {
                 console.error("Failed to fetch committees:", error);
-            } finally {
-                setLoading(false);
             }
+                
+
         };
 
         fetchCommittees();
