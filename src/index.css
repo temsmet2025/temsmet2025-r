@@ -1281,6 +1281,11 @@ input[type="range"]::-ms-fill-lower {
   margin-bottom: 2rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .-mb-px {
   margin-bottom: -1px;
 }
@@ -6270,12 +6275,24 @@ input[type="range"]::-ms-fill-lower {
     visibility: visible;
   }
 
+  .sm\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
   }
 
   .sm\:col-span-3 {
     grid-column: span 3 / span 3;
+  }
+
+  .sm\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .sm\:col-span-5 {
+    grid-column: span 5 / span 5;
   }
 
   .sm\:m-5 {
@@ -6361,6 +6378,14 @@ input[type="range"]::-ms-fill-lower {
 
   .sm\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
   }
 
   .sm\:justify-between {
@@ -6563,6 +6588,14 @@ input[type="range"]::-ms-fill-lower {
     width: auto;
   }
 
+  .md\:w-44 {
+    width: 11rem;
+  }
+
+  .md\:w-40 {
+    width: 10rem;
+  }
+
   .md\:max-w-xl {
     max-width: 36rem;
   }
@@ -6704,6 +6737,14 @@ input[type="range"]::-ms-fill-lower {
     top: 0.5rem;
   }
 
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
   .lg\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -6753,6 +6794,18 @@ input[type="range"]::-ms-fill-lower {
     width: 25rem;
   }
 
+  .lg\:w-\[18rem\] {
+    width: 18rem;
+  }
+
+  .lg\:w-\[20rem\] {
+    width: 20rem;
+  }
+
+  .lg\:w-\[23rem\] {
+    width: 23rem;
+  }
+
   .lg\:max-w-4xl {
     max-width: 56rem;
   }
@@ -6763,6 +6816,10 @@ input[type="range"]::-ms-fill-lower {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
@@ -6831,12 +6888,24 @@ input[type="range"]::-ms-fill-lower {
 }
 
 @media (min-width: 1280px) {
+  .xl\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .xl\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
   .xl\:flex {
     display: flex;
   }
 
   .xl\:hidden {
     display: none;
+  }
+
+  .xl\:grid-cols-10 {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
   }
 
   .xl\:text-3xl {

@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react'
 import { HeadingBar } from './SmallComps'
 
 const Sidebar = () => {
-    // const API_URL = (import.meta.env.VITE_API_URL + "sponsor/?position=1") || 'http://localhost:8000/api/sponsor/?position=1';
-    const API_URL = 'http://localhost:8000/api/sponsor/?position=1';
+    const API_URL = (import.meta.env.VITE_API_URL + "sponsor/?position=1") || 'http://localhost:8000/api/sponsor/?position=1';
+    // const API_URL = 'http://localhost:8000/api/sponsor/?position=1';
     const [data, setData] = useState()
     const [loading, setLoading] = useState(true)
     useEffect(() => {
@@ -51,8 +51,8 @@ const Sidebar = () => {
             ) : (
                 data.map((sponsor, index) => (
                 <div key={index} className="w-full flex flex-col gap-2 justify-center">
-                    <h1 className='text-2xl text-center sm:font-semibold text-sky-700'>{sponsor.tier_name} Sponsors</h1>
-                    <div className='flex flex-col gap-2'>
+                    <h1 className='text-2xl text-center sm:font-semibold text-sky-700'>{sponsor.tier_name}</h1>
+                    <div className='flex flex-col gap-1 justify-center items-center'>
                         {sponsor?.sponsor?.map((sponsor, index) => (
                             <a href={sponsor?.link} target="_blank">
                                     <img key={`inner-${index}`} loading='lazy' src={sponsor?.logo} alt="temsmet2025" />
