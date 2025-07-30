@@ -36,9 +36,9 @@ const Sidebar = () => {
         fetchSponsors();
     }, [loading])
   return (
-      <div className="flex flex-col justify-center items-center gap-2">
-          <span className="text-4xl  sm:text-3xl sm:font-semibold text-sky-700">Sponsored By</span>
-          <HeadingBar />
+      <div className="flex flex-col justify-center items-center gap-2 w-full">
+          <span className="text-4xl sm:text-3xl sm:font-semibold text-sky-700">Sponsored By</span>
+          <HeadingBar classes="w-full mt-1"/>
           {loading ? (
                 // 👇 Skeleton or spinner
                 <div className="flex flex-col gap-1 mt-10 animate-pulse">
@@ -63,7 +63,31 @@ const Sidebar = () => {
                     </div>
                 ))
             )}
-
+          <div className="download-btn flex flex-col justify-center items-center p-4">
+              <span className=''>Click to show your logo!</span>
+                  <a className={`border-[1px] cursor-pointer flex flex-row justify-center gap-1 px-4 py-2 rounded-md hover:scale-105 transition-all duration-300 text-white bg-sky-700`} href="./downloadable/Brochure.pdf" download="SponsorBrochure.pdf">
+                  <span>Download</span>
+                  
+                  <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="w-6 h-6"
+                        >
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                  </span>
+                </a>
+        </div>
           
     </div>
   )

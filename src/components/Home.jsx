@@ -66,7 +66,9 @@ const Home = () => {
   const updatedImportantDates = getUpdatedImportantDates(today, targetDate, strikeLineNumber);
   const updatColorForDates = getUpdatedColors(today, updatedImportantDates)
 
+  
   return (
+    
     <section id="home" className="home">
       <div className="conference-theme">
         <div className="">
