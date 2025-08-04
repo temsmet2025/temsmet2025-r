@@ -156,13 +156,15 @@ const Sponsorship = () => {
         </span>
         </div>
         </div>
-    <div className="grid grid-cols-[0.5] sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 justify-center items-center w-full ">
+      <div className="flex w-full justify-center items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-8 justify-center items-center ">
         
-      <SponsorPackageCard icon={CrownIcon} tier_name="Platinum" data={platinamData} classes="bg-[#582C83] text-lg font-semibold"></SponsorPackageCard>
-      <SponsorPackageCard icon={diamondIcon} tier_name="Diamond" data={diamondData} classes="bg-[#0074E6] text-lg font-semibold"></SponsorPackageCard>
-      <SponsorPackageCard icon={goldIcon} tier_name="Gold" data={goldData} classes="bg-[#FEC008] text-lg font-semibold"></SponsorPackageCard>
-      <SponsorPackageCard icon={silverIcon} tier_name="Silver" data={silverData} classes="bg-[#C0C0C0] text-lg font-semibold"></SponsorPackageCard>
+        <SponsorPackageCard icon={CrownIcon} tier_name="Platinum" data={platinamData} classes="bg-[#582C83] text-lg font-semibold"></SponsorPackageCard>
+        <SponsorPackageCard icon={diamondIcon} tier_name="Diamond" data={diamondData} classes="bg-[#0074E6] text-lg font-semibold"></SponsorPackageCard>
+        <SponsorPackageCard icon={goldIcon} tier_name="Gold" data={goldData} classes="bg-[#FEC008] text-lg font-semibold"></SponsorPackageCard>
+        <SponsorPackageCard icon={silverIcon} tier_name="Silver" data={silverData} classes="bg-[#C0C0C0] text-lg font-semibold"></SponsorPackageCard>
         <SponsorPackageCard icon={bronzeIcon} tier_name="Bronze" data={bronzeData} classes="bg-[#CD7F32] text-lg font-semibold"></SponsorPackageCard>
+      </div>
       </div>
       <div className="flex flex-col p-8 items-center text-center text-lg flex-wrap text-gray-500 font-semibold">
         <span className="" onClick={(e) => scrollToSection("footer")}>

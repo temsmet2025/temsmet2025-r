@@ -23,7 +23,7 @@ const Profiles = (props) => {
               </div>
               <div className="card-body w-64 lg:w-[23rem] h-52 lg:h-44 absolute flex flex-col lg:flex-row items-center text-wrap ">
                 <div className={`bg-slate-900/10 w-64 h-64 lg:w-[10rem] lg:h-44 rounded-lg`}>
-                  <img loading='lazy' src={profile.image_path === null ? `./orgCommittee/default.avif` :profile.image_path} alt={`temsmet2025-img-${profile.name}`} className={`w-64 h-52 lg:w-[10rem] lg:h-44 rounded-lg`} />
+                  <img loading='lazy' src={profile.image_path === null ? `./orgCommittee/default.avif` :profile.image_path} alt={`temsmet2025-nitdelhi-${profile.name}`} className={`w-64 h-52 lg:w-[10rem] lg:h-44 rounded-lg`} />
                 </div>
                 <div className=" text-amber-950">
                   <p className='flex flex-col text-wrap text-center md:w-40 p-2'>

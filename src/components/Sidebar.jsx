@@ -48,7 +48,7 @@ const Sidebar = () => {
         fetchSponsors();
     }, [loading])
   return (
-      <div className="sm:sticky sm:top-52 max-h-[90vh] overflow-y-auto flex flex-col justify-center items-center gap-2 w-full">
+      <div className="sm:sticky sm:top-52 h-[90vh] overflow-y-auto flex flex-col justify-start items-center gap-2 w-full">
           <span className="text-4xl sm:text-3xl sm:font-semibold text-sky-700">Sponsored By</span>
           <HeadingBar classes="w-full mt-1"/>
           {loading ? (
