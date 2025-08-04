@@ -23,7 +23,7 @@ function TouristDestinations() {
           >
             <img
               src={destination.image}
-              alt={destination.name}
+              alt={`${destination.name} – Tourist attraction near NIT Delhi for TEMSMET 2025 attendees`}
               className="w-full h-56 sm:h-64 object-cover"
             />
             <div className="p-4">

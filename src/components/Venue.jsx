@@ -28,7 +28,8 @@ const GallerySection = () => (
             <img
               className="w-full h-96 object-cover"
               src={images.url}
-              alt={`gallery-${images.name}`}
+              alt={`${images.name} at TEMSMET 2025 conference, NIT Delhi`}
+              loading="lazy"
             />
             {/* <p className="text-center text-white text-3xl font-bold absolute bottom-10 w-full bg-opacity-50 bg-black py-2">
               {images.name}

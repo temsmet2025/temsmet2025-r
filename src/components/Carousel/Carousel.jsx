@@ -63,7 +63,7 @@ function Carousel() {
           <img
             key={index}
             src={image.name}
-            alt={`carousel image ${image.id}`}
+            alt={`TEMSMET 2025 conference image ${image.id} from NIT Delhi carousel`}
             className={`absolute h-[22rem] sm:h-[27rem] md:h-[32rem] lg:h-[35rem] object-cover lg:object-fill inset-0 w-full transition-all duration-1000 ease-in-out ${imageIndex === image.id ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
           // style={{ height: "35rem" }}
