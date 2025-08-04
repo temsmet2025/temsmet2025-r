@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="flex flex-wrap justify-around w-full p-3 lg:p-10 gap-10">
           <div className="flex flex-col gap-5 w-full sm:w-auto">
             <div className="flex gap-3">
-                <img src="./logos/nit-logo/NIT-Delhi_Logo.png" className="aspect-square h-24 w-24" alt="temsmet2025 NIT-DELHI-LOGO" />
+                <img src="./logos/nit-logo/NIT-Delhi_Logo.png" className="aspect-square h-24 w-24" alt="temsmet2025 NIT-DELHI" />
                 <div className="flex flex-col justify-center items-start">
                   <span className="text-sky-400 text-2xl font-bold">TEMSMET 2025</span>
                   <span className="text-gray-400">Hosted by NIT Delhi</span>
@@ -37,7 +37,7 @@ const Footer = () => {
             <h1 className="text-3xl font-bold text-slate-200">
               Quick Links
             </h1>
-            <div className="flex flex-col gap-2">
+            <nav className="flex flex-col gap-2">
               <Link to="/call-for-papers" className="hover:text-white">Conference Tracks</Link> 
               <Link to="/submission-guidelines" className="hover:text-white">Submission Guidelines  </Link> 
               <Link to="/" onClick={(e) => {
@@ -46,9 +46,9 @@ const Footer = () => {
               <Link to="/registration" className="hover:text-white">Registration</Link>
               <Link to="/venue&directions" className="hover:text-white">Venue & Direction</Link>
               <Link to="/explore-delhi" className="hover:text-white">Explore Delhi</Link>
-            </div>
+            </nav>
           </div>
-        <div className="flex flex-col items-start gap-6 text-gray-400 w-full sm:w-auto">
+        <address className="flex flex-col items-start gap-6 text-gray-400 w-full sm:w-auto">
             <h1 className="text-3xl font-bold text-slate-200">Get In Touch</h1>
             <div className="flex flex-col gap-3">
               <div className="flex flex-col">
@@ -73,9 +73,10 @@ const Footer = () => {
               
             </div>
           </div>
-        </div>
-          <div className="flex flex-col gap-6 w-full sm:w-auto">
-            <h1 className="text-3xl font-bold text-slate-200">Follow Us</h1>
+        </address>
+          
+        <div className="flex flex-col gap-6 w-full sm:w-auto">
+            <h1 className="text-3xl font-bold text-slate-200">Follow TEMSMET 2025</h1>
             <div className="flex gap-2"> 
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-twitter w-6 h-6 hover:text-sky-400 hover:cursor-pointer"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
               <a href="https://www.linkedin.com/company/temsmet2025-nitdelhi/posts/?feedView=all" target="_blank">
@@ -84,13 +85,13 @@ const Footer = () => {
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-facebook w-6 h-6 hover:text-sky-400 hover:cursor-pointer"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram w-6 h-6 hover:text-sky-400 hover:cursor-pointer"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
             </div>
-          <img src="./logos/IEEE TEMS logo/Temsmet 2025.png" className="w-36" alt="TEMS-LOGO" />
+          <img src="./logos/IEEE TEMS logo/Temsmet 2025.png" className="w-36" alt="nitdelhi-conference" />
           </div>
         
       </div>
       <div className="w-full h-[1px] bg-sky-300"></div>
       <div className="text-center p-10 text-gray-400">
-        ©2025 TEMSMET Organizing Committee, NIT Delhi. All Rights Reserved.
+       <h2>©2025 TEMSMET Organizing Committee, NIT Delhi. All Rights Reserved.</h2> 
       </div>
     </footer>
   );
