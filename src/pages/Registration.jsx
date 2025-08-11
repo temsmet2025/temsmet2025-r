@@ -7,12 +7,14 @@ import Footer from '../components/Footer'
 import { registrationFees, deligates, registrationNotes } from '../assets/dataItems';
 import Sidebar from '../components/Sidebar'
 import Navbar from './Navbar'
+import { LatestUpdates } from '../components/SmallComps'
 const Registration = () => {
   return (
         <>
             <ScrollToTop elementId="Registration" />
             <Navbar></Navbar>
-            <Carousel />
+          <Carousel />
+          <LatestUpdates/>
             <div className="grid grid-cols-1 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 w-full gap-1">
                 <div className="sm:col-span-3 md:col-span-4 lg:col-span-6 xl:col-span-8 p-5 bg-white rounded-b-xl sm:rounded-l-none sm:rounded-r-xl">
                     <div id="reg-link" className="">

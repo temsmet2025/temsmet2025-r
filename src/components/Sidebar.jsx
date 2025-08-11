@@ -49,7 +49,7 @@ const Sidebar = () => {
     }, [loading])
   return (
       <div className="sm:sticky sm:top-52 h-[90vh] overflow-y-auto flex flex-col justify-start items-center gap-2 w-full">
-          <span className="text-4xl sm:text-3xl sm:font-semibold text-sky-700">Sponsored By</span>
+          <span className="text-3xl sm:text-2xl sm:font-semibold text-sky-700">Conference Partners</span>
           <HeadingBar classes="w-full mt-1"/>
           {loading ? (
                 // 👇 Skeleton or spinner
@@ -66,7 +66,7 @@ const Sidebar = () => {
                     <h1 className='text-2xl text-center sm:font-semibold text-sky-700'>{sponsor.tier_name}</h1>
                     <div className='flex flex-col gap-1 justify-center items-center'>
                         {sponsor?.sponsor?.map((sponsor, index) => (
-                            <a href={sponsor?.link} target="_blank">
+                            <a key={index} href={sponsor?.link} target="_blank">
                                     <img key={`inner-${index}`} loading='lazy' src={sponsor?.logo} alt="temsmet2025" />
                                 </a>
                             ))}

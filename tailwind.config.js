@@ -9,7 +9,6 @@ export default {
     "./src/components/Carousel/*.{js,ts,jsx,tsx}",
     "./src/pages/*.{js,ts,jsx,tsx}",
     "./src/*.{js,ts,jsx,tsx}",
-
     flowbite.content(),
   ],
   theme: {
@@ -26,10 +25,28 @@ export default {
       'extra-bold': '800',
       black: '950',
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        // First visible scroll (starts left)
+        'marquee-start': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        // Continuous seamless scroll
+        'marquee-loop': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+      animation: {
+        'marquee-start': 'marquee-start 30s linear 1',
+        'marquee-loop': 'marquee-loop 30s linear infinite',
+        'marquee-start-then-loop':
+          'marquee-start 30s linear 1, marquee-loop 30s linear infinite 30s',
+      },
+    },
   },
   plugins: [
     flowbite.plugin(),
   ],
-  
-}
+};

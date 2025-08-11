@@ -14,11 +14,19 @@ import { HeadingBar } from './SmallComps'
 const getUpdatedImportantDates = (today, targetDate, strikeLineNumber) => {
   const newDates = [...importantDates]
   if (today >= targetDate) {
-    newDates[strikeLineNumber] = {
+    newDates[0] = {
       tableData: [
         'Paper Submission Closes',
         <>
           <s>July 05, 2025</s> → <strong>July 25, 2025</strong> (Firm Deadline)
+        </>
+      ]
+    }
+    newDates[1] = {
+      tableData: [
+        'Notification of Acceptance',
+        <>
+          <s>August 08, 2025</s> → <strong>August 18, 2025</strong> 
         </>
       ]
     }
@@ -30,7 +38,7 @@ const toDateOnly = (date) => new Date(date.getFullYear(), date.getMonth(), date.
 const getUpdatedColors = (today, updatedImportantDates) => {
   const eventTimeLine = [
     toDateOnly(new Date('2025-07-25')), // Paper Submission Closes
-    toDateOnly(new Date('2025-08-08')), // Notification
+    toDateOnly(new Date('2025-08-18')), // Notification
     toDateOnly(new Date('2025-08-21')), // Camera-ready
     toDateOnly(new Date('2025-08-23')), // Early Registration
     toDateOnly(new Date('2025-09-02')), // Regular Registration
