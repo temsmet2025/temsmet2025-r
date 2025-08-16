@@ -17,6 +17,7 @@ import SubmissionGuidePage from "./pages/SubmissionGuidePage.jsx";
 import SposorShipInvPage from "./pages/SposorShipInvPage.jsx";
 import ExploreDelhiPage from "./pages/ExploreDelhiPage.jsx";
 import TouristDestinationsPage from "./pages/TouristDestinationsPage.jsx";
+import LoaPage from "./pages/LoaPage.jsx";
 
 
 /**
@@ -94,6 +95,14 @@ function App() {
         </>
       ),
     },
+    {
+      path: "/comera-ready-paper",
+      element: (
+        <>
+          <LoaPage/>
+        </>
+      )
+    }
   ]);
 
   return (

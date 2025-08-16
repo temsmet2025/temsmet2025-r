@@ -1,5 +1,33 @@
 import {useEffect, useState} from 'react'
 
+export const InfoCard = ({title, items}) => {
+    return (
+        <div className='flex flex-col gap-4'>
+            <span className='text-sky-500 font-bold text-xl'>LOA #65536</span>
+            {items.map((index, item) => (
+                <div class="flex flex-col pl-2 border-l-4 border-l-sky-500">
+                    {item.map((index, subitem) => (
+                        <>
+                            <span className='text-slate-950 font-semibold'>{item.label}</span>
+                            <span className='text-gray-500'>{item.value}</span>
+                        </>
+                    ))}
+                    
+                </div>
+            ))}
+            
+            <div className="flex flex-col border-l-4 border-l-sky-500 pl-2">
+                <span className="text-slate-950 font-semibold">Signatory</span>
+                <span className="text-gray-500">M. Devanathan</span>
+            </div>
+            <div className="flex flex-col border-l-4 border-l-sky-500 pl-2">
+                <span className="text-slate-950 font-semibold">Contact Email</span>
+                <span className="text-gray-500">devanathan.m@ieee.org</span>
+            </div>
+        </div>
+    )
+}
+
 export const LatestUpdates = () => {
     const [loading, setLoading] = useState(true)
     const [news, setNews] = useState([])

@@ -61,6 +61,7 @@ export const cfpSubmenuItems = [
   //   current: "_self",
   // },
   { name: "Submission Guidelines", href: "/submission-guidelines", current: "_self", id: "sg-link" },
+  { name: "Call For Papers", href: "/comera-ready-paper", current: "_self", id: "sg-link" },
   { name: "Important Dates", href: "/", current: "_self" },
 ];
 
