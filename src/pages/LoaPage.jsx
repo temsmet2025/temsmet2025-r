@@ -11,7 +11,7 @@ import Footer from '../components/Footer'
 const LoaPage = () => {
     return (
       <>
-      <ScrollToTop elementId="keynote-speakers" />
+      <ScrollToTop elementId="camera-ready-paper" />
             <Navbar />
             <Carousel />
             <LatestUpdates/>

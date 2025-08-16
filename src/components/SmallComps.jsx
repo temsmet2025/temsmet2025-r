@@ -31,7 +31,7 @@ export const InfoCard = ({title, items}) => {
 export const LatestUpdates = () => {
     const [loading, setLoading] = useState(true)
     const [news, setNews] = useState([])
-    const API_URL = import.meta.env.VITE_API_URL + "latest_updates/"
+    const API_URL = import.meta.env.VITE_API_URL + "common/latest_updates/"
     const bellIcon = (<svg
         xmlns="http://www.w3.org/2000/svg"
         width={24}

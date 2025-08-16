@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect, useState } from 'react';
 
 const tickMark = (
   <svg
@@ -509,8 +510,9 @@ const QuickAccessResources = () => {
 }
 
 const LOA = () => {
+    
     return (
-        <div className='sm:p-5'>
+        <div id="camera-ready-paper" className='sm:p-5'>
             <SubInstruction />
             <ImportantNotice />
             <QuickAccessResources />
