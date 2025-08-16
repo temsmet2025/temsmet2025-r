@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({
-  // base: "/temsmet2025-r",
+  base: "/temsmet2025-r",
   build: {
    outDir: 'dist',
     // outDir: '../temsmet builds/frontend',
