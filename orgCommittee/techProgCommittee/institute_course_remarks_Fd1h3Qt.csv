@@ -1,3 +1,0 @@
-college_id,title,description,degree_id,start_date,end_date,date_type,event_type,remark,status
-37020,Barkatullah University Important Dates for Admission,Barkatullah University admissions...,"9850, 10449, 10460",02/04/2025,08/30/2025,Confirmed,Admission,Processed,Updated
-37020,Barkatullah University Important Dates for Admission,Barkatullah University admissions...,"2090, 10518, 10758, 10757",05/04/2025,08/30/2025,Confirmed,Admission,"Processed but there is no Popular degree for degree ids 10757,10758",Inserted
