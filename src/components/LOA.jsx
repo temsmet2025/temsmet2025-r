@@ -378,12 +378,12 @@ const SubInstruction = () => {
 
     const listItem1 = [
         "Please follow the IEEE two-column A4 size standard conference format for preparing your final manuscript",
-        "Visit IEEE Templates page by clicking templates button in quick access section below for more details",
+        "Visit IEEE Templates page by clicking templates button in Quick Access Section for more details",
         "Revised Version: Revise your paper based on reviewers’ comments/suggestions. The reviewer’s comments are available on the same Microsoft paper management site by clicking Reviewer Comments button in quick access section",
         "Maximum page limit is 6 pages, including references",
         "Do not include an author biography at the end",
         "Additional pages permitted subject to extra payment of Rs. 500 ($25) per additional page",
-        "Similarity with other papers should be low (similarity index below 30% excluding reference & individual similarity not greater than 10%)",
+        "Similarity with other papers should be low (similarity index below 20% excluding reference & individual similarity not greater than 10%)",
         "Maximum file size allowed is 3 MB, PDF format without encryption or passwords",
         "Authors are responsible for ensuring reviewers' and meta-reviewers' comments have been addressed",
     ];
@@ -394,7 +394,7 @@ const SubInstruction = () => {
     ];
 
     const listItem3 = [
-        "After revising your paper, pass it through PDF eXpress using conference ID (#65536) by clicking PDF eXpress button in quick access section",
+        "After revising your paper, pass it through PDF eXpress using conference ID (#65536) by clicking PDF eXpress button in Quick Access Section",
         "If you do not have an account, click on 'New Users – Click here' and provide your information (email address and password)",
     ];
 
