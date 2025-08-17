@@ -10,7 +10,7 @@ const tickMark = (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="w-4 h-4 flex-shrink-0"
+    className="w-4 h-4 text-green-500 flex-shrink-0"
   >
     <path d="M21.801 10A10 10 0 1 1 17 3.335" />
     <path d="m9 11 3 3L22 4" />
@@ -424,6 +424,7 @@ const SubInstruction = () => {
                     
                     <span className='text-base sm:text-xl text-gray-500 font-thin text-center'>Complete instructions for final paper preparation and submission</span>
                 </div>
+                
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 items-stretch">
                     <InfoCard
                         icon={docIcon}
@@ -440,9 +441,12 @@ const SubInstruction = () => {
                     <InfoCard
                         icon={tickMark}
                         span1="Similarity"
-                        span2="<30%"
+                        span2="<20%"
                         span3="Excluding references"
                     />
+                </div>
+                <div className="">
+                    <QuickAccessResources />
                 </div>
                 <div className="flex flex-col gap-7 items-stretch">
                     <ListDiv number={"1"} title={"Step 1: Final Camera-ready paper preparation"} listItem={listItem1} />
@@ -461,7 +465,7 @@ const ResourceBtn = ({btn}) => {
     return (
         <div className="flex flex-col justify-center items-center text-white">
             <div className={`${btn.color} rounded-md hover:${btn.hover_color} hover:scale-105 duration-150`}>
-                <a href={btn.href} target='_blank' className='flex flex-col flex-wrap justify-center items-center min-w-64 p-2 md:p-5'>
+                <a href={btn.href} target='_blank' className='flex flex-col flex-wrap justify-center items-center w-64 sm:w-80 lg:w-52 xl:w-72 p-2 md:p-5'>
                     <span>{ btn.icon }</span>
                     <span className="text-base">
                             {btn.btn_text}
@@ -499,7 +503,7 @@ const QuickAccessResources = () => {
             <div className="bg-blue-800 bg-sky-500 bg-green-500 bg-purple-600 bg-blue-800/80 bg-sky-500/80 bg-green-500/80 bg-purple-600/80"></div>
             <div className="flex flex-col w-full bg-white shadow-lg p-2 rounded-lg">
                 <div className="text-center text-xl font-bold text-sky-400">Quick Access Resources</div>
-                <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-5 p-5 items-stretch">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 md:gap-5 p-5 items-stretch">
                     <ResourceBtn btn={btn1} />
                     <ResourceBtn btn={btn2} />
                     <ResourceBtn btn={btn4} />
@@ -515,7 +519,6 @@ const LOA = () => {
         <div id="camera-ready-paper" className='sm:p-5'>
             <SubInstruction />
             <ImportantNotice />
-            <QuickAccessResources />
             <RequirementCopyright/>
         </div>
   )

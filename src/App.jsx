@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
     const API_URL = import.meta.env.VITE_API_URL + "common/pages/"
-    // fetch("http://127.0.0.1:8000/api/common/pages/") // Django API
+    fetch(API_URL) // Django API
       .then((res) => res.json())
       .then((data) => {
         const routeMap = {
@@ -33,7 +33,8 @@ function App() {
           "explore-delhi": <ExploreDelhiPage />,
           "tourist-destinations": <TouristDestinationsPage />,
           "registration": <Registration />,
-          "comera-ready-paper": <LoaPage />
+          "camera-ready-paper": <LoaPage />,
+          "testing":<LoaPage/>,
         };
 
         // Filter routes based on backend enabled pages
