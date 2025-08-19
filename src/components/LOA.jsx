@@ -304,7 +304,7 @@ const RequirementCopyright = () => {
 
 const ImportantNotice = () => {
     return (
-        <section className="mt-8 border-l-4 border-yellow-400 rounded-l-sm rounded-r-md bg-yellow-200/20 px-2 sm:px-10 py-5">
+        <section className="mt-4 border-l-4 border-yellow-400 rounded-l-sm rounded-r-md bg-yellow-200/20 px-2 sm:px-10 py-5">
             <div className="flex flex-col gap-4">
                 <div className="flex flex-row items-center gap-2">
                     {importantIcon}
@@ -326,7 +326,7 @@ const ImportantNotice = () => {
     )
 }
 
-const ListDiv = ({number, title, listItem}) => {
+const ListDiv = ({para, number, title, listItem}) => {
     return (
         <section className="h-full">
             <div className="relative">
@@ -334,6 +334,7 @@ const ListDiv = ({number, title, listItem}) => {
             </div>
             <div className="flex flex-col gap-3 bg-white shadow-lg p-10 rounded-lg h-full">
                 <h3 className="font-bold text-xl">{title}</h3>
+                {para && <p className='text-sm'>{ para }</p>}
                 <ul className="flex flex-col gap-2">
                     {listItem.map((item, index) => {
                         // Check if item contains HTML tags
@@ -359,6 +360,7 @@ const ListDiv = ({number, title, listItem}) => {
                         );
                     })}
                 </ul>
+                {number == 5 && <ImportantNotice />}
             </div>
         </section>
     )
@@ -394,16 +396,20 @@ const SubInstruction = () => {
         "Revised Version: Revise your paper based on reviewers’ comments/suggestions. The reviewer’s comments are available on the same Microsoft paper management site by clicking Reviewer Comments button in quick access section",
         "Maximum page limit is 6 pages, including references",
         "Do not include an author biography at the end",
-        "Additional pages permitted subject to extra payment of Rs. 500 ($25) per additional page",
+        "Additional pages permitted subject to extra payment of Rs. 500 ($25) per additional page subject maximum of 8 pages only",
         "Similarity with other papers should be low (similarity index below 20% excluding reference & individual similarity not greater than 10%)",
+        "Papers with similarity greater than 20% will summarily be rejected",
         "Maximum file size allowed is 3 MB, PDF format without encryption or passwords",
         "Authors are responsible for ensuring reviewers' and meta-reviewers' comments have been addressed",
     ];
 
     const listItem2 = [
-        "An appropriate copyright notice is to appear at the bottom of the first page of each paper",
-        "Replace the copyright notice in the camera-ready paper template with the correct copyright notice",
+        "For papers in which all authors are employed by the US government, the copyright notice is: U.S. Government work not protected by U.S. copyright",
+        "For papers in which all authors are employed by a Crown government (UK, Canada, and Australia), the copyright notice is: 979-8-3315-2716-7/25/$31.00 ©2025 Crown",
+        "For papers in which all authors are employed by the European Union, the copyright notice is: 979-8-3315-2716-7/25/$31.00 ©2025 European Union",
+        "For all other papers the copyright notice is: 979-8-3315-2716-7/25/$31.00 ©2025 IEEE",
     ];
+
 
     const listItem3 = [
         "After revising your paper, pass it through PDF eXpress using conference ID (65536X) by clicking PDF eXpress button in Quick Access Section",
@@ -463,11 +469,32 @@ const SubInstruction = () => {
                     <QuickAccessResources />
                 </div>
                 <div className="flex flex-col gap-7 items-stretch">
-                    <ListDiv number={"1"} title={"Step 1: Final Camera-ready paper preparation"} listItem={listItem1} />
-                    <ListDiv number={"2"} title={"Step 2: IEEE Copyright Notice"} listItem={listItem2} />
-                    <ListDiv number={"3"} title={"Step 3: PDF eXpress check"} listItem={listItem3} />
-                    <ListDiv number={"4"} title={"Step 4: Camera-ready Paper Submission"} listItem={listItem4} />
-                    <ListDiv number={"5"} title={"Step 5: Submission of the copyright form"} listItem={listItem5} />
+                    <ListDiv 
+                        number={"1"} 
+                        title={"Step 1: Final Camera-ready paper preparation"} 
+                        listItem={listItem1}
+                    />
+                    <ListDiv 
+                        para="Students must ensure the correct copyright notice is included on their papers as per IEEE guidelines, since missing or incorrect notices may affect publication:" 
+                        number={"2"} 
+                        title={"Step 2: IEEE Copyright Notice"} 
+                        listItem={listItem2} 
+                    />
+                        <ListDiv 
+                        number={"3"} 
+                        title={"Step 3: PDF eXpress check"} 
+                        listItem={listItem3} 
+                    />
+                        <ListDiv 
+                        number={"4"} 
+                        title={"Step 4: Camera-ready Paper Submission"} 
+                        listItem={listItem4}
+                    />
+                        <ListDiv 
+                        number={"5"} 
+                        title={"Step 5: Submission of the copyright form"} 
+                        listItem={listItem5}
+                    />
                 </div>
 
             </div>
@@ -532,7 +559,6 @@ const LOA = () => {
     return (
         <div id="camera-ready-paper" className='sm:p-5'>
             <SubInstruction />
-            <ImportantNotice />
             <RequirementCopyright/>
         </div>
   )

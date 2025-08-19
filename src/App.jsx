@@ -29,7 +29,7 @@ function App() {
           "keynote-speakers": <KeynotesPage />,
           "venue&directions": <VenueDirPage />,
           "submission-guidelines": <SubmissionGuidePage />,
-          "sponsorhip-invitation": <SposorShipInvPage />,
+          "sponsorship-invitation": <SposorShipInvPage />,
           "explore-delhi": <ExploreDelhiPage />,
           "tourist-destinations": <TouristDestinationsPage />,
           "registration": <Registration />,
