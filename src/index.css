@@ -1426,6 +1426,10 @@ input[type="range"]::-ms-fill-lower {
   margin-top: 2rem;
 }
 
+.mt-\[0\.2rem\] {
+  margin-top: 0.2rem;
+}
+
 .block {
   display: block;
 }
@@ -2221,6 +2225,10 @@ input[type="range"]::-ms-fill-lower {
 
 .whitespace-nowrap {
   white-space: nowrap;
+}
+
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
 }
 
 .text-wrap {
@@ -3512,6 +3520,10 @@ input[type="range"]::-ms-fill-lower {
   padding-top: 1.25rem;
 }
 
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -4047,6 +4059,11 @@ input[type="range"]::-ms-fill-lower {
 .text-zinc-50 {
   --tw-text-opacity: 1;
   color: rgb(250 250 250 / var(--tw-text-opacity, 1));
+}
+
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(28 100 242 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -4647,6 +4664,10 @@ input[type="range"]::-ms-fill-lower {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-blue-600\/80:hover {
+  color: rgb(28 100 242 / 0.8);
 }
 
 .hover\:underline:hover {
@@ -6650,20 +6671,16 @@ input[type="range"]::-ms-fill-lower {
     width: 1.5rem;
   }
 
+  .sm\:w-80 {
+    width: 20rem;
+  }
+
   .sm\:w-\[13rem\] {
     width: 13rem;
   }
 
   .sm\:w-auto {
     width: auto;
-  }
-
-  .sm\:w-64 {
-    width: 16rem;
-  }
-
-  .sm\:w-80 {
-    width: 20rem;
   }
 
   .sm\:grid-cols-1 {
@@ -7258,20 +7275,8 @@ input[type="range"]::-ms-fill-lower {
     display: none;
   }
 
-  .xl\:w-64 {
-    width: 16rem;
-  }
-
   .xl\:w-72 {
     width: 18rem;
-  }
-
-  .xl\:w-96 {
-    width: 24rem;
-  }
-
-  .xl\:w-80 {
-    width: 20rem;
   }
 
   .xl\:grid-cols-10 {
