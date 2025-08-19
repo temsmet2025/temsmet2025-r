@@ -335,17 +335,29 @@ const ListDiv = ({number, title, listItem}) => {
             <div className="flex flex-col gap-3 bg-white shadow-lg p-10 rounded-lg h-full">
                 <h3 className="font-bold text-xl">{title}</h3>
                 <ul className="flex flex-col gap-2">
-                    {listItem.map((item, index) => (
-                        <li key={index} className="w-full h-full">
-                            <span className="flex flex-row items-center text-sm gap-2 text-gray-500">
-                                <span className="text-green-400">
-                                    {tickMark}
+                    {listItem.map((item, index) => {
+                        // Check if item contains HTML tags
+                        const containsHTML = item.includes('<') && item.includes('>');
+                        
+                        return (
+                            <li key={index} className="w-full h-full">
+                                <span className="flex flex-row items-start text-sm gap-2 text-gray-500">
+                                    <span className="text-green-400 pt-1">
+                                        {tickMark}
+                                    </span>
+                                    {containsHTML ? (
+                                        <div 
+                                            className="whitespace-pre-wrap"
+                                            style={{fontFamily: "inherit"}}
+                                            dangerouslySetInnerHTML={{ __html: item }}
+                                        />
+                                    ) : (
+                                        <pre style={{whiteSpace: "pre-wrap", fontFamily: "inherit"}}>{ item }</pre>
+                                    )}
                                 </span>
-                                
-                                { item }
-                            </span>
-                        </li>
-                    ))}
+                            </li>
+                        );
+                    })}
                 </ul>
             </div>
         </section>
@@ -394,8 +406,10 @@ const SubInstruction = () => {
     ];
 
     const listItem3 = [
-        "After revising your paper, pass it through PDF eXpress using conference ID (#65536) by clicking PDF eXpress button in Quick Access Section",
-        "If you do not have an account, click on 'New Users – Click here' and provide your information (email address and password)",
+        "After revising your paper, pass it through PDF eXpress using conference ID (65536X) by clicking PDF eXpress button in Quick Access Section",
+        "Log in to the <a href='https://ieee-pdf-express.org/account/login?ReturnUrl=%2F' target='_blank' style='color: #3b82f6; text-decoration: underline;'>IEEE PDF eXpress™</a> site",
+        "First-time users should do the following:\n\t1. Select the New Users - Click Here link\n\t2. Enter the following: 65536X for the Conference ID, your email address, a password\n\t3. Continue to enter information as prompted",
+        "An Online confirmation will be displayed and an email confirmation will be sent verifying your account setup",
     ];
 
     const listItem4 = [
@@ -489,7 +503,7 @@ const QuickAccessResources = () => {
         "color":"bg-sky-500",
         "hover_color":"bg-sky-500/80",
         "btn_text":"PDF eXpress", 
-        "href":"https://www.ieee.org/conferences/publishing/pdfexpress" 
+        "href":"https://ieee-pdf-express.org/account/login?ReturnUrl=%2F" 
     };
     const btn4 = {
         "icon": fileCheckIcon,
