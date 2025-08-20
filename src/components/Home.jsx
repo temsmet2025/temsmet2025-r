@@ -39,9 +39,9 @@ const getUpdatedColors = (today, updatedImportantDates) => {
   const eventTimeLine = [
     toDateOnly(new Date('2025-07-25')), // Paper Submission Closes
     toDateOnly(new Date('2025-08-18')), // Notification
-    toDateOnly(new Date('2025-08-21')), // Camera-ready
-    toDateOnly(new Date('2025-08-23')), // Early Registration
-    toDateOnly(new Date('2025-09-02')), // Regular Registration
+    toDateOnly(new Date('2025-08-25')), // Early Registration
+    toDateOnly(new Date('2025-09-15')), // Camera-ready
+    toDateOnly(new Date('2025-09-15')), // Regular Registration
     toDateOnly(new Date('2999-10-08')), // Conference
   ]
   
