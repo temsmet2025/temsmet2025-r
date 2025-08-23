@@ -3,7 +3,8 @@ import SectionList from './SectionLIst'
 import { conferenceStructure, deligates, potentialSpeakers, sponsorsAndExhibitors, importantDates, registrationFees, submissionGuidelines, aboutConference, aboutHost } from "./../assets/dataItems"
 import TableView from './TableView'
 import { HeadingBar } from './SmallComps'
-
+import { useEffect, useState } from 'react'
+import { ArrowRight } from "lucide-react";
 /**
  * Home component displaying the conference theme and related sections.
  * It includes a description of the conference theme and calls the SectionList component 
@@ -11,69 +12,111 @@ import { HeadingBar } from './SmallComps'
  * 
  * @returns {JSX.Element} The Home section containing the theme and section lists.
  */
-const getUpdatedImportantDates = (today, targetDate, strikeLineNumber) => {
-  const newDates = [...importantDates]
-  if (today >= targetDate) {
-    newDates[0] = {
-      tableData: [
-        'Paper Submission Closes',
-        <>
-          <s>July 05, 2025</s> → <strong>July 25, 2025</strong> (Firm Deadline)
-        </>
-      ]
-    }
-    newDates[1] = {
-      tableData: [
-        'Notification of Acceptance',
-        <>
-          <s>August 08, 2025</s> → <strong>August 18, 2025</strong> 
-        </>
-      ]
-    }
-  }
-  return newDates;
+
+function formatDate(dateString) {
+  if (!dateString) return null;
+  const date = new Date(dateString);
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "2-digit",
+  });
 }
 
-const toDateOnly = (date) => new Date(date.getFullYear(), date.getMonth(), date.getDate());
-const getUpdatedColors = (today, updatedImportantDates) => {
-  const eventTimeLine = [
-    toDateOnly(new Date('2025-07-25')), // Paper Submission Closes
-    toDateOnly(new Date('2025-08-18')), // Notification
-    toDateOnly(new Date('2025-08-25')), // Early Registration
-    toDateOnly(new Date('2025-09-15')), // Camera-ready
-    toDateOnly(new Date('2025-09-15')), // Regular Registration
-    toDateOnly(new Date('2999-10-08')), // Conference
-  ]
-  
-  const updatedColorTable = updatedImportantDates.map((event, index) => {
-    
-    const prevDate = index == 0 ? new Date('1999-08-04') : eventTimeLine[index-1];
-    const nextDate = eventTimeLine[index];
-    const isActive = (today > prevDate && today <= nextDate);
+const EventSkeleton = () => {
+  return (
+    <div className="w-full max-w-3xl mx-auto p-6">
+      <h2 className="text-2xl font-bold mb-6 text-center">Conference Timeline</h2>
+      <div className="space-y-6">
+        {[...Array(6)].map((_, i) => (
+          <div
+            key={i}
+            className="flex justify-between items-center p-4 rounded-2xl shadow-md border border-gray-200 bg-white"
+          >
+            <div className="flex-1">
+              <div className="h-4 w-40 bg-gray-200 rounded-md animate-pulse mb-2"></div>
+              <div className="h-3 w-28 bg-gray-200 rounded-md animate-pulse"></div>
+            </div>
+            <div className="flex gap-2">
+              <div className="h-4 w-20 bg-gray-200 rounded-md animate-pulse"></div>
+              <div className="h-4 w-4 bg-gray-200 rounded-full animate-pulse"></div>
+              <div className="h-4 w-20 bg-gray-200 rounded-md animate-pulse"></div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
-    // style date text red if it's the active one
-    return {
-      tableData: [
-        isActive
-          ? <span className="text-red-600 font-bold">{event.tableData[0]}</span>
-          : event.tableData[0], // label
-        isActive
-          ? <span className="text-red-600 font-bold">{event.tableData[1]}</span>
-          : event.tableData[1]
-      ]
-    };
-  });
-
-  return updatedColorTable;
+const ImportantDates = ({tableName, tableHead, dataItem}) => {
+  return (
+    <div id={`${tableName}`} className=''>
+            {tableName?.length > 0 && <h1 className="font-bold sm:text-2xl md:text-3xl text-xl text-sky-700">{tableName}</h1>}
+            {(tableName !== undefined && tableName !== "") && <HeadingBar />}
+            <div className={` overflow-x-auto mt-6 shadow-lg`}>
+                <table className="w-full border-collapse rounded-lg">
+                    <thead>
+                        <tr className="bg-gray-800 text-gray-100 text-left">
+                            {tableHead.map((head, index) => (
+                                <th key={index} className="px-6 py-4 font-bold">{head}</th>
+                            ))}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {dataItem?.map((item, index) => (
+                            <tr
+                                key={index}
+                                className={`${index % 2 === 0 && 'bg-sky-300/25'} ${item.highlight == "red" && "font-bold"} 'bg-white' text-xs sm:text-sm lg:text-base xl:text-xl`}
+                                style={{color:item.highlight}}
+                            >
+                                    <td 
+                                        className={`px-6 py-4 border-b border-gray-300`}
+                                    >
+                                        {item.name}
+                                    </td>
+                                    <td key={index}
+                                        className={`px-6 py-4 border-b border-gray-300`}
+                                    >
+                                      <div className='flex gap-2'>
+                                          {item.prev_date && <span><s>{formatDate(item.prev_date)}</s>  </span>}
+                                {item.prev_date && <span><ArrowRight className="inline w-4 h-4" /></span>}
+                                          <span>{formatDate(item.updated_date)}</span>
+                                          {
+                                              item.is_firm_deadline && 
+                                              <span className="">(Firm Deadline)</span>
+                                          }
+                                      </div>
+                                    </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+  )
 }
 
 const Home = () => {
-  const today = toDateOnly(new Date());
-  const targetDate = toDateOnly(new Date('2025-07-06'))
-  const strikeLineNumber = 0
-  const updatedImportantDates = getUpdatedImportantDates(today, targetDate, strikeLineNumber);
-  const updatColorForDates = getUpdatedColors(today, updatedImportantDates)
+  const [importantDates, setImportantDates] = useState();
+  const [loading, setLoading] = useState(true);
+  const API_URL = (import.meta.env.VITE_API_URL + "/common/important-dates/") || 'http://localhost:8000/api/speakers/';
 
+  useEffect(() => {
+    const getImportantDates = async() => {
+      try {
+        const response = await fetch(API_URL);
+        const data = await response.json();
+        setImportantDates(data);
+        console.log(data)
+        setLoading(false);
+      }
+      catch (error) {
+          console.error("Failed to fetch committees:", error);
+      }
+    }
+    getImportantDates()
+  }, [])
   
   return (
     
@@ -93,8 +136,12 @@ const Home = () => {
       <SectionList title="About the Host of 4th IEEE TEMSMET 2025" dataItem={aboutHost} classes="mt-2 sm:mt-5 md:mt-10" />
       <SectionList title="Conference Structure" dataItem={conferenceStructure} classes="mt-2 sm:mt-5 md:mt-10" />
       <SectionList title="Potential Speakers" dataItem={potentialSpeakers} isButton={"SquareArrowOutUpRight"} classes="mt-2 sm:mt-5 md:mt-10" />
+      {loading ?<EventSkeleton/> : <ImportantDates
+        tableName="Important Dates"
+        tableHead={['EVENTS', 'DATE']}
+        dataItem={importantDates}
+        classes="mt-2 sm:mt-5 md:mt-10" />}
 
-      <TableView tableName="Important Dates" highLightRow={0} tableHead={['EVENTS', 'DATE']} dataItem={updatColorForDates} classes="mt-2 sm:mt-5 md:mt-10" />
       <div className="">
         <p className='font-extrabold text-lg sm:text-xl md:text-2xl text-blue-800'>"All presented papers will be submitted to IEEE for possible publication in IEEE Xplore."</p>
       </div>

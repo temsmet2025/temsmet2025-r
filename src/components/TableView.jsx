@@ -21,11 +21,15 @@ function TableView(props) {
                                 className={`${index % 2 === 0 ? 'bg-sky-300/25' : 'bg-white'}`}
                             >
                                 {item.tableData.map((data, index) => (
-
                                     <td key={index}
                                         className={`px-6 py-4 border-b border-gray-300`}
                                     >
-                                        {data}
+                                        {
+                                            (data.includes('<') && data.includes('>'))?
+                                                <span className="" dangerouslySetInnerHTML={{ __html: data }}></span> :
+                                                <span>{data}</span>
+                                       }
+                                        
                                     </td>
                                 ))}
                             </tr>

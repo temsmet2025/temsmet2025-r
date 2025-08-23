@@ -523,7 +523,7 @@ const QuickAccessResources = () => {
         "color":"bg-blue-800",
         "hover_color":"bg-blue-800/80",
         "btn_text":" Reviewer Comments", 
-        "href": "https://cmt3.research.microsoft.com/ECCEASIA2025/Submission/Index"
+        "href": "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FTEMSMET2025"
     };
     const btn2 = {
         "icon": docIcon,

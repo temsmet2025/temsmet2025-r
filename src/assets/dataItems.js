@@ -50,8 +50,8 @@ export const potentialSpeakers = [
 export const importantDates = [
   { tableData: ['Paper Submission Closes', 'July 05, 2025'] },
   { tableData: ['Notification of Acceptance', 'August 08, 2025'] },
-  { tableData: ['Early Bird Paper Registration Closes', 'August 25, 2025'] },
-  { tableData: ['Final Camera-ready Paper', 'September 15, 2025'] },
+  { tableData: ['Early Bird Registration', 'August 30, 2025'] },
+  { tableData: ['Final Camera Ready Paper', 'September 15, 2025'] },
   { tableData: ['Regular Paper Registration Closes', 'September 15, 2025'] },
   { tableData: ['Conference Date', 'October 08-10, 2025'] },
 ];
@@ -63,8 +63,8 @@ export const registrationFees = [
   { tableData: ['IEEE Student Member', '6,500 INR', '225 USD', '7,500 INR', '275 USD'] },
   { tableData: ['Non-IEEE Student Member', '7,500 INR', '250 USD', '8,500 INR', '300 USD'] },
   { tableData: ['IEEE TEMS Student Member', '6,000 INR', '200 USD', '7,000 INR', '250 USD'] },
-  { tableData: ['Charges per additional accepted paper (Student authors)', '5,000 INR', '175 USD', '5,000 INR', '175 USD'] },
-  { tableData: ['Charges per additional accepted paper (Other authors)', '5,000 INR', '175 USD', '5,000 INR', '175 USD'] },
+  { tableData: ['Charges per additional accepted paper (Student authors)<span style="font-size:25px; font-weight:bold;">*</span>', '5,000 INR', '175 USD', '5,000 INR', '175 USD'] },
+  { tableData: ['Charges per additional accepted paper (Other authors)<span style="font-size:25px; font-weight:bold;">*</span>', '5,000 INR', '175 USD', '5,000 INR', '175 USD'] },
 ];
 
 export const registrationNotes = [
