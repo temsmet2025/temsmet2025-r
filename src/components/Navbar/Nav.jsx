@@ -44,10 +44,7 @@ const SubMenu = ({ items, onClose }) => (
               onClick={(e) => {
                 if (item.name === "Important Dates") scrollToSection(item.name);
                 onClose && onClose();
-                if (item.name === "Travel Visa") {
-                  e.preventDefault();
-                  alert("Comimg Soon!!!!");
-                }
+                // if (item.name === "Travel Visa") { e.preventDefault(); alert("Comimg Soon!!!!") };
               }}
             >
               {item.name}

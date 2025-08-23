@@ -12,6 +12,7 @@ import ExploreDelhiPage from "./pages/ExploreDelhiPage.jsx";
 import TouristDestinationsPage from "./pages/TouristDestinationsPage.jsx";
 import SposorShipInvPage from "./pages/SposorShipInvPage.jsx";
 import SubmissionGuidePage from "./pages/SubmissionGuidePage.jsx";
+import VisaPage from "./pages/VisaPage.jsx";
 import HackathonPage from "./pages/Hackathon.jsx";
 
 function App() {
@@ -35,7 +36,9 @@ function App() {
           "tourist-destinations": <TouristDestinationsPage />,
           "registration": <Registration />,
           "camera-ready-paper": <LoaPage />,
-          "testing":<LoaPage/>,
+          "visa-details": <VisaPage/>,
+          "testing": <VisaPage />,
+          
           "hackathon": <HackathonPage />,
         };
 
