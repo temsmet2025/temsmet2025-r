@@ -1,10 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
+import path from 'path'
 
 export default defineConfig({
   // base: "/temsmet2025-r",
   build: {
-  //  outDir: 'dist',
+    // outDir: 'dist',
     outDir: '../temsmet builds/frontend',
     rollupOptions: {
       output: {
@@ -18,4 +19,9 @@ export default defineConfig({
     chunkSizeWarningLimit: 1000, // Adjust the chunk size limit as needed
   },
   plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
 })
