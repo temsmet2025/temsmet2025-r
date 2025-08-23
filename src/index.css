@@ -1098,6 +1098,10 @@ input[type="range"]::-ms-fill-lower {
   top: -1rem;
 }
 
+.-top-5 {
+  top: -1.25rem;
+}
+
 .bottom-0 {
   bottom: 0px;
 }

@@ -541,7 +541,7 @@ const QuickAccessResources = () => {
     };
     return (
         <section className="mt-10">
-            <div className="bg-blue-800 bg-sky-500 bg-green-500 bg-purple-600 bg-blue-800/80 bg-sky-500/80 bg-green-500/80 bg-purple-600/80"></div>
+            <div className="w-full h-1 bg-gradient-to-r from-blue-800 via-green-500 to-purple-600"></div>
             <div className="flex flex-col w-full bg-white shadow-lg p-2 rounded-lg">
                 <div className="text-center text-xl font-bold text-sky-400">Quick Access Resources</div>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 md:gap-5 p-5 items-stretch">
