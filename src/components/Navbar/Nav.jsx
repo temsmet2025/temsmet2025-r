@@ -33,7 +33,7 @@ const scrollToSection = (id) => {
  * @returns {JSX.Element} The submenu JSX structure.
  */
 const SubMenu = ({ items, onClose }) => (
-  <div className="relative bg-slate-950 text-white rounded-md">
+  <div className="relative bg-slate-950 text-white rounded-md z-50">
     <div className=" bg-slate-900/80 rounded-md absolute right-0 overflow-hidden max-w-[90vw]">
       <ul className="flex flex-col space-y-1 p-2">
         {items.map((item, index) => (
@@ -132,7 +132,7 @@ function Nav({ setShowContact, linkActive, setLinkActive, children }) {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex justify-center items-center w-full ">
-              <ul className="flex text-sm flex-wrap justify-end lg:text-base w-full gap-[0.7rem] lg:gap-3 mr-5">
+              <ul className="flex text-sm flex-wrap justify-end lg:text-sm w-full gap-1 lg:gap-3 mr-5">
                 {/* <ul className="hidden xl:flex w-full flex-wrap font-mono text-lg font-bold justify-start 2xl:justify-around items-center"> */}
                 {navigation.map((navItem, index) => (
                   <li
@@ -141,7 +141,7 @@ function Nav({ setShowContact, linkActive, setLinkActive, children }) {
                       navItem.index === linkActive
                         ? "text-zinc-50"
                         : "text-sky-300"
-                    }`}
+                    }`}a
                     onMouseEnter={() => {
                       if (navItem.name === "Call for Papers")
                         toggleSubMenu("cfp");

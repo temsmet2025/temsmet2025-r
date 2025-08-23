@@ -6,9 +6,12 @@ import Carousel from '../components/Carousel/Carousel'
 import Footer from '../components/Footer'
 import { LatestUpdates } from '../components/SmallComps'
 import VisaDetails from '../components/VisaDetails'
+import ScrollToTop from '@/components/ScrollToTop'
 const VisaPage = () => {
   return (
-    <>
+      <>
+      <ScrollToTop elementId="visa" />
+          
       <Navbar />
       <Carousel />
       <LatestUpdates/>

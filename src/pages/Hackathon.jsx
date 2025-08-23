@@ -4,16 +4,18 @@ import Navbar from "./Navbar";
 import Carousel from "../components/Carousel/Carousel";
 import Footer from "../components/Footer";
 import { LatestUpdates } from "../components/SmallComps";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const HackathonPage = () => {
   const formUrl =
     "https://forms.office.com/Pages/ResponsePage.aspx?id=ETrdmUhDaESb3eUHKx3B5jl1qzbkwlJKqHu6Ame6nSFURE1YOEdPU1JFVjdHNTBJT05PMTRRRzYyTS4u&origin=QRCode"; // TODO: set VITE_HACKATHON_FORM_URL
   return (
     <>
+      <ScrollToTop elementId="hackton-page" />
       <Navbar />
       <Carousel />
       <LatestUpdates />
-      <div className="grid grid-cols-1 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 w-full gap-1">
+      <div id="hackton-page" className="grid grid-cols-1 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 w-full gap-1">
         <div className="sm:col-span-3 md:col-span-4 lg:col-span-6 xl:col-span-8 p-5 bg-white rounded-b-xl sm:rounded-l-none sm:rounded-r-xl">
           <div className="flex flex-col sm:flex-row gap-3 sm:items-center justify-between mb-4">
             <a
