@@ -226,10 +226,13 @@ function Nav({ setShowContact, linkActive, setLinkActive, children }) {
                   }}
                 >
                   <Link to={navItem.href}>
-                    <span className="flex items-center justify-center">
+                    <span className="flex items-center justify-center relative">
                       {navItem.name}
                       {navItem.name === "Call for Papers" &&
                         (subMenuStates.cfp ? <ChevronUp /> : <ChevronDown />)}
+                      {navItem.name === "Hackathon" && (
+                        <img src="/new.png" alt="New" className="h-8 w-8 absolute -left-4 -top-5" />
+                      )}
                       {navItem.name === "Past Editions" &&
                         (subMenuStates.pastEditions ? (
                           <ChevronUp />

@@ -12,6 +12,7 @@ import ExploreDelhiPage from "./pages/ExploreDelhiPage.jsx";
 import TouristDestinationsPage from "./pages/TouristDestinationsPage.jsx";
 import SposorShipInvPage from "./pages/SposorShipInvPage.jsx";
 import SubmissionGuidePage from "./pages/SubmissionGuidePage.jsx";
+import HackathonPage from "./pages/Hackathon.jsx";
 
 function App() {
   const [routes, setRoutes] = useState([]);
@@ -35,6 +36,7 @@ function App() {
           "registration": <Registration />,
           "camera-ready-paper": <LoaPage />,
           "testing":<LoaPage/>,
+          "hackathon": <HackathonPage />,
         };
 
         // Filter routes based on backend enabled pages
