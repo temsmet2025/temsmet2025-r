@@ -110,5 +110,5 @@ export const travelItems = [
   { name: "Venue & Directions", href: "/venue&directions", current: "_self", id: "venue-link" },
   { name: "Explore Delhi", href: "/explore-delhi", current: "_self" },
   { name: "Explore Delhi Neighbours", href: "/tourist-destinations", current: "_self" },
-  { name: "Accommodation and Facilities", href: "/", current: "_self" },
+  { name: "Accommodation and Facilities", href: "/accomodation", current: "_self" },
 ];

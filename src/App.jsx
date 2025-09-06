@@ -14,6 +14,7 @@ import SposorShipInvPage from "./pages/SposorShipInvPage.jsx";
 import SubmissionGuidePage from "./pages/SubmissionGuidePage.jsx";
 import VisaPage from "./pages/VisaPage.jsx";
 import HackathonPage from "./pages/Hackathon.jsx";
+import AccomodationPage from "./pages/AccomodationPage.jsx";
 
 function App() {
   const [routes, setRoutes] = useState([]);
@@ -21,7 +22,6 @@ function App() {
 
   useEffect(() => {
     const API_URL = import.meta.env.VITE_API_URL + "common/pages/"
-    console.log("API_URL:", API_URL);
     fetch(API_URL) // Django API
       .then((res) => res.json())
       .then((data) => {
@@ -37,8 +37,9 @@ function App() {
           "tourist-destinations": <TouristDestinationsPage />,
           "registration": <Registration />,
           "camera-ready-paper": <LoaPage />,
-          "visa-details": <VisaPage/>,
-          "testing": <VisaPage />,
+          "visa-details": <VisaPage />,
+          "accomodation": <AccomodationPage />,
+          "testing": <AccomodationPage />,
           
           "hackathon": <HackathonPage />,
         };
