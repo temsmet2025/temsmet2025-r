@@ -61,24 +61,31 @@ const Sidebar = () => {
                     ))}
                 </div>
             ) : (
-                data.map((sponsor, index) => (
-                <div key={index} className="w-full flex flex-col gap-2 justify-center">
-                    <h1 className='text-2xl text-center sm:font-semibold text-sky-700'>{sponsor.tier_name}</h1>
-                    <div className='flex flex-col gap-1 justify-center items-center'>
-                        {sponsor?.sponsor?.map((sponsor, index) => (
-                            <a key={index} href={sponsor?.link} target="_blank">
-                                    <img 
-                                    loading='lazy' 
-                                    src={sponsor?.logo} 
-                                    alt="temsmet2025" 
-                                    style={{
-                                        width: sponsor?.width || "auto",
-                                        height: sponsor?.height || "auto"
-                                    }} />
-                                </a>
-                            ))}
-                    </div>
-                    
+                  data.map((sponsor, index) => (
+                      <div className="w-full flex flex-col justify-center items-center" key={index}>
+                        <div key={index} className="w-full flex flex-col gap-5 justify-center">
+                              <h1 className='text-2xl text-center sm:font-semibold text-sky-700 mt-3'>
+                                <div className="h-[2px] min-w-full bg-gray-300"></div>
+                                  {sponsor.tier_name}
+                                    <div className="h-[2px] min-w-full bg-gray-300"></div>
+                              </h1>
+                              
+                            <div className='flex flex-col gap-3 justify-center items-center'>
+                                {sponsor?.sponsor?.map((sponsor, index) => (
+                                    <a key={index} href={sponsor?.link} target="_blank">
+                                            <img 
+                                            loading='lazy' 
+                                            src={sponsor?.logo} 
+                                            alt="temsmet2025" 
+                                            style={{
+                                                width: sponsor?.width || "auto",
+                                                height: sponsor?.height || "auto"
+                                            }} />
+                                        </a>
+                                    ))}
+                            </div>
+                            
+                            </div>
                     </div>
                 ))
             )}

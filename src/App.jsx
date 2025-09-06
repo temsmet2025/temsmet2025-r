@@ -21,6 +21,7 @@ function App() {
 
   useEffect(() => {
     const API_URL = import.meta.env.VITE_API_URL + "common/pages/"
+    console.log("API_URL:", API_URL);
     fetch(API_URL) // Django API
       .then((res) => res.json())
       .then((data) => {
