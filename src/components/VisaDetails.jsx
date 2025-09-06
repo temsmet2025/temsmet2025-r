@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, Users, Award, MapPin, Plane } from "lucide-react";
-import { Download } from "lucide-react";
+import { Download, ExternalLink } from "lucide-react";
 const VisaDetails = () => {
     return (
 
@@ -58,11 +58,22 @@ const VisaDetails = () => {
 
                 {/* Documents Required Section */}
                 <div>
-                  <h3 className="text-xl font-semibold text-sky-600 mb-4">2. Documents Required</h3>
+              <h3 className="text-xl font-semibold text-sky-600 mb-4">2. Documents Required</h3>
+                    
                   <p className="text-gray-500 mb-4">
                     To apply for your visa, you will need the following documents:
                   </p>
-                  <div className="space-y-3">
+                    <div className="">
+                        <a href="https://forms.gle/7jh6RuKLQfHc4N6y6" target="_blank">
+                            <button className="bg-sky-700 text-white hover:bg-sky-700/90 px-6 py-2 rounded-lg font-medium transition-colors">
+                                    <div className="flex gap-1 justify-center items-center">
+                                        <span className="">Fill Out The Form For Visa Letter</span>
+                                        <span className=""><ExternalLink className="w-4 h-4" /></span>
+                                    </div>
+                            </button>
+                        </a>
+                    </div> 
+                  <div className="space-y-3 mt-5">
                     <div className="flex gap-3">
                       <span className="text-sky-600 font-bold">•</span>
                       <div>
@@ -102,7 +113,7 @@ const VisaDetails = () => {
                       <div>
                         <span className="font-semibold">Accommodation Details:</span> Proof of hotel booking or conference accommodation.
                       </div>
-                    </div>
+                    </div>                    
                   </div>
                 </div>
 

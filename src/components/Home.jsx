@@ -85,7 +85,7 @@ const ImportantDates = ({tableName, tableHead, dataItem}) => {
                                       <div className='flex gap-2'>
                                           {item.prev_date && <span><s>{formatDate(item.prev_date)}</s>  </span>}
                                 {item.prev_date && <span><ArrowRight className="inline w-4 h-4" /></span>}
-                                           <span>{item.name == "Conference Date"? `${formatDate(item.updated_date, 1)} - ${formatDate(item.updated_date)}` : formatDate(item.updated_date)}</span>
+                                           <span>{item.name == "Conference Date"? `${formatDate(item.updated_date, 2)} - ${formatDate(item.updated_date)}` : formatDate(item.updated_date)}</span>
                                           {
                                               item.is_firm_deadline && 
                                               <span className="">(Firm Deadline)</span>

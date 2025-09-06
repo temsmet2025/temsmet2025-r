@@ -67,7 +67,14 @@ const Sidebar = () => {
                     <div className='flex flex-col gap-1 justify-center items-center'>
                         {sponsor?.sponsor?.map((sponsor, index) => (
                             <a key={index} href={sponsor?.link} target="_blank">
-                                    <img key={`inner-${index}`} loading='lazy' src={sponsor?.logo} alt="temsmet2025" />
+                                    <img 
+                                    loading='lazy' 
+                                    src={sponsor?.logo} 
+                                    alt="temsmet2025" 
+                                    style={{
+                                        width: sponsor?.width || "auto",
+                                        height: sponsor?.height || "auto"
+                                    }} />
                                 </a>
                             ))}
                     </div>
