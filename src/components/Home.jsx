@@ -112,7 +112,6 @@ const Home = () => {
         const response = await fetch(API_URL);
         const data = await response.json();
         setImportantDates(data);
-        console.log(data)
         setLoading(false);
       }
       catch (error) {

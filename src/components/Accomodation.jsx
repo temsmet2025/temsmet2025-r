@@ -27,8 +27,8 @@ function HotelCard() {
      }
         , []);
   return (
-      <div className="flex flex-col justify-center items-center w-full gap-10">
-          <div className="flex flex-col justify-center items-center gap-4">
+      <div className="flex flex-col justify-center items-center w-full gap-10 text-center">
+          <div className="flex flex-col justify-center items-center gap-4 w-full">
               <span className="text-4xl font-bold text-sky-400">Conference Accommodation</span>
               <div className="flex flex-col justify-center w-full text-center text-gray-500 font-bold text-md">
                    <span>Discover comfortable and convenient hotel options for your stay during the conference. </span>
@@ -37,7 +37,7 @@ function HotelCard() {
              
         </div>
         
-        <div className="grid grid-cols-2 gap-10 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full">
           {isLoading ? (
     <div className="">Loading...</div>
           ) : (
