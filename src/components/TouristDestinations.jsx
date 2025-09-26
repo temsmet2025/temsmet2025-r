@@ -4,7 +4,7 @@ import { HeadingBar } from './SmallComps'
 function TouristDestinations() {
   return (
     <div
-      id="tourist-destinations"
+      
     >
       <h1 className="font-bold sm:text-4xl text-2xl text-sky-700">Tourist Destinations</h1>
       <HeadingBar />

@@ -10,7 +10,7 @@ import { HeadingBar } from "./SmallComps"
  */
 const SubmissionGuidelines = () => {
   return (
-    <div id="submission-guidelines" className="">
+    <div className="">
       <h1 className="font-bold sm:text-3xl text-2xl text-sky-700">Submission Guidelines</h1>
       <HeadingBar />
       <p className="text-black text-base sm:text-xl text-wrap mt-4 text-justify">
@@ -29,20 +29,26 @@ const SubmissionGuidelines = () => {
         <h1 className="text-xl sm:text-2xl font-bold text-sky-700">For Reference Download these Formats: </h1>
         <HeadingBar />
         <div className="mt-10 flex flex-col gap-10 justify-center items-center text-sky-600 font-bold">
-          <a href="./downloadable/conference-template-letter.docx" download>
+          <a href=".downloadable/conference-template-letter.docx" download={"temsmet-word-template"}>
             <span className="px-6 py-3 border-2 border-sky-700 rounded-md hover:border-sky-800 transition-colors duration-500 ease-in-out hover:shadow-lg hover:text-sky-700 hover:bg-sky-300/70 ">Word Template</span>
           </a>
-          <a href="./downloadable/conference-template-letter.pdf" download>
-            <span className="px-6 py-3 border-2 border-sky-700 rounded-md hover:border-sky-800 transition-colors duration-500 ease-in-out hover:shadow-lg hover:text-sky-700 hover:bg-sky-300/70 ">PDF Template</span>
+          <a href="/downloadable/conference-template-letter.pdf" target="_blank">
+            <span className="px-6 py-3 border-2 border-sky-700 rounded-md hover:border-sky-800 transition-colors duration-500 ease-in-out hover:shadow-lg hover:text-sky-700 hover:bg-sky-300/70 ">
+              PDF Template
+            </span>
           </a>
-          <a href="./downloadable/LaTeX-Template.zip" download>
+          <a href="./downloadable/LaTeX-Template.zip" download={"temsmet-latex-template"}>
             <span className="px-6 py-3 border-2 border-sky-700 rounded-md hover:border-sky-800 transition-colors duration-500 ease-in-out hover:shadow-lg hover:text-sky-700 hover:bg-sky-300/70 ">LaTex Template</span>
           </a>
-          <a href="./downloadable/Template-for-IEEE.pptx" download>
-            <span className="px-6 py-3 border-2 border-sky-700 rounded-md hover:border-sky-800 transition-colors duration-500 ease-in-out hover:shadow-lg hover:text-sky-700 hover:bg-sky-300/70 ">Paper Presentation Template</span>
+          <a href="/downloadable/IEEE_TEMSEMT_PPT.pdf" target="_blank">
+            <span className="px-6 py-3 border-2 border-sky-700 rounded-md hover:border-sky-800 transition-colors duration-500 ease-in-out hover:shadow-lg hover:text-sky-700 hover:bg-sky-300/70 ">
+              Paper Presentation PDF Template
+            </span>
           </a>
-          <a href="./downloadable/Poster-Template-for-IEEE.pptx" download>
-            <span className="px-6 py-3 border-2 border-sky-700 rounded-md hover:border-sky-800 transition-colors duration-500 ease-in-out hover:shadow-lg hover:text-sky-700 hover:bg-sky-300/70 ">Poster Presentation Template</span>
+          <a href="./downloadable/IEEE_TEMSEMT_PPT.pptx" download={"paper-presentation-pptx-format"}>
+            <span className="px-6 py-3 border-2 border-sky-700 rounded-md hover:border-sky-800 transition-colors duration-500 ease-in-out hover:shadow-lg hover:text-sky-700 hover:bg-sky-300/70 ">
+              Poster Presentation PPT Template
+            </span>
           </a>
         </div>
       </div>

@@ -36,7 +36,7 @@ function OrgCommittee() {
     }, []);
 
     return (
-        <div id="org-committe" className="">
+        <div className="">
             <h1 className="font-bold text-2xl text-center sm:text-4xl text-sky-700">Organisation Committee</h1>
 
             {loading ? (

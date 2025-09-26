@@ -6,7 +6,7 @@ import { Download, ExternalLink } from "lucide-react";
 const VisaDetails = () => {
     return (
 
-          <section id="visa">
+          <section >
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">

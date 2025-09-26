@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react'
+import React, {useEffect, useState} from 'react'
 
 export const InfoCard = ({title, items}) => {
     return (
@@ -164,3 +164,127 @@ export const SponsorPackageCard = ({ icon, tier_name, data, classes }) => {
         
     )
 }
+
+
+
+export const Countdown = ({ className }) => {
+  const targetDate = "2025-10-08T00:00:00"; // 🗓️ October 8, 2025
+
+  const calculateTimeLeft = () => {
+    const difference = +new Date(targetDate) - +new Date();
+    let timeLeft = {
+      days: 0,
+      hours: 0,
+      minutes: 0,
+      seconds: 0,
+    };
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+    }
+    return timeLeft;
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const timeUnits = [
+    { value: timeLeft.days, label: "Days" },
+    { value: timeLeft.hours, label: "Hours" },
+    { value: timeLeft.minutes, label: "Minutes" },
+    { value: timeLeft.seconds, label: "Seconds" },
+  ];
+
+  if (!isMounted) {
+    const placeholderUnits = [
+      { value: "00", label: "Days" },
+      { value: "00", label: "Hours" },
+      { value: "00", label: "Minutes" },
+      { value: "00", label: "Seconds" },
+    ];
+      return (
+        <div
+      className={`relative h-[200px] md:h-[300px] text-center overflow-hidden w-full mb-7`}
+      >
+          <img 
+            src="/clockbg.jpg" 
+            alt="Background" 
+            className="w-full h-full object-cover "
+          />
+          <div className="absolute h-full w-full  bg-gray-950/40 top-0 left-0"></div>
+          <div className="absolute top-0 left-0 flex inset-0 gap-2 lg:gap-7 justify-center lg:justify-end right-2 lg:right-20 items-center font-mono">
+              {placeholderUnits.map((unit, index) => (
+                <React.Fragment key={unit.label}>
+                <div className="flex text-5xl text-white font-bold lg:text-7xl  justify-center ">
+                        <div className="flex justify-center items-center">
+                              <div className={`flex flex-col bg-yellow-300/10 md:bg-gray-950/30 ${index==0 ? "lg:bg-gray-950/30":"lg:bg-yellow-300/10" } xl:bg-yellow-300/10 rounded-xl md:p-3`}>
+                                  <span className={` font-extrabold font-mono`}>
+                                    {String(unit.value).padStart(2, "0")}
+                                    
+                                  </span>
+                                  <span className="text-lg uppercase text-center text-white/80">
+                                        {unit.label}
+                                </span>
+                            </div>
+                        
+                        </div>
+                    
+                </div>
+                
+                </React.Fragment>
+            ))}
+        </div>
+    </div>
+    );
+  }
+
+  return (
+    <div
+      className={`relative h-[200px] md:h-[300px] text-center overflow-hidden w-full mb-7`}
+      >
+          <img 
+            src="/clockbg.jpg" 
+            alt="Background" 
+            className="w-full h-full object-cover "
+          />
+          <div className="absolute h-full w-full  bg-gray-950/40 top-0 left-0"></div>
+          <div className="absolute top-0 left-0 flex inset-0 gap-2 lg:gap-7 justify-center lg:justify-end right-2 lg:right-20 items-center font-mono">
+              {timeUnits.map((unit, index) => (
+                <React.Fragment key={unit.label}>
+                <div className="flex text-5xl text-white font-bold lg:text-7xl  justify-center ">
+                        <div className="flex justify-center items-center">
+                              <div className={`flex flex-col bg-yellow-300/10 md:bg-gray-950/30 ${index==0 ? "lg:bg-gray-950/30":"lg:bg-yellow-300/10" } xl:bg-yellow-300/10 rounded-xl md:p-3`}>
+                                  <span className={` font-extrabold font-mono`}>
+                                    {String(unit.value).padStart(2, "0")}
+                                    
+                                  </span>
+                                  <span className="text-lg uppercase text-center text-white/80">
+                                        {unit.label}
+                                </span>
+                            </div>
+                        
+                        </div>
+                    
+                </div>
+                
+                </React.Fragment>
+            ))}
+        </div>
+    </div>
+  );
+};
+

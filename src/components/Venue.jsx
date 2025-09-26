@@ -54,7 +54,7 @@ function Venue() {
 
   return (
     <section
-      id="venue-and-dates"
+      
       className="flex flex-col justify-center items-center h-full w-full"
     >
       <h2 className="font-bold sm:text-4xl text-2xl mb-4 text-sky-700 ">Venue</h2>

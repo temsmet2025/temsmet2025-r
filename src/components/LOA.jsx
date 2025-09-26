@@ -114,6 +114,28 @@ const CameraIcon = (
   </svg>
 )
 
+const pdfIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="lucide lucide-file-text w-6 h-6 mx-auto mb-2"
+  >
+    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+    <path d="M14 2v6h6" />
+    <path d="M16 13H8" />
+    <path d="M16 17H8" />
+    <path d="M10 9H8" />
+  </svg>
+)
+
+
 const importantIcon = (<svg xmlns="http://www.w3.org/2000/svg"
                         width="24" height="24"
                         viewBox="0 0 24 24"
@@ -506,7 +528,11 @@ const ResourceBtn = ({btn}) => {
     return (
         <div className="flex flex-col justify-center items-center text-white">
             <div className={`${btn.color} rounded-md hover:${btn.hover_color} hover:scale-105 duration-150`}>
-                <a href={btn.href} target='_blank' className='flex flex-col flex-wrap justify-center items-center w-64 sm:w-80 lg:w-52 xl:w-72 p-2 md:p-5'>
+                <a href={btn.href}
+                    target='_blank'
+                    {...(btn.download ? { download: true } : {})}
+                    className='flex flex-col flex-wrap justify-center items-center w-64 sm:w-80 lg:w-52 xl:w-72 p-2 md:p-5'
+                >
                     <span>{ btn.icon }</span>
                     <span className="text-base">
                             {btn.btn_text}
@@ -535,9 +561,25 @@ const QuickAccessResources = () => {
     const btn4 = {
         "icon": fileCheckIcon,
         "color": "bg-purple-600",
-        "color": "bg-purple-600/80",
+        "hover_color": "bg-purple-600/80",
         "btn_text":"Templates", 
         "href": "https://www.ieee.org/conferences/publishing/templates"
+    };
+    const btn5 = {
+        "icon": pdfIcon,
+        "color": "bg-blue-800",
+        "hover_color": "bg-blue-800/80",
+        "btn_text":"Presentation Template PDF", 
+        "href": "/downloadable/IEEE_TEMSEMT_PPT.pdf",
+        
+    };
+    const btn6 = {
+        "icon": fileCheckIcon,
+        "color": "bg-sky-500",
+        "hover_color": "bg-sky-500/80",
+        "btn_text":"Presentation Template PPTX", 
+        "href": ".downloadable/IEEE_TEMSEMT_PPT.pptx",
+        "download":true
     };
     return (
         <section className="mt-10">
@@ -548,6 +590,8 @@ const QuickAccessResources = () => {
                     <ResourceBtn btn={btn1} />
                     <ResourceBtn btn={btn2} />
                     <ResourceBtn btn={btn4} />
+                    <ResourceBtn btn={btn5} />
+                    <ResourceBtn btn={btn6} />
                 </div>
             </div>
         </section>
@@ -557,7 +601,7 @@ const QuickAccessResources = () => {
 const LOA = () => {
     
     return (
-        <div id="camera-ready-paper" className='sm:p-5'>
+        <div className='sm:p-5'>
             <SubInstruction />
             <RequirementCopyright/>
         </div>
