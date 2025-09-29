@@ -578,7 +578,7 @@ const QuickAccessResources = () => {
         "color": "bg-sky-500",
         "hover_color": "bg-sky-500/80",
         "btn_text":"Presentation Template PPTX", 
-        "href": ".downloadable/IEEE_TEMSEMT_PPT.pptx",
+        "href": "/downloadable/IEEE_TEMSEMT_PPT.pptx",
         "download":true
     };
     return (
