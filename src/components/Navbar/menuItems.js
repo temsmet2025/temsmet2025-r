@@ -26,7 +26,7 @@ export const navigation = [
   { index: 8, name: "Travel", current: "_self", id: "travel-link" },
   { index: 9, name: "Past Editions", href: "/", current: "_self", id: "pe-link" },
   { index: 10, name: "Contact", current: "_self", id: "contact-link" },
-  { index: 11, name: "Gallery", current: "_self", id: "gallery" },
+  { index: 11, name: "Gallery", href: "/gallery", current: "_self", id: "gallery" },
 ];
 
 /**
