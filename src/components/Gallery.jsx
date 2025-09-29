@@ -6,7 +6,7 @@ const Gallery = () => {
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="lucide lucide-users w-8 h-8 mx-auto text-primary group-hover:scale-110 transition-smooth"
+          className="lucide lucide-users w-8 h-8 mx-auto  group-hover:scale-110 transition-smooth"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -28,7 +28,7 @@ const Gallery = () => {
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="lucide lucide-calendar w-8 h-8 mx-auto text-primary group-hover:scale-110 transition-smooth"
+          className="lucide lucide-calendar w-8 h-8 mx-auto  group-hover:scale-110 transition-smooth"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -50,7 +50,7 @@ const Gallery = () => {
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="lucide lucide-map-pin w-8 h-8 mx-auto text-primary group-hover:scale-110 transition-smooth"
+          className="lucide lucide-map-pin w-8 h-8 mx-auto  group-hover:scale-110 transition-smooth"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -70,7 +70,7 @@ const Gallery = () => {
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="lucide lucide-award w-8 h-8 mx-auto text-primary group-hover:scale-110 transition-smooth"
+          className="lucide lucide-award w-8 h-8 mx-auto  group-hover:scale-110 transition-smooth"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -90,21 +90,21 @@ const Gallery = () => {
   return (
     <div className="container mx-auto px-4">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold mb-4">Event Overview</h2>
+        <h2 className="text-3xl text-sky-600 font-bold mb-4">Event Overview</h2>
         <p className="text-lg text-muted-foreground">
           A gathering of minds shaping the future of technology
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
         {stats.map((stat, i) => (
           <div
             key={i}
-            className="rounded-lg border bg-card text-card-foreground shadow-sm text-center group hover:shadow-card transition-smooth"
+            className="text-sky-600 rounded-lg border bg-card text-card-foreground shadow-sm text-center group hover:shadow-card transition-smooth"
           >
             <div className="p-6 pt-6">
-              <div className="mb-4">{stat.icon}</div>
-              <div className="text-3xl font-bold text-primary mb-2">
+              <div className="mb-4 text-sky-600">{stat.icon}</div>
+              <div className="text-3xl font-bold text-sky-600 mb-2">
                 {stat.value}
               </div>
               <div className="font-semibold mb-1">{stat.label}</div>
@@ -117,7 +117,7 @@ const Gallery = () => {
       {/* Image Gallery Section */}
       <div className="mt-8">
         <div className="text-center mb-8">
-          <h3 className="text-3xl font-bold mb-2">Gallery</h3>
+          <h3 className="text-3xl font-bold mb-2 text-sky-600">Gallery</h3>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:mx-32">
