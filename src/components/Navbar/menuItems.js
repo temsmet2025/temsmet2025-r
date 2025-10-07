@@ -11,7 +11,7 @@
 export const navigation = [
   { index: 0, name: "Home", href: "/", current: "_self", id: "home-link" },
   { index: 1, name: "Call for Papers", href: "", current: "_self", id: "cfp-link" },
-  { index: 2, name: "Conference Schedule", href: "", current: "_self", id: "schedule-link" },
+  { index: 2, name: "Conference Schedule", href: "/conference-schedule", current: "_self", id: "schedule-link" },
   // {
   //   index: 2, name: "Submission Guidelines",
   //   href: "/submission-guidelines",

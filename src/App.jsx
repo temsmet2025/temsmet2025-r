@@ -16,6 +16,7 @@ import VisaPage from "./pages/VisaPage.jsx";
 import HackathonPage from "./pages/Hackathon.jsx";
 import AccomodationPage from "./pages/AccomodationPage.jsx";
 import GalleryPage from "./pages/GalleryPage.jsx";
+import SchedulePage from "./pages/SchedulePage.jsx";
 
 function App() {
   const [routes, setRoutes] = useState([]);
@@ -40,6 +41,7 @@ function App() {
           "camera-ready-paper": <LoaPage />,
           "visa-details": <VisaPage />,
           "accomodation": <AccomodationPage />,
+          "conference-schedule": <SchedulePage />,
           "testing": <AccomodationPage />,
           
           "hackathon": <HackathonPage />,
