@@ -326,7 +326,7 @@ export const QuickLinks = ({page}) => {
             }
         }
         fetchLinks();
-    }, [page])
+    }, [loading])
     if (loading || !links || links.length == 0) {
         return <></>
     }
