@@ -6,7 +6,7 @@ import Navbar from './Navbar'
 import Carousel from '../components/Carousel/Carousel'
 import Footer from '../components/Footer'
 import ScrollToTop from '../components/ScrollToTop'
-import { Countdown, LatestUpdates } from '../components/SmallComps'
+import { Countdown, LatestUpdates, QuickLinks } from '../components/SmallComps'
 const CallForPaper = () => {
   return (
     <>
@@ -18,7 +18,7 @@ const CallForPaper = () => {
               <div className="sm:col-span-3 md:col-span-4 lg:col-span-6 xl:col-span-8 p-5 bg-white rounded-b-xl sm:rounded-l-none sm:rounded-r-xl">
                   <div id="Call For Papers">
                       <Countdown/>
-            
+                      <QuickLinks page="camera-ready-paper"/>
                         <ListView
                         title="Call For Papers"
                         data={conferenceTracks}

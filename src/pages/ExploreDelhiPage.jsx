@@ -5,7 +5,7 @@ import Carousel from '../components/Carousel/Carousel'
 import ExploreDelhi from '../components/ExploreDelhi'
 import Footer from '../components/Footer'
 import Sidebar from '../components/Sidebar'
-import { Countdown, LatestUpdates } from '../components/SmallComps'
+import { Countdown, LatestUpdates, QuickLinks } from '../components/SmallComps'
 const ExploreDelhiPage = () => {
   return (
      <>
@@ -17,6 +17,7 @@ const ExploreDelhiPage = () => {
         <div className="sm:col-span-3 md:col-span-4 lg:col-span-6 xl:col-span-8 p-5 bg-white rounded-b-xl sm:rounded-l-none sm:rounded-r-xl">
           <div id="explore-delhi">
                     <Countdown/>
+                    <QuickLinks page="explore-delhi"/>
             
                 <ExploreDelhi />
             </div>

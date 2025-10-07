@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 import { registrationFees, deligates, registrationNotes } from '../assets/dataItems';
 import Sidebar from '../components/Sidebar'
 import Navbar from './Navbar'
-import { Countdown, LatestUpdates } from '../components/SmallComps'
+import { Countdown, LatestUpdates, QuickLinks } from '../components/SmallComps'
 const Registration = () => {
   return (
         <>
@@ -19,7 +19,7 @@ const Registration = () => {
                 <div className="sm:col-span-3 md:col-span-4 lg:col-span-6 xl:col-span-8 p-5 bg-white rounded-b-xl sm:rounded-l-none sm:rounded-r-xl">
                   <div id="Registration" className="">
                     <Countdown/>
-                      
+                      <QuickLinks page="registration"/>
                 <TableView  
                 tableName="Registration"
                 tableHead={[

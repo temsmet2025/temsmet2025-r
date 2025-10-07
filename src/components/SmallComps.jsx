@@ -288,9 +288,9 @@ export const Countdown = ({ className }) => {
   );
 };
 
-const ResourceBtn = ({btn}) => {
+const ResourceBtn = ({btn, key}) => {
     return (
-        <div className="flex flex-col justify-center items-center text-white">
+        <div key={key} className="flex flex-col justify-center items-center text-white">
             <div className={`rounded-md hover:scale-105 duration-150`} style={{backgroundColor: btn.button_colors, color: btn.text_color}}>
                 <a href={btn.link?btn.link:btn.file}
                     target={btn.target}
@@ -307,18 +307,18 @@ const ResourceBtn = ({btn}) => {
 }
 
 export const QuickLinks = ({page}) => {
-    let url = import.meta.env.VITE_API_URL + "/api/common/quick-links/"
-    if (page){
-        url = url + "?page=" + page
-    }
+    const url = import.meta.env.VITE_API_URL + "common/quick-links/"+"?page=" + encodeURIComponent(page.trim());
+    
     const [links, setLinks] = useState()
     const [loading, setLoading] = useState(true)
     useEffect(() => {
+        console.log("feting from url = ", url)
         const fetchLinks = async () => {
             try {
                 const response = await fetch(url);
                 const data = await response.json();
                 setLinks(data);
+                console.log("fetched response = ", data)
                 setLoading(false);
             }
             catch {
@@ -326,18 +326,18 @@ export const QuickLinks = ({page}) => {
             }
         }
         fetchLinks();
-    }, [loading])
+    }, [page])
     if (loading || !links || links.length == 0) {
         return <></>
     }
     return (
-            <section className="mt-10">
+            <section className="mt-10 mb-10">
                 {/* <div className="w-full h-1 bg-gradient-to-r from-blue-800 via-green-500 to-purple-600"></div> */}
                 <div className="flex flex-col w-full bg-white shadow-lg p-2 rounded-lg">
                     <div className="text-center text-xl font-bold text-sky-400">Quick Access Resources</div>
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 md:gap-5 p-5 items-stretch">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 md:gap-5 p-5 jsutify-center items-center">
                         {
-                            !loading && links.map((link, index) => (
+                        !loading && links.map((link, index) => (
                                 <ResourceBtn btn={link} />
                             ))
                         }
