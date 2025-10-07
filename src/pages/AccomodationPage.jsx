@@ -10,6 +10,7 @@ import ScrollToTop from '@/components/ScrollToTop'
 import Accomodation from '@/components/Accomodation'
 const VisaPage = () => {
   return (
+
       <>
       <ScrollToTop elementId="visa" />
           

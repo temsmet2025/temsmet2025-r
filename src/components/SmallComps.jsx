@@ -288,3 +288,62 @@ export const Countdown = ({ className }) => {
   );
 };
 
+const ResourceBtn = ({btn}) => {
+    return (
+        <div className="flex flex-col justify-center items-center text-white">
+            <div className={`rounded-md hover:scale-105 duration-150`} style={{backgroundColor: btn.button_colors, color: btn.text_color}}>
+                <a href={btn.link?btn.link:btn.file}
+                    target={btn.target}
+                    className='flex flex-col flex-wrap justify-center items-center w-64 sm:w-80 lg:w-52 xl:w-72 p-2 md:p-5'
+                >
+                    <span>{ btn.icon_svg && btn.icon_svg }</span>
+                    <span className="text-base">
+                            {btn.button_text}
+                    </span>
+                </a>
+            </div>
+        </div>
+    )
+}
+
+export const QuickLinks = ({page}) => {
+    let url = import.meta.env.VITE_API_URL + "/api/common/quick-links/"
+    if (page){
+        url = url + "?page=" + page
+    }
+    const [links, setLinks] = useState()
+    const [loading, setLoading] = useState(true)
+    useEffect(() => {
+        const fetchLinks = async () => {
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                setLinks(data);
+                setLoading(false);
+            }
+            catch {
+                setLinks(null);
+            }
+        }
+        fetchLinks();
+    }, [loading])
+    if (loading || !links || links.length == 0) {
+        return <></>
+    }
+    return (
+            <section className="mt-10">
+                {/* <div className="w-full h-1 bg-gradient-to-r from-blue-800 via-green-500 to-purple-600"></div> */}
+                <div className="flex flex-col w-full bg-white shadow-lg p-2 rounded-lg">
+                    <div className="text-center text-xl font-bold text-sky-400">Quick Access Resources</div>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 md:gap-5 p-5 items-stretch">
+                        {
+                            !loading && links.map((link, index) => (
+                                <ResourceBtn btn={link} />
+                            ))
+                        }
+                    </div>
+                </div>
+            </section>
+    )
+}
+
